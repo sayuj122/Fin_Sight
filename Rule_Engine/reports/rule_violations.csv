@@ -1,0 +1,64 @@
+Company,Year,Rule ID,Rule Name,Group,Category,Severity,Status,Message,Observed
+AARTI DRUGS LTD,2018,CF-002,Cash flow to cash-balance tie-out,Handbook Rules,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(4.27), 'Net Cash Flow': np.float64(0.15)}"
+AARTI DRUGS LTD,2018,CF-004,Financing activity plausibility,Handbook Rules,cross_statement,High,fail,Validation triggered,"{'Borrowings': np.float64(546.25), 'Dividend Amount': np.float64(2.36), 'Cash from Financing Activity': np.float64(3.92)}"
+AARTI DRUGS LTD,2018,FA-024,Adverse operating-cash-flow growth,Financial Analytics Rules,financial_analytics,High,fail,Validation triggered,{'Operating_CF_Growth': np.float64(-0.6007)}
+AARTI DRUGS LTD,2018,FA-098,Revenue growth with operating cash-flow decline,Financial Analytics Rules,financial_analytics,High,fail,Validation triggered,"{'Revenue_Growth': np.float64(0.0405), 'Operating_CF_Growth': np.float64(-0.6007)}"
+AARTI DRUGS LTD,2018,FA-106,Operating cash flow below net profit,Financial Analytics Rules,financial_analytics,High,fail,Validation triggered,"{'Cash from Operating Activity': np.float64(69.77), 'Net profit': np.float64(82.31)}"
+AARTI DRUGS LTD,2018,IS-011,Revenue versus operating cash flow correlation,Handbook Rules,cross_statement,High,fail,Validation triggered,"{'Revenue_Growth': np.float64(0.0405), 'Operating_CF_Growth': np.float64(-0.6007)}"
+AARTI DRUGS LTD,2018,IS-013,Net income to reserve movement plausibility,Handbook Rules,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(82.31), 'Dividend Amount': np.float64(2.36), 'Reserves': np.float64(431.85)}"
+AARTI DRUGS LTD,2019,CF-002,Cash flow to cash-balance tie-out,Handbook Rules,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(5.55), 'Net Cash Flow': np.float64(1.35)}"
+AARTI DRUGS LTD,2019,FA-021,Adverse borrowing growth,Financial Analytics Rules,financial_analytics,High,fail,Validation triggered,{'Borrowing_Growth': np.float64(-0.0715)}
+AARTI DRUGS LTD,2019,FA-026,Adverse inventory growth,Financial Analytics Rules,financial_analytics,High,fail,Validation triggered,{'Inventory_Growth': np.float64(-0.1136)}
+AARTI DRUGS LTD,2019,IS-013,Net income to reserve movement plausibility,Handbook Rules,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(89.75), 'Dividend Amount': np.float64(2.36), 'Reserves': np.float64(519.86)}"
+AARTI DRUGS LTD,2019,RAT-011,Net profit margin trend,Handbook Rules,trend,Medium,fail,Validation triggered,{'Profit_Margin': np.float64(0.0575)}
+AARTI DRUGS LTD,2020,CF-002,Cash flow to cash-balance tie-out,Handbook Rules,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(7.64), 'Net Cash Flow': np.float64(2.13)}"
+AARTI DRUGS LTD,2020,FA-021,Adverse borrowing growth,Financial Analytics Rules,financial_analytics,High,fail,Validation triggered,{'Borrowing_Growth': np.float64(-0.2338)}
+AARTI DRUGS LTD,2020,IS-013,Net income to reserve movement plausibility,Handbook Rules,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(141.4), 'Dividend Amount': np.float64(4.66), 'Reserves': np.float64(629.19)}"
+AARTI DRUGS LTD,2021,CF-002,Cash flow to cash-balance tie-out,Handbook Rules,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(9.78), 'Net Cash Flow': np.float64(2.04)}"
+AARTI DRUGS LTD,2021,FA-021,Adverse borrowing growth,Financial Analytics Rules,financial_analytics,High,fail,Validation triggered,{'Borrowing_Growth': np.float64(-0.0975)}
+AARTI DRUGS LTD,2021,FA-024,Adverse operating-cash-flow growth,Financial Analytics Rules,financial_analytics,High,fail,Validation triggered,{'Operating_CF_Growth': np.float64(-0.382)}
+AARTI DRUGS LTD,2021,FA-098,Revenue growth with operating cash-flow decline,Financial Analytics Rules,financial_analytics,High,fail,Validation triggered,"{'Revenue_Growth': np.float64(0.1931), 'Operating_CF_Growth': np.float64(-0.382)}"
+AARTI DRUGS LTD,2021,FA-106,Operating cash flow below net profit,Financial Analytics Rules,financial_analytics,High,fail,Validation triggered,"{'Cash from Operating Activity': np.float64(154.95), 'Net profit': np.float64(280.41)}"
+AARTI DRUGS LTD,2021,IS-011,Revenue versus operating cash flow correlation,Handbook Rules,cross_statement,High,fail,Validation triggered,"{'Revenue_Growth': np.float64(0.1931), 'Operating_CF_Growth': np.float64(-0.382)}"
+AARTI DRUGS LTD,2021,IS-013,Net income to reserve movement plausibility,Handbook Rules,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(280.41), 'Dividend Amount': np.float64(23.3), 'Reserves': np.float64(820.22)}"
+AARTI DRUGS LTD,2022,CF-002,Cash flow to cash-balance tie-out,Handbook Rules,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(22.33), 'Net Cash Flow': np.float64(12.8)}"
+AARTI DRUGS LTD,2022,FA-020,Adverse profit growth,Financial Analytics Rules,financial_analytics,High,fail,Validation triggered,{'Profit_Growth': np.float64(-0.2688)}
+AARTI DRUGS LTD,2022,FA-024,Adverse operating-cash-flow growth,Financial Analytics Rules,financial_analytics,High,fail,Validation triggered,{'Operating_CF_Growth': np.float64(-0.5456)}
+AARTI DRUGS LTD,2022,FA-097,Revenue growth with profit decline,Financial Analytics Rules,financial_analytics,High,fail,Validation triggered,"{'Revenue_Growth': np.float64(0.1549), 'Profit_Growth': np.float64(-0.2688)}"
+AARTI DRUGS LTD,2022,FA-098,Revenue growth with operating cash-flow decline,Financial Analytics Rules,financial_analytics,High,fail,Validation triggered,"{'Revenue_Growth': np.float64(0.1549), 'Operating_CF_Growth': np.float64(-0.5456)}"
+AARTI DRUGS LTD,2022,FA-106,Operating cash flow below net profit,Financial Analytics Rules,financial_analytics,High,fail,Validation triggered,"{'Cash from Operating Activity': np.float64(70.41), 'Net profit': np.float64(205.04)}"
+AARTI DRUGS LTD,2022,IS-011,Revenue versus operating cash flow correlation,Handbook Rules,cross_statement,High,fail,Validation triggered,"{'Revenue_Growth': np.float64(0.1549), 'Operating_CF_Growth': np.float64(-0.5456)}"
+AARTI DRUGS LTD,2022,IS-013,Net income to reserve movement plausibility,Handbook Rules,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(205.04), 'Dividend Amount': np.float64(9.26), 'Reserves': np.float64(943.76)}"
+AARTI DRUGS LTD,2023,CF-002,Cash flow to cash-balance tie-out,Handbook Rules,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(8.96), 'Net Cash Flow': np.float64(-14.11)}"
+AARTI DRUGS LTD,2023,FA-020,Adverse profit growth,Financial Analytics Rules,financial_analytics,High,fail,Validation triggered,{'Profit_Growth': np.float64(-0.1889)}
+AARTI DRUGS LTD,2023,FA-026,Adverse inventory growth,Financial Analytics Rules,financial_analytics,High,fail,Validation triggered,{'Inventory_Growth': np.float64(-0.0183)}
+AARTI DRUGS LTD,2023,FA-027,Adverse cash growth,Financial Analytics Rules,financial_analytics,High,fail,Validation triggered,{'Cash_Growth': np.float64(-0.5987)}
+AARTI DRUGS LTD,2023,FA-097,Revenue growth with profit decline,Financial Analytics Rules,financial_analytics,High,fail,Validation triggered,"{'Revenue_Growth': np.float64(0.0914), 'Profit_Growth': np.float64(-0.1889)}"
+AARTI DRUGS LTD,2023,FA-101,Borrowing growth with cash decline,Financial Analytics Rules,financial_analytics,High,fail,Validation triggered,"{'Borrowing_Growth': np.float64(0.1218), 'Cash_Growth': np.float64(-0.5987)}"
+AARTI DRUGS LTD,2023,FA-106,Operating cash flow below net profit,Financial Analytics Rules,financial_analytics,High,fail,Validation triggered,"{'Cash from Operating Activity': np.float64(133.32), 'Net profit': np.float64(166.31)}"
+AARTI DRUGS LTD,2023,FA-107,Cash decline amid positive operating cash flow,Financial Analytics Rules,financial_analytics,Medium,fail,Validation triggered,"{'Cash_Growth': np.float64(-0.5987), 'Cash from Operating Activity': np.float64(133.32)}"
+AARTI DRUGS LTD,2023,IS-013,Net income to reserve movement plausibility,Handbook Rules,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(166.31), 'Dividend Amount': np.float64(9.26), 'Reserves': np.float64(1099.83)}"
+AARTI DRUGS LTD,2023,RAT-011,Net profit margin trend,Handbook Rules,trend,Medium,fail,Validation triggered,{'Profit_Margin': np.float64(0.0612)}
+AARTI DRUGS LTD,2024,CF-002,Cash flow to cash-balance tie-out,Handbook Rules,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(9.43), 'Net Cash Flow': np.float64(-0.76)}"
+AARTI DRUGS LTD,2024,FA-019,Adverse revenue growth,Financial Analytics Rules,financial_analytics,High,fail,Validation triggered,{'Revenue_Growth': np.float64(-0.069)}
+AARTI DRUGS LTD,2024,FA-021,Adverse borrowing growth,Financial Analytics Rules,financial_analytics,High,fail,Validation triggered,{'Borrowing_Growth': np.float64(-0.0733)}
+AARTI DRUGS LTD,2024,FA-025,Adverse receivable growth,Financial Analytics Rules,financial_analytics,High,fail,Validation triggered,{'Receivable_Growth': np.float64(-0.1853)}
+AARTI DRUGS LTD,2024,FA-026,Adverse inventory growth,Financial Analytics Rules,financial_analytics,High,fail,Validation triggered,{'Inventory_Growth': np.float64(-0.0589)}
+AARTI DRUGS LTD,2024,IS-013,Net income to reserve movement plausibility,Handbook Rules,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(171.42), 'Dividend Amount': np.float64(9.19), 'Reserves': np.float64(1189.61)}"
+AARTI DRUGS LTD,2024,RAT-024,Revenue growth rate,Handbook Rules,trend,Medium,fail,Validation triggered,{'Revenue_Growth': np.float64(-0.069)}
+AARTI DRUGS LTD,2025,CF-002,Cash flow to cash-balance tie-out,Handbook Rules,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(7.56), 'Net Cash Flow': np.float64(-2.17)}"
+AARTI DRUGS LTD,2025,FA-019,Adverse revenue growth,Financial Analytics Rules,financial_analytics,High,fail,Validation triggered,{'Revenue_Growth': np.float64(-0.056)}
+AARTI DRUGS LTD,2025,FA-020,Adverse profit growth,Financial Analytics Rules,financial_analytics,High,fail,Validation triggered,{'Profit_Growth': np.float64(-0.019)}
+AARTI DRUGS LTD,2025,FA-024,Adverse operating-cash-flow growth,Financial Analytics Rules,financial_analytics,High,fail,Validation triggered,{'Operating_CF_Growth': np.float64(-0.3186)}
+AARTI DRUGS LTD,2025,FA-026,Adverse inventory growth,Financial Analytics Rules,financial_analytics,High,fail,Validation triggered,{'Inventory_Growth': np.float64(-0.0267)}
+AARTI DRUGS LTD,2025,FA-027,Adverse cash growth,Financial Analytics Rules,financial_analytics,High,fail,Validation triggered,{'Cash_Growth': np.float64(-0.1983)}
+AARTI DRUGS LTD,2025,FA-099,Receivables growth exceeding revenue growth,Financial Analytics Rules,financial_analytics,High,fail,Validation triggered,"{'Receivable_Growth': np.float64(0.0662), 'Revenue_Growth': np.float64(-0.056)}"
+AARTI DRUGS LTD,2025,FA-101,Borrowing growth with cash decline,Financial Analytics Rules,financial_analytics,High,fail,Validation triggered,"{'Borrowing_Growth': np.float64(0.09), 'Cash_Growth': np.float64(-0.1983)}"
+AARTI DRUGS LTD,2025,FA-102,Borrowing growth with flat revenue,Financial Analytics Rules,financial_analytics,High,fail,Validation triggered,"{'Borrowing_Growth': np.float64(0.09), 'Revenue_Growth': np.float64(-0.056)}"
+AARTI DRUGS LTD,2025,FA-107,Cash decline amid positive operating cash flow,Financial Analytics Rules,financial_analytics,Medium,fail,Validation triggered,"{'Cash_Growth': np.float64(-0.1983), 'Cash from Operating Activity': np.float64(244.58)}"
+AARTI DRUGS LTD,2025,IS-013,Net income to reserve movement plausibility,Handbook Rules,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(168.16), 'Dividend Amount': np.float64(9.13), 'Reserves': np.float64(1277.73)}"
+AARTI DRUGS LTD,2025,RAT-024,Revenue growth rate,Handbook Rules,trend,Medium,fail,Validation triggered,{'Revenue_Growth': np.float64(-0.056)}
+AARTI DRUGS LTD,2026,CF-002,Cash flow to cash-balance tie-out,Handbook Rules,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(8.81), 'Net Cash Flow': np.float64(2.69)}"
+AARTI DRUGS LTD,2026,FA-021,Adverse borrowing growth,Financial Analytics Rules,financial_analytics,High,fail,Validation triggered,{'Borrowing_Growth': np.float64(-0.0625)}
+AARTI DRUGS LTD,2026,IS-013,Net income to reserve movement plausibility,Handbook Rules,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(194.92), 'Dividend Amount': np.float64(18.25), 'Reserves': np.float64(1457.59)}"
+AARTI DRUGS LTD,2026,RAT-012,Operating margin trend,Handbook Rules,trend,Medium,fail,Validation triggered,{'Operating_Margin': np.float64(0.0819)}

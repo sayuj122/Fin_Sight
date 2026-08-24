@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python rule_engine.py)",
+      "Bash(python -c ' *)",
+      "Bash(python -)",
+      "Bash(python risk_score.py)"
+    ]
+  }
+}
