@@ -1,0 +1,463 @@
+Company,Year,Rule ID,Rule Description,Category,Severity,Status,Message,Observed
+ABB INDIA LTD,2016,BS-001,Balance sheet equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(12831.33), 'Total Liabilities': np.float64(7731.200000000001), 'Equity Share Capital': np.float64(42.38), 'Reserves': np.float64(3244.32)}"
+ABB INDIA LTD,2016,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(42.38), 'Reserves': np.float64(3244.32)}"
+ABB INDIA LTD,2016,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,skipped,Unavailable prior-year Cash & Bank,"{'Cash & Bank': np.float64(1189.16), 'Net Cash Flow': np.float64(615.37)}"
+ABB INDIA LTD,2016,CF-004,Financing activity plausibility,cross_statement,High,skipped,Unavailable prior-year Borrowings,"{'Borrowings': np.float64(600.04), 'Dividend Amount': np.float64(84.76), 'Cash from Financing Activity': np.float64(-178.83)}"
+ABB INDIA LTD,2016,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(374.47), 'Depreciation': np.float64(150.95), 'Cash from Operating Activity': np.float64(862.57)}"
+ABB INDIA LTD,2016,CF-008,Sustained negative operating cash flow,trend,High,skipped,Insufficient history for Cash from Operating Activity,{'Cash from Operating Activity': np.float64(862.57)}
+ABB INDIA LTD,2016,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+ABB INDIA LTD,2016,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(84.76), 'Reserves': np.float64(3244.32)}"
+ABB INDIA LTD,2016,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'ABB INDIA LTD', 'Year': np.int64(2016)}"
+ABB INDIA LTD,2016,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+ABB INDIA LTD,2016,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(1189.16), 'Inventory': np.float64(940.25)}"
+ABB INDIA LTD,2016,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+ABB INDIA LTD,2016,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(8642.21), 'robust_z': None}"
+ABB INDIA LTD,2016,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2016), 'Report Date': '2016-12-31'}"
+ABB INDIA LTD,2016,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(0.4169454340961397), 'robust_z': None}"
+ABB INDIA LTD,2016,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(107.59), 'Borrowings': np.float64(600.04)}"
+ABB INDIA LTD,2016,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.3467824934149703), 'robust_z': None}"
+ABB INDIA LTD,2016,IS-010,Unusual expense spike detection,trend,High,skipped,Unavailable prior-year Total Expenses,{'Total Expenses': np.float64(0.0)}
+ABB INDIA LTD,2016,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,skipped,"Unavailable metric values: ['Revenue_Growth', 'Operating_CF_Growth']","{'Revenue_Growth': np.float64(nan), 'Operating_CF_Growth': np.float64(nan)}"
+ABB INDIA LTD,2016,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,skipped,Unavailable prior-year Reserves,"{'Net profit': np.float64(374.47), 'Dividend Amount': np.float64(84.76), 'Reserves': np.float64(3244.32)}"
+ABB INDIA LTD,2016,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+ABB INDIA LTD,2016,LED-001,Accounting equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(12831.33), 'Total Liabilities': np.float64(7731.200000000001), 'Equity Share Capital': np.float64(42.38), 'Reserves': np.float64(3244.32)}"
+ABB INDIA LTD,2016,RAT-005,Debt-to-equity ratio,ratio,High,pass,Validation passed,{'Debt_Equity_Ratio': np.float64(0.1825660997352967)}
+ABB INDIA LTD,2016,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+ABB INDIA LTD,2016,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+ABB INDIA LTD,2016,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+ABB INDIA LTD,2016,RAT-010,Gross profit margin trend,trend,Medium,skipped,Insufficient history for gross_margin,{'gross_margin': np.float64(0.4169454340961397)}
+ABB INDIA LTD,2016,RAT-011,Net profit margin trend,trend,Medium,skipped,Insufficient history for Profit_Margin,{'Profit_Margin': np.float64(0.0433303518428735)}
+ABB INDIA LTD,2016,RAT-012,Operating margin trend,trend,Medium,skipped,Insufficient history for Operating_Margin,{'Operating_Margin': np.float64(0.0)}
+ABB INDIA LTD,2016,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+ABB INDIA LTD,2016,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.1139349499497976), 'robust_z': None}"
+ABB INDIA LTD,2016,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+ABB INDIA LTD,2016,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(9.191395905344322), 'robust_z': None}"
+ABB INDIA LTD,2016,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(2.909129773253622), 'robust_z': None}"
+ABB INDIA LTD,2016,RAT-020,Days sales outstanding trend,trend,Medium,skipped,Insufficient history for dso,{'dso': np.float64(125.46707381560968)}
+ABB INDIA LTD,2016,RAT-022,Days inventory outstanding trend,trend,Medium,skipped,Insufficient history for dio,{'dio': np.float64(39.71105191843291)}
+ABB INDIA LTD,2016,RAT-024,Revenue growth rate,trend,Medium,skipped,Unavailable metric values: ['Revenue_Growth'],{'Revenue_Growth': np.float64(nan)}
+ABB INDIA LTD,2016,TR-001,Year-over-year revenue variance,trend,Medium,skipped,Unavailable metric values: ['Revenue_Growth'],{'Revenue_Growth': np.float64(nan)}
+ABB INDIA LTD,2016,TR-002,Year-over-year expense variance,trend,Medium,skipped,Unavailable prior-year Total Expenses,{'Total Expenses': np.float64(0.0)}
+ABB INDIA LTD,2016,TR-003,Multi-year trend consistency,trend,Medium,skipped,Unavailable metric values: ['Revenue_Volatility'],{'Revenue_Volatility': np.float64(nan)}
+ABB INDIA LTD,2016,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+ABB INDIA LTD,2016,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.0433303518428735), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
+ABB INDIA LTD,2017,BS-001,Balance sheet equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(14297.36), 'Total Liabilities': np.float64(8888.050000000001), 'Equity Share Capital': np.float64(42.38), 'Reserves': np.float64(3564.51)}"
+ABB INDIA LTD,2017,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(42.38), 'Reserves': np.float64(3564.51)}"
+ABB INDIA LTD,2017,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(1491.66), 'Net Cash Flow': np.float64(302.27)}"
+ABB INDIA LTD,2017,CF-004,Financing activity plausibility,cross_statement,High,pass,Validation passed,"{'Borrowings': np.float64(608.35), 'Dividend Amount': np.float64(93.24), 'Cash from Financing Activity': np.float64(-170.99)}"
+ABB INDIA LTD,2017,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(419.95), 'Depreciation': np.float64(101.23), 'Cash from Operating Activity': np.float64(791.66)}"
+ABB INDIA LTD,2017,CF-008,Sustained negative operating cash flow,trend,High,skipped,Insufficient history for Cash from Operating Activity,{'Cash from Operating Activity': np.float64(791.66)}
+ABB INDIA LTD,2017,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+ABB INDIA LTD,2017,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(93.24), 'Reserves': np.float64(3564.51)}"
+ABB INDIA LTD,2017,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'ABB INDIA LTD', 'Year': np.int64(2017)}"
+ABB INDIA LTD,2017,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+ABB INDIA LTD,2017,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(1491.66), 'Inventory': np.float64(1153.55)}"
+ABB INDIA LTD,2017,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+ABB INDIA LTD,2017,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(6093.73), 'robust_z': None}"
+ABB INDIA LTD,2017,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2017), 'Report Date': '2017-12-31'}"
+ABB INDIA LTD,2017,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(0.3709567046784153), 'robust_z': None}"
+ABB INDIA LTD,2017,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(62.08), 'Borrowings': np.float64(608.35)}"
+ABB INDIA LTD,2017,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.2050918038992996), 'robust_z': None}"
+ABB INDIA LTD,2017,IS-010,Unusual expense spike detection,trend,High,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+ABB INDIA LTD,2017,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,pass,Validation passed,"{'Revenue_Growth': np.float64(-0.2948875345542401), 'Operating_CF_Growth': np.float64(-0.0822078208145427)}"
+ABB INDIA LTD,2017,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(419.95), 'Dividend Amount': np.float64(93.24), 'Reserves': np.float64(3564.51)}"
+ABB INDIA LTD,2017,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+ABB INDIA LTD,2017,LED-001,Accounting equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(14297.36), 'Total Liabilities': np.float64(8888.050000000001), 'Equity Share Capital': np.float64(42.38), 'Reserves': np.float64(3564.51)}"
+ABB INDIA LTD,2017,RAT-005,Debt-to-equity ratio,ratio,High,pass,Validation passed,{'Debt_Equity_Ratio': np.float64(0.1686633082794318)}
+ABB INDIA LTD,2017,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+ABB INDIA LTD,2017,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+ABB INDIA LTD,2017,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+ABB INDIA LTD,2017,RAT-010,Gross profit margin trend,trend,Medium,skipped,Insufficient history for gross_margin,{'gross_margin': np.float64(0.3709567046784153)}
+ABB INDIA LTD,2017,RAT-011,Net profit margin trend,trend,Medium,skipped,Insufficient history for Profit_Margin,{'Profit_Margin': np.float64(0.0689150979777574)}
+ABB INDIA LTD,2017,RAT-012,Operating margin trend,trend,Medium,skipped,Insufficient history for Operating_Margin,{'Operating_Margin': np.float64(0.0)}
+ABB INDIA LTD,2017,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+ABB INDIA LTD,2017,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.1164299438020011), 'robust_z': None}"
+ABB INDIA LTD,2017,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+ABB INDIA LTD,2017,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(5.282588531056304), 'robust_z': None}"
+ABB INDIA LTD,2017,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(2.2045982417423398), 'robust_z': None}"
+ABB INDIA LTD,2017,RAT-020,Days sales outstanding trend,trend,Medium,skipped,Insufficient history for dso,{'dso': np.float64(165.56304595050975)}
+ABB INDIA LTD,2017,RAT-022,Days inventory outstanding trend,trend,Medium,skipped,Insufficient history for dio,{'dio': np.float64(69.0949139525381)}
+ABB INDIA LTD,2017,RAT-024,Revenue growth rate,trend,Medium,fail,Validation triggered,{'Revenue_Growth': np.float64(-0.2948875345542401)}
+ABB INDIA LTD,2017,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(-0.2948875345542401), 'robust_z': None}"
+ABB INDIA LTD,2017,TR-002,Year-over-year expense variance,trend,Medium,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+ABB INDIA LTD,2017,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(1802.0474897182924), 'robust_z': None}"
+ABB INDIA LTD,2017,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+ABB INDIA LTD,2017,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.0689150979777574), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
+ABB INDIA LTD,2018,BS-001,Balance sheet equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(13166.71), 'Total Liabilities': np.float64(9076.9), 'Equity Share Capital': np.float64(42.38), 'Reserves': np.float64(3964.94)}"
+ABB INDIA LTD,2018,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(42.38), 'Reserves': np.float64(3964.94)}"
+ABB INDIA LTD,2018,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(1475.07), 'Net Cash Flow': np.float64(-16.79)}"
+ABB INDIA LTD,2018,CF-004,Financing activity plausibility,cross_statement,High,pass,Validation passed,"{'Borrowings': np.float64(6.92), 'Dividend Amount': np.float64(101.71), 'Cash from Financing Activity': np.float64(-793.69)}"
+ABB INDIA LTD,2018,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(510.89), 'Depreciation': np.float64(92.76), 'Cash from Operating Activity': np.float64(625.46)}"
+ABB INDIA LTD,2018,CF-008,Sustained negative operating cash flow,trend,High,pass,Validation passed,{'Cash from Operating Activity': np.float64(625.46)}
+ABB INDIA LTD,2018,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+ABB INDIA LTD,2018,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(101.71), 'Reserves': np.float64(3964.94)}"
+ABB INDIA LTD,2018,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'ABB INDIA LTD', 'Year': np.int64(2018)}"
+ABB INDIA LTD,2018,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+ABB INDIA LTD,2018,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(1475.07), 'Inventory': np.float64(927.85)}"
+ABB INDIA LTD,2018,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+ABB INDIA LTD,2018,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(6690.12), 'robust_z': None}"
+ABB INDIA LTD,2018,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2018), 'Report Date': '2018-12-31'}"
+ABB INDIA LTD,2018,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(0.3516214955785547), 'robust_z': None}"
+ABB INDIA LTD,2018,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(60.22), 'Borrowings': np.float64(6.92)}"
+ABB INDIA LTD,2018,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.2162340451644575), 'robust_z': None}"
+ABB INDIA LTD,2018,IS-010,Unusual expense spike detection,trend,High,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+ABB INDIA LTD,2018,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,fail,Validation triggered,"{'Revenue_Growth': np.float64(0.0978694494176801), 'Operating_CF_Growth': np.float64(-0.2099386100093473)}"
+ABB INDIA LTD,2018,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(510.89), 'Dividend Amount': np.float64(101.71), 'Reserves': np.float64(3964.94)}"
+ABB INDIA LTD,2018,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+ABB INDIA LTD,2018,LED-001,Accounting equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(13166.71), 'Total Liabilities': np.float64(9076.9), 'Equity Share Capital': np.float64(42.38), 'Reserves': np.float64(3964.94)}"
+ABB INDIA LTD,2018,RAT-005,Debt-to-equity ratio,ratio,High,pass,Validation passed,{'Debt_Equity_Ratio': np.float64(0.001726839883014)}
+ABB INDIA LTD,2018,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+ABB INDIA LTD,2018,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+ABB INDIA LTD,2018,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+ABB INDIA LTD,2018,RAT-010,Gross profit margin trend,trend,Medium,fail,Validation triggered,{'gross_margin': np.float64(0.3516214955785547)}
+ABB INDIA LTD,2018,RAT-011,Net profit margin trend,trend,Medium,pass,Validation passed,{'Profit_Margin': np.float64(0.0763648484631067)}
+ABB INDIA LTD,2018,RAT-012,Operating margin trend,trend,Medium,fail,Validation triggered,{'Operating_Margin': np.float64(0.0)}
+ABB INDIA LTD,2018,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+ABB INDIA LTD,2018,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.1274891947735643), 'robust_z': None}"
+ABB INDIA LTD,2018,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+ABB INDIA LTD,2018,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(7.210346499973055), 'robust_z': None}"
+ABB INDIA LTD,2018,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(3.965949172737997), 'robust_z': None}"
+ABB INDIA LTD,2018,RAT-020,Days sales outstanding trend,trend,Medium,pass,Validation passed,{'dso': np.float64(92.03345380949818)}
+ABB INDIA LTD,2018,RAT-022,Days inventory outstanding trend,trend,Medium,pass,Validation passed,{'dio': np.float64(50.62170035814007)}
+ABB INDIA LTD,2018,RAT-024,Revenue growth rate,trend,Medium,pass,Validation passed,{'Revenue_Growth': np.float64(0.0978694494176801)}
+ABB INDIA LTD,2018,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(0.0978694494176801), 'robust_z': None}"
+ABB INDIA LTD,2018,TR-002,Year-over-year expense variance,trend,Medium,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+ABB INDIA LTD,2018,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(1332.98454045799), 'robust_z': None}"
+ABB INDIA LTD,2018,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+ABB INDIA LTD,2018,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.0763648484631067), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
+ABB INDIA LTD,2019,BS-001,Balance sheet equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(12107.669999999998), 'Total Liabilities': np.float64(7700.83), 'Equity Share Capital': np.float64(42.38), 'Reserves': np.float64(3477.73)}"
+ABB INDIA LTD,2019,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(42.38), 'Reserves': np.float64(3477.73)}"
+ABB INDIA LTD,2019,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(1597.57), 'Net Cash Flow': np.float64(122.51)}"
+ABB INDIA LTD,2019,CF-004,Financing activity plausibility,cross_statement,High,pass,Validation passed,"{'Borrowings': np.float64(13.54), 'Dividend Amount': np.float64(101.71), 'Cash from Financing Activity': np.float64(-146.72)}"
+ABB INDIA LTD,2019,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(303.4), 'Depreciation': np.float64(90.4), 'Cash from Operating Activity': np.float64(666.87)}"
+ABB INDIA LTD,2019,CF-008,Sustained negative operating cash flow,trend,High,pass,Validation passed,{'Cash from Operating Activity': np.float64(666.87)}
+ABB INDIA LTD,2019,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+ABB INDIA LTD,2019,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(101.71), 'Reserves': np.float64(3477.73)}"
+ABB INDIA LTD,2019,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'ABB INDIA LTD', 'Year': np.int64(2019)}"
+ABB INDIA LTD,2019,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+ABB INDIA LTD,2019,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(1597.57), 'Inventory': np.float64(861.73)}"
+ABB INDIA LTD,2019,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+ABB INDIA LTD,2019,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(7315.06), 'robust_z': None}"
+ABB INDIA LTD,2019,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2019), 'Report Date': '2019-12-31'}"
+ABB INDIA LTD,2019,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(0.3621392032327828), 'robust_z': None}"
+ABB INDIA LTD,2019,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(28.19), 'Borrowings': np.float64(13.54)}"
+ABB INDIA LTD,2019,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.3184626097895186), 'robust_z': None}"
+ABB INDIA LTD,2019,IS-010,Unusual expense spike detection,trend,High,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+ABB INDIA LTD,2019,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,pass,Validation passed,"{'Revenue_Growth': np.float64(0.0934123752638218), 'Operating_CF_Growth': np.float64(0.066207271448214)}"
+ABB INDIA LTD,2019,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(303.4), 'Dividend Amount': np.float64(101.71), 'Reserves': np.float64(3477.73)}"
+ABB INDIA LTD,2019,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+ABB INDIA LTD,2019,LED-001,Accounting equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(12107.669999999998), 'Total Liabilities': np.float64(7700.83), 'Equity Share Capital': np.float64(42.38), 'Reserves': np.float64(3477.73)}"
+ABB INDIA LTD,2019,RAT-005,Debt-to-equity ratio,ratio,High,pass,Validation passed,{'Debt_Equity_Ratio': np.float64(0.0038464707068813)}
+ABB INDIA LTD,2019,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+ABB INDIA LTD,2019,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+ABB INDIA LTD,2019,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+ABB INDIA LTD,2019,RAT-010,Gross profit margin trend,trend,Medium,pass,Validation passed,{'gross_margin': np.float64(0.3621392032327828)}
+ABB INDIA LTD,2019,RAT-011,Net profit margin trend,trend,Medium,pass,Validation passed,{'Profit_Margin': np.float64(0.0414760781182929)}
+ABB INDIA LTD,2019,RAT-012,Operating margin trend,trend,Medium,fail,Validation triggered,{'Operating_Margin': np.float64(0.0)}
+ABB INDIA LTD,2019,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+ABB INDIA LTD,2019,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.0861904883654203), 'robust_z': None}"
+ABB INDIA LTD,2019,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+ABB INDIA LTD,2019,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(8.488807399069314), 'robust_z': None}"
+ABB INDIA LTD,2019,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(3.7560512235948944), 'robust_z': None}"
+ABB INDIA LTD,2019,RAT-020,Days sales outstanding trend,trend,Medium,pass,Validation passed,{'dso': np.float64(97.17652350083252)}
+ABB INDIA LTD,2019,RAT-022,Days inventory outstanding trend,trend,Medium,pass,Validation passed,{'dio': np.float64(42.997794959986656)}
+ABB INDIA LTD,2019,RAT-024,Revenue growth rate,trend,Medium,pass,Validation passed,{'Revenue_Growth': np.float64(0.0934123752638218)}
+ABB INDIA LTD,2019,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(0.0934123752638218), 'robust_z': None}"
+ABB INDIA LTD,2019,TR-002,Year-over-year expense variance,trend,Medium,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+ABB INDIA LTD,2019,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(610.7206132376194), 'robust_z': None}"
+ABB INDIA LTD,2019,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+ABB INDIA LTD,2019,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.0414760781182929), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
+ABB INDIA LTD,2020,BS-001,Balance sheet equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(12332.86), 'Total Liabilities': np.float64(7590.5), 'Equity Share Capital': np.float64(42.38), 'Reserves': np.float64(3564.0)}"
+ABB INDIA LTD,2020,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(42.38), 'Reserves': np.float64(3564.0)}"
+ABB INDIA LTD,2020,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(2206.57), 'Net Cash Flow': np.float64(609.04)}"
+ABB INDIA LTD,2020,CF-004,Financing activity plausibility,cross_statement,High,pass,Validation passed,"{'Borrowings': np.float64(58.24), 'Dividend Amount': np.float64(105.95), 'Cash from Financing Activity': np.float64(-152.25)}"
+ABB INDIA LTD,2020,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(219.22), 'Depreciation': np.float64(120.36), 'Cash from Operating Activity': np.float64(318.22)}"
+ABB INDIA LTD,2020,CF-008,Sustained negative operating cash flow,trend,High,pass,Validation passed,{'Cash from Operating Activity': np.float64(318.22)}
+ABB INDIA LTD,2020,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+ABB INDIA LTD,2020,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(105.95), 'Reserves': np.float64(3564.0)}"
+ABB INDIA LTD,2020,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'ABB INDIA LTD', 'Year': np.int64(2020)}"
+ABB INDIA LTD,2020,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+ABB INDIA LTD,2020,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(2206.57), 'Inventory': np.float64(840.83)}"
+ABB INDIA LTD,2020,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+ABB INDIA LTD,2020,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(5820.95), 'robust_z': None}"
+ABB INDIA LTD,2020,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2020), 'Report Date': '2020-12-31'}"
+ABB INDIA LTD,2020,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(0.3670105395167455), 'robust_z': None}"
+ABB INDIA LTD,2020,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(24.62), 'Borrowings': np.float64(58.24)}"
+ABB INDIA LTD,2020,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.2521917107282961), 'robust_z': None}"
+ABB INDIA LTD,2020,IS-010,Unusual expense spike detection,trend,High,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+ABB INDIA LTD,2020,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,pass,Validation passed,"{'Revenue_Growth': np.float64(-0.2042512296549857), 'Operating_CF_Growth': np.float64(-0.5228155412599157)}"
+ABB INDIA LTD,2020,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(219.22), 'Dividend Amount': np.float64(105.95), 'Reserves': np.float64(3564.0)}"
+ABB INDIA LTD,2020,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+ABB INDIA LTD,2020,LED-001,Accounting equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(12332.86), 'Total Liabilities': np.float64(7590.5), 'Equity Share Capital': np.float64(42.38), 'Reserves': np.float64(3564.0)}"
+ABB INDIA LTD,2020,RAT-005,Debt-to-equity ratio,ratio,High,pass,Validation passed,{'Debt_Equity_Ratio': np.float64(0.0161491578813103)}
+ABB INDIA LTD,2020,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+ABB INDIA LTD,2020,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+ABB INDIA LTD,2020,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+ABB INDIA LTD,2020,RAT-010,Gross profit margin trend,trend,Medium,pass,Validation passed,{'gross_margin': np.float64(0.3670105395167455)}
+ABB INDIA LTD,2020,RAT-011,Net profit margin trend,trend,Medium,fail,Validation triggered,{'Profit_Margin': np.float64(0.037660519331037)}
+ABB INDIA LTD,2020,RAT-012,Operating margin trend,trend,Medium,fail,Validation triggered,{'Operating_Margin': np.float64(0.0)}
+ABB INDIA LTD,2020,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+ABB INDIA LTD,2020,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.0607867168739844), 'robust_z': None}"
+ABB INDIA LTD,2020,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+ABB INDIA LTD,2020,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(6.922861934041364), 'robust_z': None}"
+ABB INDIA LTD,2020,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(3.4342698352763485), 'robust_z': None}"
+ABB INDIA LTD,2020,RAT-020,Days sales outstanding trend,trend,Medium,fail,Validation triggered,{'dso': np.float64(106.28168941495804)}
+ABB INDIA LTD,2020,RAT-022,Days inventory outstanding trend,trend,Medium,pass,Validation passed,{'dio': np.float64(52.72385950746872)}
+ABB INDIA LTD,2020,RAT-024,Revenue growth rate,trend,Medium,fail,Validation triggered,{'Revenue_Growth': np.float64(-0.2042512296549857)}
+ABB INDIA LTD,2020,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(-0.2042512296549857), 'robust_z': None}"
+ABB INDIA LTD,2020,TR-002,Year-over-year expense variance,trend,Medium,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+ABB INDIA LTD,2020,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(750.374482575201), 'robust_z': None}"
+ABB INDIA LTD,2020,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+ABB INDIA LTD,2020,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.037660519331037), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
+ABB INDIA LTD,2021,BS-001,Balance sheet equation,integrity,Critical,skipped,Unavailable metric values: ['Total Assets'],"{'Total Assets': np.float64(nan), 'Total Liabilities': np.float64(8072.74), 'Equity Share Capital': np.float64(42.38), 'Reserves': np.float64(4002.81)}"
+ABB INDIA LTD,2021,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(42.38), 'Reserves': np.float64(4002.81)}"
+ABB INDIA LTD,2021,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(2712.19), 'Net Cash Flow': np.float64(-1484.86)}"
+ABB INDIA LTD,2021,CF-004,Financing activity plausibility,cross_statement,High,pass,Validation passed,"{'Borrowings': np.float64(36.66), 'Dividend Amount': np.float64(110.19), 'Cash from Financing Activity': np.float64(-126.83)}"
+ABB INDIA LTD,2021,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(519.71), 'Depreciation': np.float64(102.7), 'Cash from Operating Activity': np.float64(650.19)}"
+ABB INDIA LTD,2021,CF-008,Sustained negative operating cash flow,trend,High,pass,Validation passed,{'Cash from Operating Activity': np.float64(650.19)}
+ABB INDIA LTD,2021,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+ABB INDIA LTD,2021,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(110.19), 'Reserves': np.float64(4002.81)}"
+ABB INDIA LTD,2021,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'ABB INDIA LTD', 'Year': np.int64(2021)}"
+ABB INDIA LTD,2021,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+ABB INDIA LTD,2021,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(2712.19), 'Inventory': np.float64(1009.09)}"
+ABB INDIA LTD,2021,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+ABB INDIA LTD,2021,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(6934.0), 'robust_z': None}"
+ABB INDIA LTD,2021,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2021), 'Report Date': '2021-12-31'}"
+ABB INDIA LTD,2021,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(0.3584208249206807), 'robust_z': None}"
+ABB INDIA LTD,2021,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(18.69), 'Borrowings': np.float64(36.66)}"
+ABB INDIA LTD,2021,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.2695470069853406), 'robust_z': None}"
+ABB INDIA LTD,2021,IS-010,Unusual expense spike detection,trend,High,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+ABB INDIA LTD,2021,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,pass,Validation passed,"{'Revenue_Growth': np.float64(0.1912144924797498), 'Operating_CF_Growth': np.float64(1.043209100622211)}"
+ABB INDIA LTD,2021,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(519.71), 'Dividend Amount': np.float64(110.19), 'Reserves': np.float64(4002.81)}"
+ABB INDIA LTD,2021,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+ABB INDIA LTD,2021,LED-001,Accounting equation,integrity,Critical,skipped,Unavailable metric values: ['Total Assets'],"{'Total Assets': np.float64(nan), 'Total Liabilities': np.float64(8072.74), 'Equity Share Capital': np.float64(42.38), 'Reserves': np.float64(4002.81)}"
+ABB INDIA LTD,2021,RAT-005,Debt-to-equity ratio,ratio,High,pass,Validation passed,{'Debt_Equity_Ratio': np.float64(0.0090626151058417)}
+ABB INDIA LTD,2021,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+ABB INDIA LTD,2021,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+ABB INDIA LTD,2021,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+ABB INDIA LTD,2021,RAT-010,Gross profit margin trend,trend,Medium,pass,Validation passed,{'gross_margin': np.float64(0.3584208249206807)}
+ABB INDIA LTD,2021,RAT-011,Net profit margin trend,trend,Medium,pass,Validation passed,{'Profit_Margin': np.float64(0.0749509662532448)}
+ABB INDIA LTD,2021,RAT-012,Operating margin trend,trend,Medium,fail,Validation triggered,{'Operating_Margin': np.float64(0.0)}
+ABB INDIA LTD,2021,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+ABB INDIA LTD,2021,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.1284760419164489), 'robust_z': None}"
+ABB INDIA LTD,2021,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+ABB INDIA LTD,2021,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(6.871537722106056), 'robust_z': None}"
+ABB INDIA LTD,2021,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(3.6807796840496008), 'robust_z': None}"
+ABB INDIA LTD,2021,RAT-020,Days sales outstanding trend,trend,Medium,pass,Validation passed,{'dso': np.float64(99.1637727141621)}
+ABB INDIA LTD,2021,RAT-022,Days inventory outstanding trend,trend,Medium,fail,Validation triggered,{'dio': np.float64(53.11765935967696)}
+ABB INDIA LTD,2021,RAT-024,Revenue growth rate,trend,Medium,pass,Validation passed,{'Revenue_Growth': np.float64(0.1912144924797498)}
+ABB INDIA LTD,2021,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(0.1912144924797498), 'robust_z': None}"
+ABB INDIA LTD,2021,TR-002,Year-over-year expense variance,trend,Medium,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+ABB INDIA LTD,2021,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(776.3645748186441), 'robust_z': None}"
+ABB INDIA LTD,2021,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+ABB INDIA LTD,2021,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.0749509662532448), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
+ABB INDIA LTD,2022,BS-001,Balance sheet equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(15980.96), 'Total Liabilities': np.float64(9318.23), 'Equity Share Capital': np.float64(42.38), 'Reserves': np.float64(4897.03)}"
+ABB INDIA LTD,2022,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(42.38), 'Reserves': np.float64(4897.03)}"
+ABB INDIA LTD,2022,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(3149.08), 'Net Cash Flow': np.float64(2427.77)}"
+ABB INDIA LTD,2022,CF-004,Financing activity plausibility,cross_statement,High,pass,Validation passed,"{'Borrowings': np.float64(33.09), 'Dividend Amount': np.float64(116.54), 'Cash from Financing Activity': np.float64(-140.15)}"
+ABB INDIA LTD,2022,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(1016.23), 'Depreciation': np.float64(104.7), 'Cash from Operating Activity': np.float64(741.94)}"
+ABB INDIA LTD,2022,CF-008,Sustained negative operating cash flow,trend,High,pass,Validation passed,{'Cash from Operating Activity': np.float64(741.94)}
+ABB INDIA LTD,2022,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+ABB INDIA LTD,2022,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(116.54), 'Reserves': np.float64(4897.03)}"
+ABB INDIA LTD,2022,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'ABB INDIA LTD', 'Year': np.int64(2022)}"
+ABB INDIA LTD,2022,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+ABB INDIA LTD,2022,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(3149.08), 'Inventory': np.float64(1420.66)}"
+ABB INDIA LTD,2022,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+ABB INDIA LTD,2022,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(8567.53), 'robust_z': None}"
+ABB INDIA LTD,2022,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2022), 'Report Date': '2022-12-31'}"
+ABB INDIA LTD,2022,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(0.3693970140752353), 'robust_z': None}"
+ABB INDIA LTD,2022,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(15.4), 'Borrowings': np.float64(33.09)}"
+ABB INDIA LTD,2022,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.2491336697674762), 'robust_z': None}"
+ABB INDIA LTD,2022,IS-010,Unusual expense spike detection,trend,High,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+ABB INDIA LTD,2022,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,pass,Validation passed,"{'Revenue_Growth': np.float64(0.2355826362849726), 'Operating_CF_Growth': np.float64(0.1411125978560112)}"
+ABB INDIA LTD,2022,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(1016.23), 'Dividend Amount': np.float64(116.54), 'Reserves': np.float64(4897.03)}"
+ABB INDIA LTD,2022,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+ABB INDIA LTD,2022,LED-001,Accounting equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(15980.96), 'Total Liabilities': np.float64(9318.23), 'Equity Share Capital': np.float64(42.38), 'Reserves': np.float64(4897.03)}"
+ABB INDIA LTD,2022,RAT-005,Debt-to-equity ratio,ratio,High,pass,Validation passed,{'Debt_Equity_Ratio': np.float64(0.0066991806713757)}
+ABB INDIA LTD,2022,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+ABB INDIA LTD,2022,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+ABB INDIA LTD,2022,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+ABB INDIA LTD,2022,RAT-010,Gross profit margin trend,trend,Medium,pass,Validation passed,{'gross_margin': np.float64(0.3693970140752353)}
+ABB INDIA LTD,2022,RAT-011,Net profit margin trend,trend,Medium,pass,Validation passed,{'Profit_Margin': np.float64(0.1186141163205731)}
+ABB INDIA LTD,2022,RAT-012,Operating margin trend,trend,Medium,fail,Validation triggered,{'Operating_Margin': np.float64(0.0)}
+ABB INDIA LTD,2022,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+ABB INDIA LTD,2022,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.2057391469831417), 'robust_z': None}"
+ABB INDIA LTD,2022,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+ABB INDIA LTD,2022,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(6.030668844058395), 'robust_z': None}"
+ABB INDIA LTD,2022,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(4.09344048466548), 'robust_z': None}"
+ABB INDIA LTD,2022,RAT-020,Days sales outstanding trend,trend,Medium,pass,Validation passed,{'dso': np.float64(89.16704697853405)}
+ABB INDIA LTD,2022,RAT-022,Days inventory outstanding trend,trend,Medium,fail,Validation triggered,{'dio': np.float64(60.52396665083169)}
+ABB INDIA LTD,2022,RAT-024,Revenue growth rate,trend,Medium,pass,Validation passed,{'Revenue_Growth': np.float64(0.2355826362849726)}
+ABB INDIA LTD,2022,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(0.2355826362849726), 'robust_z': None}"
+ABB INDIA LTD,2022,TR-002,Year-over-year expense variance,trend,Medium,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+ABB INDIA LTD,2022,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(1381.4848448800788), 'robust_z': None}"
+ABB INDIA LTD,2022,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+ABB INDIA LTD,2022,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.1186141163205731), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
+ABB INDIA LTD,2023,BS-001,Balance sheet equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(19922.42), 'Total Liabilities': np.float64(11001.19), 'Equity Share Capital': np.float64(42.38), 'Reserves': np.float64(5902.22)}"
+ABB INDIA LTD,2023,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(42.38), 'Reserves': np.float64(5902.22)}"
+ABB INDIA LTD,2023,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(4816.17), 'Net Cash Flow': np.float64(-2269.98)}"
+ABB INDIA LTD,2023,CF-004,Financing activity plausibility,cross_statement,High,pass,Validation passed,"{'Borrowings': np.float64(48.98), 'Dividend Amount': np.float64(620.87), 'Cash from Financing Activity': np.float64(-269.45)}"
+ABB INDIA LTD,2023,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(1242.05), 'Depreciation': np.float64(119.92), 'Cash from Operating Activity': np.float64(1351.48)}"
+ABB INDIA LTD,2023,CF-008,Sustained negative operating cash flow,trend,High,pass,Validation passed,{'Cash from Operating Activity': np.float64(1351.48)}
+ABB INDIA LTD,2023,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+ABB INDIA LTD,2023,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(620.87), 'Reserves': np.float64(5902.22)}"
+ABB INDIA LTD,2023,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'ABB INDIA LTD', 'Year': np.int64(2023)}"
+ABB INDIA LTD,2023,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+ABB INDIA LTD,2023,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(4816.17), 'Inventory': np.float64(1560.76)}"
+ABB INDIA LTD,2023,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+ABB INDIA LTD,2023,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(10446.52), 'robust_z': None}"
+ABB INDIA LTD,2023,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2023), 'Report Date': '2023-12-31'}"
+ABB INDIA LTD,2023,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(0.3916395124883693), 'robust_z': None}"
+ABB INDIA LTD,2023,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(12.66), 'Borrowings': np.float64(48.98)}"
+ABB INDIA LTD,2023,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.2484994796582685), 'robust_z': None}"
+ABB INDIA LTD,2023,IS-010,Unusual expense spike detection,trend,High,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+ABB INDIA LTD,2023,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,pass,Validation passed,"{'Revenue_Growth': np.float64(0.2193152518870667), 'Operating_CF_Growth': np.float64(0.8215489123109685)}"
+ABB INDIA LTD,2023,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(1242.05), 'Dividend Amount': np.float64(620.87), 'Reserves': np.float64(5902.22)}"
+ABB INDIA LTD,2023,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+ABB INDIA LTD,2023,LED-001,Accounting equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(19922.42), 'Total Liabilities': np.float64(11001.19), 'Equity Share Capital': np.float64(42.38), 'Reserves': np.float64(5902.22)}"
+ABB INDIA LTD,2023,RAT-005,Debt-to-equity ratio,ratio,High,pass,Validation passed,{'Debt_Equity_Ratio': np.float64(0.0082394105574807)}
+ABB INDIA LTD,2023,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+ABB INDIA LTD,2023,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+ABB INDIA LTD,2023,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+ABB INDIA LTD,2023,RAT-010,Gross profit margin trend,trend,Medium,pass,Validation passed,{'gross_margin': np.float64(0.3916395124883693)}
+ABB INDIA LTD,2023,RAT-011,Net profit margin trend,trend,Medium,pass,Validation passed,{'Profit_Margin': np.float64(0.1188960534225751)}
+ABB INDIA LTD,2023,RAT-012,Operating margin trend,trend,Medium,fail,Validation triggered,{'Operating_Margin': np.float64(0.0)}
+ABB INDIA LTD,2023,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+ABB INDIA LTD,2023,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.2089375231302358), 'robust_z': None}"
+ABB INDIA LTD,2023,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+ABB INDIA LTD,2023,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(6.693226376893309), 'robust_z': None}"
+ABB INDIA LTD,2023,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(4.105852297291986), 'robust_z': None}"
+ABB INDIA LTD,2023,RAT-020,Days sales outstanding trend,trend,Medium,pass,Validation passed,{'dso': np.float64(88.89749888000979)}
+ABB INDIA LTD,2023,RAT-022,Days inventory outstanding trend,trend,Medium,pass,Validation passed,{'dio': np.float64(54.53274391854895)}
+ABB INDIA LTD,2023,RAT-024,Revenue growth rate,trend,Medium,pass,Validation passed,{'Revenue_Growth': np.float64(0.2193152518870667)}
+ABB INDIA LTD,2023,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(0.2193152518870667), 'robust_z': None}"
+ABB INDIA LTD,2023,TR-002,Year-over-year expense variance,trend,Medium,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+ABB INDIA LTD,2023,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(1757.688843879941), 'robust_z': None}"
+ABB INDIA LTD,2023,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+ABB INDIA LTD,2023,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.1188960534225751), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
+ABB INDIA LTD,2024,BS-001,Balance sheet equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(22660.8), 'Total Liabilities': np.float64(12391.330000000002), 'Equity Share Capital': np.float64(42.38), 'Reserves': np.float64(7033.02)}"
+ABB INDIA LTD,2024,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(42.38), 'Reserves': np.float64(7033.02)}"
+ABB INDIA LTD,2024,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(5507.82), 'Net Cash Flow': np.float64(58.75)}"
+ABB INDIA LTD,2024,CF-004,Financing activity plausibility,cross_statement,High,pass,Validation passed,"{'Borrowings': np.float64(51.88), 'Dividend Amount': np.float64(935.75), 'Cash from Financing Activity': np.float64(-770.38)}"
+ABB INDIA LTD,2024,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(1871.64), 'Depreciation': np.float64(128.92), 'Cash from Operating Activity': np.float64(1331.8)}"
+ABB INDIA LTD,2024,CF-008,Sustained negative operating cash flow,trend,High,pass,Validation passed,{'Cash from Operating Activity': np.float64(1331.8)}
+ABB INDIA LTD,2024,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+ABB INDIA LTD,2024,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(935.75), 'Reserves': np.float64(7033.02)}"
+ABB INDIA LTD,2024,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'ABB INDIA LTD', 'Year': np.int64(2024)}"
+ABB INDIA LTD,2024,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+ABB INDIA LTD,2024,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(5507.82), 'Inventory': np.float64(1777.99)}"
+ABB INDIA LTD,2024,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+ABB INDIA LTD,2024,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(12188.31), 'robust_z': None}"
+ABB INDIA LTD,2024,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2024), 'Report Date': '2024-12-31'}"
+ABB INDIA LTD,2024,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(0.4326859096954376), 'robust_z': None}"
+ABB INDIA LTD,2024,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(16.45), 'Borrowings': np.float64(51.88)}"
+ABB INDIA LTD,2024,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.2544128367638799), 'robust_z': None}"
+ABB INDIA LTD,2024,IS-010,Unusual expense spike detection,trend,High,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+ABB INDIA LTD,2024,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,fail,Validation triggered,"{'Revenue_Growth': np.float64(0.1667339937127387), 'Operating_CF_Growth': np.float64(-0.0145618137153343)}"
+ABB INDIA LTD,2024,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(1871.64), 'Dividend Amount': np.float64(935.75), 'Reserves': np.float64(7033.02)}"
+ABB INDIA LTD,2024,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+ABB INDIA LTD,2024,LED-001,Accounting equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(22660.8), 'Total Liabilities': np.float64(12391.330000000002), 'Equity Share Capital': np.float64(42.38), 'Reserves': np.float64(7033.02)}"
+ABB INDIA LTD,2024,RAT-005,Debt-to-equity ratio,ratio,High,pass,Validation passed,{'Debt_Equity_Ratio': np.float64(0.0073324476354693)}
+ABB INDIA LTD,2024,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+ABB INDIA LTD,2024,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+ABB INDIA LTD,2024,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+ABB INDIA LTD,2024,RAT-010,Gross profit margin trend,trend,Medium,pass,Validation passed,{'gross_margin': np.float64(0.4326859096954376)}
+ABB INDIA LTD,2024,RAT-011,Net profit margin trend,trend,Medium,pass,Validation passed,{'Profit_Margin': np.float64(0.153560255687622)}
+ABB INDIA LTD,2024,RAT-012,Operating margin trend,trend,Medium,fail,Validation triggered,{'Operating_Margin': np.float64(0.0)}
+ABB INDIA LTD,2024,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+ABB INDIA LTD,2024,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.2645278005483789), 'robust_z': None}"
+ABB INDIA LTD,2024,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+ABB INDIA LTD,2024,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(6.855106046715673), 'robust_z': None}"
+ABB INDIA LTD,2024,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(4.085019740855191), 'robust_z': None}"
+ABB INDIA LTD,2024,RAT-020,Days sales outstanding trend,trend,Medium,pass,Validation passed,{'dso': np.float64(89.350853399692)}
+ABB INDIA LTD,2024,RAT-022,Days inventory outstanding trend,trend,Medium,pass,Validation passed,{'dio': np.float64(53.2449822822032)}
+ABB INDIA LTD,2024,RAT-024,Revenue growth rate,trend,Medium,pass,Validation passed,{'Revenue_Growth': np.float64(0.1667339937127387)}
+ABB INDIA LTD,2024,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(0.1667339937127387), 'robust_z': None}"
+ABB INDIA LTD,2024,TR-002,Year-over-year expense variance,trend,Medium,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+ABB INDIA LTD,2024,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(1810.8231844753184), 'robust_z': None}"
+ABB INDIA LTD,2024,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+ABB INDIA LTD,2024,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.153560255687622), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
+ABB INDIA LTD,2025,BS-001,Balance sheet equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(24702.66), 'Total Liabilities': np.float64(13638.48), 'Equity Share Capital': np.float64(42.38), 'Reserves': np.float64(7793.61)}"
+ABB INDIA LTD,2025,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(42.38), 'Reserves': np.float64(7793.61)}"
+ABB INDIA LTD,2025,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(5834.87), 'Net Cash Flow': np.float64(616.94)}"
+ABB INDIA LTD,2025,CF-004,Financing activity plausibility,cross_statement,High,pass,Validation passed,"{'Borrowings': np.float64(84.82), 'Dividend Amount': np.float64(834.25), 'Cash from Financing Activity': np.float64(-966.23)}"
+ABB INDIA LTD,2025,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(1668.26), 'Depreciation': np.float64(145.53), 'Cash from Operating Activity': np.float64(1219.52)}"
+ABB INDIA LTD,2025,CF-008,Sustained negative operating cash flow,trend,High,pass,Validation passed,{'Cash from Operating Activity': np.float64(1219.52)}
+ABB INDIA LTD,2025,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+ABB INDIA LTD,2025,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(834.25), 'Reserves': np.float64(7793.61)}"
+ABB INDIA LTD,2025,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'ABB INDIA LTD', 'Year': np.int64(2025)}"
+ABB INDIA LTD,2025,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+ABB INDIA LTD,2025,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(5834.87), 'Inventory': np.float64(2052.98)}"
+ABB INDIA LTD,2025,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+ABB INDIA LTD,2025,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(13202.73), 'robust_z': None}"
+ABB INDIA LTD,2025,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2025), 'Report Date': '2025-12-31'}"
+ABB INDIA LTD,2025,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(0.4125722483153105), 'robust_z': None}"
+ABB INDIA LTD,2025,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(19.89), 'Borrowings': np.float64(84.82)}"
+ABB INDIA LTD,2025,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.2514985642498205), 'robust_z': None}"
+ABB INDIA LTD,2025,IS-010,Unusual expense spike detection,trend,High,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+ABB INDIA LTD,2025,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,fail,Validation triggered,"{'Revenue_Growth': np.float64(0.0832289300157282), 'Operating_CF_Growth': np.float64(-0.0843069529959453)}"
+ABB INDIA LTD,2025,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(1668.26), 'Dividend Amount': np.float64(834.25), 'Reserves': np.float64(7793.61)}"
+ABB INDIA LTD,2025,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+ABB INDIA LTD,2025,LED-001,Accounting equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(24702.66), 'Total Liabilities': np.float64(13638.48), 'Equity Share Capital': np.float64(42.38), 'Reserves': np.float64(7793.61)}"
+ABB INDIA LTD,2025,RAT-005,Debt-to-equity ratio,ratio,High,pass,Validation passed,{'Debt_Equity_Ratio': np.float64(0.0108244140178841)}
+ABB INDIA LTD,2025,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+ABB INDIA LTD,2025,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+ABB INDIA LTD,2025,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+ABB INDIA LTD,2025,RAT-010,Gross profit margin trend,trend,Medium,pass,Validation passed,{'gross_margin': np.float64(0.4125722483153105)}
+ABB INDIA LTD,2025,RAT-011,Net profit margin trend,trend,Medium,pass,Validation passed,{'Profit_Margin': np.float64(0.1263572003668938)}
+ABB INDIA LTD,2025,RAT-012,Operating margin trend,trend,Medium,fail,Validation triggered,{'Operating_Margin': np.float64(0.0)}
+ABB INDIA LTD,2025,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+ABB INDIA LTD,2025,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.2128971578575266), 'robust_z': None}"
+ABB INDIA LTD,2025,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+ABB INDIA LTD,2025,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(6.431007608452103), 'robust_z': None}"
+ABB INDIA LTD,2025,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(4.156598967991361), 'robust_z': None}"
+ABB INDIA LTD,2025,RAT-020,Days sales outstanding trend,trend,Medium,pass,Validation passed,{'dso': np.float64(87.81217596663721)}
+ABB INDIA LTD,2025,RAT-022,Days inventory outstanding trend,trend,Medium,pass,Validation passed,{'dio': np.float64(56.756269347324384)}
+ABB INDIA LTD,2025,RAT-024,Revenue growth rate,trend,Medium,pass,Validation passed,{'Revenue_Growth': np.float64(0.0832289300157282)}
+ABB INDIA LTD,2025,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(0.0832289300157282), 'robust_z': None}"
+ABB INDIA LTD,2025,TR-002,Year-over-year expense variance,trend,Medium,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+ABB INDIA LTD,2025,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(1394.009439506537), 'robust_z': None}"
+ABB INDIA LTD,2025,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+ABB INDIA LTD,2025,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.1263572003668938), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
+ABB INDIA LTD,2026,BS-001,Balance sheet equation,integrity,Critical,skipped,"Unavailable metric values: ['Total Assets', 'Total Liabilities', 'Equity Share Capital', 'Reserves']","{'Total Assets': np.float64(nan), 'Total Liabilities': np.float64(nan), 'Equity Share Capital': np.float64(nan), 'Reserves': np.float64(nan)}"
+ABB INDIA LTD,2026,BS-009,Negative total equity,solvency,High,skipped,"Unavailable metric values: ['Equity Share Capital', 'Reserves']","{'Equity Share Capital': np.float64(nan), 'Reserves': np.float64(nan)}"
+ABB INDIA LTD,2026,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,skipped,"Unavailable metric values: ['Cash & Bank', 'Net Cash Flow']","{'Cash & Bank': np.float64(nan), 'Net Cash Flow': np.float64(nan)}"
+ABB INDIA LTD,2026,CF-004,Financing activity plausibility,cross_statement,High,skipped,"Unavailable metric values: ['Borrowings', 'Dividend Amount', 'Cash from Financing Activity']","{'Borrowings': np.float64(nan), 'Dividend Amount': np.float64(nan), 'Cash from Financing Activity': np.float64(nan)}"
+ABB INDIA LTD,2026,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,skipped,"Unavailable metric values: ['Net profit', 'Depreciation', 'Cash from Operating Activity']","{'Net profit': np.float64(nan), 'Depreciation': np.float64(nan), 'Cash from Operating Activity': np.float64(nan)}"
+ABB INDIA LTD,2026,CF-008,Sustained negative operating cash flow,trend,High,skipped,Unavailable metric values: ['Cash from Operating Activity'],{'Cash from Operating Activity': np.float64(nan)}
+ABB INDIA LTD,2026,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+ABB INDIA LTD,2026,CF-010,Dividend versus reserves,solvency,High,skipped,"Unavailable metric values: ['Dividend Amount', 'Reserves']","{'Dividend Amount': np.float64(nan), 'Reserves': np.float64(nan)}"
+ABB INDIA LTD,2026,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'ABB INDIA LTD', 'Year': np.int64(2026)}"
+ABB INDIA LTD,2026,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+ABB INDIA LTD,2026,DV-008,Unexpected negative cash or inventory,data_quality,Medium,skipped,"Unavailable metric values: ['Cash & Bank', 'Inventory']","{'Cash & Bank': np.float64(nan), 'Inventory': np.float64(nan)}"
+ABB INDIA LTD,2026,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+ABB INDIA LTD,2026,DV-015,Statistical outlier screening,analytical,Medium,skipped,Unavailable metric values: ['Sales'],{'Sales': np.float64(nan)}
+ABB INDIA LTD,2026,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2026), 'Report Date': '2026-06-30'}"
+ABB INDIA LTD,2026,IS-002,Gross margin consistency,trend,Medium,skipped,Unavailable metric values: ['gross_margin'],{'gross_margin': np.float64(nan)}
+ABB INDIA LTD,2026,IS-007,Interest expense reasonableness,analytical,Medium,skipped,"Unavailable metric values: ['Interest', 'Borrowings']","{'Interest': np.float64(nan), 'Borrowings': np.float64(nan)}"
+ABB INDIA LTD,2026,IS-008,Effective tax rate reasonableness,analytical,Medium,skipped,Unavailable metric values: ['effective_tax_rate'],{'effective_tax_rate': np.float64(nan)}
+ABB INDIA LTD,2026,IS-010,Unusual expense spike detection,trend,High,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+ABB INDIA LTD,2026,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,pass,Validation passed,"{'Revenue_Growth': np.float64(0.0), 'Operating_CF_Growth': np.float64(0.0)}"
+ABB INDIA LTD,2026,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,skipped,"Unavailable metric values: ['Net profit', 'Dividend Amount', 'Reserves']","{'Net profit': np.float64(nan), 'Dividend Amount': np.float64(nan), 'Reserves': np.float64(nan)}"
+ABB INDIA LTD,2026,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+ABB INDIA LTD,2026,LED-001,Accounting equation,integrity,Critical,skipped,"Unavailable metric values: ['Total Assets', 'Total Liabilities', 'Equity Share Capital', 'Reserves']","{'Total Assets': np.float64(nan), 'Total Liabilities': np.float64(nan), 'Equity Share Capital': np.float64(nan), 'Reserves': np.float64(nan)}"
+ABB INDIA LTD,2026,RAT-005,Debt-to-equity ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Equity_Ratio'],{'Debt_Equity_Ratio': np.float64(nan)}
+ABB INDIA LTD,2026,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+ABB INDIA LTD,2026,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+ABB INDIA LTD,2026,RAT-008,Interest coverage ratio,ratio,High,skipped,Unavailable metric values: ['Interest_Coverage_Ratio'],{'Interest_Coverage_Ratio': np.float64(nan)}
+ABB INDIA LTD,2026,RAT-010,Gross profit margin trend,trend,Medium,skipped,Unavailable metric values: ['gross_margin'],{'gross_margin': np.float64(nan)}
+ABB INDIA LTD,2026,RAT-011,Net profit margin trend,trend,Medium,skipped,Unavailable metric values: ['Profit_Margin'],{'Profit_Margin': np.float64(nan)}
+ABB INDIA LTD,2026,RAT-012,Operating margin trend,trend,Medium,skipped,Unavailable metric values: ['Operating_Margin'],{'Operating_Margin': np.float64(nan)}
+ABB INDIA LTD,2026,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+ABB INDIA LTD,2026,RAT-015,Return on equity outlier,ratio,Medium,skipped,Unavailable metric values: ['ROE'],{'ROE': np.float64(nan)}
+ABB INDIA LTD,2026,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+ABB INDIA LTD,2026,RAT-018,Inventory turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['inventory_turnover'],{'inventory_turnover': np.float64(nan)}
+ABB INDIA LTD,2026,RAT-019,Receivables turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['receivables_turnover'],{'receivables_turnover': np.float64(nan)}
+ABB INDIA LTD,2026,RAT-020,Days sales outstanding trend,trend,Medium,skipped,Unavailable metric values: ['dso'],{'dso': np.float64(nan)}
+ABB INDIA LTD,2026,RAT-022,Days inventory outstanding trend,trend,Medium,skipped,Unavailable metric values: ['dio'],{'dio': np.float64(nan)}
+ABB INDIA LTD,2026,RAT-024,Revenue growth rate,trend,Medium,pass,Validation passed,{'Revenue_Growth': np.float64(0.0)}
+ABB INDIA LTD,2026,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(0.0), 'robust_z': None}"
+ABB INDIA LTD,2026,TR-002,Year-over-year expense variance,trend,Medium,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+ABB INDIA LTD,2026,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(717.3032609712527), 'robust_z': None}"
+ABB INDIA LTD,2026,TR-006,Common-size statement analysis,trend,Medium,skipped,Unavailable metric values: ['Expense_Ratio'],{'Expense_Ratio': np.float64(nan)}
+ABB INDIA LTD,2026,TR-009,Margin trend stability,trend,Medium,skipped,"Unavailable metric values: ['Profit_Margin', 'Operating_Margin']","{'Profit_Margin': np.float64(nan), 'Operating_Margin': np.float64(nan)}"

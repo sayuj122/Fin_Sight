@@ -1,0 +1,421 @@
+Company,Year,Rule ID,Rule Description,Category,Severity,Status,Message,Observed
+ANDHRA PAPER LTD,2017,BS-001,Balance sheet equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(1413.04), 'Total Liabilities': np.float64(1154.63), 'Equity Share Capital': np.float64(39.77), 'Reserves': np.float64(438.18)}"
+ANDHRA PAPER LTD,2017,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(39.77), 'Reserves': np.float64(438.18)}"
+ANDHRA PAPER LTD,2017,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,skipped,Unavailable prior-year Cash & Bank,"{'Cash & Bank': np.float64(7.07), 'Net Cash Flow': np.float64(-2.85)}"
+ANDHRA PAPER LTD,2017,CF-004,Financing activity plausibility,cross_statement,High,skipped,Unavailable metric values: ['Dividend Amount'],"{'Borrowings': np.float64(359.45), 'Dividend Amount': np.float64(nan), 'Cash from Financing Activity': np.float64(-145.2)}"
+ANDHRA PAPER LTD,2017,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(32.4), 'Depreciation': np.float64(70.03), 'Cash from Operating Activity': np.float64(171.82)}"
+ANDHRA PAPER LTD,2017,CF-008,Sustained negative operating cash flow,trend,High,skipped,Insufficient history for Cash from Operating Activity,{'Cash from Operating Activity': np.float64(171.82)}
+ANDHRA PAPER LTD,2017,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+ANDHRA PAPER LTD,2017,CF-010,Dividend versus reserves,solvency,High,skipped,Unavailable metric values: ['Dividend Amount'],"{'Dividend Amount': np.float64(nan), 'Reserves': np.float64(438.18)}"
+ANDHRA PAPER LTD,2017,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'ANDHRA PAPER LTD', 'Year': np.int64(2017)}"
+ANDHRA PAPER LTD,2017,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+ANDHRA PAPER LTD,2017,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(7.07), 'Inventory': np.float64(183.84)}"
+ANDHRA PAPER LTD,2017,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+ANDHRA PAPER LTD,2017,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(1172.36), 'robust_z': None}"
+ANDHRA PAPER LTD,2017,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2017), 'Report Date': '2017-03-31'}"
+ANDHRA PAPER LTD,2017,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(0.584402401992562), 'robust_z': None}"
+ANDHRA PAPER LTD,2017,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(33.59), 'Borrowings': np.float64(359.45)}"
+ANDHRA PAPER LTD,2017,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.2674655211394981), 'robust_z': None}"
+ANDHRA PAPER LTD,2017,IS-010,Unusual expense spike detection,trend,High,skipped,Unavailable prior-year Total Expenses,{'Total Expenses': np.float64(1081.97)}
+ANDHRA PAPER LTD,2017,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,skipped,"Unavailable metric values: ['Revenue_Growth', 'Operating_CF_Growth']","{'Revenue_Growth': np.float64(nan), 'Operating_CF_Growth': np.float64(nan)}"
+ANDHRA PAPER LTD,2017,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,skipped,Unavailable metric values: ['Dividend Amount'],"{'Net profit': np.float64(32.4), 'Dividend Amount': np.float64(nan), 'Reserves': np.float64(438.18)}"
+ANDHRA PAPER LTD,2017,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+ANDHRA PAPER LTD,2017,LED-001,Accounting equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(1413.04), 'Total Liabilities': np.float64(1154.63), 'Equity Share Capital': np.float64(39.77), 'Reserves': np.float64(438.18)}"
+ANDHRA PAPER LTD,2017,RAT-005,Debt-to-equity ratio,ratio,High,pass,Validation passed,{'Debt_Equity_Ratio': np.float64(0.7520661157024794)}
+ANDHRA PAPER LTD,2017,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+ANDHRA PAPER LTD,2017,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+ANDHRA PAPER LTD,2017,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+ANDHRA PAPER LTD,2017,RAT-010,Gross profit margin trend,trend,Medium,skipped,Insufficient history for gross_margin,{'gross_margin': np.float64(0.584402401992562)}
+ANDHRA PAPER LTD,2017,RAT-011,Net profit margin trend,trend,Medium,skipped,Insufficient history for Profit_Margin,{'Profit_Margin': np.float64(0.0276365621481456)}
+ANDHRA PAPER LTD,2017,RAT-012,Operating margin trend,trend,Medium,skipped,Insufficient history for Operating_Margin,{'Operating_Margin': np.float64(0.0)}
+ANDHRA PAPER LTD,2017,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+ANDHRA PAPER LTD,2017,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.0677895177319803), 'robust_z': None}"
+ANDHRA PAPER LTD,2017,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+ANDHRA PAPER LTD,2017,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(6.3770670147954736), 'robust_z': None}"
+ANDHRA PAPER LTD,2017,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(17.368296296296293), 'robust_z': None}"
+ANDHRA PAPER LTD,2017,RAT-020,Days sales outstanding trend,trend,Medium,skipped,Insufficient history for dso,{'dso': np.float64(21.01530246681907)}
+ANDHRA PAPER LTD,2017,RAT-022,Days inventory outstanding trend,trend,Medium,skipped,Insufficient history for dio,{'dio': np.float64(57.23634378518545)}
+ANDHRA PAPER LTD,2017,RAT-024,Revenue growth rate,trend,Medium,skipped,Unavailable metric values: ['Revenue_Growth'],{'Revenue_Growth': np.float64(nan)}
+ANDHRA PAPER LTD,2017,TR-001,Year-over-year revenue variance,trend,Medium,skipped,Unavailable metric values: ['Revenue_Growth'],{'Revenue_Growth': np.float64(nan)}
+ANDHRA PAPER LTD,2017,TR-002,Year-over-year expense variance,trend,Medium,skipped,Unavailable prior-year Total Expenses,{'Total Expenses': np.float64(1081.97)}
+ANDHRA PAPER LTD,2017,TR-003,Multi-year trend consistency,trend,Medium,skipped,Unavailable metric values: ['Revenue_Volatility'],{'Revenue_Volatility': np.float64(nan)}
+ANDHRA PAPER LTD,2017,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+ANDHRA PAPER LTD,2017,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.0276365621481456), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
+ANDHRA PAPER LTD,2018,BS-001,Balance sheet equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(1337.65), 'Total Liabilities': np.float64(1096.64), 'Equity Share Capital': np.float64(39.77), 'Reserves': np.float64(524.24)}"
+ANDHRA PAPER LTD,2018,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(39.77), 'Reserves': np.float64(524.24)}"
+ANDHRA PAPER LTD,2018,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(16.66), 'Net Cash Flow': np.float64(9.24)}"
+ANDHRA PAPER LTD,2018,CF-004,Financing activity plausibility,cross_statement,High,skipped,Unavailable metric values: ['Dividend Amount'],"{'Borrowings': np.float64(207.52), 'Dividend Amount': np.float64(nan), 'Cash from Financing Activity': np.float64(-174.58)}"
+ANDHRA PAPER LTD,2018,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(83.07), 'Depreciation': np.float64(65.81), 'Cash from Operating Activity': np.float64(215.1)}"
+ANDHRA PAPER LTD,2018,CF-008,Sustained negative operating cash flow,trend,High,skipped,Insufficient history for Cash from Operating Activity,{'Cash from Operating Activity': np.float64(215.1)}
+ANDHRA PAPER LTD,2018,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+ANDHRA PAPER LTD,2018,CF-010,Dividend versus reserves,solvency,High,skipped,Unavailable metric values: ['Dividend Amount'],"{'Dividend Amount': np.float64(nan), 'Reserves': np.float64(524.24)}"
+ANDHRA PAPER LTD,2018,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'ANDHRA PAPER LTD', 'Year': np.int64(2018)}"
+ANDHRA PAPER LTD,2018,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+ANDHRA PAPER LTD,2018,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(16.66), 'Inventory': np.float64(154.78)}"
+ANDHRA PAPER LTD,2018,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+ANDHRA PAPER LTD,2018,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(1264.0), 'robust_z': None}"
+ANDHRA PAPER LTD,2018,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2018), 'Report Date': '2018-03-31'}"
+ANDHRA PAPER LTD,2018,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(0.6183623417721519), 'robust_z': None}"
+ANDHRA PAPER LTD,2018,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(26.09), 'Borrowings': np.float64(207.52)}"
+ANDHRA PAPER LTD,2018,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.3431124466234382), 'robust_z': None}"
+ANDHRA PAPER LTD,2018,IS-010,Unusual expense spike detection,trend,High,pass,Validation passed,{'Total Expenses': np.float64(1113.75)}
+ANDHRA PAPER LTD,2018,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,pass,Validation passed,"{'Revenue_Growth': np.float64(0.0781671159029651), 'Operating_CF_Growth': np.float64(0.2518915143755091)}"
+ANDHRA PAPER LTD,2018,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,skipped,Unavailable metric values: ['Dividend Amount'],"{'Net profit': np.float64(83.07), 'Dividend Amount': np.float64(nan), 'Reserves': np.float64(524.24)}"
+ANDHRA PAPER LTD,2018,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+ANDHRA PAPER LTD,2018,LED-001,Accounting equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(1337.65), 'Total Liabilities': np.float64(1096.64), 'Equity Share Capital': np.float64(39.77), 'Reserves': np.float64(524.24)}"
+ANDHRA PAPER LTD,2018,RAT-005,Debt-to-equity ratio,ratio,High,pass,Validation passed,{'Debt_Equity_Ratio': np.float64(0.3679367387103066)}
+ANDHRA PAPER LTD,2018,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+ANDHRA PAPER LTD,2018,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+ANDHRA PAPER LTD,2018,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+ANDHRA PAPER LTD,2018,RAT-010,Gross profit margin trend,trend,Medium,skipped,Insufficient history for gross_margin,{'gross_margin': np.float64(0.6183623417721519)}
+ANDHRA PAPER LTD,2018,RAT-011,Net profit margin trend,trend,Medium,skipped,Insufficient history for Profit_Margin,{'Profit_Margin': np.float64(0.0657199367088607)}
+ANDHRA PAPER LTD,2018,RAT-012,Operating margin trend,trend,Medium,skipped,Insufficient history for Operating_Margin,{'Operating_Margin': np.float64(0.0)}
+ANDHRA PAPER LTD,2018,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+ANDHRA PAPER LTD,2018,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.1472846226130742), 'robust_z': None}"
+ANDHRA PAPER LTD,2018,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+ANDHRA PAPER LTD,2018,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(8.16642977128828), 'robust_z': None}"
+ANDHRA PAPER LTD,2018,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(18.168750898375738), 'robust_z': None}"
+ANDHRA PAPER LTD,2018,RAT-020,Days sales outstanding trend,trend,Medium,skipped,Insufficient history for dso,{'dso': np.float64(20.08943829113924)}
+ANDHRA PAPER LTD,2018,RAT-022,Days inventory outstanding trend,trend,Medium,skipped,Insufficient history for dio,{'dio': np.float64(44.69517405063291)}
+ANDHRA PAPER LTD,2018,RAT-024,Revenue growth rate,trend,Medium,pass,Validation passed,{'Revenue_Growth': np.float64(0.0781671159029651)}
+ANDHRA PAPER LTD,2018,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(0.0781671159029651), 'robust_z': None}"
+ANDHRA PAPER LTD,2018,TR-002,Year-over-year expense variance,trend,Medium,pass,Validation passed,{'Total Expenses': np.float64(1113.75)}
+ANDHRA PAPER LTD,2018,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(64.79926542793537), 'robust_z': None}"
+ANDHRA PAPER LTD,2018,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+ANDHRA PAPER LTD,2018,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.0657199367088607), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
+ANDHRA PAPER LTD,2019,BS-001,Balance sheet equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(1483.71), 'Total Liabilities': np.float64(1186.09), 'Equity Share Capital': np.float64(39.77), 'Reserves': np.float64(724.04)}"
+ANDHRA PAPER LTD,2019,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(39.77), 'Reserves': np.float64(724.04)}"
+ANDHRA PAPER LTD,2019,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(67.06), 'Net Cash Flow': np.float64(-1.36)}"
+ANDHRA PAPER LTD,2019,CF-004,Financing activity plausibility,cross_statement,High,skipped,Unavailable metric values: ['Dividend Amount'],"{'Borrowings': np.float64(14.8), 'Dividend Amount': np.float64(nan), 'Cash from Financing Activity': np.float64(-201.32)}"
+ANDHRA PAPER LTD,2019,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(200.08), 'Depreciation': np.float64(67.87), 'Cash from Operating Activity': np.float64(310.03)}"
+ANDHRA PAPER LTD,2019,CF-008,Sustained negative operating cash flow,trend,High,pass,Validation passed,{'Cash from Operating Activity': np.float64(310.03)}
+ANDHRA PAPER LTD,2019,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+ANDHRA PAPER LTD,2019,CF-010,Dividend versus reserves,solvency,High,skipped,Unavailable metric values: ['Dividend Amount'],"{'Dividend Amount': np.float64(nan), 'Reserves': np.float64(724.04)}"
+ANDHRA PAPER LTD,2019,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'ANDHRA PAPER LTD', 'Year': np.int64(2019)}"
+ANDHRA PAPER LTD,2019,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+ANDHRA PAPER LTD,2019,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(67.06), 'Inventory': np.float64(157.0)}"
+ANDHRA PAPER LTD,2019,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+ANDHRA PAPER LTD,2019,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(1427.33), 'robust_z': None}"
+ANDHRA PAPER LTD,2019,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2019), 'Report Date': '2019-03-31'}"
+ANDHRA PAPER LTD,2019,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(0.6638969264290668), 'robust_z': None}"
+ANDHRA PAPER LTD,2019,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(8.54), 'Borrowings': np.float64(14.8)}"
+ANDHRA PAPER LTD,2019,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.3573378729964989), 'robust_z': None}"
+ANDHRA PAPER LTD,2019,IS-010,Unusual expense spike detection,trend,High,pass,Validation passed,{'Total Expenses': np.float64(1124.62)}
+ANDHRA PAPER LTD,2019,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,pass,Validation passed,"{'Revenue_Growth': np.float64(0.1292167721518986), 'Operating_CF_Growth': np.float64(0.4413296141329612)}"
+ANDHRA PAPER LTD,2019,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,skipped,Unavailable metric values: ['Dividend Amount'],"{'Net profit': np.float64(200.08), 'Dividend Amount': np.float64(nan), 'Reserves': np.float64(724.04)}"
+ANDHRA PAPER LTD,2019,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+ANDHRA PAPER LTD,2019,LED-001,Accounting equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(1483.71), 'Total Liabilities': np.float64(1186.09), 'Equity Share Capital': np.float64(39.77), 'Reserves': np.float64(724.04)}"
+ANDHRA PAPER LTD,2019,RAT-005,Debt-to-equity ratio,ratio,High,pass,Validation passed,{'Debt_Equity_Ratio': np.float64(0.01937654652335)}
+ANDHRA PAPER LTD,2019,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+ANDHRA PAPER LTD,2019,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+ANDHRA PAPER LTD,2019,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+ANDHRA PAPER LTD,2019,RAT-010,Gross profit margin trend,trend,Medium,pass,Validation passed,{'gross_margin': np.float64(0.6638969264290668)}
+ANDHRA PAPER LTD,2019,RAT-011,Net profit margin trend,trend,Medium,pass,Validation passed,{'Profit_Margin': np.float64(0.1401778145208186)}
+ANDHRA PAPER LTD,2019,RAT-012,Operating margin trend,trend,Medium,fail,Validation triggered,{'Operating_Margin': np.float64(0.0)}
+ANDHRA PAPER LTD,2019,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+ANDHRA PAPER LTD,2019,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.2619499613778296), 'robust_z': None}"
+ANDHRA PAPER LTD,2019,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+ANDHRA PAPER LTD,2019,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(9.09127388535032), 'robust_z': None}"
+ANDHRA PAPER LTD,2019,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(19.403616095704187), 'robust_z': None}"
+ANDHRA PAPER LTD,2019,RAT-020,Days sales outstanding trend,trend,Medium,pass,Validation passed,{'dso': np.float64(18.81092669529821)}
+ANDHRA PAPER LTD,2019,RAT-022,Days inventory outstanding trend,trend,Medium,pass,Validation passed,{'dio': np.float64(40.148388949997546)}
+ANDHRA PAPER LTD,2019,RAT-024,Revenue growth rate,trend,Medium,pass,Validation passed,{'Revenue_Growth': np.float64(0.1292167721518986)}
+ANDHRA PAPER LTD,2019,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(0.1292167721518986), 'robust_z': None}"
+ANDHRA PAPER LTD,2019,TR-002,Year-over-year expense variance,trend,Medium,pass,Validation passed,{'Total Expenses': np.float64(1124.62)}
+ANDHRA PAPER LTD,2019,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(129.15383553473492), 'robust_z': None}"
+ANDHRA PAPER LTD,2019,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+ANDHRA PAPER LTD,2019,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.1401778145208186), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
+ANDHRA PAPER LTD,2020,BS-001,Balance sheet equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(1756.23), 'Total Liabilities': np.float64(1321.14), 'Equity Share Capital': np.float64(39.77), 'Reserves': np.float64(936.08)}"
+ANDHRA PAPER LTD,2020,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(39.77), 'Reserves': np.float64(936.08)}"
+ANDHRA PAPER LTD,2020,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(170.9), 'Net Cash Flow': np.float64(-0.39)}"
+ANDHRA PAPER LTD,2020,CF-004,Financing activity plausibility,cross_statement,High,skipped,Unavailable metric values: ['Dividend Amount'],"{'Borrowings': np.float64(9.33), 'Dividend Amount': np.float64(nan), 'Cash from Financing Activity': np.float64(-10.61)}"
+ANDHRA PAPER LTD,2020,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(212.92), 'Depreciation': np.float64(75.9), 'Cash from Operating Activity': np.float64(177.15)}"
+ANDHRA PAPER LTD,2020,CF-008,Sustained negative operating cash flow,trend,High,pass,Validation passed,{'Cash from Operating Activity': np.float64(177.15)}
+ANDHRA PAPER LTD,2020,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+ANDHRA PAPER LTD,2020,CF-010,Dividend versus reserves,solvency,High,skipped,Unavailable metric values: ['Dividend Amount'],"{'Dividend Amount': np.float64(nan), 'Reserves': np.float64(936.08)}"
+ANDHRA PAPER LTD,2020,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'ANDHRA PAPER LTD', 'Year': np.int64(2020)}"
+ANDHRA PAPER LTD,2020,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+ANDHRA PAPER LTD,2020,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(170.9), 'Inventory': np.float64(223.41)}"
+ANDHRA PAPER LTD,2020,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+ANDHRA PAPER LTD,2020,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(1269.7), 'robust_z': None}"
+ANDHRA PAPER LTD,2020,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2020), 'Report Date': '2020-03-31'}"
+ANDHRA PAPER LTD,2020,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(0.655099629833819), 'robust_z': None}"
+ANDHRA PAPER LTD,2020,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(5.32), 'Borrowings': np.float64(9.33)}"
+ANDHRA PAPER LTD,2020,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.0970313825275657), 'robust_z': None}"
+ANDHRA PAPER LTD,2020,IS-010,Unusual expense spike detection,trend,High,pass,Validation passed,{'Total Expenses': np.float64(1106.23)}
+ANDHRA PAPER LTD,2020,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,pass,Validation passed,"{'Revenue_Growth': np.float64(-0.1104369697266923), 'Operating_CF_Growth': np.float64(-0.4286036835144985)}"
+ANDHRA PAPER LTD,2020,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,skipped,Unavailable metric values: ['Dividend Amount'],"{'Net profit': np.float64(212.92), 'Dividend Amount': np.float64(nan), 'Reserves': np.float64(936.08)}"
+ANDHRA PAPER LTD,2020,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+ANDHRA PAPER LTD,2020,LED-001,Accounting equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(1756.23), 'Total Liabilities': np.float64(1321.14), 'Equity Share Capital': np.float64(39.77), 'Reserves': np.float64(936.08)}"
+ANDHRA PAPER LTD,2020,RAT-005,Debt-to-equity ratio,ratio,High,pass,Validation passed,{'Debt_Equity_Ratio': np.float64(0.0095608956294512)}
+ANDHRA PAPER LTD,2020,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+ANDHRA PAPER LTD,2020,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+ANDHRA PAPER LTD,2020,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+ANDHRA PAPER LTD,2020,RAT-010,Gross profit margin trend,trend,Medium,pass,Validation passed,{'gross_margin': np.float64(0.655099629833819)}
+ANDHRA PAPER LTD,2020,RAT-011,Net profit margin trend,trend,Medium,pass,Validation passed,{'Profit_Margin': np.float64(0.1676931558635898)}
+ANDHRA PAPER LTD,2020,RAT-012,Operating margin trend,trend,Medium,fail,Validation triggered,{'Operating_Margin': np.float64(0.0)}
+ANDHRA PAPER LTD,2020,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+ANDHRA PAPER LTD,2020,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.2181892708920428), 'robust_z': None}"
+ANDHRA PAPER LTD,2020,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+ANDHRA PAPER LTD,2020,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(5.683272906315743), 'robust_z': None}"
+ANDHRA PAPER LTD,2020,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(31.13536047081903), 'robust_z': None}"
+ANDHRA PAPER LTD,2020,RAT-020,Days sales outstanding trend,trend,Medium,pass,Validation passed,{'dso': np.float64(11.72300543435457)}
+ANDHRA PAPER LTD,2020,RAT-022,Days inventory outstanding trend,trend,Medium,pass,Validation passed,{'dio': np.float64(64.22355674568794)}
+ANDHRA PAPER LTD,2020,RAT-024,Revenue growth rate,trend,Medium,fail,Validation triggered,{'Revenue_Growth': np.float64(-0.1104369697266923)}
+ANDHRA PAPER LTD,2020,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(-0.1104369697266923), 'robust_z': None}"
+ANDHRA PAPER LTD,2020,TR-002,Year-over-year expense variance,trend,Medium,pass,Validation passed,{'Total Expenses': np.float64(1106.23)}
+ANDHRA PAPER LTD,2020,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(92.69699365855048), 'robust_z': None}"
+ANDHRA PAPER LTD,2020,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+ANDHRA PAPER LTD,2020,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.1676931558635898), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
+ANDHRA PAPER LTD,2021,BS-001,Balance sheet equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(1654.0699999999997), 'Total Liabilities': np.float64(1332.59), 'Equity Share Capital': np.float64(39.77), 'Reserves': np.float64(935.45)}"
+ANDHRA PAPER LTD,2021,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(39.77), 'Reserves': np.float64(935.45)}"
+ANDHRA PAPER LTD,2021,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(81.57), 'Net Cash Flow': np.float64(1.03)}"
+ANDHRA PAPER LTD,2021,CF-004,Financing activity plausibility,cross_statement,High,pass,Validation passed,"{'Borrowings': np.float64(44.2), 'Dividend Amount': np.float64(19.88), 'Cash from Financing Activity': np.float64(10.75)}"
+ANDHRA PAPER LTD,2021,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(-4.6), 'Depreciation': np.float64(73.38), 'Cash from Operating Activity': np.float64(103.8)}"
+ANDHRA PAPER LTD,2021,CF-008,Sustained negative operating cash flow,trend,High,pass,Validation passed,{'Cash from Operating Activity': np.float64(103.8)}
+ANDHRA PAPER LTD,2021,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+ANDHRA PAPER LTD,2021,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(19.88), 'Reserves': np.float64(935.45)}"
+ANDHRA PAPER LTD,2021,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'ANDHRA PAPER LTD', 'Year': np.int64(2021)}"
+ANDHRA PAPER LTD,2021,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+ANDHRA PAPER LTD,2021,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(81.57), 'Inventory': np.float64(164.31)}"
+ANDHRA PAPER LTD,2021,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+ANDHRA PAPER LTD,2021,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(886.75), 'robust_z': None}"
+ANDHRA PAPER LTD,2021,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2021), 'Report Date': '2021-03-31'}"
+ANDHRA PAPER LTD,2021,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(0.6579419227516211), 'robust_z': None}"
+ANDHRA PAPER LTD,2021,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(4.51), 'Borrowings': np.float64(44.2)}"
+ANDHRA PAPER LTD,2021,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.258481421647819), 'robust_z': None}"
+ANDHRA PAPER LTD,2021,IS-010,Unusual expense spike detection,trend,High,pass,Validation passed,{'Total Expenses': np.float64(850.9699999999999)}
+ANDHRA PAPER LTD,2021,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,pass,Validation passed,"{'Revenue_Growth': np.float64(-0.3016066787430101), 'Operating_CF_Growth': np.float64(-0.4140558848433531)}"
+ANDHRA PAPER LTD,2021,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(-4.6), 'Dividend Amount': np.float64(19.88), 'Reserves': np.float64(935.45)}"
+ANDHRA PAPER LTD,2021,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+ANDHRA PAPER LTD,2021,LED-001,Accounting equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(1654.0699999999997), 'Total Liabilities': np.float64(1332.59), 'Equity Share Capital': np.float64(39.77), 'Reserves': np.float64(935.45)}"
+ANDHRA PAPER LTD,2021,RAT-005,Debt-to-equity ratio,ratio,High,pass,Validation passed,{'Debt_Equity_Ratio': np.float64(0.0453231065810791)}
+ANDHRA PAPER LTD,2021,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+ANDHRA PAPER LTD,2021,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+ANDHRA PAPER LTD,2021,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+ANDHRA PAPER LTD,2021,RAT-010,Gross profit margin trend,trend,Medium,pass,Validation passed,{'gross_margin': np.float64(0.6579419227516211)}
+ANDHRA PAPER LTD,2021,RAT-011,Net profit margin trend,trend,Medium,pass,Validation passed,{'Profit_Margin': np.float64(-0.0051874823794756)}
+ANDHRA PAPER LTD,2021,RAT-012,Operating margin trend,trend,Medium,fail,Validation triggered,{'Operating_Margin': np.float64(0.0)}
+ANDHRA PAPER LTD,2021,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+ANDHRA PAPER LTD,2021,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(-0.0047168843953159), 'robust_z': None}"
+ANDHRA PAPER LTD,2021,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+ANDHRA PAPER LTD,2021,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(5.396810906213864), 'robust_z': None}"
+ANDHRA PAPER LTD,2021,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(11.729497354497356), 'robust_z': None}"
+ANDHRA PAPER LTD,2021,RAT-020,Days sales outstanding trend,trend,Medium,pass,Validation passed,{'dso': np.float64(31.118127995489143)}
+ANDHRA PAPER LTD,2021,RAT-022,Days inventory outstanding trend,trend,Medium,fail,Validation triggered,{'dio': np.float64(67.6325345362278)}
+ANDHRA PAPER LTD,2021,RAT-024,Revenue growth rate,trend,Medium,fail,Validation triggered,{'Revenue_Growth': np.float64(-0.3016066787430101)}
+ANDHRA PAPER LTD,2021,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(-0.3016066787430101), 'robust_z': None}"
+ANDHRA PAPER LTD,2021,TR-002,Year-over-year expense variance,trend,Medium,pass,Validation passed,{'Total Expenses': np.float64(850.9699999999999)}
+ANDHRA PAPER LTD,2021,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(278.0061917176186), 'robust_z': None}"
+ANDHRA PAPER LTD,2021,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+ANDHRA PAPER LTD,2021,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(-0.0051874823794756), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
+ANDHRA PAPER LTD,2022,BS-001,Balance sheet equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(1800.3699999999997), 'Total Liabilities': np.float64(1497.92), 'Equity Share Capital': np.float64(39.77), 'Reserves': np.float64(1054.32)}"
+ANDHRA PAPER LTD,2022,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(39.77), 'Reserves': np.float64(1054.32)}"
+ANDHRA PAPER LTD,2022,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(54.81), 'Net Cash Flow': np.float64(9.24)}"
+ANDHRA PAPER LTD,2022,CF-004,Financing activity plausibility,cross_statement,High,pass,Validation passed,"{'Borrowings': np.float64(59.17), 'Dividend Amount': np.float64(29.83), 'Cash from Financing Activity': np.float64(-11.74)}"
+ANDHRA PAPER LTD,2022,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(139.73), 'Depreciation': np.float64(72.01), 'Cash from Operating Activity': np.float64(202.35)}"
+ANDHRA PAPER LTD,2022,CF-008,Sustained negative operating cash flow,trend,High,pass,Validation passed,{'Cash from Operating Activity': np.float64(202.35)}
+ANDHRA PAPER LTD,2022,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+ANDHRA PAPER LTD,2022,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(29.83), 'Reserves': np.float64(1054.32)}"
+ANDHRA PAPER LTD,2022,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'ANDHRA PAPER LTD', 'Year': np.int64(2022)}"
+ANDHRA PAPER LTD,2022,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+ANDHRA PAPER LTD,2022,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(54.81), 'Inventory': np.float64(145.09)}"
+ANDHRA PAPER LTD,2022,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+ANDHRA PAPER LTD,2022,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(1380.23), 'robust_z': None}"
+ANDHRA PAPER LTD,2022,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2022), 'Report Date': '2022-03-31'}"
+ANDHRA PAPER LTD,2022,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(0.531766444722981), 'robust_z': None}"
+ANDHRA PAPER LTD,2022,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(5.45), 'Borrowings': np.float64(59.17)}"
+ANDHRA PAPER LTD,2022,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.2581227436823104), 'robust_z': None}"
+ANDHRA PAPER LTD,2022,IS-010,Unusual expense spike detection,trend,High,pass,Validation passed,{'Total Expenses': np.float64(1215.54)}
+ANDHRA PAPER LTD,2022,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,pass,Validation passed,"{'Revenue_Growth': np.float64(0.5565040879616578), 'Operating_CF_Growth': np.float64(0.949421965317919)}"
+ANDHRA PAPER LTD,2022,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(139.73), 'Dividend Amount': np.float64(29.83), 'Reserves': np.float64(1054.32)}"
+ANDHRA PAPER LTD,2022,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+ANDHRA PAPER LTD,2022,LED-001,Accounting equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(1800.3699999999997), 'Total Liabilities': np.float64(1497.92), 'Equity Share Capital': np.float64(39.77), 'Reserves': np.float64(1054.32)}"
+ANDHRA PAPER LTD,2022,RAT-005,Debt-to-equity ratio,ratio,High,pass,Validation passed,{'Debt_Equity_Ratio': np.float64(0.0540814741017649)}
+ANDHRA PAPER LTD,2022,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+ANDHRA PAPER LTD,2022,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+ANDHRA PAPER LTD,2022,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+ANDHRA PAPER LTD,2022,RAT-010,Gross profit margin trend,trend,Medium,pass,Validation passed,{'gross_margin': np.float64(0.531766444722981)}
+ANDHRA PAPER LTD,2022,RAT-011,Net profit margin trend,trend,Medium,pass,Validation passed,{'Profit_Margin': np.float64(0.101236750396673)}
+ANDHRA PAPER LTD,2022,RAT-012,Operating margin trend,trend,Medium,fail,Validation triggered,{'Operating_Margin': np.float64(0.0)}
+ANDHRA PAPER LTD,2022,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+ANDHRA PAPER LTD,2022,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.1277134422213894), 'robust_z': None}"
+ANDHRA PAPER LTD,2022,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+ANDHRA PAPER LTD,2022,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(9.512923013302087), 'robust_z': None}"
+ANDHRA PAPER LTD,2022,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(13.45909312530473), 'robust_z': None}"
+ANDHRA PAPER LTD,2022,RAT-020,Days sales outstanding trend,trend,Medium,pass,Validation passed,{'dso': np.float64(27.11921201538874)}
+ANDHRA PAPER LTD,2022,RAT-022,Days inventory outstanding trend,trend,Medium,pass,Validation passed,{'dio': np.float64(38.368858813386176)}
+ANDHRA PAPER LTD,2022,RAT-024,Revenue growth rate,trend,Medium,pass,Validation passed,{'Revenue_Growth': np.float64(0.5565040879616578)}
+ANDHRA PAPER LTD,2022,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(0.5565040879616578), 'robust_z': None}"
+ANDHRA PAPER LTD,2022,TR-002,Year-over-year expense variance,trend,Medium,pass,Validation passed,{'Total Expenses': np.float64(1215.54)}
+ANDHRA PAPER LTD,2022,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(258.96914031083577), 'robust_z': None}"
+ANDHRA PAPER LTD,2022,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+ANDHRA PAPER LTD,2022,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.101236750396673), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
+ANDHRA PAPER LTD,2023,BS-001,Balance sheet equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(2373.26), 'Total Liabilities': np.float64(2004.7), 'Equity Share Capital': np.float64(39.77), 'Reserves': np.float64(1542.4)}"
+ANDHRA PAPER LTD,2023,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(39.77), 'Reserves': np.float64(1542.4)}"
+ANDHRA PAPER LTD,2023,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(47.37), 'Net Cash Flow': np.float64(-3.22)}"
+ANDHRA PAPER LTD,2023,CF-004,Financing activity plausibility,cross_statement,High,pass,Validation passed,"{'Borrowings': np.float64(55.46), 'Dividend Amount': np.float64(49.71), 'Cash from Financing Activity': np.float64(-41.33)}"
+ANDHRA PAPER LTD,2023,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(522.46), 'Depreciation': np.float64(63.2), 'Cash from Operating Activity': np.float64(535.82)}"
+ANDHRA PAPER LTD,2023,CF-008,Sustained negative operating cash flow,trend,High,pass,Validation passed,{'Cash from Operating Activity': np.float64(535.82)}
+ANDHRA PAPER LTD,2023,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+ANDHRA PAPER LTD,2023,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(49.71), 'Reserves': np.float64(1542.4)}"
+ANDHRA PAPER LTD,2023,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'ANDHRA PAPER LTD', 'Year': np.int64(2023)}"
+ANDHRA PAPER LTD,2023,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+ANDHRA PAPER LTD,2023,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(47.37), 'Inventory': np.float64(173.66)}"
+ANDHRA PAPER LTD,2023,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+ANDHRA PAPER LTD,2023,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(2097.66), 'robust_z': None}"
+ANDHRA PAPER LTD,2023,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2023), 'Report Date': '2023-03-31'}"
+ANDHRA PAPER LTD,2023,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(0.6085256905313541), 'robust_z': None}"
+ANDHRA PAPER LTD,2023,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(7.17), 'Borrowings': np.float64(55.46)}"
+ANDHRA PAPER LTD,2023,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.2546720305857514), 'robust_z': None}"
+ANDHRA PAPER LTD,2023,IS-010,Unusual expense spike detection,trend,High,pass,Validation passed,{'Total Expenses': np.float64(1428.0800000000002)}
+ANDHRA PAPER LTD,2023,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,pass,Validation passed,"{'Revenue_Growth': np.float64(0.5197901798975533), 'Operating_CF_Growth': np.float64(1.6479861625895729)}"
+ANDHRA PAPER LTD,2023,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(522.46), 'Dividend Amount': np.float64(49.71), 'Reserves': np.float64(1542.4)}"
+ANDHRA PAPER LTD,2023,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+ANDHRA PAPER LTD,2023,LED-001,Accounting equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(2373.26), 'Total Liabilities': np.float64(2004.7), 'Equity Share Capital': np.float64(39.77), 'Reserves': np.float64(1542.4)}"
+ANDHRA PAPER LTD,2023,RAT-005,Debt-to-equity ratio,ratio,High,pass,Validation passed,{'Debt_Equity_Ratio': np.float64(0.0350531232421294)}
+ANDHRA PAPER LTD,2023,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+ANDHRA PAPER LTD,2023,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+ANDHRA PAPER LTD,2023,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+ANDHRA PAPER LTD,2023,RAT-010,Gross profit margin trend,trend,Medium,pass,Validation passed,{'gross_margin': np.float64(0.6085256905313541)}
+ANDHRA PAPER LTD,2023,RAT-011,Net profit margin trend,trend,Medium,pass,Validation passed,{'Profit_Margin': np.float64(0.2490680091149185)}
+ANDHRA PAPER LTD,2023,RAT-012,Operating margin trend,trend,Medium,fail,Validation triggered,{'Operating_Margin': np.float64(0.0)}
+ANDHRA PAPER LTD,2023,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+ANDHRA PAPER LTD,2023,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.3302173597021812), 'robust_z': None}"
+ANDHRA PAPER LTD,2023,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+ANDHRA PAPER LTD,2023,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(12.07912011977427), 'robust_z': None}"
+ANDHRA PAPER LTD,2023,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(14.218531824035788), 'robust_z': None}"
+ANDHRA PAPER LTD,2023,RAT-020,Days sales outstanding trend,trend,Medium,pass,Validation passed,{'dso': np.float64(25.67072356816644)}
+ANDHRA PAPER LTD,2023,RAT-022,Days inventory outstanding trend,trend,Medium,pass,Validation passed,{'dio': np.float64(30.21743275840699)}
+ANDHRA PAPER LTD,2023,RAT-024,Revenue growth rate,trend,Medium,pass,Validation passed,{'Revenue_Growth': np.float64(0.5197901798975533)}
+ANDHRA PAPER LTD,2023,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(0.5197901798975533), 'robust_z': None}"
+ANDHRA PAPER LTD,2023,TR-002,Year-over-year expense variance,trend,Medium,pass,Validation passed,{'Total Expenses': np.float64(1428.0800000000002)}
+ANDHRA PAPER LTD,2023,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(608.8967267936329), 'robust_z': None}"
+ANDHRA PAPER LTD,2023,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+ANDHRA PAPER LTD,2023,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.2490680091149185), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
+ANDHRA PAPER LTD,2024,BS-001,Balance sheet equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(2775.13), 'Total Liabilities': np.float64(2450.96), 'Equity Share Capital': np.float64(39.77), 'Reserves': np.float64(1853.43)}"
+ANDHRA PAPER LTD,2024,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(39.77), 'Reserves': np.float64(1853.43)}"
+ANDHRA PAPER LTD,2024,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(26.26), 'Net Cash Flow': np.float64(-10.27)}"
+ANDHRA PAPER LTD,2024,CF-004,Financing activity plausibility,cross_statement,High,pass,Validation passed,"{'Borrowings': np.float64(115.08), 'Dividend Amount': np.float64(39.77), 'Cash from Financing Activity': np.float64(5.03)}"
+ANDHRA PAPER LTD,2024,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(339.74), 'Depreciation': np.float64(65.87), 'Cash from Operating Activity': np.float64(318.74)}"
+ANDHRA PAPER LTD,2024,CF-008,Sustained negative operating cash flow,trend,High,pass,Validation passed,{'Cash from Operating Activity': np.float64(318.74)}
+ANDHRA PAPER LTD,2024,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+ANDHRA PAPER LTD,2024,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(39.77), 'Reserves': np.float64(1853.43)}"
+ANDHRA PAPER LTD,2024,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'ANDHRA PAPER LTD', 'Year': np.int64(2024)}"
+ANDHRA PAPER LTD,2024,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+ANDHRA PAPER LTD,2024,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(26.26), 'Inventory': np.float64(236.98)}"
+ANDHRA PAPER LTD,2024,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+ANDHRA PAPER LTD,2024,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(1800.58), 'robust_z': None}"
+ANDHRA PAPER LTD,2024,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2024), 'Report Date': '2024-03-31'}"
+ANDHRA PAPER LTD,2024,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(0.5194048584345045), 'robust_z': None}"
+ANDHRA PAPER LTD,2024,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(4.41), 'Borrowings': np.float64(115.08)}"
+ANDHRA PAPER LTD,2024,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.2543619005815867), 'robust_z': None}"
+ANDHRA PAPER LTD,2024,IS-010,Unusual expense spike detection,trend,High,pass,Validation passed,{'Total Expenses': np.float64(1453.2)}
+ANDHRA PAPER LTD,2024,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,pass,Validation passed,"{'Revenue_Growth': np.float64(-0.1416244767979557), 'Operating_CF_Growth': np.float64(-0.405136053152178)}"
+ANDHRA PAPER LTD,2024,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(339.74), 'Dividend Amount': np.float64(39.77), 'Reserves': np.float64(1853.43)}"
+ANDHRA PAPER LTD,2024,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+ANDHRA PAPER LTD,2024,LED-001,Accounting equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(2775.13), 'Total Liabilities': np.float64(2450.96), 'Equity Share Capital': np.float64(39.77), 'Reserves': np.float64(1853.43)}"
+ANDHRA PAPER LTD,2024,RAT-005,Debt-to-equity ratio,ratio,High,pass,Validation passed,{'Debt_Equity_Ratio': np.float64(0.0607859708430171)}
+ANDHRA PAPER LTD,2024,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+ANDHRA PAPER LTD,2024,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+ANDHRA PAPER LTD,2024,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+ANDHRA PAPER LTD,2024,RAT-010,Gross profit margin trend,trend,Medium,pass,Validation passed,{'gross_margin': np.float64(0.5194048584345045)}
+ANDHRA PAPER LTD,2024,RAT-011,Net profit margin trend,trend,Medium,pass,Validation passed,{'Profit_Margin': np.float64(0.1886836463806107)}
+ANDHRA PAPER LTD,2024,RAT-012,Operating margin trend,trend,Medium,fail,Validation triggered,{'Operating_Margin': np.float64(0.0)}
+ANDHRA PAPER LTD,2024,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+ANDHRA PAPER LTD,2024,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.1794527783646735), 'robust_z': None}"
+ANDHRA PAPER LTD,2024,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+ANDHRA PAPER LTD,2024,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(7.598025149801671), 'robust_z': None}"
+ANDHRA PAPER LTD,2024,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(29.5516166092237), 'robust_z': None}"
+ANDHRA PAPER LTD,2024,RAT-020,Days sales outstanding trend,trend,Medium,pass,Validation passed,{'dso': np.float64(12.351270146286195)}
+ANDHRA PAPER LTD,2024,RAT-022,Days inventory outstanding trend,trend,Medium,pass,Validation passed,{'dio': np.float64(48.038798609336986)}
+ANDHRA PAPER LTD,2024,RAT-024,Revenue growth rate,trend,Medium,fail,Validation triggered,{'Revenue_Growth': np.float64(-0.1416244767979557)}
+ANDHRA PAPER LTD,2024,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(-0.1416244767979557), 'robust_z': None}"
+ANDHRA PAPER LTD,2024,TR-002,Year-over-year expense variance,trend,Medium,pass,Validation passed,{'Total Expenses': np.float64(1453.2)}
+ANDHRA PAPER LTD,2024,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(360.47571665786336), 'robust_z': None}"
+ANDHRA PAPER LTD,2024,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+ANDHRA PAPER LTD,2024,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.1886836463806107), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
+ANDHRA PAPER LTD,2025,BS-001,Balance sheet equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(3043.1), 'Total Liabilities': np.float64(2604.62), 'Equity Share Capital': np.float64(39.77), 'Reserves': np.float64(1901.06)}"
+ANDHRA PAPER LTD,2025,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(39.77), 'Reserves': np.float64(1901.06)}"
+ANDHRA PAPER LTD,2025,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(7.71), 'Net Cash Flow': np.float64(-7.28)}"
+ANDHRA PAPER LTD,2025,CF-004,Financing activity plausibility,cross_statement,High,pass,Validation passed,"{'Borrowings': np.float64(283.11), 'Dividend Amount': np.float64(19.88), 'Cash from Financing Activity': np.float64(109.24)}"
+ANDHRA PAPER LTD,2025,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(88.91), 'Depreciation': np.float64(88.32), 'Cash from Operating Activity': np.float64(-55.39)}"
+ANDHRA PAPER LTD,2025,CF-008,Sustained negative operating cash flow,trend,High,pass,Validation passed,{'Cash from Operating Activity': np.float64(-55.39)}
+ANDHRA PAPER LTD,2025,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+ANDHRA PAPER LTD,2025,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(19.88), 'Reserves': np.float64(1901.06)}"
+ANDHRA PAPER LTD,2025,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'ANDHRA PAPER LTD', 'Year': np.int64(2025)}"
+ANDHRA PAPER LTD,2025,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+ANDHRA PAPER LTD,2025,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(7.71), 'Inventory': np.float64(322.14)}"
+ANDHRA PAPER LTD,2025,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+ANDHRA PAPER LTD,2025,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(1541.24), 'robust_z': None}"
+ANDHRA PAPER LTD,2025,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2025), 'Report Date': '2025-03-31'}"
+ANDHRA PAPER LTD,2025,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(0.3676195790402533), 'robust_z': None}"
+ANDHRA PAPER LTD,2025,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(17.89), 'Borrowings': np.float64(283.11)}"
+ANDHRA PAPER LTD,2025,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.2405193030406559), 'robust_z': None}"
+ANDHRA PAPER LTD,2025,IS-010,Unusual expense spike detection,trend,High,pass,Validation passed,{'Total Expenses': np.float64(1555.66)}
+ANDHRA PAPER LTD,2025,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,pass,Validation passed,"{'Revenue_Growth': np.float64(-0.1440313676704172), 'Operating_CF_Growth': np.float64(-1.1737780008784588)}"
+ANDHRA PAPER LTD,2025,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(88.91), 'Dividend Amount': np.float64(19.88), 'Reserves': np.float64(1901.06)}"
+ANDHRA PAPER LTD,2025,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+ANDHRA PAPER LTD,2025,LED-001,Accounting equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(3043.1), 'Total Liabilities': np.float64(2604.62), 'Equity Share Capital': np.float64(39.77), 'Reserves': np.float64(1901.06)}"
+ANDHRA PAPER LTD,2025,RAT-005,Debt-to-equity ratio,ratio,High,pass,Validation passed,{'Debt_Equity_Ratio': np.float64(0.1458705811431191)}
+ANDHRA PAPER LTD,2025,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+ANDHRA PAPER LTD,2025,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+ANDHRA PAPER LTD,2025,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+ANDHRA PAPER LTD,2025,RAT-010,Gross profit margin trend,trend,Medium,fail,Validation triggered,{'gross_margin': np.float64(0.3676195790402533)}
+ANDHRA PAPER LTD,2025,RAT-011,Net profit margin trend,trend,Medium,fail,Validation triggered,{'Profit_Margin': np.float64(0.0576873167060289)}
+ANDHRA PAPER LTD,2025,RAT-012,Operating margin trend,trend,Medium,fail,Validation triggered,{'Operating_Margin': np.float64(0.0)}
+ANDHRA PAPER LTD,2025,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+ANDHRA PAPER LTD,2025,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.0458102976561574), 'robust_z': None}"
+ANDHRA PAPER LTD,2025,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+ANDHRA PAPER LTD,2025,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(4.784379462345564), 'robust_z': None}"
+ANDHRA PAPER LTD,2025,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(14.187977538433216), 'robust_z': None}"
+ANDHRA PAPER LTD,2025,RAT-020,Days sales outstanding trend,trend,Medium,pass,Validation passed,{'dso': np.float64(25.72600633256339)}
+ANDHRA PAPER LTD,2025,RAT-022,Days inventory outstanding trend,trend,Medium,fail,Validation triggered,{'dio': np.float64(76.28993537670966)}
+ANDHRA PAPER LTD,2025,RAT-024,Revenue growth rate,trend,Medium,fail,Validation triggered,{'Revenue_Growth': np.float64(-0.1440313676704172)}
+ANDHRA PAPER LTD,2025,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(-0.1440313676704172), 'robust_z': None}"
+ANDHRA PAPER LTD,2025,TR-002,Year-over-year expense variance,trend,Medium,pass,Validation passed,{'Total Expenses': np.float64(1555.66)}
+ANDHRA PAPER LTD,2025,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(278.4232325076344), 'robust_z': None}"
+ANDHRA PAPER LTD,2025,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+ANDHRA PAPER LTD,2025,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.0576873167060289), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
+ANDHRA PAPER LTD,2026,BS-001,Balance sheet equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(2975.7400000000007), 'Total Liabilities': np.float64(2538.09), 'Equity Share Capital': np.float64(39.77), 'Reserves': np.float64(1899.58)}"
+ANDHRA PAPER LTD,2026,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(39.77), 'Reserves': np.float64(1899.58)}"
+ANDHRA PAPER LTD,2026,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(18.51), 'Net Cash Flow': np.float64(12.4)}"
+ANDHRA PAPER LTD,2026,CF-004,Financing activity plausibility,cross_statement,High,pass,Validation passed,"{'Borrowings': np.float64(232.15), 'Dividend Amount': np.float64(9.94), 'Cash from Financing Activity': np.float64(-93.89)}"
+ANDHRA PAPER LTD,2026,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(18.62), 'Depreciation': np.float64(107.31), 'Cash from Operating Activity': np.float64(104.5)}"
+ANDHRA PAPER LTD,2026,CF-008,Sustained negative operating cash flow,trend,High,pass,Validation passed,{'Cash from Operating Activity': np.float64(104.5)}
+ANDHRA PAPER LTD,2026,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+ANDHRA PAPER LTD,2026,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(9.94), 'Reserves': np.float64(1899.58)}"
+ANDHRA PAPER LTD,2026,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'ANDHRA PAPER LTD', 'Year': np.int64(2026)}"
+ANDHRA PAPER LTD,2026,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+ANDHRA PAPER LTD,2026,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(18.51), 'Inventory': np.float64(263.07)}"
+ANDHRA PAPER LTD,2026,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+ANDHRA PAPER LTD,2026,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(1701.23), 'robust_z': None}"
+ANDHRA PAPER LTD,2026,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2026), 'Report Date': '2026-03-31'}"
+ANDHRA PAPER LTD,2026,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(0.3542319380683388), 'robust_z': None}"
+ANDHRA PAPER LTD,2026,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(18.22), 'Borrowings': np.float64(232.15)}"
+ANDHRA PAPER LTD,2026,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.2657728706624606), 'robust_z': None}"
+ANDHRA PAPER LTD,2026,IS-010,Unusual expense spike detection,trend,High,pass,Validation passed,{'Total Expenses': np.float64(1752.22)}
+ANDHRA PAPER LTD,2026,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,fail,Validation triggered,"{'Revenue_Growth': np.float64(0.1038060263164724), 'Operating_CF_Growth': np.float64(-2.8866221339591984)}"
+ANDHRA PAPER LTD,2026,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(18.62), 'Dividend Amount': np.float64(9.94), 'Reserves': np.float64(1899.58)}"
+ANDHRA PAPER LTD,2026,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+ANDHRA PAPER LTD,2026,LED-001,Accounting equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(2975.7400000000007), 'Total Liabilities': np.float64(2538.09), 'Equity Share Capital': np.float64(39.77), 'Reserves': np.float64(1899.58)}"
+ANDHRA PAPER LTD,2026,RAT-005,Debt-to-equity ratio,ratio,High,pass,Validation passed,{'Debt_Equity_Ratio': np.float64(0.1197050558176708)}
+ANDHRA PAPER LTD,2026,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+ANDHRA PAPER LTD,2026,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+ANDHRA PAPER LTD,2026,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+ANDHRA PAPER LTD,2026,RAT-010,Gross profit margin trend,trend,Medium,fail,Validation triggered,{'gross_margin': np.float64(0.3542319380683388)}
+ANDHRA PAPER LTD,2026,RAT-011,Net profit margin trend,trend,Medium,fail,Validation triggered,{'Profit_Margin': np.float64(0.0109450221310463)}
+ANDHRA PAPER LTD,2026,RAT-012,Operating margin trend,trend,Medium,fail,Validation triggered,{'Operating_Margin': np.float64(0.0)}
+ANDHRA PAPER LTD,2026,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+ANDHRA PAPER LTD,2026,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.0096011550261685), 'robust_z': None}"
+ANDHRA PAPER LTD,2026,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+ANDHRA PAPER LTD,2026,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(6.4668339225301255), 'robust_z': None}"
+ANDHRA PAPER LTD,2026,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(10.90042929454732), 'robust_z': None}"
+ANDHRA PAPER LTD,2026,RAT-020,Days sales outstanding trend,trend,Medium,fail,Validation triggered,{'dso': np.float64(33.484919734545)}
+ANDHRA PAPER LTD,2026,RAT-022,Days inventory outstanding trend,trend,Medium,pass,Validation passed,{'dio': np.float64(56.44183913991641)}
+ANDHRA PAPER LTD,2026,RAT-024,Revenue growth rate,trend,Medium,pass,Validation passed,{'Revenue_Growth': np.float64(0.1038060263164724)}
+ANDHRA PAPER LTD,2026,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(0.1038060263164724), 'robust_z': None}"
+ANDHRA PAPER LTD,2026,TR-002,Year-over-year expense variance,trend,Medium,pass,Validation passed,{'Total Expenses': np.float64(1752.22)}
+ANDHRA PAPER LTD,2026,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(130.84625723853773), 'robust_z': None}"
+ANDHRA PAPER LTD,2026,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+ANDHRA PAPER LTD,2026,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.0109450221310463), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"

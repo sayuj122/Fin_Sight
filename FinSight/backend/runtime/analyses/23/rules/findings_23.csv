@@ -1,0 +1,421 @@
+Company,Year,Rule ID,Rule Description,Category,Severity,Status,Message,Observed
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2017,BS-001,Balance sheet equation,integrity,Critical,skipped,"Unavailable metrics: ['Total Assets', 'Total Liabilities']",
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2017,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(414.19), 'Reserves': np.float64(17111.79)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2017,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,skipped,Unavailable prior-year Cash & Bank,"{'Cash & Bank': np.float64(1976.8), 'Net Cash Flow': np.float64(108.71)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2017,CF-004,Financing activity plausibility,cross_statement,High,skipped,Unavailable prior-year Borrowings,"{'Borrowings': np.float64(22214.26), 'Dividend Amount': np.float64(269.22), 'Cash from Financing Activity': np.float64(-1324.71)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2017,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(3911.52), 'Depreciation': np.float64(1160.19), 'Cash from Operating Activity': np.float64(4062.57)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2017,CF-008,Sustained negative operating cash flow,trend,High,skipped,Insufficient history for Cash from Operating Activity,{'Cash from Operating Activity': np.float64(4062.57)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2017,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2017,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(269.22), 'Reserves': np.float64(17111.79)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2017,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'ADANI PORTS & SPECIAL ECONOMIC ZONE LTD', 'Year': np.int64(2017)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2017,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2017,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(1976.8), 'Inventory': np.float64(657.09)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2017,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2017,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(8439.35), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2017,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2017), 'Report Date': '2017-03-31'}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2017,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(0.9868449584387424), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2017,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(1115.74), 'Borrowings': np.float64(22214.26)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2017,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.0685903126921871), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2017,IS-010,Unusual expense spike detection,trend,High,skipped,Unavailable metrics: ['Total Expenses'],
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2017,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,skipped,"Unavailable metric values: ['Revenue_Growth', 'Operating_CF_Growth']","{'Revenue_Growth': np.float64(nan), 'Operating_CF_Growth': np.float64(nan)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2017,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,skipped,Unavailable prior-year Reserves,"{'Net profit': np.float64(3911.52), 'Dividend Amount': np.float64(269.22), 'Reserves': np.float64(17111.79)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2017,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2017,LED-001,Accounting equation,integrity,Critical,skipped,"Unavailable metrics: ['Total Assets', 'Total Liabilities']",
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2017,RAT-005,Debt-to-equity ratio,ratio,High,pass,Validation passed,{'Debt_Equity_Ratio': np.float64(1.267504584622372)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2017,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2017,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2017,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2017,RAT-010,Gross profit margin trend,trend,Medium,skipped,Insufficient history for gross_margin,{'gross_margin': np.float64(0.9868449584387424)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2017,RAT-011,Net profit margin trend,trend,Medium,skipped,Insufficient history for Profit_Margin,{'Profit_Margin': np.float64(0.4634859319734339)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2017,RAT-012,Operating margin trend,trend,Medium,skipped,Insufficient history for Operating_Margin,{'Operating_Margin': np.float64(0.0)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2017,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2017,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.2231840958394338), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2017,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2017,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(12.843522196350577), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2017,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(3.1338215143762143), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2017,RAT-020,Days sales outstanding trend,trend,Medium,skipped,Insufficient history for dso,{'dso': np.float64(116.47121520022274)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2017,RAT-022,Days inventory outstanding trend,trend,Medium,skipped,Insufficient history for dio,{'dio': np.float64(28.418995538755944)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2017,RAT-024,Revenue growth rate,trend,Medium,skipped,Unavailable metric values: ['Revenue_Growth'],{'Revenue_Growth': np.float64(nan)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2017,TR-001,Year-over-year revenue variance,trend,Medium,skipped,Unavailable metric values: ['Revenue_Growth'],{'Revenue_Growth': np.float64(nan)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2017,TR-002,Year-over-year expense variance,trend,Medium,skipped,Unavailable metrics: ['Total Expenses'],
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2017,TR-003,Multi-year trend consistency,trend,Medium,skipped,Unavailable metric values: ['Revenue_Volatility'],{'Revenue_Volatility': np.float64(nan)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2017,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2017,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.4634859319734339), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2018,BS-001,Balance sheet equation,integrity,Critical,skipped,"Unavailable metrics: ['Total Assets', 'Total Liabilities']",
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2018,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(414.19), 'Reserves': np.float64(20488.76)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2018,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(2967.55), 'Net Cash Flow': np.float64(-126.73)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2018,CF-004,Financing activity plausibility,cross_statement,High,pass,Validation passed,"{'Borrowings': np.float64(22370.04), 'Dividend Amount': np.float64(414.19), 'Cash from Financing Activity': np.float64(-1889.03)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2018,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(3673.62), 'Depreciation': np.float64(1188.37), 'Cash from Operating Activity': np.float64(5608.14)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2018,CF-008,Sustained negative operating cash flow,trend,High,skipped,Insufficient history for Cash from Operating Activity,{'Cash from Operating Activity': np.float64(5608.14)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2018,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2018,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(414.19), 'Reserves': np.float64(20488.76)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2018,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'ADANI PORTS & SPECIAL ECONOMIC ZONE LTD', 'Year': np.int64(2018)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2018,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2018,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(2967.55), 'Inventory': np.float64(520.29)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2018,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2018,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(11322.96), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2018,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2018), 'Report Date': '2018-03-31'}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2018,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(0.988530384281142), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2018,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(1578.66), 'Borrowings': np.float64(22370.04)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2018,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.2950213311476788), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2018,IS-010,Unusual expense spike detection,trend,High,skipped,Unavailable metrics: ['Total Expenses'],
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2018,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,pass,Validation passed,"{'Revenue_Growth': np.float64(0.3416862673073162), 'Operating_CF_Growth': np.float64(0.3804414447012605)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2018,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(3673.62), 'Dividend Amount': np.float64(414.19), 'Reserves': np.float64(20488.76)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2018,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2018,LED-001,Accounting equation,integrity,Critical,skipped,"Unavailable metrics: ['Total Assets', 'Total Liabilities']",
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2018,RAT-005,Debt-to-equity ratio,ratio,High,pass,Validation passed,{'Debt_Equity_Ratio': np.float64(1.070185787173581)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2018,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2018,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2018,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2018,RAT-010,Gross profit margin trend,trend,Medium,skipped,Insufficient history for gross_margin,{'gross_margin': np.float64(0.988530384281142)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2018,RAT-011,Net profit margin trend,trend,Medium,skipped,Insufficient history for Profit_Margin,{'Profit_Margin': np.float64(0.3244398991076538)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2018,RAT-012,Operating margin trend,trend,Medium,skipped,Insufficient history for Operating_Margin,{'Operating_Margin': np.float64(0.0)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2018,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2018,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.1757464855439065), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2018,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2018,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(21.76278613849968), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2018,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(2.6271917511038514), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2018,RAT-020,Days sales outstanding trend,trend,Medium,skipped,Insufficient history for dso,{'dso': np.float64(138.93161770420454)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2018,RAT-022,Days inventory outstanding trend,trend,Medium,skipped,Insufficient history for dio,{'dio': np.float64(16.771749613175356)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2018,RAT-024,Revenue growth rate,trend,Medium,pass,Validation passed,{'Revenue_Growth': np.float64(0.3416862673073162)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2018,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(0.3416862673073162), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2018,TR-002,Year-over-year expense variance,trend,Medium,skipped,Unavailable metrics: ['Total Expenses'],
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2018,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(2039.02018529734), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2018,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2018,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.3244398991076538), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2019,BS-001,Balance sheet equation,integrity,Critical,skipped,"Unavailable metrics: ['Total Assets', 'Total Liabilities']",
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2019,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(414.19), 'Reserves': np.float64(23958.13)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2019,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(5967.3), 'Net Cash Flow': np.float64(3974.71)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2019,CF-004,Financing activity plausibility,cross_statement,High,pass,Validation passed,"{'Borrowings': np.float64(27711.54), 'Dividend Amount': np.float64(41.42), 'Cash from Financing Activity': np.float64(2313.34)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2019,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(3990.22), 'Depreciation': np.float64(1373.48), 'Cash from Operating Activity': np.float64(6029.4)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2019,CF-008,Sustained negative operating cash flow,trend,High,pass,Validation passed,{'Cash from Operating Activity': np.float64(6029.4)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2019,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2019,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(41.42), 'Reserves': np.float64(23958.13)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2019,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'ADANI PORTS & SPECIAL ECONOMIC ZONE LTD', 'Year': np.int64(2019)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2019,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2019,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(5967.3), 'Inventory': np.float64(806.68)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2019,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2019,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(10925.44), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2019,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2019), 'Report Date': '2019-03-31'}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2019,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(0.9871465130923788), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2019,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(1385.19), 'Borrowings': np.float64(27711.54)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2019,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.2109683158350597), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2019,IS-010,Unusual expense spike detection,trend,High,skipped,Unavailable metrics: ['Total Expenses'],
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2019,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,pass,Validation passed,"{'Revenue_Growth': np.float64(-0.0351074277397428), 'Operating_CF_Growth': np.float64(0.0751158137992273)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2019,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(3990.22), 'Dividend Amount': np.float64(41.42), 'Reserves': np.float64(23958.13)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2019,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2019,LED-001,Accounting equation,integrity,Critical,skipped,"Unavailable metrics: ['Total Assets', 'Total Liabilities']",
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2019,RAT-005,Debt-to-equity ratio,ratio,High,pass,Validation passed,{'Debt_Equity_Ratio': np.float64(1.137008704957099)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2019,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2019,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2019,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2019,RAT-010,Gross profit margin trend,trend,Medium,pass,Validation passed,{'gross_margin': np.float64(0.9871465130923788)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2019,RAT-011,Net profit margin trend,trend,Medium,pass,Validation passed,{'Profit_Margin': np.float64(0.3652228194013238)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2019,RAT-012,Operating margin trend,trend,Medium,fail,Validation triggered,{'Operating_Margin': np.float64(0.0)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2019,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2019,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.1637193340642171), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2019,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2019,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(13.543710021321964), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2019,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(3.916405583476123), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2019,RAT-020,Days sales outstanding trend,trend,Medium,pass,Validation passed,{'dso': np.float64(93.19770187745296)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2019,RAT-022,Days inventory outstanding trend,trend,Medium,pass,Validation passed,{'dio': np.float64(26.94977959697733)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2019,RAT-024,Revenue growth rate,trend,Medium,fail,Validation triggered,{'Revenue_Growth': np.float64(-0.0351074277397428)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2019,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(-0.0351074277397428), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2019,TR-002,Year-over-year expense variance,trend,Medium,skipped,Unavailable metrics: ['Total Expenses'],
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2019,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(1562.789827551997), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2019,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2019,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.3652228194013238), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2020,BS-001,Balance sheet equation,integrity,Critical,skipped,"Unavailable metrics: ['Total Assets', 'Total Liabilities']",
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2020,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(406.35), 'Reserves': np.float64(25050.61)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2020,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(7313.86), 'Net Cash Flow': np.float64(2397.27)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2020,CF-004,Financing activity plausibility,cross_statement,High,pass,Validation passed,"{'Borrowings': np.float64(30242.32), 'Dividend Amount': np.float64(650.16), 'Cash from Financing Activity': np.float64(-4255.63)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2020,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(3763.13), 'Depreciation': np.float64(1680.28), 'Cash from Operating Activity': np.float64(7401.81)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2020,CF-008,Sustained negative operating cash flow,trend,High,pass,Validation passed,{'Cash from Operating Activity': np.float64(7401.81)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2020,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2020,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(650.16), 'Reserves': np.float64(25050.61)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2020,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'ADANI PORTS & SPECIAL ECONOMIC ZONE LTD', 'Year': np.int64(2020)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2020,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2020,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(7313.86), 'Inventory': np.float64(288.28)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2020,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2020,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(11873.07), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2020,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2020), 'Report Date': '2020-03-31'}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2020,IS-002,Gross margin consistency,trend,Medium,skipped,Unavailable metric values: ['gross_margin'],{'gross_margin': np.float64(nan)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2020,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(1950.64), 'Borrowings': np.float64(30242.32)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2020,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.1082466210484646), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2020,IS-010,Unusual expense spike detection,trend,High,skipped,Unavailable metrics: ['Total Expenses'],
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2020,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,pass,Validation passed,"{'Revenue_Growth': np.float64(0.0867360948392008), 'Operating_CF_Growth': np.float64(0.2276196636481242)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2020,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(3763.13), 'Dividend Amount': np.float64(650.16), 'Reserves': np.float64(25050.61)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2020,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2020,LED-001,Accounting equation,integrity,Critical,skipped,"Unavailable metrics: ['Total Assets', 'Total Liabilities']",
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2020,RAT-005,Debt-to-equity ratio,ratio,High,pass,Validation passed,{'Debt_Equity_Ratio': np.float64(1.1879784546151622)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2020,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2020,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2020,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2020,RAT-010,Gross profit margin trend,trend,Medium,skipped,Unavailable metric values: ['gross_margin'],{'gross_margin': np.float64(nan)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2020,RAT-011,Net profit margin trend,trend,Medium,pass,Validation passed,{'Profit_Margin': np.float64(0.316946670069325)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2020,RAT-012,Operating margin trend,trend,Medium,fail,Validation triggered,{'Operating_Margin': np.float64(0.0)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2020,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2020,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.1478232279109524), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2020,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2020,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(41.18589565700014), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2020,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(3.707854747137852), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2020,RAT-020,Days sales outstanding trend,trend,Medium,pass,Validation passed,{'dso': np.float64(98.4396706159401)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2020,RAT-022,Days inventory outstanding trend,trend,Medium,pass,Validation passed,{'dio': np.float64(8.862257192116276)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2020,RAT-024,Revenue growth rate,trend,Medium,pass,Validation passed,{'Revenue_Growth': np.float64(0.0867360948392008)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2020,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(0.0867360948392008), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2020,TR-002,Year-over-year expense variance,trend,Medium,skipped,Unavailable metrics: ['Total Expenses'],
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2020,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(475.85813351600206), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2020,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2020,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.316946670069325), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2021,BS-001,Balance sheet equation,integrity,Critical,skipped,"Unavailable metrics: ['Total Assets', 'Total Liabilities']",
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2021,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(406.35), 'Reserves': np.float64(30035.38)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2021,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(4700.78), 'Net Cash Flow': np.float64(-2994.49)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2021,CF-004,Financing activity plausibility,cross_statement,High,pass,Validation passed,"{'Borrowings': np.float64(35855.33), 'Dividend Amount': np.float64(1015.88), 'Cash from Financing Activity': np.float64(3513.85)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2021,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(4994.3), 'Depreciation': np.float64(2107.34), 'Cash from Operating Activity': np.float64(7555.78)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2021,CF-008,Sustained negative operating cash flow,trend,High,pass,Validation passed,{'Cash from Operating Activity': np.float64(7555.78)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2021,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2021,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(1015.88), 'Reserves': np.float64(30035.38)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2021,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'ADANI PORTS & SPECIAL ECONOMIC ZONE LTD', 'Year': np.int64(2021)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2021,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2021,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(4700.78), 'Inventory': np.float64(991.85)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2021,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2021,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(12549.6), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2021,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2021), 'Report Date': '2021-03-31'}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2021,IS-002,Gross margin consistency,trend,Medium,skipped,Unavailable metric values: ['gross_margin'],{'gross_margin': np.float64(nan)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2021,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(2255.29), 'Borrowings': np.float64(35855.33)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2021,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.1975950451445563), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2021,IS-010,Unusual expense spike detection,trend,High,skipped,Unavailable metrics: ['Total Expenses'],
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2021,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,pass,Validation passed,"{'Revenue_Growth': np.float64(0.056980208151725), 'Operating_CF_Growth': np.float64(0.0208016687810141)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2021,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(4994.3), 'Dividend Amount': np.float64(1015.88), 'Reserves': np.float64(30035.38)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2021,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2021,LED-001,Accounting equation,integrity,Critical,skipped,"Unavailable metrics: ['Total Assets', 'Total Liabilities']",
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2021,RAT-005,Debt-to-equity ratio,ratio,High,pass,Validation passed,{'Debt_Equity_Ratio': np.float64(1.1778348339598308)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2021,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2021,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2021,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2021,RAT-010,Gross profit margin trend,trend,Medium,skipped,Unavailable metric values: ['gross_margin'],{'gross_margin': np.float64(nan)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2021,RAT-011,Net profit margin trend,trend,Medium,pass,Validation passed,{'Profit_Margin': np.float64(0.3979648753745139)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2021,RAT-012,Operating margin trend,trend,Medium,fail,Validation triggered,{'Operating_Margin': np.float64(0.0)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2021,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2021,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.1640609781375762), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2021,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2021,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(12.652719665271968), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2021,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(4.289420345830584), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2021,RAT-020,Days sales outstanding trend,trend,Medium,pass,Validation passed,{'dso': np.float64(85.09308264805253)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2021,RAT-022,Days inventory outstanding trend,trend,Medium,pass,Validation passed,{'dio': np.float64(28.847552910052908)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2021,RAT-024,Revenue growth rate,trend,Medium,pass,Validation passed,{'Revenue_Growth': np.float64(0.056980208151725)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2021,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(0.056980208151725), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2021,TR-002,Year-over-year expense variance,trend,Medium,skipped,Unavailable metrics: ['Total Expenses'],
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2021,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(815.8422195702624), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2021,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2021,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.3979648753745139), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2022,BS-001,Balance sheet equation,integrity,Critical,skipped,"Unavailable metrics: ['Total Assets', 'Total Liabilities']",
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2022,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(422.47), 'Reserves': np.float64(41399.22)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2022,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(10667.41), 'Net Cash Flow': np.float64(4341.24)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2022,CF-004,Financing activity plausibility,cross_statement,High,fail,Validation triggered,"{'Borrowings': np.float64(47934.75), 'Dividend Amount': np.float64(1056.18), 'Cash from Financing Activity': np.float64(-585.77)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2022,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(4886.03), 'Depreciation': np.float64(3099.3), 'Cash from Operating Activity': np.float64(10420.14)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2022,CF-008,Sustained negative operating cash flow,trend,High,pass,Validation passed,{'Cash from Operating Activity': np.float64(10420.14)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2022,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2022,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(1056.18), 'Reserves': np.float64(41399.22)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2022,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'ADANI PORTS & SPECIAL ECONOMIC ZONE LTD', 'Year': np.int64(2022)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2022,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2022,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(10667.41), 'Inventory': np.float64(395.64)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2022,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2022,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(17118.79), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2022,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2022), 'Report Date': '2022-03-31'}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2022,IS-002,Gross margin consistency,trend,Medium,skipped,Unavailable metric values: ['gross_margin'],{'gross_margin': np.float64(nan)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2022,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(2543.92), 'Borrowings': np.float64(47934.75)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2022,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.1336262536862837), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2022,IS-010,Unusual expense spike detection,trend,High,skipped,Unavailable metrics: ['Total Expenses'],
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2022,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,pass,Validation passed,"{'Revenue_Growth': np.float64(0.3640904889398866), 'Operating_CF_Growth': np.float64(0.3790952092305493)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2022,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(4886.03), 'Dividend Amount': np.float64(1056.18), 'Reserves': np.float64(41399.22)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2022,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2022,LED-001,Accounting equation,integrity,Critical,skipped,"Unavailable metrics: ['Total Assets', 'Total Liabilities']",
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2022,RAT-005,Debt-to-equity ratio,ratio,High,pass,Validation passed,{'Debt_Equity_Ratio': np.float64(1.1461696072062129)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2022,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2022,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2022,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2022,RAT-010,Gross profit margin trend,trend,Medium,skipped,Unavailable metric values: ['gross_margin'],{'gross_margin': np.float64(nan)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2022,RAT-011,Net profit margin trend,trend,Medium,pass,Validation passed,{'Profit_Margin': np.float64(0.2854191213280845)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2022,RAT-012,Operating margin trend,trend,Medium,fail,Validation triggered,{'Operating_Margin': np.float64(0.0)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2022,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2022,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.1168300468010737), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2022,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2022,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(43.26860277019513), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2022,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(6.79009892350286), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2022,RAT-020,Days sales outstanding trend,trend,Medium,pass,Validation passed,{'dso': np.float64(53.75473967494197)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2022,RAT-022,Days inventory outstanding trend,trend,Medium,pass,Validation passed,{'dio': np.float64(8.435677988923281)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2022,RAT-024,Revenue growth rate,trend,Medium,pass,Validation passed,{'Revenue_Growth': np.float64(0.3640904889398866)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2022,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(0.3640904889398866), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2022,TR-002,Year-over-year expense variance,trend,Medium,skipped,Unavailable metrics: ['Total Expenses'],
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2022,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(2853.441443105733), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2022,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2022,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.2854191213280845), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2023,BS-001,Balance sheet equation,integrity,Critical,skipped,"Unavailable metrics: ['Total Assets', 'Total Liabilities']",
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2023,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(432.03), 'Reserves': np.float64(44957.36)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2023,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(4334.31), 'Net Cash Flow': np.float64(-7550.23)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2023,CF-004,Financing activity plausibility,cross_statement,High,pass,Validation passed,"{'Borrowings': np.float64(53434.22), 'Dividend Amount': np.float64(1080.08), 'Cash from Financing Activity': np.float64(-2733.8)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2023,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(5308.85), 'Depreciation': np.float64(3424.71), 'Cash from Operating Activity': np.float64(11899.5)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2023,CF-008,Sustained negative operating cash flow,trend,High,pass,Validation passed,{'Cash from Operating Activity': np.float64(11899.5)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2023,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2023,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(1080.08), 'Reserves': np.float64(44957.36)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2023,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'ADANI PORTS & SPECIAL ECONOMIC ZONE LTD', 'Year': np.int64(2023)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2023,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2023,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(4334.31), 'Inventory': np.float64(451.97)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2023,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2023,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(20851.91), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2023,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2023), 'Report Date': '2023-03-31'}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2023,IS-002,Gross margin consistency,trend,Medium,skipped,Unavailable metric values: ['gross_margin'],{'gross_margin': np.float64(nan)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2023,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(2362.64), 'Borrowings': np.float64(53434.22)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2023,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.0175035402568668), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2023,IS-010,Unusual expense spike detection,trend,High,skipped,Unavailable metrics: ['Total Expenses'],
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2023,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,pass,Validation passed,"{'Revenue_Growth': np.float64(0.2180714875292002), 'Operating_CF_Growth': np.float64(0.1419712211160311)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2023,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(5308.85), 'Dividend Amount': np.float64(1080.08), 'Reserves': np.float64(44957.36)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2023,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2023,LED-001,Accounting equation,integrity,Critical,skipped,"Unavailable metrics: ['Total Assets', 'Total Liabilities']",
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2023,RAT-005,Debt-to-equity ratio,ratio,High,pass,Validation passed,{'Debt_Equity_Ratio': np.float64(1.1772403198192354)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2023,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2023,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2023,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2023,RAT-010,Gross profit margin trend,trend,Medium,skipped,Unavailable metric values: ['gross_margin'],{'gross_margin': np.float64(nan)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2023,RAT-011,Net profit margin trend,trend,Medium,fail,Validation triggered,{'Profit_Margin': np.float64(0.2545977802513055)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2023,RAT-012,Operating margin trend,trend,Medium,fail,Validation triggered,{'Operating_Margin': np.float64(0.0)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2023,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2023,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.1169623561805964), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2023,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2023,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(46.1356063455539), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2023,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(5.269532760350461), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2023,RAT-020,Days sales outstanding trend,trend,Medium,pass,Validation passed,{'dso': np.float64(69.26610320109765)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2023,RAT-022,Days inventory outstanding trend,trend,Medium,pass,Validation passed,{'dio': np.float64(7.911459909427962)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2023,RAT-024,Revenue growth rate,trend,Medium,pass,Validation passed,{'Revenue_Growth': np.float64(0.2180714875292002)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2023,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(0.2180714875292002), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2023,TR-002,Year-over-year expense variance,trend,Medium,skipped,Unavailable metrics: ['Total Expenses'],
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2023,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(4158.165331140643), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2023,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2023,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.2545977802513055), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2024,BS-001,Balance sheet equation,integrity,Critical,skipped,"Unavailable metrics: ['Total Assets', 'Total Liabilities']",
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2024,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(432.03), 'Reserves': np.float64(52346.21)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2024,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(7631.88), 'Net Cash Flow': np.float64(270.92)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2024,CF-004,Financing activity plausibility,cross_statement,High,pass,Validation passed,"{'Borrowings': np.float64(49470.24), 'Dividend Amount': np.float64(1296.09), 'Cash from Financing Activity': np.float64(-7800.11)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2024,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(8110.64), 'Depreciation': np.float64(3888.46), 'Cash from Operating Activity': np.float64(15017.58)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2024,CF-008,Sustained negative operating cash flow,trend,High,pass,Validation passed,{'Cash from Operating Activity': np.float64(15017.58)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2024,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2024,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(1296.09), 'Reserves': np.float64(52346.21)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2024,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'ADANI PORTS & SPECIAL ECONOMIC ZONE LTD', 'Year': np.int64(2024)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2024,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2024,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(7631.88), 'Inventory': np.float64(437.51)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2024,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2024,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(26710.56), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2024,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2024), 'Report Date': '2024-03-31'}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2024,IS-002,Gross margin consistency,trend,Medium,skipped,Unavailable metric values: ['gross_margin'],{'gross_margin': np.float64(nan)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2024,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(2732.94), 'Borrowings': np.float64(49470.24)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2024,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.1592124142896716), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2024,IS-010,Unusual expense spike detection,trend,High,skipped,Unavailable metrics: ['Total Expenses'],
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2024,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,pass,Validation passed,"{'Revenue_Growth': np.float64(0.2809646694235685), 'Operating_CF_Growth': np.float64(0.2620345392663556)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2024,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(8110.64), 'Dividend Amount': np.float64(1296.09), 'Reserves': np.float64(52346.21)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2024,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2024,LED-001,Accounting equation,integrity,Critical,skipped,"Unavailable metrics: ['Total Assets', 'Total Liabilities']",
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2024,RAT-005,Debt-to-equity ratio,ratio,High,pass,Validation passed,{'Debt_Equity_Ratio': np.float64(0.9373226541847548)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2024,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2024,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2024,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2024,RAT-010,Gross profit margin trend,trend,Medium,skipped,Unavailable metric values: ['gross_margin'],{'gross_margin': np.float64(nan)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2024,RAT-011,Net profit margin trend,trend,Medium,pass,Validation passed,{'Profit_Margin': np.float64(0.3036491934276181)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2024,RAT-012,Operating margin trend,trend,Medium,fail,Validation triggered,{'Operating_Margin': np.float64(0.0)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2024,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2024,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.1536739383503504), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2024,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2024,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(61.05131311284314), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2024,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(7.284155181159223), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2024,RAT-020,Days sales outstanding trend,trend,Medium,pass,Validation passed,{'dso': np.float64(50.10876222737374)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2024,RAT-022,Days inventory outstanding trend,trend,Medium,pass,Validation passed,{'dio': np.float64(5.9785773866216205)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2024,RAT-024,Revenue growth rate,trend,Medium,pass,Validation passed,{'Revenue_Growth': np.float64(0.2809646694235685)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2024,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(0.2809646694235685), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2024,TR-002,Year-over-year expense variance,trend,Medium,skipped,Unavailable metrics: ['Total Expenses'],
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2024,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(4834.977016315585), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2024,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2024,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.3036491934276181), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2025,BS-001,Balance sheet equation,integrity,Critical,skipped,"Unavailable metrics: ['Total Assets', 'Total Liabilities']",
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2025,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(432.03), 'Reserves': np.float64(61836.83)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2025,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(6605.97), 'Net Cash Flow': np.float64(523.23)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2025,CF-004,Financing activity plausibility,cross_statement,High,pass,Validation passed,"{'Borrowings': np.float64(51620.73), 'Dividend Amount': np.float64(1512.1), 'Cash from Financing Activity': np.float64(-6915.52)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2025,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(11092.31), 'Depreciation': np.float64(4378.93), 'Cash from Operating Activity': np.float64(17226.28)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2025,CF-008,Sustained negative operating cash flow,trend,High,pass,Validation passed,{'Cash from Operating Activity': np.float64(17226.28)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2025,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2025,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(1512.1), 'Reserves': np.float64(61836.83)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2025,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'ADANI PORTS & SPECIAL ECONOMIC ZONE LTD', 'Year': np.int64(2025)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2025,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2025,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(6605.97), 'Inventory': np.float64(521.8)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2025,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2025,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(30475.33), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2025,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2025), 'Report Date': '2025-03-31'}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2025,IS-002,Gross margin consistency,trend,Medium,skipped,Unavailable metric values: ['gross_margin'],{'gross_margin': np.float64(nan)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2025,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(2812.67), 'Borrowings': np.float64(51620.73)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2025,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.1510681048257738), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2025,IS-010,Unusual expense spike detection,trend,High,skipped,Unavailable metrics: ['Total Expenses'],
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2025,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,pass,Validation passed,"{'Revenue_Growth': np.float64(0.1409468764413775), 'Operating_CF_Growth': np.float64(0.1470742955922324)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2025,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(11092.31), 'Dividend Amount': np.float64(1512.1), 'Reserves': np.float64(61836.83)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2025,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2025,LED-001,Accounting equation,integrity,Critical,skipped,"Unavailable metrics: ['Total Assets', 'Total Liabilities']",
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2025,RAT-005,Debt-to-equity ratio,ratio,High,pass,Validation passed,{'Debt_Equity_Ratio': np.float64(0.8289975117578835)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2025,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2025,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2025,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2025,RAT-010,Gross profit margin trend,trend,Medium,skipped,Unavailable metric values: ['gross_margin'],{'gross_margin': np.float64(nan)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2025,RAT-011,Net profit margin trend,trend,Medium,pass,Validation passed,{'Profit_Margin': np.float64(0.3639766985295975)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2025,RAT-012,Operating margin trend,trend,Medium,fail,Validation triggered,{'Operating_Margin': np.float64(0.0)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2025,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2025,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.1781357487514626), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2025,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2025,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(58.40423533921044), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2025,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(6.875644126379627), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2025,RAT-020,Days sales outstanding trend,trend,Medium,pass,Validation passed,{'dso': np.float64(53.085935410707606)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2025,RAT-022,Days inventory outstanding trend,trend,Medium,pass,Validation passed,{'dio': np.float64(6.249546764546929)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2025,RAT-024,Revenue growth rate,trend,Medium,pass,Validation passed,{'Revenue_Growth': np.float64(0.1409468764413775)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2025,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(0.1409468764413775), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2025,TR-002,Year-over-year expense variance,trend,Medium,skipped,Unavailable metrics: ['Total Expenses'],
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2025,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(4849.527218739983), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2025,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2025,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.3639766985295975), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2026,BS-001,Balance sheet equation,integrity,Critical,skipped,"Unavailable metrics: ['Total Assets', 'Total Liabilities']",
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2026,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(460.79), 'Reserves': np.float64(95497.98)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2026,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(8483.51), 'Net Cash Flow': np.float64(1682.15)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2026,CF-004,Financing activity plausibility,cross_statement,High,pass,Validation passed,"{'Borrowings': np.float64(63565.52), 'Dividend Amount': np.float64(1727.96), 'Cash from Financing Activity': np.float64(-5483.4)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2026,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(12806.21), 'Depreciation': np.float64(5517.38), 'Cash from Operating Activity': np.float64(20356.25)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2026,CF-008,Sustained negative operating cash flow,trend,High,pass,Validation passed,{'Cash from Operating Activity': np.float64(20356.25)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2026,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2026,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(1727.96), 'Reserves': np.float64(95497.98)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2026,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'ADANI PORTS & SPECIAL ECONOMIC ZONE LTD', 'Year': np.int64(2026)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2026,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2026,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(8483.51), 'Inventory': np.float64(685.0)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2026,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2026,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(38735.77), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2026,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2026), 'Report Date': '2026-03-31'}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2026,IS-002,Gross margin consistency,trend,Medium,skipped,Unavailable metric values: ['gross_margin'],{'gross_margin': np.float64(nan)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2026,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(4653.98), 'Borrowings': np.float64(63565.52)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2026,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.1391737649980873), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2026,IS-010,Unusual expense spike detection,trend,High,skipped,Unavailable metrics: ['Total Expenses'],
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2026,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,pass,Validation passed,"{'Revenue_Growth': np.float64(0.2710533405216611), 'Operating_CF_Growth': np.float64(0.1816973833003992)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2026,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(12806.21), 'Dividend Amount': np.float64(1727.96), 'Reserves': np.float64(95497.98)}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2026,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2026,LED-001,Accounting equation,integrity,Critical,skipped,"Unavailable metrics: ['Total Assets', 'Total Liabilities']",
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2026,RAT-005,Debt-to-equity ratio,ratio,High,pass,Validation passed,{'Debt_Equity_Ratio': np.float64(0.6624253312125614)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2026,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2026,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2026,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2026,RAT-010,Gross profit margin trend,trend,Medium,skipped,Unavailable metric values: ['gross_margin'],{'gross_margin': np.float64(nan)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2026,RAT-011,Net profit margin trend,trend,Medium,pass,Validation passed,{'Profit_Margin': np.float64(0.330604245120208)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2026,RAT-012,Operating margin trend,trend,Medium,fail,Validation triggered,{'Operating_Margin': np.float64(0.0)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2026,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2026,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.133455337120307), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2026,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2026,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(56.54856934306569), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2026,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(6.069021110717676), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2026,RAT-020,Days sales outstanding trend,trend,Medium,fail,Validation triggered,{'dso': np.float64(60.14149454109213)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2026,RAT-022,Days inventory outstanding trend,trend,Medium,fail,Validation triggered,{'dio': np.float64(6.454628370624878)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2026,RAT-024,Revenue growth rate,trend,Medium,pass,Validation passed,{'Revenue_Growth': np.float64(0.2710533405216611)}
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2026,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(0.2710533405216611), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2026,TR-002,Year-over-year expense variance,trend,Medium,skipped,Unavailable metrics: ['Total Expenses'],
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2026,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(6151.070878183182), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2026,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+ADANI PORTS & SPECIAL ECONOMIC ZONE LTD,2026,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.330604245120208), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"

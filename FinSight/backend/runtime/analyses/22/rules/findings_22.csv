@@ -1,0 +1,421 @@
+Company,Year,Rule ID,Rule Description,Category,Severity,Status,Message,Observed
+AARTI DRUGS LTD,2017,BS-001,Balance sheet equation,integrity,Critical,pass,Validation passed,"{'Total Assets': np.float64(1191.04), 'Total Liabilities': np.float64(1191.04), 'Equity Share Capital': np.float64(23.86), 'Reserves': np.float64(376.28)}"
+AARTI DRUGS LTD,2017,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(23.86), 'Reserves': np.float64(376.28)}"
+AARTI DRUGS LTD,2017,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,skipped,Unavailable prior-year Cash & Bank,"{'Cash & Bank': np.float64(4.17), 'Net Cash Flow': np.float64(-0.45)}"
+AARTI DRUGS LTD,2017,CF-004,Financing activity plausibility,cross_statement,High,skipped,Unavailable prior-year Borrowings,"{'Borrowings': np.float64(479.5), 'Dividend Amount': np.float64(2.39), 'Cash from Financing Activity': np.float64(-68.23)}"
+AARTI DRUGS LTD,2017,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(81.8), 'Depreciation': np.float64(38.46), 'Cash from Operating Activity': np.float64(174.75)}"
+AARTI DRUGS LTD,2017,CF-008,Sustained negative operating cash flow,trend,High,skipped,Insufficient history for Cash from Operating Activity,{'Cash from Operating Activity': np.float64(174.75)}
+AARTI DRUGS LTD,2017,CF-009,Cash flow versus net income divergence,cross_statement,High,pass,Validation passed,"{'Operating_CF_Ratio': np.float64(0.146720513164965), 'robust_z': None}"
+AARTI DRUGS LTD,2017,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(2.39), 'Reserves': np.float64(376.28)}"
+AARTI DRUGS LTD,2017,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'AARTI DRUGS LTD', 'Year': np.int64(2017)}"
+AARTI DRUGS LTD,2017,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+AARTI DRUGS LTD,2017,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(4.17), 'Inventory': np.float64(209.63)}"
+AARTI DRUGS LTD,2017,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+AARTI DRUGS LTD,2017,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(1195.17), 'robust_z': None}"
+AARTI DRUGS LTD,2017,DV-018,Reporting date consistency,data_completeness,Medium,skipped,Unavailable metrics: ['Report Date'],
+AARTI DRUGS LTD,2017,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(0.3591790289247555), 'robust_z': None}"
+AARTI DRUGS LTD,2017,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(40.02), 'Borrowings': np.float64(479.5)}"
+AARTI DRUGS LTD,2017,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.2948883716920955), 'robust_z': None}"
+AARTI DRUGS LTD,2017,IS-010,Unusual expense spike detection,trend,High,skipped,Unavailable prior-year Total Expenses,{'Total Expenses': np.float64(1084.0199999999998)}
+AARTI DRUGS LTD,2017,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,skipped,"Unavailable metric values: ['Revenue_Growth', 'Operating_CF_Growth']","{'Revenue_Growth': np.float64(nan), 'Operating_CF_Growth': np.float64(nan)}"
+AARTI DRUGS LTD,2017,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,skipped,Unavailable prior-year Reserves,"{'Net profit': np.float64(81.8), 'Dividend Amount': np.float64(2.39), 'Reserves': np.float64(376.28)}"
+AARTI DRUGS LTD,2017,IS-016,Depreciation expense consistency,trend,Medium,pass,Validation passed,"{'Depreciation_Ratio': np.float64(0.0322911069317571), 'robust_z': None}"
+AARTI DRUGS LTD,2017,LED-001,Accounting equation,integrity,Critical,pass,Validation passed,"{'Total Assets': np.float64(1191.04), 'Total Liabilities': np.float64(1191.04), 'Equity Share Capital': np.float64(23.86), 'Reserves': np.float64(376.28)}"
+AARTI DRUGS LTD,2017,RAT-005,Debt-to-equity ratio,ratio,High,pass,Validation passed,{'Debt_Equity_Ratio': np.float64(1.1983305842954963)}
+AARTI DRUGS LTD,2017,RAT-006,Debt-to-assets ratio,ratio,High,pass,Validation passed,{'Debt_Ratio': np.float64(0.4025893336915637)}
+AARTI DRUGS LTD,2017,RAT-007,Equity ratio,ratio,High,pass,Validation passed,{'Equity_Ratio': np.float64(0.335958490059108)}
+AARTI DRUGS LTD,2017,RAT-008,Interest coverage ratio,ratio,High,pass,Validation passed,{'Interest_Coverage_Ratio': np.float64(2.877311344327844)}
+AARTI DRUGS LTD,2017,RAT-010,Gross profit margin trend,trend,Medium,skipped,Insufficient history for gross_margin,{'gross_margin': np.float64(0.3591790289247555)}
+AARTI DRUGS LTD,2017,RAT-011,Net profit margin trend,trend,Medium,skipped,Insufficient history for Profit_Margin,{'Profit_Margin': np.float64(0.0684421463055464)}
+AARTI DRUGS LTD,2017,RAT-012,Operating margin trend,trend,Medium,skipped,Insufficient history for Operating_Margin,{'Operating_Margin': np.float64(0.0963461264924657)}
+AARTI DRUGS LTD,2017,RAT-014,Return on assets outlier,ratio,Medium,pass,Validation passed,"{'ROA': np.float64(0.0686794734013971), 'robust_z': None}"
+AARTI DRUGS LTD,2017,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.2044284500424851), 'robust_z': None}"
+AARTI DRUGS LTD,2017,RAT-017,Asset turnover outlier,ratio,Medium,pass,Validation passed,"{'Asset_Utilization_Ratio': np.float64(1.0034675577646428), 'robust_z': None}"
+AARTI DRUGS LTD,2017,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(5.701330916376473), 'robust_z': None}"
+AARTI DRUGS LTD,2017,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(4.026717428658064), 'robust_z': None}"
+AARTI DRUGS LTD,2017,RAT-020,Days sales outstanding trend,trend,Medium,skipped,Insufficient history for dso,{'dso': np.float64(90.64455265778088)}
+AARTI DRUGS LTD,2017,RAT-022,Days inventory outstanding trend,trend,Medium,skipped,Insufficient history for dio,{'dio': np.float64(64.02013939439577)}
+AARTI DRUGS LTD,2017,RAT-024,Revenue growth rate,trend,Medium,skipped,Unavailable metric values: ['Revenue_Growth'],{'Revenue_Growth': np.float64(nan)}
+AARTI DRUGS LTD,2017,TR-001,Year-over-year revenue variance,trend,Medium,skipped,Unavailable metric values: ['Revenue_Growth'],{'Revenue_Growth': np.float64(nan)}
+AARTI DRUGS LTD,2017,TR-002,Year-over-year expense variance,trend,Medium,skipped,Unavailable prior-year Total Expenses,{'Total Expenses': np.float64(1084.0199999999998)}
+AARTI DRUGS LTD,2017,TR-003,Multi-year trend consistency,trend,Medium,skipped,Unavailable metric values: ['Revenue_Volatility'],{'Revenue_Volatility': np.float64(nan)}
+AARTI DRUGS LTD,2017,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.9070006777278544), 'robust_z': None}"
+AARTI DRUGS LTD,2017,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.0684421463055464), 'Operating_Margin': np.float64(0.0963461264924657), 'robust_z': None}"
+AARTI DRUGS LTD,2018,BS-001,Balance sheet equation,integrity,Critical,pass,Validation passed,"{'Total Assets': np.float64(1389.42), 'Total Liabilities': np.float64(1389.42), 'Equity Share Capital': np.float64(23.58), 'Reserves': np.float64(431.85)}"
+AARTI DRUGS LTD,2018,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(23.58), 'Reserves': np.float64(431.85)}"
+AARTI DRUGS LTD,2018,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(4.27), 'Net Cash Flow': np.float64(0.15)}"
+AARTI DRUGS LTD,2018,CF-004,Financing activity plausibility,cross_statement,High,fail,Validation triggered,"{'Borrowings': np.float64(546.25), 'Dividend Amount': np.float64(2.36), 'Cash from Financing Activity': np.float64(3.92)}"
+AARTI DRUGS LTD,2018,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(82.31), 'Depreciation': np.float64(40.06), 'Cash from Operating Activity': np.float64(69.77)}"
+AARTI DRUGS LTD,2018,CF-008,Sustained negative operating cash flow,trend,High,skipped,Insufficient history for Cash from Operating Activity,{'Cash from Operating Activity': np.float64(69.77)}
+AARTI DRUGS LTD,2018,CF-009,Cash flow versus net income divergence,cross_statement,High,pass,Validation passed,"{'Operating_CF_Ratio': np.float64(0.0502151977083963), 'robust_z': None}"
+AARTI DRUGS LTD,2018,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(2.36), 'Reserves': np.float64(431.85)}"
+AARTI DRUGS LTD,2018,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'AARTI DRUGS LTD', 'Year': np.int64(2018)}"
+AARTI DRUGS LTD,2018,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+AARTI DRUGS LTD,2018,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(4.27), 'Inventory': np.float64(278.21)}"
+AARTI DRUGS LTD,2018,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+AARTI DRUGS LTD,2018,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(1243.63), 'robust_z': None}"
+AARTI DRUGS LTD,2018,DV-018,Reporting date consistency,data_completeness,Medium,skipped,Unavailable metrics: ['Report Date'],
+AARTI DRUGS LTD,2018,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(0.3390960333861358), 'robust_z': None}"
+AARTI DRUGS LTD,2018,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(38.36), 'Borrowings': np.float64(546.25)}"
+AARTI DRUGS LTD,2018,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.3389286001124408), 'robust_z': None}"
+AARTI DRUGS LTD,2018,IS-010,Unusual expense spike detection,trend,High,pass,Validation passed,{'Total Expenses': np.float64(1229.91)}
+AARTI DRUGS LTD,2018,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,fail,Validation triggered,"{'Revenue_Growth': np.float64(0.0405465331291783), 'Operating_CF_Growth': np.float64(-0.6007439198855509)}"
+AARTI DRUGS LTD,2018,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(82.31), 'Dividend Amount': np.float64(2.36), 'Reserves': np.float64(431.85)}"
+AARTI DRUGS LTD,2018,IS-016,Depreciation expense consistency,trend,Medium,pass,Validation passed,"{'Depreciation_Ratio': np.float64(0.0288321745764419), 'robust_z': None}"
+AARTI DRUGS LTD,2018,LED-001,Accounting equation,integrity,Critical,pass,Validation passed,"{'Total Assets': np.float64(1389.42), 'Total Liabilities': np.float64(1389.42), 'Equity Share Capital': np.float64(23.58), 'Reserves': np.float64(431.85)}"
+AARTI DRUGS LTD,2018,RAT-005,Debt-to-equity ratio,ratio,High,pass,Validation passed,{'Debt_Equity_Ratio': np.float64(1.1994159365874009)}
+AARTI DRUGS LTD,2018,RAT-006,Debt-to-assets ratio,ratio,High,pass,Validation passed,{'Debt_Ratio': np.float64(0.3931496595701803)}
+AARTI DRUGS LTD,2018,RAT-007,Equity ratio,ratio,High,pass,Validation passed,{'Equity_Ratio': np.float64(0.327784255300773)}
+AARTI DRUGS LTD,2018,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.3850364963503716)}
+AARTI DRUGS LTD,2018,RAT-010,Gross profit margin trend,trend,Medium,skipped,Insufficient history for gross_margin,{'gross_margin': np.float64(0.3390960333861358)}
+AARTI DRUGS LTD,2018,RAT-011,Net profit margin trend,trend,Medium,skipped,Insufficient history for Profit_Margin,{'Profit_Margin': np.float64(0.0661852801878372)}
+AARTI DRUGS LTD,2018,RAT-012,Operating margin trend,trend,Medium,skipped,Insufficient history for Operating_Margin,{'Operating_Margin': np.float64(0.011876522759985)}
+AARTI DRUGS LTD,2018,RAT-014,Return on assets outlier,ratio,Medium,pass,Validation passed,"{'ROA': np.float64(0.0592405464150508), 'robust_z': None}"
+AARTI DRUGS LTD,2018,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.1807302988384603), 'robust_z': None}"
+AARTI DRUGS LTD,2018,RAT-017,Asset turnover outlier,ratio,Medium,pass,Validation passed,"{'Asset_Utilization_Ratio': np.float64(0.895071324725425), 'robust_z': None}"
+AARTI DRUGS LTD,2018,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(4.470112504942311), 'robust_z': None}"
+AARTI DRUGS LTD,2018,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(3.3168773670453944), 'robust_z': None}"
+AARTI DRUGS LTD,2018,RAT-020,Days sales outstanding trend,trend,Medium,skipped,Insufficient history for dso,{'dso': np.float64(110.04326045528008)}
+AARTI DRUGS LTD,2018,RAT-022,Days inventory outstanding trend,trend,Medium,skipped,Insufficient history for dio,{'dio': np.float64(81.65342585817324)}
+AARTI DRUGS LTD,2018,RAT-024,Revenue growth rate,trend,Medium,pass,Validation passed,{'Revenue_Growth': np.float64(0.0405465331291783)}
+AARTI DRUGS LTD,2018,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(0.0405465331291783), 'robust_z': None}"
+AARTI DRUGS LTD,2018,TR-002,Year-over-year expense variance,trend,Medium,pass,Validation passed,{'Total Expenses': np.float64(1229.91)}
+AARTI DRUGS LTD,2018,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(34.26639461630012), 'robust_z': None}"
+AARTI DRUGS LTD,2018,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.9889677798058908), 'robust_z': None}"
+AARTI DRUGS LTD,2018,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.0661852801878372), 'Operating_Margin': np.float64(0.011876522759985), 'robust_z': None}"
+AARTI DRUGS LTD,2019,BS-001,Balance sheet equation,integrity,Critical,pass,Validation passed,"{'Total Assets': np.float64(1455.49), 'Total Liabilities': np.float64(1455.49), 'Equity Share Capital': np.float64(23.58), 'Reserves': np.float64(519.86)}"
+AARTI DRUGS LTD,2019,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(23.58), 'Reserves': np.float64(519.86)}"
+AARTI DRUGS LTD,2019,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(5.55), 'Net Cash Flow': np.float64(1.35)}"
+AARTI DRUGS LTD,2019,CF-004,Financing activity plausibility,cross_statement,High,pass,Validation passed,"{'Borrowings': np.float64(507.21), 'Dividend Amount': np.float64(2.36), 'Cash from Financing Activity': np.float64(-80.07)}"
+AARTI DRUGS LTD,2019,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(89.75), 'Depreciation': np.float64(42.56), 'Cash from Operating Activity': np.float64(143.09)}"
+AARTI DRUGS LTD,2019,CF-008,Sustained negative operating cash flow,trend,High,pass,Validation passed,{'Cash from Operating Activity': np.float64(143.09)}
+AARTI DRUGS LTD,2019,CF-009,Cash flow versus net income divergence,cross_statement,High,pass,Validation passed,"{'Operating_CF_Ratio': np.float64(0.0983105345965963), 'robust_z': None}"
+AARTI DRUGS LTD,2019,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(2.36), 'Reserves': np.float64(519.86)}"
+AARTI DRUGS LTD,2019,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'AARTI DRUGS LTD', 'Year': np.int64(2019)}"
+AARTI DRUGS LTD,2019,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+AARTI DRUGS LTD,2019,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(5.55), 'Inventory': np.float64(246.61)}"
+AARTI DRUGS LTD,2019,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+AARTI DRUGS LTD,2019,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(1560.94), 'robust_z': None}"
+AARTI DRUGS LTD,2019,DV-018,Reporting date consistency,data_completeness,Medium,skipped,Unavailable metrics: ['Report Date'],
+AARTI DRUGS LTD,2019,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(0.3425051571488975), 'robust_z': None}"
+AARTI DRUGS LTD,2019,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(43.51), 'Borrowings': np.float64(507.21)}"
+AARTI DRUGS LTD,2019,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.314966038311837), 'robust_z': None}"
+AARTI DRUGS LTD,2019,IS-010,Unusual expense spike detection,trend,High,pass,Validation passed,{'Total Expenses': np.float64(1402.45)}
+AARTI DRUGS LTD,2019,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,pass,Validation passed,"{'Revenue_Growth': np.float64(0.2551482354076373), 'Operating_CF_Growth': np.float64(1.0508814676795186)}"
+AARTI DRUGS LTD,2019,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(89.75), 'Dividend Amount': np.float64(2.36), 'Reserves': np.float64(519.86)}"
+AARTI DRUGS LTD,2019,IS-016,Depreciation expense consistency,trend,Medium,pass,Validation passed,"{'Depreciation_Ratio': np.float64(0.0292410116180805), 'robust_z': None}"
+AARTI DRUGS LTD,2019,LED-001,Accounting equation,integrity,Critical,pass,Validation passed,"{'Total Assets': np.float64(1455.49), 'Total Liabilities': np.float64(1455.49), 'Equity Share Capital': np.float64(23.58), 'Reserves': np.float64(519.86)}"
+AARTI DRUGS LTD,2019,RAT-005,Debt-to-equity ratio,ratio,High,pass,Validation passed,{'Debt_Equity_Ratio': np.float64(0.9333321065803032)}
+AARTI DRUGS LTD,2019,RAT-006,Debt-to-assets ratio,ratio,High,pass,Validation passed,{'Debt_Ratio': np.float64(0.3484805804230877)}
+AARTI DRUGS LTD,2019,RAT-007,Equity ratio,ratio,High,pass,Validation passed,{'Equity_Ratio': np.float64(0.3733725412060543)}
+AARTI DRUGS LTD,2019,RAT-008,Interest coverage ratio,ratio,High,pass,Validation passed,{'Interest_Coverage_Ratio': np.float64(3.7846472075384976)}
+AARTI DRUGS LTD,2019,RAT-010,Gross profit margin trend,trend,Medium,pass,Validation passed,{'gross_margin': np.float64(0.3425051571488975)}
+AARTI DRUGS LTD,2019,RAT-011,Net profit margin trend,trend,Medium,fail,Validation triggered,{'Profit_Margin': np.float64(0.0574974054095609)}
+AARTI DRUGS LTD,2019,RAT-012,Operating margin trend,trend,Medium,pass,Validation passed,{'Operating_Margin': np.float64(0.1054941253347342)}
+AARTI DRUGS LTD,2019,RAT-014,Return on assets outlier,ratio,Medium,pass,Validation passed,"{'ROA': np.float64(0.0616630825357783), 'robust_z': None}"
+AARTI DRUGS LTD,2019,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.1651516266745178), 'robust_z': None}"
+AARTI DRUGS LTD,2019,RAT-017,Asset turnover outlier,ratio,Medium,pass,Validation passed,"{'Asset_Utilization_Ratio': np.float64(1.072449827893012), 'robust_z': None}"
+AARTI DRUGS LTD,2019,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(6.329589229958233), 'robust_z': None}"
+AARTI DRUGS LTD,2019,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(3.404152309504078), 'robust_z': None}"
+AARTI DRUGS LTD,2019,RAT-020,Days sales outstanding trend,trend,Medium,pass,Validation passed,{'dso': np.float64(107.22199443924816)}
+AARTI DRUGS LTD,2019,RAT-022,Days inventory outstanding trend,trend,Medium,pass,Validation passed,{'dio': np.float64(57.66566940433329)}
+AARTI DRUGS LTD,2019,RAT-024,Revenue growth rate,trend,Medium,pass,Validation passed,{'Revenue_Growth': np.float64(0.2551482354076373)}
+AARTI DRUGS LTD,2019,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(0.2551482354076373), 'robust_z': None}"
+AARTI DRUGS LTD,2019,TR-002,Year-over-year expense variance,trend,Medium,pass,Validation passed,{'Total Expenses': np.float64(1402.45)}
+AARTI DRUGS LTD,2019,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(198.67129494049547), 'robust_z': None}"
+AARTI DRUGS LTD,2019,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.8984650274834395), 'robust_z': None}"
+AARTI DRUGS LTD,2019,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.0574974054095609), 'Operating_Margin': np.float64(0.1054941253347342), 'robust_z': None}"
+AARTI DRUGS LTD,2020,BS-001,Balance sheet equation,integrity,Critical,pass,Validation passed,"{'Total Assets': np.float64(1576.5), 'Total Liabilities': np.float64(1576.5), 'Equity Share Capital': np.float64(23.3), 'Reserves': np.float64(629.19)}"
+AARTI DRUGS LTD,2020,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(23.3), 'Reserves': np.float64(629.19)}"
+AARTI DRUGS LTD,2020,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(7.64), 'Net Cash Flow': np.float64(2.13)}"
+AARTI DRUGS LTD,2020,CF-004,Financing activity plausibility,cross_statement,High,pass,Validation passed,"{'Borrowings': np.float64(388.64), 'Dividend Amount': np.float64(4.66), 'Cash from Financing Activity': np.float64(-215.41)}"
+AARTI DRUGS LTD,2020,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(141.4), 'Depreciation': np.float64(48.75), 'Cash from Operating Activity': np.float64(250.74)}"
+AARTI DRUGS LTD,2020,CF-008,Sustained negative operating cash flow,trend,High,pass,Validation passed,{'Cash from Operating Activity': np.float64(250.74)}
+AARTI DRUGS LTD,2020,CF-009,Cash flow versus net income divergence,cross_statement,High,pass,Validation passed,"{'Operating_CF_Ratio': np.float64(0.1590485252140818), 'robust_z': None}"
+AARTI DRUGS LTD,2020,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(4.66), 'Reserves': np.float64(629.19)}"
+AARTI DRUGS LTD,2020,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'AARTI DRUGS LTD', 'Year': np.int64(2020)}"
+AARTI DRUGS LTD,2020,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+AARTI DRUGS LTD,2020,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(7.64), 'Inventory': np.float64(325.4)}"
+AARTI DRUGS LTD,2020,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+AARTI DRUGS LTD,2020,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(1806.09), 'robust_z': None}"
+AARTI DRUGS LTD,2020,DV-018,Reporting date consistency,data_completeness,Medium,skipped,Unavailable metrics: ['Report Date'],
+AARTI DRUGS LTD,2020,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(0.3297122513274532), 'robust_z': None}"
+AARTI DRUGS LTD,2020,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(37.42), 'Borrowings': np.float64(388.64)}"
+AARTI DRUGS LTD,2020,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.2368719304873441), 'robust_z': None}"
+AARTI DRUGS LTD,2020,IS-010,Unusual expense spike detection,trend,High,pass,Validation passed,{'Total Expenses': np.float64(1729.31)}
+AARTI DRUGS LTD,2020,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,pass,Validation passed,"{'Revenue_Growth': np.float64(0.1570528015170345), 'Operating_CF_Growth': np.float64(0.7523237123488713)}"
+AARTI DRUGS LTD,2020,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(141.4), 'Dividend Amount': np.float64(4.66), 'Reserves': np.float64(629.19)}"
+AARTI DRUGS LTD,2020,IS-016,Depreciation expense consistency,trend,Medium,pass,Validation passed,"{'Depreciation_Ratio': np.float64(0.0309229305423406), 'robust_z': None}"
+AARTI DRUGS LTD,2020,LED-001,Accounting equation,integrity,Critical,pass,Validation passed,"{'Total Assets': np.float64(1576.5), 'Total Liabilities': np.float64(1576.5), 'Equity Share Capital': np.float64(23.3), 'Reserves': np.float64(629.19)}"
+AARTI DRUGS LTD,2020,RAT-005,Debt-to-equity ratio,ratio,High,pass,Validation passed,{'Debt_Equity_Ratio': np.float64(0.5956259866051586)}
+AARTI DRUGS LTD,2020,RAT-006,Debt-to-assets ratio,ratio,High,pass,Validation passed,{'Debt_Ratio': np.float64(0.2465207738661592)}
+AARTI DRUGS LTD,2020,RAT-007,Equity ratio,ratio,High,pass,Validation passed,{'Equity_Ratio': np.float64(0.4138851887091658)}
+AARTI DRUGS LTD,2020,RAT-008,Interest coverage ratio,ratio,High,pass,Validation passed,{'Interest_Coverage_Ratio': np.float64(2.210849812934259)}
+AARTI DRUGS LTD,2020,RAT-010,Gross profit margin trend,trend,Medium,pass,Validation passed,{'gross_margin': np.float64(0.3297122513274532)}
+AARTI DRUGS LTD,2020,RAT-011,Net profit margin trend,trend,Medium,pass,Validation passed,{'Profit_Margin': np.float64(0.0782906721149001)}
+AARTI DRUGS LTD,2020,RAT-012,Operating margin trend,trend,Medium,pass,Validation passed,{'Operating_Margin': np.float64(0.0458061336921194)}
+AARTI DRUGS LTD,2020,RAT-014,Return on assets outlier,ratio,Medium,pass,Validation passed,"{'ROA': np.float64(0.0896923564858864), 'robust_z': None}"
+AARTI DRUGS LTD,2020,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.2167083020429432), 'robust_z': None}"
+AARTI DRUGS LTD,2020,RAT-017,Asset turnover outlier,ratio,Medium,pass,Validation passed,"{'Asset_Utilization_Ratio': np.float64(1.1456327307326355), 'robust_z': None}"
+AARTI DRUGS LTD,2020,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(5.550368776889981), 'robust_z': None}"
+AARTI DRUGS LTD,2020,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(3.696232323025602), 'robust_z': None}"
+AARTI DRUGS LTD,2020,RAT-020,Days sales outstanding trend,trend,Medium,pass,Validation passed,{'dso': np.float64(98.74920408174566)}
+AARTI DRUGS LTD,2020,RAT-022,Days inventory outstanding trend,trend,Medium,pass,Validation passed,{'dio': np.float64(65.76139616519664)}
+AARTI DRUGS LTD,2020,RAT-024,Revenue growth rate,trend,Medium,pass,Validation passed,{'Revenue_Growth': np.float64(0.1570528015170345)}
+AARTI DRUGS LTD,2020,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(0.1570528015170345), 'robust_z': None}"
+AARTI DRUGS LTD,2020,TR-002,Year-over-year expense variance,trend,Medium,pass,Validation passed,{'Total Expenses': np.float64(1729.31)}
+AARTI DRUGS LTD,2020,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(282.0004167254605), 'robust_z': None}"
+AARTI DRUGS LTD,2020,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.957488275778062), 'robust_z': None}"
+AARTI DRUGS LTD,2020,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.0782906721149001), 'Operating_Margin': np.float64(0.0458061336921194), 'robust_z': None}"
+AARTI DRUGS LTD,2021,BS-001,Balance sheet equation,integrity,Critical,pass,Validation passed,"{'Total Assets': np.float64(1766.01), 'Total Liabilities': np.float64(1766.01), 'Equity Share Capital': np.float64(93.2), 'Reserves': np.float64(820.22)}"
+AARTI DRUGS LTD,2021,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(93.2), 'Reserves': np.float64(820.22)}"
+AARTI DRUGS LTD,2021,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(9.78), 'Net Cash Flow': np.float64(2.04)}"
+AARTI DRUGS LTD,2021,CF-004,Financing activity plausibility,cross_statement,High,pass,Validation passed,"{'Borrowings': np.float64(350.76), 'Dividend Amount': np.float64(23.3), 'Cash from Financing Activity': np.float64(-81.13)}"
+AARTI DRUGS LTD,2021,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(280.41), 'Depreciation': np.float64(49.88), 'Cash from Operating Activity': np.float64(154.95)}"
+AARTI DRUGS LTD,2021,CF-008,Sustained negative operating cash flow,trend,High,pass,Validation passed,{'Cash from Operating Activity': np.float64(154.95)}
+AARTI DRUGS LTD,2021,CF-009,Cash flow versus net income divergence,cross_statement,High,pass,Validation passed,"{'Operating_CF_Ratio': np.float64(0.0877401600217439), 'robust_z': None}"
+AARTI DRUGS LTD,2021,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(23.3), 'Reserves': np.float64(820.22)}"
+AARTI DRUGS LTD,2021,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'AARTI DRUGS LTD', 'Year': np.int64(2021)}"
+AARTI DRUGS LTD,2021,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+AARTI DRUGS LTD,2021,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(9.78), 'Inventory': np.float64(415.0)}"
+AARTI DRUGS LTD,2021,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+AARTI DRUGS LTD,2021,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(2154.78), 'robust_z': None}"
+AARTI DRUGS LTD,2021,DV-018,Reporting date consistency,data_completeness,Medium,skipped,Unavailable metrics: ['Report Date'],
+AARTI DRUGS LTD,2021,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(0.3917430085669999), 'robust_z': None}"
+AARTI DRUGS LTD,2021,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(26.23), 'Borrowings': np.float64(350.76)}"
+AARTI DRUGS LTD,2021,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.2401224865860929), 'robust_z': None}"
+AARTI DRUGS LTD,2021,IS-010,Unusual expense spike detection,trend,High,pass,Validation passed,{'Total Expenses': np.float64(1813.9400000000005)}
+AARTI DRUGS LTD,2021,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,fail,Validation triggered,"{'Revenue_Growth': np.float64(0.1930634685979104), 'Operating_CF_Growth': np.float64(-0.3820291935869826)}"
+AARTI DRUGS LTD,2021,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(280.41), 'Dividend Amount': np.float64(23.3), 'Reserves': np.float64(820.22)}"
+AARTI DRUGS LTD,2021,IS-016,Depreciation expense consistency,trend,Medium,pass,Validation passed,"{'Depreciation_Ratio': np.float64(0.0282444606768931), 'robust_z': None}"
+AARTI DRUGS LTD,2021,LED-001,Accounting equation,integrity,Critical,pass,Validation passed,"{'Total Assets': np.float64(1766.01), 'Total Liabilities': np.float64(1766.01), 'Equity Share Capital': np.float64(93.2), 'Reserves': np.float64(820.22)}"
+AARTI DRUGS LTD,2021,RAT-005,Debt-to-equity ratio,ratio,High,pass,Validation passed,{'Debt_Equity_Ratio': np.float64(0.3840073569661272)}
+AARTI DRUGS LTD,2021,RAT-006,Debt-to-assets ratio,ratio,High,pass,Validation passed,{'Debt_Ratio': np.float64(0.1986172218730358)}
+AARTI DRUGS LTD,2021,RAT-007,Equity ratio,ratio,High,pass,Validation passed,{'Equity_Ratio': np.float64(0.5172224392840358)}
+AARTI DRUGS LTD,2021,RAT-008,Interest coverage ratio,ratio,High,pass,Validation passed,{'Interest_Coverage_Ratio': np.float64(13.174990468928703)}
+AARTI DRUGS LTD,2021,RAT-010,Gross profit margin trend,trend,Medium,pass,Validation passed,{'gross_margin': np.float64(0.3917430085669999)}
+AARTI DRUGS LTD,2021,RAT-011,Net profit margin trend,trend,Medium,pass,Validation passed,{'Profit_Margin': np.float64(0.1301339347868459)}
+AARTI DRUGS LTD,2021,RAT-012,Operating margin trend,trend,Medium,pass,Validation passed,{'Operating_Margin': np.float64(0.1603783216848123)}
+AARTI DRUGS LTD,2021,RAT-014,Return on assets outlier,ratio,Medium,pass,Validation passed,"{'ROA': np.float64(0.1587816603529991), 'robust_z': None}"
+AARTI DRUGS LTD,2021,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.3069891178209367), 'robust_z': None}"
+AARTI DRUGS LTD,2021,RAT-017,Asset turnover outlier,ratio,Medium,pass,Validation passed,"{'Asset_Utilization_Ratio': np.float64(1.22014031630625), 'robust_z': None}"
+AARTI DRUGS LTD,2021,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(5.192240963855422), 'robust_z': None}"
+AARTI DRUGS LTD,2021,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(3.8808781946220487), 'robust_z': None}"
+AARTI DRUGS LTD,2021,RAT-020,Days sales outstanding trend,trend,Medium,pass,Validation passed,{'dso': np.float64(94.05087758379044)}
+AARTI DRUGS LTD,2021,RAT-022,Days inventory outstanding trend,trend,Medium,fail,Validation triggered,{'dio': np.float64(70.29719971412395)}
+AARTI DRUGS LTD,2021,RAT-024,Revenue growth rate,trend,Medium,pass,Validation passed,{'Revenue_Growth': np.float64(0.1930634685979104)}
+AARTI DRUGS LTD,2021,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(0.1930634685979104), 'robust_z': None}"
+AARTI DRUGS LTD,2021,TR-002,Year-over-year expense variance,trend,Medium,pass,Validation passed,{'Total Expenses': np.float64(1813.9400000000005)}
+AARTI DRUGS LTD,2021,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(298.42061596567623), 'robust_z': None}"
+AARTI DRUGS LTD,2021,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.8418214388475855), 'robust_z': None}"
+AARTI DRUGS LTD,2021,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.1301339347868459), 'Operating_Margin': np.float64(0.1603783216848123), 'robust_z': None}"
+AARTI DRUGS LTD,2022,BS-001,Balance sheet equation,integrity,Critical,pass,Validation passed,"{'Total Assets': np.float64(2207.96), 'Total Liabilities': np.float64(2207.96), 'Equity Share Capital': np.float64(92.6), 'Reserves': np.float64(943.76)}"
+AARTI DRUGS LTD,2022,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(92.6), 'Reserves': np.float64(943.76)}"
+AARTI DRUGS LTD,2022,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(22.33), 'Net Cash Flow': np.float64(12.8)}"
+AARTI DRUGS LTD,2022,CF-004,Financing activity plausibility,cross_statement,High,pass,Validation passed,"{'Borrowings': np.float64(542.82), 'Dividend Amount': np.float64(9.26), 'Cash from Financing Activity': np.float64(92.03)}"
+AARTI DRUGS LTD,2022,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(205.04), 'Depreciation': np.float64(50.05), 'Cash from Operating Activity': np.float64(70.41)}"
+AARTI DRUGS LTD,2022,CF-008,Sustained negative operating cash flow,trend,High,pass,Validation passed,{'Cash from Operating Activity': np.float64(70.41)}
+AARTI DRUGS LTD,2022,CF-009,Cash flow versus net income divergence,cross_statement,High,pass,Validation passed,"{'Operating_CF_Ratio': np.float64(0.03188916465878), 'robust_z': None}"
+AARTI DRUGS LTD,2022,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(9.26), 'Reserves': np.float64(943.76)}"
+AARTI DRUGS LTD,2022,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'AARTI DRUGS LTD', 'Year': np.int64(2022)}"
+AARTI DRUGS LTD,2022,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+AARTI DRUGS LTD,2022,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(22.33), 'Inventory': np.float64(525.94)}"
+AARTI DRUGS LTD,2022,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+AARTI DRUGS LTD,2022,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(2488.65), 'robust_z': None}"
+AARTI DRUGS LTD,2022,DV-018,Reporting date consistency,data_completeness,Medium,skipped,Unavailable metrics: ['Report Date'],
+AARTI DRUGS LTD,2022,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(0.2967833966206578), 'robust_z': None}"
+AARTI DRUGS LTD,2022,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(23.91), 'Borrowings': np.float64(542.82)}"
+AARTI DRUGS LTD,2022,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.240637155028709), 'robust_z': None}"
+AARTI DRUGS LTD,2022,IS-010,Unusual expense spike detection,trend,High,pass,Validation passed,{'Total Expenses': np.float64(2402.18)}
+AARTI DRUGS LTD,2022,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,fail,Validation triggered,"{'Revenue_Growth': np.float64(0.1549438921838888), 'Operating_CF_Growth': np.float64(-0.545595353339787)}"
+AARTI DRUGS LTD,2022,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(205.04), 'Dividend Amount': np.float64(9.26), 'Reserves': np.float64(943.76)}"
+AARTI DRUGS LTD,2022,IS-016,Depreciation expense consistency,trend,Medium,pass,Validation passed,"{'Depreciation_Ratio': np.float64(0.0226679831156361), 'robust_z': None}"
+AARTI DRUGS LTD,2022,LED-001,Accounting equation,integrity,Critical,pass,Validation passed,"{'Total Assets': np.float64(2207.96), 'Total Liabilities': np.float64(2207.96), 'Equity Share Capital': np.float64(92.6), 'Reserves': np.float64(943.76)}"
+AARTI DRUGS LTD,2022,RAT-005,Debt-to-equity ratio,ratio,High,pass,Validation passed,{'Debt_Equity_Ratio': np.float64(0.5237755220193756)}
+AARTI DRUGS LTD,2022,RAT-006,Debt-to-assets ratio,ratio,High,pass,Validation passed,{'Debt_Ratio': np.float64(0.2458468450515408)}
+AARTI DRUGS LTD,2022,RAT-007,Equity ratio,ratio,High,pass,Validation passed,{'Equity_Ratio': np.float64(0.4693744451892244)}
+AARTI DRUGS LTD,2022,RAT-008,Interest coverage ratio,ratio,High,pass,Validation passed,{'Interest_Coverage_Ratio': np.float64(4.089920535340871)}
+AARTI DRUGS LTD,2022,RAT-010,Gross profit margin trend,trend,Medium,pass,Validation passed,{'gross_margin': np.float64(0.2967833966206578)}
+AARTI DRUGS LTD,2022,RAT-011,Net profit margin trend,trend,Medium,pass,Validation passed,{'Profit_Margin': np.float64(0.0823900508307717)}
+AARTI DRUGS LTD,2022,RAT-012,Operating margin trend,trend,Medium,pass,Validation passed,{'Operating_Margin': np.float64(0.0392943965603842)}
+AARTI DRUGS LTD,2022,RAT-014,Return on assets outlier,ratio,Medium,pass,Validation passed,"{'ROA': np.float64(0.0928640011594413), 'robust_z': None}"
+AARTI DRUGS LTD,2022,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.1978463082326604), 'robust_z': None}"
+AARTI DRUGS LTD,2022,RAT-017,Asset turnover outlier,ratio,Medium,pass,Validation passed,"{'Asset_Utilization_Ratio': np.float64(1.1271263972173409), 'robust_z': None}"
+AARTI DRUGS LTD,2022,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(4.731813514849602), 'robust_z': None}"
+AARTI DRUGS LTD,2022,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(3.318642485664756), 'robust_z': None}"
+AARTI DRUGS LTD,2022,RAT-020,Days sales outstanding trend,trend,Medium,pass,Validation passed,{'dso': np.float64(109.9847306772748)}
+AARTI DRUGS LTD,2022,RAT-022,Days inventory outstanding trend,trend,Medium,fail,Validation triggered,{'dio': np.float64(77.13744399574067)}
+AARTI DRUGS LTD,2022,RAT-024,Revenue growth rate,trend,Medium,pass,Validation passed,{'Revenue_Growth': np.float64(0.1549438921838888)}
+AARTI DRUGS LTD,2022,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(0.1549438921838888), 'robust_z': None}"
+AARTI DRUGS LTD,2022,TR-002,Year-over-year expense variance,trend,Medium,pass,Validation passed,{'Total Expenses': np.float64(2402.18)}
+AARTI DRUGS LTD,2022,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(341.30681373216146), 'robust_z': None}"
+AARTI DRUGS LTD,2022,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.965254254314588), 'robust_z': None}"
+AARTI DRUGS LTD,2022,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.0823900508307717), 'Operating_Margin': np.float64(0.0392943965603842), 'robust_z': None}"
+AARTI DRUGS LTD,2023,BS-001,Balance sheet equation,integrity,Critical,pass,Validation passed,"{'Total Assets': np.float64(2421.4), 'Total Liabilities': np.float64(2421.4), 'Equity Share Capital': np.float64(92.6), 'Reserves': np.float64(1099.83)}"
+AARTI DRUGS LTD,2023,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(92.6), 'Reserves': np.float64(1099.83)}"
+AARTI DRUGS LTD,2023,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(8.96), 'Net Cash Flow': np.float64(-14.11)}"
+AARTI DRUGS LTD,2023,CF-004,Financing activity plausibility,cross_statement,High,pass,Validation passed,"{'Borrowings': np.float64(608.91), 'Dividend Amount': np.float64(9.26), 'Cash from Financing Activity': np.float64(16.54)}"
+AARTI DRUGS LTD,2023,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(166.31), 'Depreciation': np.float64(50.32), 'Cash from Operating Activity': np.float64(133.32)}"
+AARTI DRUGS LTD,2023,CF-008,Sustained negative operating cash flow,trend,High,pass,Validation passed,{'Cash from Operating Activity': np.float64(133.32)}
+AARTI DRUGS LTD,2023,CF-009,Cash flow versus net income divergence,cross_statement,High,pass,Validation passed,"{'Operating_CF_Ratio': np.float64(0.0550590567440323), 'robust_z': None}"
+AARTI DRUGS LTD,2023,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(9.26), 'Reserves': np.float64(1099.83)}"
+AARTI DRUGS LTD,2023,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'AARTI DRUGS LTD', 'Year': np.int64(2023)}"
+AARTI DRUGS LTD,2023,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+AARTI DRUGS LTD,2023,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(8.96), 'Inventory': np.float64(516.29)}"
+AARTI DRUGS LTD,2023,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+AARTI DRUGS LTD,2023,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(2716.05), 'robust_z': None}"
+AARTI DRUGS LTD,2023,DV-018,Reporting date consistency,data_completeness,Medium,skipped,Unavailable metrics: ['Report Date'],
+AARTI DRUGS LTD,2023,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(0.3138160195872683), 'robust_z': None}"
+AARTI DRUGS LTD,2023,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(37.14), 'Borrowings': np.float64(608.91)}"
+AARTI DRUGS LTD,2023,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.2579508452651768), 'robust_z': None}"
+AARTI DRUGS LTD,2023,IS-010,Unusual expense spike detection,trend,High,pass,Validation passed,{'Total Expenses': np.float64(2497.55)}
+AARTI DRUGS LTD,2023,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,pass,Validation passed,"{'Revenue_Growth': np.float64(0.0913748417816888), 'Operating_CF_Growth': np.float64(0.8934810396250532)}"
+AARTI DRUGS LTD,2023,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(166.31), 'Dividend Amount': np.float64(9.26), 'Reserves': np.float64(1099.83)}"
+AARTI DRUGS LTD,2023,IS-016,Depreciation expense consistency,trend,Medium,pass,Validation passed,"{'Depreciation_Ratio': np.float64(0.020781366151813), 'robust_z': None}"
+AARTI DRUGS LTD,2023,LED-001,Accounting equation,integrity,Critical,pass,Validation passed,"{'Total Assets': np.float64(2421.4), 'Total Liabilities': np.float64(2421.4), 'Equity Share Capital': np.float64(92.6), 'Reserves': np.float64(1099.83)}"
+AARTI DRUGS LTD,2023,RAT-005,Debt-to-equity ratio,ratio,High,pass,Validation passed,{'Debt_Equity_Ratio': np.float64(0.5106463272477211)}
+AARTI DRUGS LTD,2023,RAT-006,Debt-to-assets ratio,ratio,High,pass,Validation passed,{'Debt_Ratio': np.float64(0.2514702238374494)}
+AARTI DRUGS LTD,2023,RAT-007,Equity ratio,ratio,High,pass,Validation passed,{'Equity_Ratio': np.float64(0.4924547782274716)}
+AARTI DRUGS LTD,2023,RAT-008,Interest coverage ratio,ratio,High,pass,Validation passed,{'Interest_Coverage_Ratio': np.float64(5.942110931610136)}
+AARTI DRUGS LTD,2023,RAT-010,Gross profit margin trend,trend,Medium,pass,Validation passed,{'gross_margin': np.float64(0.3138160195872683)}
+AARTI DRUGS LTD,2023,RAT-011,Net profit margin trend,trend,Medium,fail,Validation triggered,{'Profit_Margin': np.float64(0.0612323042653853)}
+AARTI DRUGS LTD,2023,RAT-012,Operating margin trend,trend,Medium,pass,Validation passed,{'Operating_Margin': np.float64(0.0812540269877213)}
+AARTI DRUGS LTD,2023,RAT-014,Return on assets outlier,ratio,Medium,pass,Validation passed,"{'ROA': np.float64(0.0686834062938795), 'robust_z': None}"
+AARTI DRUGS LTD,2023,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.1394714993752254), 'robust_z': None}"
+AARTI DRUGS LTD,2023,RAT-017,Asset turnover outlier,ratio,Medium,pass,Validation passed,"{'Asset_Utilization_Ratio': np.float64(1.1216858016023787), 'robust_z': None}"
+AARTI DRUGS LTD,2023,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(5.260706192256291), 'robust_z': None}"
+AARTI DRUGS LTD,2023,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(3.140523102539198), 'robust_z': None}"
+AARTI DRUGS LTD,2023,RAT-020,Days sales outstanding trend,trend,Medium,fail,Validation triggered,{'dso': np.float64(116.22267631302812)}
+AARTI DRUGS LTD,2023,RAT-022,Days inventory outstanding trend,trend,Medium,pass,Validation passed,{'dio': np.float64(69.3823199131091)}
+AARTI DRUGS LTD,2023,RAT-024,Revenue growth rate,trend,Medium,pass,Validation passed,{'Revenue_Growth': np.float64(0.0913748417816888)}
+AARTI DRUGS LTD,2023,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(0.0913748417816888), 'robust_z': None}"
+AARTI DRUGS LTD,2023,TR-002,Year-over-year expense variance,trend,Medium,pass,Validation passed,{'Total Expenses': np.float64(2497.55)}
+AARTI DRUGS LTD,2023,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(282.313050176573), 'robust_z': None}"
+AARTI DRUGS LTD,2023,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.9195522910108428), 'robust_z': None}"
+AARTI DRUGS LTD,2023,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.0612323042653853), 'Operating_Margin': np.float64(0.0812540269877213), 'robust_z': None}"
+AARTI DRUGS LTD,2024,BS-001,Balance sheet equation,integrity,Critical,pass,Validation passed,"{'Total Assets': np.float64(2432.37), 'Total Liabilities': np.float64(2432.37), 'Equity Share Capital': np.float64(91.94), 'Reserves': np.float64(1189.61)}"
+AARTI DRUGS LTD,2024,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(91.94), 'Reserves': np.float64(1189.61)}"
+AARTI DRUGS LTD,2024,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(9.43), 'Net Cash Flow': np.float64(-0.76)}"
+AARTI DRUGS LTD,2024,CF-004,Financing activity plausibility,cross_statement,High,pass,Validation passed,"{'Borrowings': np.float64(564.28), 'Dividend Amount': np.float64(9.19), 'Cash from Financing Activity': np.float64(-136.03)}"
+AARTI DRUGS LTD,2024,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(171.42), 'Depreciation': np.float64(51.45), 'Cash from Operating Activity': np.float64(358.92)}"
+AARTI DRUGS LTD,2024,CF-008,Sustained negative operating cash flow,trend,High,pass,Validation passed,{'Cash from Operating Activity': np.float64(358.92)}
+AARTI DRUGS LTD,2024,CF-009,Cash flow versus net income divergence,cross_statement,High,pass,Validation passed,"{'Operating_CF_Ratio': np.float64(0.1475597873678757), 'robust_z': None}"
+AARTI DRUGS LTD,2024,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(9.19), 'Reserves': np.float64(1189.61)}"
+AARTI DRUGS LTD,2024,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'AARTI DRUGS LTD', 'Year': np.int64(2024)}"
+AARTI DRUGS LTD,2024,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+AARTI DRUGS LTD,2024,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(9.43), 'Inventory': np.float64(485.89)}"
+AARTI DRUGS LTD,2024,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+AARTI DRUGS LTD,2024,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(2528.58), 'robust_z': None}"
+AARTI DRUGS LTD,2024,DV-018,Reporting date consistency,data_completeness,Medium,skipped,Unavailable metrics: ['Report Date'],
+AARTI DRUGS LTD,2024,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(0.3569117844798266), 'robust_z': None}"
+AARTI DRUGS LTD,2024,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(37.89), 'Borrowings': np.float64(564.28)}"
+AARTI DRUGS LTD,2024,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.2714303910329894), 'robust_z': None}"
+AARTI DRUGS LTD,2024,IS-010,Unusual expense spike detection,trend,High,pass,Validation passed,{'Total Expenses': np.float64(2245.88)}
+AARTI DRUGS LTD,2024,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,pass,Validation passed,"{'Revenue_Growth': np.float64(-0.0690230297674933), 'Operating_CF_Growth': np.float64(1.6921692169216924)}"
+AARTI DRUGS LTD,2024,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(171.42), 'Dividend Amount': np.float64(9.19), 'Reserves': np.float64(1189.61)}"
+AARTI DRUGS LTD,2024,IS-016,Depreciation expense consistency,trend,Medium,pass,Validation passed,"{'Depreciation_Ratio': np.float64(0.021152209573379), 'robust_z': None}"
+AARTI DRUGS LTD,2024,LED-001,Accounting equation,integrity,Critical,pass,Validation passed,"{'Total Assets': np.float64(2432.37), 'Total Liabilities': np.float64(2432.37), 'Equity Share Capital': np.float64(91.94), 'Reserves': np.float64(1189.61)}"
+AARTI DRUGS LTD,2024,RAT-005,Debt-to-equity ratio,ratio,High,pass,Validation passed,{'Debt_Equity_Ratio': np.float64(0.4403105614295189)}
+AARTI DRUGS LTD,2024,RAT-006,Debt-to-assets ratio,ratio,High,pass,Validation passed,{'Debt_Ratio': np.float64(0.2319877321295691)}
+AARTI DRUGS LTD,2024,RAT-007,Equity ratio,ratio,High,pass,Validation passed,{'Equity_Ratio': np.float64(0.5268729675172774)}
+AARTI DRUGS LTD,2024,RAT-008,Interest coverage ratio,ratio,High,pass,Validation passed,{'Interest_Coverage_Ratio': np.float64(7.562681446291905)}
+AARTI DRUGS LTD,2024,RAT-010,Gross profit margin trend,trend,Medium,pass,Validation passed,{'gross_margin': np.float64(0.3569117844798266)}
+AARTI DRUGS LTD,2024,RAT-011,Net profit margin trend,trend,Medium,pass,Validation passed,{'Profit_Margin': np.float64(0.0677929905322354)}
+AARTI DRUGS LTD,2024,RAT-012,Operating margin trend,trend,Medium,pass,Validation passed,{'Operating_Margin': np.float64(0.1133244746063008)}
+AARTI DRUGS LTD,2024,RAT-014,Return on assets outlier,ratio,Medium,pass,Validation passed,"{'ROA': np.float64(0.0704744755115381), 'robust_z': None}"
+AARTI DRUGS LTD,2024,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.1337599001209473), 'robust_z': None}"
+AARTI DRUGS LTD,2024,RAT-017,Asset turnover outlier,ratio,Medium,pass,Validation passed,"{'Asset_Utilization_Ratio': np.float64(1.039554015219724), 'robust_z': None}"
+AARTI DRUGS LTD,2024,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(5.204017370186667), 'robust_z': None}"
+AARTI DRUGS LTD,2024,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(3.5889291036832023), 'robust_z': None}"
+AARTI DRUGS LTD,2024,RAT-020,Days sales outstanding trend,trend,Medium,pass,Validation passed,{'dso': np.float64(101.70164677407872)}
+AARTI DRUGS LTD,2024,RAT-022,Days inventory outstanding trend,trend,Medium,pass,Validation passed,{'dio': np.float64(70.13812100071978)}
+AARTI DRUGS LTD,2024,RAT-024,Revenue growth rate,trend,Medium,fail,Validation triggered,{'Revenue_Growth': np.float64(-0.0690230297674933)}
+AARTI DRUGS LTD,2024,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(-0.0690230297674933), 'robust_z': None}"
+AARTI DRUGS LTD,2024,TR-002,Year-over-year expense variance,trend,Medium,pass,Validation passed,{'Total Expenses': np.float64(2245.88)}
+AARTI DRUGS LTD,2024,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(121.41537917414), 'robust_z': None}"
+AARTI DRUGS LTD,2024,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.8881981191024212), 'robust_z': None}"
+AARTI DRUGS LTD,2024,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.0677929905322354), 'Operating_Margin': np.float64(0.1133244746063008), 'robust_z': None}"
+AARTI DRUGS LTD,2025,BS-001,Balance sheet equation,integrity,Critical,pass,Validation passed,"{'Total Assets': np.float64(2574.68), 'Total Liabilities': np.float64(2574.68), 'Equity Share Capital': np.float64(91.27), 'Reserves': np.float64(1277.73)}"
+AARTI DRUGS LTD,2025,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(91.27), 'Reserves': np.float64(1277.73)}"
+AARTI DRUGS LTD,2025,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(7.56), 'Net Cash Flow': np.float64(-2.17)}"
+AARTI DRUGS LTD,2025,CF-004,Financing activity plausibility,cross_statement,High,pass,Validation passed,"{'Borrowings': np.float64(615.08), 'Dividend Amount': np.float64(9.13), 'Cash from Financing Activity': np.float64(-82.12)}"
+AARTI DRUGS LTD,2025,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(168.16), 'Depreciation': np.float64(55.78), 'Cash from Operating Activity': np.float64(244.58)}"
+AARTI DRUGS LTD,2025,CF-008,Sustained negative operating cash flow,trend,High,pass,Validation passed,{'Cash from Operating Activity': np.float64(244.58)}
+AARTI DRUGS LTD,2025,CF-009,Cash flow versus net income divergence,cross_statement,High,pass,Validation passed,"{'Operating_CF_Ratio': np.float64(0.0949943293923905), 'robust_z': None}"
+AARTI DRUGS LTD,2025,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(9.13), 'Reserves': np.float64(1277.73)}"
+AARTI DRUGS LTD,2025,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'AARTI DRUGS LTD', 'Year': np.int64(2025)}"
+AARTI DRUGS LTD,2025,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+AARTI DRUGS LTD,2025,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(7.56), 'Inventory': np.float64(472.93)}"
+AARTI DRUGS LTD,2025,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+AARTI DRUGS LTD,2025,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(2387.03), 'robust_z': None}"
+AARTI DRUGS LTD,2025,DV-018,Reporting date consistency,data_completeness,Medium,skipped,Unavailable metrics: ['Report Date'],
+AARTI DRUGS LTD,2025,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(0.3732462516181197), 'robust_z': None}"
+AARTI DRUGS LTD,2025,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(39.04), 'Borrowings': np.float64(615.08)}"
+AARTI DRUGS LTD,2025,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.2062142890872172), 'robust_z': None}"
+AARTI DRUGS LTD,2025,IS-010,Unusual expense spike detection,trend,High,pass,Validation passed,{'Total Expenses': np.float64(2152.7)}
+AARTI DRUGS LTD,2025,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,pass,Validation passed,"{'Revenue_Growth': np.float64(-0.0559800362258657), 'Operating_CF_Growth': np.float64(-0.3185668115457484)}"
+AARTI DRUGS LTD,2025,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(168.16), 'Dividend Amount': np.float64(9.13), 'Reserves': np.float64(1277.73)}"
+AARTI DRUGS LTD,2025,IS-016,Depreciation expense consistency,trend,Medium,pass,Validation passed,"{'Depreciation_Ratio': np.float64(0.021664828250501), 'robust_z': None}"
+AARTI DRUGS LTD,2025,LED-001,Accounting equation,integrity,Critical,pass,Validation passed,"{'Total Assets': np.float64(2574.68), 'Total Liabilities': np.float64(2574.68), 'Equity Share Capital': np.float64(91.27), 'Reserves': np.float64(1277.73)}"
+AARTI DRUGS LTD,2025,RAT-005,Debt-to-equity ratio,ratio,High,pass,Validation passed,{'Debt_Equity_Ratio': np.float64(0.449291453615778)}
+AARTI DRUGS LTD,2025,RAT-006,Debt-to-assets ratio,ratio,High,pass,Validation passed,{'Debt_Ratio': np.float64(0.2388957074277192)}
+AARTI DRUGS LTD,2025,RAT-007,Equity ratio,ratio,High,pass,Validation passed,{'Equity_Ratio': np.float64(0.5317165628349931)}
+AARTI DRUGS LTD,2025,RAT-008,Interest coverage ratio,ratio,High,pass,Validation passed,{'Interest_Coverage_Ratio': np.float64(6.421362704918043)}
+AARTI DRUGS LTD,2025,RAT-010,Gross profit margin trend,trend,Medium,pass,Validation passed,{'gross_margin': np.float64(0.3732462516181197)}
+AARTI DRUGS LTD,2025,RAT-011,Net profit margin trend,trend,Medium,pass,Validation passed,{'Profit_Margin': np.float64(0.070447376027951)}
+AARTI DRUGS LTD,2025,RAT-012,Operating margin trend,trend,Medium,pass,Validation passed,{'Operating_Margin': np.float64(0.1050217215535625)}
+AARTI DRUGS LTD,2025,RAT-014,Return on assets outlier,ratio,Medium,pass,Validation passed,"{'ROA': np.float64(0.06531297093231), 'robust_z': None}"
+AARTI DRUGS LTD,2025,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.1228341855368882), 'robust_z': None}"
+AARTI DRUGS LTD,2025,RAT-017,Asset turnover outlier,ratio,Medium,pass,Validation passed,"{'Asset_Utilization_Ratio': np.float64(0.9271171563068034), 'robust_z': None}"
+AARTI DRUGS LTD,2025,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(5.047322013828685), 'robust_z': None}"
+AARTI DRUGS LTD,2025,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(3.177707074203254), 'robust_z': None}"
+AARTI DRUGS LTD,2025,RAT-020,Days sales outstanding trend,trend,Medium,pass,Validation passed,{'dso': np.float64(114.86269548350876)}
+AARTI DRUGS LTD,2025,RAT-022,Days inventory outstanding trend,trend,Medium,fail,Validation triggered,{'dio': np.float64(72.31557626003863)}
+AARTI DRUGS LTD,2025,RAT-024,Revenue growth rate,trend,Medium,fail,Validation triggered,{'Revenue_Growth': np.float64(-0.0559800362258657)}
+AARTI DRUGS LTD,2025,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(-0.0559800362258657), 'robust_z': None}"
+AARTI DRUGS LTD,2025,TR-002,Year-over-year expense variance,trend,Medium,pass,Validation passed,{'Total Expenses': np.float64(2152.7)}
+AARTI DRUGS LTD,2025,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(165.04320838293697), 'robust_z': None}"
+AARTI DRUGS LTD,2025,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.9018319836784622), 'robust_z': None}"
+AARTI DRUGS LTD,2025,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.070447376027951), 'Operating_Margin': np.float64(0.1050217215535625), 'robust_z': None}"
+AARTI DRUGS LTD,2026,BS-001,Balance sheet equation,integrity,Critical,pass,Validation passed,"{'Total Assets': np.float64(2815.26), 'Total Liabilities': np.float64(2815.26), 'Equity Share Capital': np.float64(91.27), 'Reserves': np.float64(1457.59)}"
+AARTI DRUGS LTD,2026,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(91.27), 'Reserves': np.float64(1457.59)}"
+AARTI DRUGS LTD,2026,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(8.81), 'Net Cash Flow': np.float64(2.69)}"
+AARTI DRUGS LTD,2026,CF-004,Financing activity plausibility,cross_statement,High,pass,Validation passed,"{'Borrowings': np.float64(576.64), 'Dividend Amount': np.float64(18.25), 'Cash from Financing Activity': np.float64(-77.44)}"
+AARTI DRUGS LTD,2026,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(194.92), 'Depreciation': np.float64(66.97), 'Cash from Operating Activity': np.float64(253.54)}"
+AARTI DRUGS LTD,2026,CF-008,Sustained negative operating cash flow,trend,High,pass,Validation passed,{'Cash from Operating Activity': np.float64(253.54)}
+AARTI DRUGS LTD,2026,CF-009,Cash flow versus net income divergence,cross_statement,High,pass,Validation passed,"{'Operating_CF_Ratio': np.float64(0.0900591774827191), 'robust_z': None}"
+AARTI DRUGS LTD,2026,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(18.25), 'Reserves': np.float64(1457.59)}"
+AARTI DRUGS LTD,2026,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'AARTI DRUGS LTD', 'Year': np.int64(2026)}"
+AARTI DRUGS LTD,2026,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+AARTI DRUGS LTD,2026,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(8.81), 'Inventory': np.float64(490.78)}"
+AARTI DRUGS LTD,2026,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+AARTI DRUGS LTD,2026,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(2565.31), 'robust_z': None}"
+AARTI DRUGS LTD,2026,DV-018,Reporting date consistency,data_completeness,Medium,skipped,Unavailable metrics: ['Report Date'],
+AARTI DRUGS LTD,2026,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(0.3688521075425582), 'robust_z': None}"
+AARTI DRUGS LTD,2026,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(33.71), 'Borrowings': np.float64(576.64)}"
+AARTI DRUGS LTD,2026,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.0756756756756756), 'robust_z': None}"
+AARTI DRUGS LTD,2026,IS-010,Unusual expense spike detection,trend,High,pass,Validation passed,{'Total Expenses': np.float64(2357.54)}
+AARTI DRUGS LTD,2026,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,pass,Validation passed,"{'Revenue_Growth': np.float64(0.0746869540810126), 'Operating_CF_Growth': np.float64(0.0366342301087578)}"
+AARTI DRUGS LTD,2026,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(194.92), 'Dividend Amount': np.float64(18.25), 'Reserves': np.float64(1457.59)}"
+AARTI DRUGS LTD,2026,IS-016,Depreciation expense consistency,trend,Medium,pass,Validation passed,"{'Depreciation_Ratio': np.float64(0.0237882113907774), 'robust_z': None}"
+AARTI DRUGS LTD,2026,LED-001,Accounting equation,integrity,Critical,pass,Validation passed,"{'Total Assets': np.float64(2815.26), 'Total Liabilities': np.float64(2815.26), 'Equity Share Capital': np.float64(91.27), 'Reserves': np.float64(1457.59)}"
+AARTI DRUGS LTD,2026,RAT-005,Debt-to-equity ratio,ratio,High,pass,Validation passed,{'Debt_Equity_Ratio': np.float64(0.372299626822308)}
+AARTI DRUGS LTD,2026,RAT-006,Debt-to-assets ratio,ratio,High,pass,Validation passed,{'Debt_Ratio': np.float64(0.2048265524321021)}
+AARTI DRUGS LTD,2026,RAT-007,Equity ratio,ratio,High,pass,Validation passed,{'Equity_Ratio': np.float64(0.5501658816592427)}
+AARTI DRUGS LTD,2026,RAT-008,Interest coverage ratio,ratio,High,pass,Validation passed,{'Interest_Coverage_Ratio': np.float64(6.234351824384455)}
+AARTI DRUGS LTD,2026,RAT-010,Gross profit margin trend,trend,Medium,pass,Validation passed,{'gross_margin': np.float64(0.3688521075425582)}
+AARTI DRUGS LTD,2026,RAT-011,Net profit margin trend,trend,Medium,pass,Validation passed,{'Profit_Margin': np.float64(0.0759830195960722)}
+AARTI DRUGS LTD,2026,RAT-012,Operating margin trend,trend,Medium,fail,Validation triggered,{'Operating_Margin': np.float64(0.0819238220721862)}
+AARTI DRUGS LTD,2026,RAT-014,Return on assets outlier,ratio,Medium,pass,Validation passed,"{'ROA': np.float64(0.0692369443674829), 'robust_z': None}"
+AARTI DRUGS LTD,2026,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.1258473974406983), 'robust_z': None}"
+AARTI DRUGS LTD,2026,RAT-017,Asset turnover outlier,ratio,Medium,pass,Validation passed,"{'Asset_Utilization_Ratio': np.float64(0.9112160155722738), 'robust_z': None}"
+AARTI DRUGS LTD,2026,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(5.22700599046416), 'robust_z': None}"
+AARTI DRUGS LTD,2026,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(3.091219106607059), 'robust_z': None}"
+AARTI DRUGS LTD,2026,RAT-020,Days sales outstanding trend,trend,Medium,fail,Validation triggered,{'dso': np.float64(118.07639232685328)}
+AARTI DRUGS LTD,2026,RAT-022,Days inventory outstanding trend,trend,Medium,pass,Validation passed,{'dio': np.float64(69.82965021771247)}
+AARTI DRUGS LTD,2026,RAT-024,Revenue growth rate,trend,Medium,pass,Validation passed,{'Revenue_Growth': np.float64(0.0746869540810126)}
+AARTI DRUGS LTD,2026,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(0.0746869540810126), 'robust_z': None}"
+AARTI DRUGS LTD,2026,TR-002,Year-over-year expense variance,trend,Medium,pass,Validation passed,{'Total Expenses': np.float64(2357.54)}
+AARTI DRUGS LTD,2026,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(94.13576525423412), 'robust_z': None}"
+AARTI DRUGS LTD,2026,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.9190078392085168), 'robust_z': None}"
+AARTI DRUGS LTD,2026,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.0759830195960722), 'Operating_Margin': np.float64(0.0819238220721862), 'robust_z': None}"

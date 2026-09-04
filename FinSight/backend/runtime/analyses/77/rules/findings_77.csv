@@ -1,0 +1,421 @@
+Company,Year,Rule ID,Rule Description,Category,Severity,Status,Message,Observed
+BHARTI AIRTEL LTD,2017,BS-001,Balance sheet equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(242209.6), 'Total Liabilities': np.float64(232322.3), 'Equity Share Capital': np.float64(1998.7), 'Reserves': np.float64(65457.6)}"
+BHARTI AIRTEL LTD,2017,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(1998.7), 'Reserves': np.float64(65457.6)}"
+BHARTI AIRTEL LTD,2017,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,skipped,Unavailable prior-year Cash & Bank,"{'Cash & Bank': np.float64(5098.3), 'Net Cash Flow': np.float64(-2751.5)}"
+BHARTI AIRTEL LTD,2017,CF-004,Financing activity plausibility,cross_statement,High,skipped,Unavailable prior-year Borrowings,"{'Borrowings': np.float64(107287.6), 'Dividend Amount': np.float64(399.74), 'Cash from Financing Activity': np.float64(-351.4)}"
+BHARTI AIRTEL LTD,2017,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(3799.8), 'Depreciation': np.float64(19773.0), 'Cash from Operating Activity': np.float64(28279.9)}"
+BHARTI AIRTEL LTD,2017,CF-008,Sustained negative operating cash flow,trend,High,skipped,Insufficient history for Cash from Operating Activity,{'Cash from Operating Activity': np.float64(28279.9)}
+BHARTI AIRTEL LTD,2017,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+BHARTI AIRTEL LTD,2017,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(399.74), 'Reserves': np.float64(65457.6)}"
+BHARTI AIRTEL LTD,2017,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'BHARTI AIRTEL LTD', 'Year': np.int64(2017)}"
+BHARTI AIRTEL LTD,2017,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+BHARTI AIRTEL LTD,2017,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(5098.3), 'Inventory': np.float64(48.8)}"
+BHARTI AIRTEL LTD,2017,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+BHARTI AIRTEL LTD,2017,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(95468.3), 'robust_z': None}"
+BHARTI AIRTEL LTD,2017,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2017), 'Report Date': '2017-03-31'}"
+BHARTI AIRTEL LTD,2017,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(1.0), 'robust_z': None}"
+BHARTI AIRTEL LTD,2017,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(9546.6), 'Borrowings': np.float64(107287.6)}"
+BHARTI AIRTEL LTD,2017,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.4508306034985045), 'robust_z': None}"
+BHARTI AIRTEL LTD,2017,IS-010,Unusual expense spike detection,trend,High,skipped,Unavailable prior-year Total Expenses,{'Total Expenses': np.float64(0.0)}
+BHARTI AIRTEL LTD,2017,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,skipped,"Unavailable metric values: ['Revenue_Growth', 'Operating_CF_Growth']","{'Revenue_Growth': np.float64(nan), 'Operating_CF_Growth': np.float64(nan)}"
+BHARTI AIRTEL LTD,2017,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,skipped,Unavailable prior-year Reserves,"{'Net profit': np.float64(3799.8), 'Dividend Amount': np.float64(399.74), 'Reserves': np.float64(65457.6)}"
+BHARTI AIRTEL LTD,2017,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+BHARTI AIRTEL LTD,2017,LED-001,Accounting equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(242209.6), 'Total Liabilities': np.float64(232322.3), 'Equity Share Capital': np.float64(1998.7), 'Reserves': np.float64(65457.6)}"
+BHARTI AIRTEL LTD,2017,RAT-005,Debt-to-equity ratio,ratio,High,pass,Validation passed,{'Debt_Equity_Ratio': np.float64(1.5904756116181884)}
+BHARTI AIRTEL LTD,2017,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+BHARTI AIRTEL LTD,2017,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+BHARTI AIRTEL LTD,2017,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+BHARTI AIRTEL LTD,2017,RAT-010,Gross profit margin trend,trend,Medium,skipped,Insufficient history for gross_margin,{'gross_margin': np.float64(1.0)}
+BHARTI AIRTEL LTD,2017,RAT-011,Net profit margin trend,trend,Medium,skipped,Insufficient history for Profit_Margin,{'Profit_Margin': np.float64(0.0398016933369505)}
+BHARTI AIRTEL LTD,2017,RAT-012,Operating margin trend,trend,Medium,skipped,Insufficient history for Operating_Margin,{'Operating_Margin': np.float64(0.0)}
+BHARTI AIRTEL LTD,2017,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+BHARTI AIRTEL LTD,2017,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.0563298016641885), 'robust_z': None}"
+BHARTI AIRTEL LTD,2017,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+BHARTI AIRTEL LTD,2017,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(1956.31762295082), 'robust_z': None}"
+BHARTI AIRTEL LTD,2017,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(20.140141766170206), 'robust_z': None}"
+BHARTI AIRTEL LTD,2017,RAT-020,Days sales outstanding trend,trend,Medium,skipped,Insufficient history for dso,{'dso': np.float64(18.12301046525391)}
+BHARTI AIRTEL LTD,2017,RAT-022,Days inventory outstanding trend,trend,Medium,skipped,Insufficient history for dio,{'dio': np.float64(0.1865750201899478)}
+BHARTI AIRTEL LTD,2017,RAT-024,Revenue growth rate,trend,Medium,skipped,Unavailable metric values: ['Revenue_Growth'],{'Revenue_Growth': np.float64(nan)}
+BHARTI AIRTEL LTD,2017,TR-001,Year-over-year revenue variance,trend,Medium,skipped,Unavailable metric values: ['Revenue_Growth'],{'Revenue_Growth': np.float64(nan)}
+BHARTI AIRTEL LTD,2017,TR-002,Year-over-year expense variance,trend,Medium,skipped,Unavailable prior-year Total Expenses,{'Total Expenses': np.float64(0.0)}
+BHARTI AIRTEL LTD,2017,TR-003,Multi-year trend consistency,trend,Medium,skipped,Unavailable metric values: ['Revenue_Volatility'],{'Revenue_Volatility': np.float64(nan)}
+BHARTI AIRTEL LTD,2017,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+BHARTI AIRTEL LTD,2017,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.0398016933369505), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
+BHARTI AIRTEL LTD,2018,BS-001,Balance sheet equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(262143.9), 'Total Liabilities': np.float64(249521.0), 'Equity Share Capital': np.float64(1998.7), 'Reserves': np.float64(67535.7)}"
+BHARTI AIRTEL LTD,2018,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(1998.7), 'Reserves': np.float64(67535.7)}"
+BHARTI AIRTEL LTD,2018,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(6670.6), 'Net Cash Flow': np.float64(3834.8)}"
+BHARTI AIRTEL LTD,2018,CF-004,Financing activity plausibility,cross_statement,High,pass,Validation passed,"{'Borrowings': np.float64(111333.5), 'Dividend Amount': np.float64(2134.61), 'Cash from Financing Activity': np.float64(1920.5)}"
+BHARTI AIRTEL LTD,2018,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(1099.0), 'Depreciation': np.float64(19243.1), 'Cash from Operating Activity': np.float64(29853.8)}"
+BHARTI AIRTEL LTD,2018,CF-008,Sustained negative operating cash flow,trend,High,skipped,Insufficient history for Cash from Operating Activity,{'Cash from Operating Activity': np.float64(29853.8)}
+BHARTI AIRTEL LTD,2018,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+BHARTI AIRTEL LTD,2018,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(2134.61), 'Reserves': np.float64(67535.7)}"
+BHARTI AIRTEL LTD,2018,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'BHARTI AIRTEL LTD', 'Year': np.int64(2018)}"
+BHARTI AIRTEL LTD,2018,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+BHARTI AIRTEL LTD,2018,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(6670.6), 'Inventory': np.float64(69.3)}"
+BHARTI AIRTEL LTD,2018,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+BHARTI AIRTEL LTD,2018,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(82638.8), 'robust_z': None}"
+BHARTI AIRTEL LTD,2018,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2018), 'Report Date': '2018-03-31'}"
+BHARTI AIRTEL LTD,2018,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(1.0), 'robust_z': None}"
+BHARTI AIRTEL LTD,2018,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(9325.5), 'Borrowings': np.float64(111333.5)}"
+BHARTI AIRTEL LTD,2018,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.3316498316498316), 'robust_z': None}"
+BHARTI AIRTEL LTD,2018,IS-010,Unusual expense spike detection,trend,High,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+BHARTI AIRTEL LTD,2018,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,pass,Validation passed,"{'Revenue_Growth': np.float64(-0.1343849214870276), 'Operating_CF_Growth': np.float64(0.0556543693577415)}"
+BHARTI AIRTEL LTD,2018,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(1099.0), 'Dividend Amount': np.float64(2134.61), 'Reserves': np.float64(67535.7)}"
+BHARTI AIRTEL LTD,2018,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+BHARTI AIRTEL LTD,2018,LED-001,Accounting equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(262143.9), 'Total Liabilities': np.float64(249521.0), 'Equity Share Capital': np.float64(1998.7), 'Reserves': np.float64(67535.7)}"
+BHARTI AIRTEL LTD,2018,RAT-005,Debt-to-equity ratio,ratio,High,pass,Validation passed,{'Debt_Equity_Ratio': np.float64(1.6011283623645276)}
+BHARTI AIRTEL LTD,2018,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+BHARTI AIRTEL LTD,2018,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+BHARTI AIRTEL LTD,2018,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+BHARTI AIRTEL LTD,2018,RAT-010,Gross profit margin trend,trend,Medium,skipped,Insufficient history for gross_margin,{'gross_margin': np.float64(1.0)}
+BHARTI AIRTEL LTD,2018,RAT-011,Net profit margin trend,trend,Medium,skipped,Insufficient history for Profit_Margin,{'Profit_Margin': np.float64(0.013298837834044)}
+BHARTI AIRTEL LTD,2018,RAT-012,Operating margin trend,trend,Medium,skipped,Insufficient history for Operating_Margin,{'Operating_Margin': np.float64(0.0)}
+BHARTI AIRTEL LTD,2018,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+BHARTI AIRTEL LTD,2018,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.0158051266711153), 'robust_z': None}"
+BHARTI AIRTEL LTD,2018,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+BHARTI AIRTEL LTD,2018,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(1192.4790764790766), 'robust_z': None}"
+BHARTI AIRTEL LTD,2018,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(14.047050824409316), 'robust_z': None}"
+BHARTI AIRTEL LTD,2018,RAT-020,Days sales outstanding trend,trend,Medium,skipped,Insufficient history for dso,{'dso': np.float64(25.98410189886591)}
+BHARTI AIRTEL LTD,2018,RAT-022,Days inventory outstanding trend,trend,Medium,skipped,Insufficient history for dio,{'dio': np.float64(0.3060850351166764)}
+BHARTI AIRTEL LTD,2018,RAT-024,Revenue growth rate,trend,Medium,fail,Validation triggered,{'Revenue_Growth': np.float64(-0.1343849214870276)}
+BHARTI AIRTEL LTD,2018,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(-0.1343849214870276), 'robust_z': None}"
+BHARTI AIRTEL LTD,2018,TR-002,Year-over-year expense variance,trend,Medium,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+BHARTI AIRTEL LTD,2018,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(9071.82644923281), 'robust_z': None}"
+BHARTI AIRTEL LTD,2018,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+BHARTI AIRTEL LTD,2018,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.013298837834044), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
+BHARTI AIRTEL LTD,2019,BS-001,Balance sheet equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(286479.3), 'Total Liabilities': np.float64(274026.3), 'Equity Share Capital': np.float64(1998.7), 'Reserves': np.float64(69423.5)}"
+BHARTI AIRTEL LTD,2019,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(1998.7), 'Reserves': np.float64(69423.5)}"
+BHARTI AIRTEL LTD,2019,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(8064.0), 'Net Cash Flow': np.float64(1248.4)}"
+BHARTI AIRTEL LTD,2019,CF-004,Financing activity plausibility,cross_statement,High,pass,Validation passed,"{'Borrowings': np.float64(125428.3), 'Dividend Amount': np.float64(999.35), 'Cash from Financing Activity': np.float64(9463.8)}"
+BHARTI AIRTEL LTD,2019,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(409.5), 'Depreciation': np.float64(21347.5), 'Cash from Operating Activity': np.float64(20070.2)}"
+BHARTI AIRTEL LTD,2019,CF-008,Sustained negative operating cash flow,trend,High,pass,Validation passed,{'Cash from Operating Activity': np.float64(20070.2)}
+BHARTI AIRTEL LTD,2019,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+BHARTI AIRTEL LTD,2019,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(999.35), 'Reserves': np.float64(69423.5)}"
+BHARTI AIRTEL LTD,2019,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'BHARTI AIRTEL LTD', 'Year': np.int64(2019)}"
+BHARTI AIRTEL LTD,2019,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+BHARTI AIRTEL LTD,2019,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(8064.0), 'Inventory': np.float64(88.4)}"
+BHARTI AIRTEL LTD,2019,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+BHARTI AIRTEL LTD,2019,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(80780.2), 'robust_z': None}"
+BHARTI AIRTEL LTD,2019,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2019), 'Report Date': '2019-03-31'}"
+BHARTI AIRTEL LTD,2019,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(1.0), 'robust_z': None}"
+BHARTI AIRTEL LTD,2019,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(10622.2), 'Borrowings': np.float64(125428.3)}"
+BHARTI AIRTEL LTD,2019,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(1.9744196789467607), 'robust_z': None}"
+BHARTI AIRTEL LTD,2019,IS-010,Unusual expense spike detection,trend,High,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+BHARTI AIRTEL LTD,2019,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,pass,Validation passed,"{'Revenue_Growth': np.float64(-0.0224906460403588), 'Operating_CF_Growth': np.float64(-0.3277170745432741)}"
+BHARTI AIRTEL LTD,2019,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(409.5), 'Dividend Amount': np.float64(999.35), 'Reserves': np.float64(69423.5)}"
+BHARTI AIRTEL LTD,2019,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+BHARTI AIRTEL LTD,2019,LED-001,Accounting equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(286479.3), 'Total Liabilities': np.float64(274026.3), 'Equity Share Capital': np.float64(1998.7), 'Reserves': np.float64(69423.5)}"
+BHARTI AIRTEL LTD,2019,RAT-005,Debt-to-equity ratio,ratio,High,pass,Validation passed,{'Debt_Equity_Ratio': np.float64(1.756152848834116)}
+BHARTI AIRTEL LTD,2019,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+BHARTI AIRTEL LTD,2019,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+BHARTI AIRTEL LTD,2019,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+BHARTI AIRTEL LTD,2019,RAT-010,Gross profit margin trend,trend,Medium,fail,Validation triggered,{'gross_margin': np.float64(1.0)}
+BHARTI AIRTEL LTD,2019,RAT-011,Net profit margin trend,trend,Medium,fail,Validation triggered,{'Profit_Margin': np.float64(0.0050693115392138)}
+BHARTI AIRTEL LTD,2019,RAT-012,Operating margin trend,trend,Medium,fail,Validation triggered,{'Operating_Margin': np.float64(0.0)}
+BHARTI AIRTEL LTD,2019,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+BHARTI AIRTEL LTD,2019,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.0057335114292194), 'robust_z': None}"
+BHARTI AIRTEL LTD,2019,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+BHARTI AIRTEL LTD,2019,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(913.8031674208144), 'robust_z': None}"
+BHARTI AIRTEL LTD,2019,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(18.783472073664136), 'robust_z': None}"
+BHARTI AIRTEL LTD,2019,RAT-020,Days sales outstanding trend,trend,Medium,pass,Validation passed,{'dso': np.float64(19.431977142913738)}
+BHARTI AIRTEL LTD,2019,RAT-022,Days inventory outstanding trend,trend,Medium,fail,Validation triggered,{'dio': np.float64(0.399429563185038)}
+BHARTI AIRTEL LTD,2019,RAT-024,Revenue growth rate,trend,Medium,fail,Validation triggered,{'Revenue_Growth': np.float64(-0.0224906460403588)}
+BHARTI AIRTEL LTD,2019,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(-0.0224906460403588), 'robust_z': None}"
+BHARTI AIRTEL LTD,2019,TR-002,Year-over-year expense variance,trend,Medium,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+BHARTI AIRTEL LTD,2019,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(7997.819971925684), 'robust_z': None}"
+BHARTI AIRTEL LTD,2019,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+BHARTI AIRTEL LTD,2019,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.0050693115392138), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
+BHARTI AIRTEL LTD,2020,BS-001,Balance sheet equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(379746.7), 'Total Liabilities': np.float64(359091.30000000005), 'Equity Share Capital': np.float64(2727.8), 'Reserves': np.float64(74417.0)}"
+BHARTI AIRTEL LTD,2020,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(2727.8), 'Reserves': np.float64(74417.0)}"
+BHARTI AIRTEL LTD,2020,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(15892.7), 'Net Cash Flow': np.float64(7674.6)}"
+BHARTI AIRTEL LTD,2020,CF-004,Financing activity plausibility,cross_statement,High,pass,Validation passed,"{'Borrowings': np.float64(148228.1), 'Dividend Amount': np.float64(1091.12), 'Cash from Financing Activity': np.float64(19144.4)}"
+BHARTI AIRTEL LTD,2020,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(-32183.2), 'Depreciation': np.float64(27689.6), 'Cash from Operating Activity': np.float64(18128.7)}"
+BHARTI AIRTEL LTD,2020,CF-008,Sustained negative operating cash flow,trend,High,pass,Validation passed,{'Cash from Operating Activity': np.float64(18128.7)}
+BHARTI AIRTEL LTD,2020,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+BHARTI AIRTEL LTD,2020,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(1091.12), 'Reserves': np.float64(74417.0)}"
+BHARTI AIRTEL LTD,2020,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'BHARTI AIRTEL LTD', 'Year': np.int64(2020)}"
+BHARTI AIRTEL LTD,2020,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+BHARTI AIRTEL LTD,2020,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(15892.7), 'Inventory': np.float64(156.9)}"
+BHARTI AIRTEL LTD,2020,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+BHARTI AIRTEL LTD,2020,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(87539.0), 'robust_z': None}"
+BHARTI AIRTEL LTD,2020,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2020), 'Report Date': '2020-03-31'}"
+BHARTI AIRTEL LTD,2020,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(1.0), 'robust_z': None}"
+BHARTI AIRTEL LTD,2020,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(13991.8), 'Borrowings': np.float64(148228.1)}"
+BHARTI AIRTEL LTD,2020,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.2843242738613422), 'robust_z': None}"
+BHARTI AIRTEL LTD,2020,IS-010,Unusual expense spike detection,trend,High,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+BHARTI AIRTEL LTD,2020,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,fail,Validation triggered,"{'Revenue_Growth': np.float64(0.083669017902902), 'Operating_CF_Growth': np.float64(-0.0967354585405227)}"
+BHARTI AIRTEL LTD,2020,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(-32183.2), 'Dividend Amount': np.float64(1091.12), 'Reserves': np.float64(74417.0)}"
+BHARTI AIRTEL LTD,2020,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+BHARTI AIRTEL LTD,2020,LED-001,Accounting equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(379746.7), 'Total Liabilities': np.float64(359091.30000000005), 'Equity Share Capital': np.float64(2727.8), 'Reserves': np.float64(74417.0)}"
+BHARTI AIRTEL LTD,2020,RAT-005,Debt-to-equity ratio,ratio,High,pass,Validation passed,{'Debt_Equity_Ratio': np.float64(1.921426978876088)}
+BHARTI AIRTEL LTD,2020,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+BHARTI AIRTEL LTD,2020,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+BHARTI AIRTEL LTD,2020,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+BHARTI AIRTEL LTD,2020,RAT-010,Gross profit margin trend,trend,Medium,fail,Validation triggered,{'gross_margin': np.float64(1.0)}
+BHARTI AIRTEL LTD,2020,RAT-011,Net profit margin trend,trend,Medium,fail,Validation triggered,{'Profit_Margin': np.float64(-0.3676441357566342)}
+BHARTI AIRTEL LTD,2020,RAT-012,Operating margin trend,trend,Medium,fail,Validation triggered,{'Operating_Margin': np.float64(0.0)}
+BHARTI AIRTEL LTD,2020,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+BHARTI AIRTEL LTD,2020,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(-0.4171791228961641), 'robust_z': None}"
+BHARTI AIRTEL LTD,2020,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+BHARTI AIRTEL LTD,2020,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(557.9286169534736), 'robust_z': None}"
+BHARTI AIRTEL LTD,2020,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(19.00625298536628), 'robust_z': None}"
+BHARTI AIRTEL LTD,2020,RAT-020,Days sales outstanding trend,trend,Medium,pass,Validation passed,{'dso': np.float64(19.20420612526988)}
+BHARTI AIRTEL LTD,2020,RAT-022,Days inventory outstanding trend,trend,Medium,fail,Validation triggered,{'dio': np.float64(0.6542055540958887)}
+BHARTI AIRTEL LTD,2020,RAT-024,Revenue growth rate,trend,Medium,pass,Validation passed,{'Revenue_Growth': np.float64(0.083669017902902)}
+BHARTI AIRTEL LTD,2020,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(0.083669017902902), 'robust_z': None}"
+BHARTI AIRTEL LTD,2020,TR-002,Year-over-year expense variance,trend,Medium,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+BHARTI AIRTEL LTD,2020,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(3491.602579523229), 'robust_z': None}"
+BHARTI AIRTEL LTD,2020,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+BHARTI AIRTEL LTD,2020,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(-0.3676441357566342), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
+BHARTI AIRTEL LTD,2021,BS-001,Balance sheet equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(361786.9), 'Total Liabilities': np.float64(344417.10000000003), 'Equity Share Capital': np.float64(2746.0), 'Reserves': np.float64(56206.7)}"
+BHARTI AIRTEL LTD,2021,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(2746.0), 'Reserves': np.float64(56206.7)}"
+BHARTI AIRTEL LTD,2021,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(13466.1), 'Net Cash Flow': np.float64(-3990.9)}"
+BHARTI AIRTEL LTD,2021,CF-004,Financing activity plausibility,cross_statement,High,skipped,Unavailable metric values: ['Dividend Amount'],"{'Borrowings': np.float64(162785.2), 'Dividend Amount': np.float64(nan), 'Cash from Financing Activity': np.float64(-24910.3)}"
+BHARTI AIRTEL LTD,2021,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(-15083.5), 'Depreciation': np.float64(29404.4), 'Cash from Operating Activity': np.float64(48205.0)}"
+BHARTI AIRTEL LTD,2021,CF-008,Sustained negative operating cash flow,trend,High,pass,Validation passed,{'Cash from Operating Activity': np.float64(48205.0)}
+BHARTI AIRTEL LTD,2021,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+BHARTI AIRTEL LTD,2021,CF-010,Dividend versus reserves,solvency,High,skipped,Unavailable metric values: ['Dividend Amount'],"{'Dividend Amount': np.float64(nan), 'Reserves': np.float64(56206.7)}"
+BHARTI AIRTEL LTD,2021,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'BHARTI AIRTEL LTD', 'Year': np.int64(2021)}"
+BHARTI AIRTEL LTD,2021,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+BHARTI AIRTEL LTD,2021,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(13466.1), 'Inventory': np.float64(266.0)}"
+BHARTI AIRTEL LTD,2021,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+BHARTI AIRTEL LTD,2021,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(100615.8), 'robust_z': None}"
+BHARTI AIRTEL LTD,2021,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2021), 'Report Date': '2021-03-31'}"
+BHARTI AIRTEL LTD,2021,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(1.0), 'robust_z': None}"
+BHARTI AIRTEL LTD,2021,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(15091.0), 'Borrowings': np.float64(162785.2)}"
+BHARTI AIRTEL LTD,2021,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(-2.6030890281218126), 'robust_z': None}"
+BHARTI AIRTEL LTD,2021,IS-010,Unusual expense spike detection,trend,High,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+BHARTI AIRTEL LTD,2021,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,pass,Validation passed,"{'Revenue_Growth': np.float64(0.1493825609157062), 'Operating_CF_Growth': np.float64(1.6590433952793084)}"
+BHARTI AIRTEL LTD,2021,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,skipped,Unavailable metric values: ['Dividend Amount'],"{'Net profit': np.float64(-15083.5), 'Dividend Amount': np.float64(nan), 'Reserves': np.float64(56206.7)}"
+BHARTI AIRTEL LTD,2021,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+BHARTI AIRTEL LTD,2021,LED-001,Accounting equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(361786.9), 'Total Liabilities': np.float64(344417.10000000003), 'Equity Share Capital': np.float64(2746.0), 'Reserves': np.float64(56206.7)}"
+BHARTI AIRTEL LTD,2021,RAT-005,Debt-to-equity ratio,ratio,High,pass,Validation passed,{'Debt_Equity_Ratio': np.float64(2.761284894500168)}
+BHARTI AIRTEL LTD,2021,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+BHARTI AIRTEL LTD,2021,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+BHARTI AIRTEL LTD,2021,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+BHARTI AIRTEL LTD,2021,RAT-010,Gross profit margin trend,trend,Medium,fail,Validation triggered,{'gross_margin': np.float64(1.0)}
+BHARTI AIRTEL LTD,2021,RAT-011,Net profit margin trend,trend,Medium,pass,Validation passed,{'Profit_Margin': np.float64(-0.1499118428715967)}
+BHARTI AIRTEL LTD,2021,RAT-012,Operating margin trend,trend,Medium,fail,Validation triggered,{'Operating_Margin': np.float64(0.0)}
+BHARTI AIRTEL LTD,2021,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+BHARTI AIRTEL LTD,2021,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(-0.2558576621596636), 'robust_z': None}"
+BHARTI AIRTEL LTD,2021,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+BHARTI AIRTEL LTD,2021,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(378.2548872180451), 'robust_z': None}"
+BHARTI AIRTEL LTD,2021,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(27.659180251257663), 'robust_z': None}"
+BHARTI AIRTEL LTD,2021,RAT-020,Days sales outstanding trend,trend,Medium,pass,Validation passed,{'dso': np.float64(13.19634192641712)}
+BHARTI AIRTEL LTD,2021,RAT-022,Days inventory outstanding trend,trend,Medium,fail,Validation triggered,{'dio': np.float64(0.9649577899296136)}
+BHARTI AIRTEL LTD,2021,RAT-024,Revenue growth rate,trend,Medium,pass,Validation passed,{'Revenue_Growth': np.float64(0.1493825609157062)}
+BHARTI AIRTEL LTD,2021,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(0.1493825609157062), 'robust_z': None}"
+BHARTI AIRTEL LTD,2021,TR-002,Year-over-year expense variance,trend,Medium,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+BHARTI AIRTEL LTD,2021,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(10084.105505199752), 'robust_z': None}"
+BHARTI AIRTEL LTD,2021,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+BHARTI AIRTEL LTD,2021,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(-0.1499118428715967), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
+BHARTI AIRTEL LTD,2022,BS-001,Balance sheet equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(379132.7), 'Total Liabilities': np.float64(361207.2), 'Equity Share Capital': np.float64(2795.0), 'Reserves': np.float64(63759.3)}"
+BHARTI AIRTEL LTD,2022,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(2795.0), 'Reserves': np.float64(63759.3)}"
+BHARTI AIRTEL LTD,2022,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(13494.3), 'Net Cash Flow': np.float64(-1664.3)}"
+BHARTI AIRTEL LTD,2022,CF-004,Financing activity plausibility,cross_statement,High,pass,Validation passed,"{'Borrowings': np.float64(169677.9), 'Dividend Amount': np.float64(1677.0), 'Cash from Financing Activity': np.float64(-15203.2)}"
+BHARTI AIRTEL LTD,2022,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(4254.9), 'Depreciation': np.float64(33090.7), 'Cash from Operating Activity': np.float64(55016.6)}"
+BHARTI AIRTEL LTD,2022,CF-008,Sustained negative operating cash flow,trend,High,pass,Validation passed,{'Cash from Operating Activity': np.float64(55016.6)}
+BHARTI AIRTEL LTD,2022,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+BHARTI AIRTEL LTD,2022,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(1677.0), 'Reserves': np.float64(63759.3)}"
+BHARTI AIRTEL LTD,2022,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'BHARTI AIRTEL LTD', 'Year': np.int64(2022)}"
+BHARTI AIRTEL LTD,2022,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+BHARTI AIRTEL LTD,2022,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(13494.3), 'Inventory': np.float64(375.0)}"
+BHARTI AIRTEL LTD,2022,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+BHARTI AIRTEL LTD,2022,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(116546.9), 'robust_z': None}"
+BHARTI AIRTEL LTD,2022,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2022), 'Report Date': '2022-03-31'}"
+BHARTI AIRTEL LTD,2022,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(1.0), 'robust_z': None}"
+BHARTI AIRTEL LTD,2022,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(16616.2), 'Borrowings': np.float64(169677.9)}"
+BHARTI AIRTEL LTD,2022,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.3346844934351242), 'robust_z': None}"
+BHARTI AIRTEL LTD,2022,IS-010,Unusual expense spike detection,trend,High,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+BHARTI AIRTEL LTD,2022,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,pass,Validation passed,"{'Revenue_Growth': np.float64(0.1583359671145088), 'Operating_CF_Growth': np.float64(0.1413048438958613)}"
+BHARTI AIRTEL LTD,2022,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(4254.9), 'Dividend Amount': np.float64(1677.0), 'Reserves': np.float64(63759.3)}"
+BHARTI AIRTEL LTD,2022,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+BHARTI AIRTEL LTD,2022,LED-001,Accounting equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(379132.7), 'Total Liabilities': np.float64(361207.2), 'Equity Share Capital': np.float64(2795.0), 'Reserves': np.float64(63759.3)}"
+BHARTI AIRTEL LTD,2022,RAT-005,Debt-to-equity ratio,ratio,High,pass,Validation passed,{'Debt_Equity_Ratio': np.float64(2.5494656243097737)}
+BHARTI AIRTEL LTD,2022,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+BHARTI AIRTEL LTD,2022,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+BHARTI AIRTEL LTD,2022,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+BHARTI AIRTEL LTD,2022,RAT-010,Gross profit margin trend,trend,Medium,fail,Validation triggered,{'gross_margin': np.float64(1.0)}
+BHARTI AIRTEL LTD,2022,RAT-011,Net profit margin trend,trend,Medium,pass,Validation passed,{'Profit_Margin': np.float64(0.0365080495491514)}
+BHARTI AIRTEL LTD,2022,RAT-012,Operating margin trend,trend,Medium,fail,Validation triggered,{'Operating_Margin': np.float64(0.0)}
+BHARTI AIRTEL LTD,2022,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+BHARTI AIRTEL LTD,2022,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.0639312561322108), 'robust_z': None}"
+BHARTI AIRTEL LTD,2022,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+BHARTI AIRTEL LTD,2022,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(310.7917333333333), 'robust_z': None}"
+BHARTI AIRTEL LTD,2022,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(28.733025984911983), 'robust_z': None}"
+BHARTI AIRTEL LTD,2022,RAT-020,Days sales outstanding trend,trend,Medium,pass,Validation passed,{'dso': np.float64(12.703152121592252)}
+BHARTI AIRTEL LTD,2022,RAT-022,Days inventory outstanding trend,trend,Medium,fail,Validation triggered,{'dio': np.float64(1.1744199116407217)}
+BHARTI AIRTEL LTD,2022,RAT-024,Revenue growth rate,trend,Medium,pass,Validation passed,{'Revenue_Growth': np.float64(0.1583359671145088)}
+BHARTI AIRTEL LTD,2022,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(0.1583359671145088), 'robust_z': None}"
+BHARTI AIRTEL LTD,2022,TR-002,Year-over-year expense variance,trend,Medium,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+BHARTI AIRTEL LTD,2022,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(14527.33577237524), 'robust_z': None}"
+BHARTI AIRTEL LTD,2022,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+BHARTI AIRTEL LTD,2022,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.0365080495491514), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
+BHARTI AIRTEL LTD,2023,BS-001,Balance sheet equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(462214.7), 'Total Liabilities': np.float64(444557.0), 'Equity Share Capital': np.float64(2836.6), 'Reserves': np.float64(74726.3)}"
+BHARTI AIRTEL LTD,2023,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(2836.6), 'Reserves': np.float64(74726.3)}"
+BHARTI AIRTEL LTD,2023,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(13418.6), 'Net Cash Flow': np.float64(1622.7)}"
+BHARTI AIRTEL LTD,2023,CF-004,Financing activity plausibility,cross_statement,High,fail,Validation triggered,"{'Borrowings': np.float64(226020.3), 'Dividend Amount': np.float64(2269.28), 'Cash from Financing Activity': np.float64(-24469.5)}"
+BHARTI AIRTEL LTD,2023,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(8345.9), 'Depreciation': np.float64(36431.8), 'Cash from Operating Activity': np.float64(65324.6)}"
+BHARTI AIRTEL LTD,2023,CF-008,Sustained negative operating cash flow,trend,High,pass,Validation passed,{'Cash from Operating Activity': np.float64(65324.6)}
+BHARTI AIRTEL LTD,2023,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+BHARTI AIRTEL LTD,2023,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(2269.28), 'Reserves': np.float64(74726.3)}"
+BHARTI AIRTEL LTD,2023,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'BHARTI AIRTEL LTD', 'Year': np.int64(2023)}"
+BHARTI AIRTEL LTD,2023,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+BHARTI AIRTEL LTD,2023,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(13418.6), 'Inventory': np.float64(257.6)}"
+BHARTI AIRTEL LTD,2023,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+BHARTI AIRTEL LTD,2023,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(139144.8), 'robust_z': None}"
+BHARTI AIRTEL LTD,2023,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2023), 'Report Date': '2023-03-31'}"
+BHARTI AIRTEL LTD,2023,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(1.0), 'robust_z': None}"
+BHARTI AIRTEL LTD,2023,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(19299.9), 'Borrowings': np.float64(226020.3)}"
+BHARTI AIRTEL LTD,2023,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.2580386094790679), 'robust_z': None}"
+BHARTI AIRTEL LTD,2023,IS-010,Unusual expense spike detection,trend,High,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+BHARTI AIRTEL LTD,2023,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,pass,Validation passed,"{'Revenue_Growth': np.float64(0.1938953331234034), 'Operating_CF_Growth': np.float64(0.1873616326708667)}"
+BHARTI AIRTEL LTD,2023,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(8345.9), 'Dividend Amount': np.float64(2269.28), 'Reserves': np.float64(74726.3)}"
+BHARTI AIRTEL LTD,2023,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+BHARTI AIRTEL LTD,2023,LED-001,Accounting equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(462214.7), 'Total Liabilities': np.float64(444557.0), 'Equity Share Capital': np.float64(2836.6), 'Reserves': np.float64(74726.3)}"
+BHARTI AIRTEL LTD,2023,RAT-005,Debt-to-equity ratio,ratio,High,pass,Validation passed,{'Debt_Equity_Ratio': np.float64(2.91402590671571)}
+BHARTI AIRTEL LTD,2023,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+BHARTI AIRTEL LTD,2023,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+BHARTI AIRTEL LTD,2023,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+BHARTI AIRTEL LTD,2023,RAT-010,Gross profit margin trend,trend,Medium,fail,Validation triggered,{'gross_margin': np.float64(1.0)}
+BHARTI AIRTEL LTD,2023,RAT-011,Net profit margin trend,trend,Medium,pass,Validation passed,{'Profit_Margin': np.float64(0.0599799633187873)}
+BHARTI AIRTEL LTD,2023,RAT-012,Operating margin trend,trend,Medium,fail,Validation triggered,{'Operating_Margin': np.float64(0.0)}
+BHARTI AIRTEL LTD,2023,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+BHARTI AIRTEL LTD,2023,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.1076017013288569), 'robust_z': None}"
+BHARTI AIRTEL LTD,2023,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+BHARTI AIRTEL LTD,2023,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(540.1583850931676), 'robust_z': None}"
+BHARTI AIRTEL LTD,2023,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(34.9478337310059), 'robust_z': None}"
+BHARTI AIRTEL LTD,2023,RAT-020,Days sales outstanding trend,trend,Medium,pass,Validation passed,{'dso': np.float64(10.44413804899644)}
+BHARTI AIRTEL LTD,2023,RAT-022,Days inventory outstanding trend,trend,Medium,pass,Validation passed,{'dio': np.float64(0.6757277311117629)}
+BHARTI AIRTEL LTD,2023,RAT-024,Revenue growth rate,trend,Medium,pass,Validation passed,{'Revenue_Growth': np.float64(0.1938953331234034)}
+BHARTI AIRTEL LTD,2023,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(0.1938953331234034), 'robust_z': None}"
+BHARTI AIRTEL LTD,2023,TR-002,Year-over-year expense variance,trend,Medium,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+BHARTI AIRTEL LTD,2023,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(19360.39287058333), 'robust_z': None}"
+BHARTI AIRTEL LTD,2023,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+BHARTI AIRTEL LTD,2023,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.0599799633187873), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
+BHARTI AIRTEL LTD,2024,BS-001,Balance sheet equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(463450.7), 'Total Liabilities': np.float64(442019.2), 'Equity Share Capital': np.float64(2876.6), 'Reserves': np.float64(79142.2)}"
+BHARTI AIRTEL LTD,2024,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(2876.6), 'Reserves': np.float64(79142.2)}"
+BHARTI AIRTEL LTD,2024,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(16339.9), 'Net Cash Flow': np.float64(30.7)}"
+BHARTI AIRTEL LTD,2024,CF-004,Financing activity plausibility,cross_statement,High,pass,Validation passed,"{'Borrowings': np.float64(215592.3), 'Dividend Amount': np.float64(4602.56), 'Cash from Financing Activity': np.float64(-27778.5)}"
+BHARTI AIRTEL LTD,2024,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(7467.0), 'Depreciation': np.float64(39537.6), 'Cash from Operating Activity': np.float64(78898.2)}"
+BHARTI AIRTEL LTD,2024,CF-008,Sustained negative operating cash flow,trend,High,pass,Validation passed,{'Cash from Operating Activity': np.float64(78898.2)}
+BHARTI AIRTEL LTD,2024,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+BHARTI AIRTEL LTD,2024,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(4602.56), 'Reserves': np.float64(79142.2)}"
+BHARTI AIRTEL LTD,2024,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'BHARTI AIRTEL LTD', 'Year': np.int64(2024)}"
+BHARTI AIRTEL LTD,2024,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+BHARTI AIRTEL LTD,2024,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(16339.9), 'Inventory': np.float64(363.9)}"
+BHARTI AIRTEL LTD,2024,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+BHARTI AIRTEL LTD,2024,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(149982.4), 'robust_z': None}"
+BHARTI AIRTEL LTD,2024,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2024), 'Report Date': '2024-03-31'}"
+BHARTI AIRTEL LTD,2024,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(1.0), 'robust_z': None}"
+BHARTI AIRTEL LTD,2024,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(22647.7), 'Borrowings': np.float64(215592.3)}"
+BHARTI AIRTEL LTD,2024,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.3250256329363514), 'robust_z': None}"
+BHARTI AIRTEL LTD,2024,IS-010,Unusual expense spike detection,trend,High,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+BHARTI AIRTEL LTD,2024,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,pass,Validation passed,"{'Revenue_Growth': np.float64(0.0778872081457588), 'Operating_CF_Growth': np.float64(0.2077869592772094)}"
+BHARTI AIRTEL LTD,2024,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(7467.0), 'Dividend Amount': np.float64(4602.56), 'Reserves': np.float64(79142.2)}"
+BHARTI AIRTEL LTD,2024,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+BHARTI AIRTEL LTD,2024,LED-001,Accounting equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(463450.7), 'Total Liabilities': np.float64(442019.2), 'Equity Share Capital': np.float64(2876.6), 'Reserves': np.float64(79142.2)}"
+BHARTI AIRTEL LTD,2024,RAT-005,Debt-to-equity ratio,ratio,High,pass,Validation passed,{'Debt_Equity_Ratio': np.float64(2.628571742088399)}
+BHARTI AIRTEL LTD,2024,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+BHARTI AIRTEL LTD,2024,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+BHARTI AIRTEL LTD,2024,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+BHARTI AIRTEL LTD,2024,RAT-010,Gross profit margin trend,trend,Medium,fail,Validation triggered,{'gross_margin': np.float64(1.0)}
+BHARTI AIRTEL LTD,2024,RAT-011,Net profit margin trend,trend,Medium,pass,Validation passed,{'Profit_Margin': np.float64(0.0497858415387405)}
+BHARTI AIRTEL LTD,2024,RAT-012,Operating margin trend,trend,Medium,fail,Validation triggered,{'Operating_Margin': np.float64(0.0)}
+BHARTI AIRTEL LTD,2024,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+BHARTI AIRTEL LTD,2024,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.0910401030007754), 'robust_z': None}"
+BHARTI AIRTEL LTD,2024,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+BHARTI AIRTEL LTD,2024,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(412.1527892278098), 'robust_z': None}"
+BHARTI AIRTEL LTD,2024,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(31.72417877614908), 'robust_z': None}"
+BHARTI AIRTEL LTD,2024,RAT-020,Days sales outstanding trend,trend,Medium,pass,Validation passed,{'dso': np.float64(11.505419969276396)}
+BHARTI AIRTEL LTD,2024,RAT-022,Days inventory outstanding trend,trend,Medium,pass,Validation passed,{'dio': np.float64(0.8855939096854031)}
+BHARTI AIRTEL LTD,2024,RAT-024,Revenue growth rate,trend,Medium,pass,Validation passed,{'Revenue_Growth': np.float64(0.0778872081457588)}
+BHARTI AIRTEL LTD,2024,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(0.0778872081457588), 'robust_z': None}"
+BHARTI AIRTEL LTD,2024,TR-002,Year-over-year expense variance,trend,Medium,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+BHARTI AIRTEL LTD,2024,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(17058.972802311448), 'robust_z': None}"
+BHARTI AIRTEL LTD,2024,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+BHARTI AIRTEL LTD,2024,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.0497858415387405), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
+BHARTI AIRTEL LTD,2025,BS-001,Balance sheet equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(529632.8), 'Total Liabilities': np.float64(505005.5), 'Equity Share Capital': np.float64(2900.1), 'Reserves': np.float64(110771.8)}"
+BHARTI AIRTEL LTD,2025,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(2900.1), 'Reserves': np.float64(110771.8)}"
+BHARTI AIRTEL LTD,2025,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(16719.9), 'Net Cash Flow': np.float64(1601.0)}"
+BHARTI AIRTEL LTD,2025,CF-004,Financing activity plausibility,cross_statement,High,pass,Validation passed,"{'Borrowings': np.float64(213642.1), 'Dividend Amount': np.float64(9280.32), 'Cash from Financing Activity': np.float64(-36533.2)}"
+BHARTI AIRTEL LTD,2025,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(33556.1), 'Depreciation': np.float64(45570.3), 'Cash from Operating Activity': np.float64(98332.2)}"
+BHARTI AIRTEL LTD,2025,CF-008,Sustained negative operating cash flow,trend,High,pass,Validation passed,{'Cash from Operating Activity': np.float64(98332.2)}
+BHARTI AIRTEL LTD,2025,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+BHARTI AIRTEL LTD,2025,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(9280.32), 'Reserves': np.float64(110771.8)}"
+BHARTI AIRTEL LTD,2025,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'BHARTI AIRTEL LTD', 'Year': np.int64(2025)}"
+BHARTI AIRTEL LTD,2025,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+BHARTI AIRTEL LTD,2025,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(16719.9), 'Inventory': np.float64(451.7)}"
+BHARTI AIRTEL LTD,2025,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+BHARTI AIRTEL LTD,2025,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(172985.2), 'robust_z': None}"
+BHARTI AIRTEL LTD,2025,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2025), 'Report Date': '2025-03-31'}"
+BHARTI AIRTEL LTD,2025,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(1.0), 'robust_z': None}"
+BHARTI AIRTEL LTD,2025,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(21753.9), 'Borrowings': np.float64(213642.1)}"
+BHARTI AIRTEL LTD,2025,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.0238863497272028), 'robust_z': None}"
+BHARTI AIRTEL LTD,2025,IS-010,Unusual expense spike detection,trend,High,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+BHARTI AIRTEL LTD,2025,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,pass,Validation passed,"{'Revenue_Growth': np.float64(0.1533699954127951), 'Operating_CF_Growth': np.float64(0.2463174064807562)}"
+BHARTI AIRTEL LTD,2025,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(33556.1), 'Dividend Amount': np.float64(9280.32), 'Reserves': np.float64(110771.8)}"
+BHARTI AIRTEL LTD,2025,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+BHARTI AIRTEL LTD,2025,LED-001,Accounting equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(529632.8), 'Total Liabilities': np.float64(505005.5), 'Equity Share Capital': np.float64(2900.1), 'Reserves': np.float64(110771.8)}"
+BHARTI AIRTEL LTD,2025,RAT-005,Debt-to-equity ratio,ratio,High,pass,Validation passed,{'Debt_Equity_Ratio': np.float64(1.879462734413694)}
+BHARTI AIRTEL LTD,2025,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+BHARTI AIRTEL LTD,2025,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+BHARTI AIRTEL LTD,2025,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+BHARTI AIRTEL LTD,2025,RAT-010,Gross profit margin trend,trend,Medium,fail,Validation triggered,{'gross_margin': np.float64(1.0)}
+BHARTI AIRTEL LTD,2025,RAT-011,Net profit margin trend,trend,Medium,pass,Validation passed,{'Profit_Margin': np.float64(0.1939824909876683)}
+BHARTI AIRTEL LTD,2025,RAT-012,Operating margin trend,trend,Medium,fail,Validation triggered,{'Operating_Margin': np.float64(0.0)}
+BHARTI AIRTEL LTD,2025,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+BHARTI AIRTEL LTD,2025,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.2952013646292531), 'robust_z': None}"
+BHARTI AIRTEL LTD,2025,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+BHARTI AIRTEL LTD,2025,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(382.96479964578265), 'robust_z': None}"
+BHARTI AIRTEL LTD,2025,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(23.20173826736591), 'robust_z': None}"
+BHARTI AIRTEL LTD,2025,RAT-020,Days sales outstanding trend,trend,Medium,fail,Validation triggered,{'dso': np.float64(15.731579927068903)}
+BHARTI AIRTEL LTD,2025,RAT-022,Days inventory outstanding trend,trend,Medium,fail,Validation triggered,{'dio': np.float64(0.9530902065610236)}
+BHARTI AIRTEL LTD,2025,RAT-024,Revenue growth rate,trend,Medium,pass,Validation passed,{'Revenue_Growth': np.float64(0.1533699954127951)}
+BHARTI AIRTEL LTD,2025,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(0.1533699954127951), 'robust_z': None}"
+BHARTI AIRTEL LTD,2025,TR-002,Year-over-year expense variance,trend,Medium,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+BHARTI AIRTEL LTD,2025,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(17280.794029596447), 'robust_z': None}"
+BHARTI AIRTEL LTD,2025,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+BHARTI AIRTEL LTD,2025,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.1939824909876683), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
+BHARTI AIRTEL LTD,2026,BS-001,Balance sheet equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(584328.0), 'Total Liabilities': np.float64(545372.7), 'Equity Share Capital': np.float64(3046.8), 'Reserves': np.float64(146009.8)}"
+BHARTI AIRTEL LTD,2026,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(3046.8), 'Reserves': np.float64(146009.8)}"
+BHARTI AIRTEL LTD,2026,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(30376.8), 'Net Cash Flow': np.float64(13731.6)}"
+BHARTI AIRTEL LTD,2026,CF-004,Financing activity plausibility,cross_statement,High,pass,Validation passed,"{'Borrowings': np.float64(195411.7), 'Dividend Amount': np.float64(14624.64), 'Cash from Financing Activity': np.float64(-52292.6)}"
+BHARTI AIRTEL LTD,2026,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(26695.2), 'Depreciation': np.float64(52710.8), 'Cash from Operating Activity': np.float64(122229.6)}"
+BHARTI AIRTEL LTD,2026,CF-008,Sustained negative operating cash flow,trend,High,pass,Validation passed,{'Cash from Operating Activity': np.float64(122229.6)}
+BHARTI AIRTEL LTD,2026,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+BHARTI AIRTEL LTD,2026,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(14624.64), 'Reserves': np.float64(146009.8)}"
+BHARTI AIRTEL LTD,2026,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'BHARTI AIRTEL LTD', 'Year': np.int64(2026)}"
+BHARTI AIRTEL LTD,2026,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+BHARTI AIRTEL LTD,2026,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(30376.8), 'Inventory': np.float64(600.9)}"
+BHARTI AIRTEL LTD,2026,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+BHARTI AIRTEL LTD,2026,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(210972.8), 'robust_z': None}"
+BHARTI AIRTEL LTD,2026,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2026), 'Report Date': '2026-03-31'}"
+BHARTI AIRTEL LTD,2026,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(1.0), 'robust_z': None}"
+BHARTI AIRTEL LTD,2026,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(21555.3), 'Borrowings': np.float64(195411.7)}"
+BHARTI AIRTEL LTD,2026,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.2512557363186172), 'robust_z': None}"
+BHARTI AIRTEL LTD,2026,IS-010,Unusual expense spike detection,trend,High,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+BHARTI AIRTEL LTD,2026,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,pass,Validation passed,"{'Revenue_Growth': np.float64(0.2196002895045354), 'Operating_CF_Growth': np.float64(0.2430272077712083)}"
+BHARTI AIRTEL LTD,2026,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(26695.2), 'Dividend Amount': np.float64(14624.64), 'Reserves': np.float64(146009.8)}"
+BHARTI AIRTEL LTD,2026,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+BHARTI AIRTEL LTD,2026,LED-001,Accounting equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(584328.0), 'Total Liabilities': np.float64(545372.7), 'Equity Share Capital': np.float64(3046.8), 'Reserves': np.float64(146009.8)}"
+BHARTI AIRTEL LTD,2026,RAT-005,Debt-to-equity ratio,ratio,High,pass,Validation passed,{'Debt_Equity_Ratio': np.float64(1.3109899192655678)}
+BHARTI AIRTEL LTD,2026,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+BHARTI AIRTEL LTD,2026,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+BHARTI AIRTEL LTD,2026,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+BHARTI AIRTEL LTD,2026,RAT-010,Gross profit margin trend,trend,Medium,fail,Validation triggered,{'gross_margin': np.float64(1.0)}
+BHARTI AIRTEL LTD,2026,RAT-011,Net profit margin trend,trend,Medium,pass,Validation passed,{'Profit_Margin': np.float64(0.1265338470172458)}
+BHARTI AIRTEL LTD,2026,RAT-012,Operating margin trend,trend,Medium,fail,Validation triggered,{'Operating_Margin': np.float64(0.0)}
+BHARTI AIRTEL LTD,2026,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+BHARTI AIRTEL LTD,2026,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.1790943842808705), 'robust_z': None}"
+BHARTI AIRTEL LTD,2026,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+BHARTI AIRTEL LTD,2026,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(351.0946912963888), 'robust_z': None}"
+BHARTI AIRTEL LTD,2026,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(26.445647813878857), 'robust_z': None}"
+BHARTI AIRTEL LTD,2026,RAT-020,Days sales outstanding trend,trend,Medium,pass,Validation passed,{'dso': np.float64(13.80189294544131)}
+BHARTI AIRTEL LTD,2026,RAT-022,Days inventory outstanding trend,trend,Medium,fail,Validation triggered,{'dio': np.float64(1.0396055794870238)}
+BHARTI AIRTEL LTD,2026,RAT-024,Revenue growth rate,trend,Medium,pass,Validation passed,{'Revenue_Growth': np.float64(0.2196002895045354)}
+BHARTI AIRTEL LTD,2026,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(0.2196002895045354), 'robust_z': None}"
+BHARTI AIRTEL LTD,2026,TR-002,Year-over-year expense variance,trend,Medium,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+BHARTI AIRTEL LTD,2026,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(30800.4747088959), 'robust_z': None}"
+BHARTI AIRTEL LTD,2026,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+BHARTI AIRTEL LTD,2026,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.1265338470172458), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"

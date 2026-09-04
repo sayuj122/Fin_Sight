@@ -1,0 +1,111 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [2 0 R 4 0 R] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Length 5135 >>
+stream
+BT /F1 10 Tf 45 792 Td (================================================================================) Tj ET
+BT /F1 10 Tf 45 779 Td (                       FINSIGHT COMPREHENSIVE AUDIT REPORT                      ) Tj ET
+BT /F1 10 Tf 45 766 Td (================================================================================) Tj ET
+BT /F1 10 Tf 45 753 Td (Analysis Session ID: #72) Tj ET
+BT /F1 10 Tf 45 740 Td (Client Company: ADANI ENTERPRISES LTD) Tj ET
+BT /F1 10 Tf 45 727 Td (Reporting Period: 2017 - 2026 \(10 years analyzed\)) Tj ET
+BT /F1 10 Tf 45 714 Td (Focus Financial Year: 2026) Tj ET
+BT /F1 10 Tf 45 701 Td (Report Generation Date: September 3, 2026) Tj ET
+BT /F1 10 Tf 45 688 Td (1. EXECUTIVE SUMMARY & PROVENANCE) Tj ET
+BT /F1 10 Tf 45 675 Td (This report presents the comprehensive audit finding analysis for ADANI ENTERPRISES) Tj ET
+BT /F1 10 Tf 45 662 Td (LTD covering the 2017 - 2026 financial statements. Data was ingested, preprocessed) Tj ET
+BT /F1 10 Tf 45 649 Td (using the 68-column standardized schema, and evaluated across 42 authoritative audit) Tj ET
+BT /F1 10 Tf 45 636 Td (control rules, Isolation Forest ML models, and Explainable AI \(XAI\) synthesis) Tj ET
+BT /F1 10 Tf 45 623 Td (engines.) Tj ET
+BT /F1 10 Tf 45 610 Td (2. RISK ASSESSMENT & METRIC EVALUATION) Tj ET
+BT /F1 10 Tf 45 597 Td (Overall Rule Risk Score: 33.1 / 100 \(Moderate Risk Classification\)) Tj ET
+BT /F1 10 Tf 45 584 Td (Passed Audit Control Rules: 28 / 42 rules) Tj ET
+BT /F1 10 Tf 45 571 Td (Failed Control Rules: 8 rules) Tj ET
+BT /F1 10 Tf 45 558 Td (Skipped Rules \(Insufficient Data\): 6 rules) Tj ET
+BT /F1 10 Tf 45 545 Td (ML Anomaly Classification: Anomaly) Tj ET
+BT /F1 10 Tf 45 532 Td (ML Isolation Forest Decision Score: -0.0193) Tj ET
+BT /F1 10 Tf 45 519 Td (ML Anomaly Score: 0.0193) Tj ET
+BT /F1 10 Tf 45 506 Td (3. PREPROCESSING & SCHEMA SUMMARY) Tj ET
+BT /F1 10 Tf 45 493 Td (Dataset underwent 68-column feature normalization, median imputation for missing) Tj ET
+BT /F1 10 Tf 45 480 Td (items, and RobustScaler IQR scaling across all financial statement ledgers \(P&L,) Tj ET
+BT /F1 10 Tf 45 467 Td (Balance Sheet, Cash Flow\).) Tj ET
+BT /F1 10 Tf 45 454 Td (4. RULE ENGINE AUDIT FINDINGS \(42 AUTHORITATIVE RULES\)) Tj ET
+BT /F1 10 Tf 45 441 Td (Control Category [integrity]: 3 Failed, 0 Passed, 0 Skipped) Tj ET
+BT /F1 10 Tf 45 428 Td (Control Category [cross_statement]: 2 Failed, 0 Passed, 0 Skipped) Tj ET
+BT /F1 10 Tf 45 415 Td (Control Category [ratio]: 1 Failed, 0 Passed, 0 Skipped) Tj ET
+BT /F1 10 Tf 45 402 Td (Control Category [trend]: 2 Failed, 0 Passed, 0 Skipped) Tj ET
+BT /F1 10 Tf 45 389 Td (5. FAILED CONTROL RULE DETAILS & EVIDENCE) Tj ET
+BT /F1 10 Tf 45 376 Td (Rule [BS-001] Balance sheet equation | Severity: Critical | Observed: {"observed":) Tj ET
+BT /F1 10 Tf 45 363 Td ("{'Total Assets': np.float64\(303933.39\), 'Total Liabilities': np.float64\(260868.38\),) Tj ET
+BT /F1 10 Tf 45 350 Td ('Equity Share Capital': np.float64\(129.24\), 'Reserves': np.float64\(80796.71\)}"}) Tj ET
+BT /F1 10 Tf 45 337 Td (Rule [CF-002] Cash flow to cash-balance tie-out | Severity: Critical | Observed:) Tj ET
+BT /F1 10 Tf 45 324 Td ({"observed": "{'Cash & Bank': np.float64\(11809.42\), 'Net Cash Flow':) Tj ET
+BT /F1 10 Tf 45 311 Td (np.float64\(3160.89\)}"}) Tj ET
+BT /F1 10 Tf 45 298 Td (Rule [IS-011] Revenue versus operating cash flow correlation | Severity: High |) Tj ET
+BT /F1 10 Tf 45 285 Td (Observed: {"observed": "{'Revenue_Growth': np.float64\(0.0262921147456836\),) Tj ET
+BT /F1 10 Tf 45 272 Td ('Operating_CF_Growth': np.float64\(-0.4777625135716027\)}"}) Tj ET
+BT /F1 10 Tf 45 259 Td (Rule [IS-013] Net income to reserve movement plausibility | Severity: Critical |) Tj ET
+BT /F1 10 Tf 45 246 Td (Observed: {"observed": "{'Net profit': np.float64\(9339.47\), 'Dividend Amount':) Tj ET
+BT /F1 10 Tf 45 233 Td (np.float64\(168.01\), 'Reserves': np.float64\(80796.71\)}"}) Tj ET
+BT /F1 10 Tf 45 220 Td (Rule [LED-001] Accounting equation | Severity: Critical | Observed: {"observed":) Tj ET
+BT /F1 10 Tf 45 207 Td ("{'Total Assets': np.float64\(303933.39\), 'Total Liabilities': np.float64\(260868.38\),) Tj ET
+BT /F1 10 Tf 45 194 Td ('Equity Share Capital': np.float64\(129.24\), 'Reserves': np.float64\(80796.71\)}"}) Tj ET
+BT /F1 10 Tf 45 181 Td (Rule [RAT-008] Interest coverage ratio | Severity: High | Observed: {"observed":) Tj ET
+BT /F1 10 Tf 45 168 Td ("{'Interest_Coverage_Ratio': np.float64\(0.0\)}"}) Tj ET
+BT /F1 10 Tf 45 155 Td (Rule [RAT-012] Operating margin trend | Severity: Medium | Observed: {"observed":) Tj ET
+BT /F1 10 Tf 45 142 Td ("{'Operating_Margin': np.float64\(0.0\)}"}) Tj ET
+BT /F1 10 Tf 45 129 Td (Rule [RAT-022] Days inventory outstanding trend | Severity: Medium | Observed:) Tj ET
+BT /F1 10 Tf 45 116 Td ({"observed": "{'dio': np.float64\(67.98379812361293\)}"}) Tj ET
+BT /F1 10 Tf 45 103 Td (6. ISOLATION FOREST ML ANOMALY DETECTION) Tj ET
+BT /F1 10 Tf 45 90 Td (Model Engine: Isolation Forest Ensemble \(63-Feature Schema\)) Tj ET
+BT /F1 10 Tf 45 77 Td (Selected Year Prediction: Anomaly) Tj ET
+BT /F1 10 Tf 45 64 Td (Decision Score: -0.0193) Tj ET
+endstream
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 1 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+6 0 obj
+<< /Length 1107 >>
+stream
+BT /F1 10 Tf 45 792 Td (Anomaly Score: 0.0193) Tj ET
+BT /F1 10 Tf 45 779 Td (7. EXPLAINABLE AI \(XAI\) SYNTHESIS & RECOMMENDATIONS) Tj ET
+BT /F1 10 Tf 45 766 Td (System Explanation: Validation triggered) Tj ET
+BT /F1 10 Tf 45 753 Td (Audit Recommendation: Validation triggered) Tj ET
+BT /F1 10 Tf 45 740 Td (8. DETAILED ACTIONABLE AUDIT RECOMMENDATIONS) Tj ET
+BT /F1 10 Tf 45 727 Td (- Initiate targeted audit procedures for 8 flagged control failures in statement) Tj ET
+BT /F1 10 Tf 45 714 Td (ledgers.) Tj ET
+BT /F1 10 Tf 45 701 Td (- Verify Balance Sheet equity/reserves tie-outs and Cash Flow statement operating) Tj ET
+BT /F1 10 Tf 45 688 Td (adjustments.) Tj ET
+BT /F1 10 Tf 45 675 Td (- Maintain continuous monitoring across 4 high-risk control categories.) Tj ET
+BT /F1 10 Tf 45 662 Td (================================================================================) Tj ET
+BT /F1 10 Tf 45 649 Td (                           END OF FINSIGHT AUDIT REPORT                         ) Tj ET
+BT /F1 10 Tf 45 636 Td (================================================================================) Tj ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 3 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+xref
+0 8
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000121 00000 n 
+0000000191 00000 n 
+0000005378 00000 n 
+0000005504 00000 n 
+0000006663 00000 n 
+trailer
+<< /Size 8 /Root 1 0 R >>
+startxref
+6789
+%%EOF

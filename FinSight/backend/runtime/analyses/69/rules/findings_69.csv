@@ -1,0 +1,421 @@
+Company,Year,Rule ID,Rule Description,Category,Severity,Status,Message,Observed
+ADANI GREEN ENERGY LTD,2017,BS-001,Balance sheet equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(6683.63), 'Total Liabilities': np.float64(6159.92), 'Equity Share Capital': np.float64(1273.9), 'Reserves': np.float64(-70.96)}"
+ADANI GREEN ENERGY LTD,2017,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(1273.9), 'Reserves': np.float64(-70.96)}"
+ADANI GREEN ENERGY LTD,2017,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,skipped,Unavailable prior-year Cash & Bank,"{'Cash & Bank': np.float64(186.75), 'Net Cash Flow': np.float64(75.85)}"
+ADANI GREEN ENERGY LTD,2017,CF-004,Financing activity plausibility,cross_statement,High,skipped,Unavailable prior-year Borrowings,"{'Borrowings': np.float64(4346.57), 'Dividend Amount': np.float64(0.0), 'Cash from Financing Activity': np.float64(1559.09)}"
+ADANI GREEN ENERGY LTD,2017,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(-46.67), 'Depreciation': np.float64(333.27), 'Cash from Operating Activity': np.float64(27.78)}"
+ADANI GREEN ENERGY LTD,2017,CF-008,Sustained negative operating cash flow,trend,High,skipped,Insufficient history for Cash from Operating Activity,{'Cash from Operating Activity': np.float64(27.78)}
+ADANI GREEN ENERGY LTD,2017,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+ADANI GREEN ENERGY LTD,2017,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(0.0), 'Reserves': np.float64(-70.96)}"
+ADANI GREEN ENERGY LTD,2017,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'ADANI GREEN ENERGY LTD', 'Year': np.int64(2017)}"
+ADANI GREEN ENERGY LTD,2017,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+ADANI GREEN ENERGY LTD,2017,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(186.75), 'Inventory': np.float64(0.49)}"
+ADANI GREEN ENERGY LTD,2017,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+ADANI GREEN ENERGY LTD,2017,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(501.65), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2017,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2017), 'Report Date': '2017-03-31'}"
+ADANI GREEN ENERGY LTD,2017,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(1.0), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2017,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(334.14), 'Borrowings': np.float64(4346.57)}"
+ADANI GREEN ENERGY LTD,2017,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.7485863418877774), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2017,IS-010,Unusual expense spike detection,trend,High,skipped,Unavailable prior-year Total Expenses,{'Total Expenses': np.float64(0.0)}
+ADANI GREEN ENERGY LTD,2017,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,skipped,"Unavailable metric values: ['Revenue_Growth', 'Operating_CF_Growth']","{'Revenue_Growth': np.float64(nan), 'Operating_CF_Growth': np.float64(nan)}"
+ADANI GREEN ENERGY LTD,2017,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,skipped,Unavailable prior-year Reserves,"{'Net profit': np.float64(-46.67), 'Dividend Amount': np.float64(0.0), 'Reserves': np.float64(-70.96)}"
+ADANI GREEN ENERGY LTD,2017,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+ADANI GREEN ENERGY LTD,2017,LED-001,Accounting equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(6683.63), 'Total Liabilities': np.float64(6159.92), 'Equity Share Capital': np.float64(1273.9), 'Reserves': np.float64(-70.96)}"
+ADANI GREEN ENERGY LTD,2017,RAT-005,Debt-to-equity ratio,ratio,High,fail,Validation triggered,{'Debt_Equity_Ratio': np.float64(3.6132891083512058)}
+ADANI GREEN ENERGY LTD,2017,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+ADANI GREEN ENERGY LTD,2017,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+ADANI GREEN ENERGY LTD,2017,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+ADANI GREEN ENERGY LTD,2017,RAT-010,Gross profit margin trend,trend,Medium,skipped,Insufficient history for gross_margin,{'gross_margin': np.float64(1.0)}
+ADANI GREEN ENERGY LTD,2017,RAT-011,Net profit margin trend,trend,Medium,skipped,Insufficient history for Profit_Margin,{'Profit_Margin': np.float64(-0.0930329911292734)}
+ADANI GREEN ENERGY LTD,2017,RAT-012,Operating margin trend,trend,Medium,skipped,Insufficient history for Operating_Margin,{'Operating_Margin': np.float64(0.0)}
+ADANI GREEN ENERGY LTD,2017,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+ADANI GREEN ENERGY LTD,2017,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(-0.0387966149600146), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2017,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+ADANI GREEN ENERGY LTD,2017,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(1023.7755102040816), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2017,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(1.4909204386720951), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2017,RAT-020,Days sales outstanding trend,trend,Medium,skipped,Insufficient history for dso,{'dso': np.float64(244.8152098076349)}
+ADANI GREEN ENERGY LTD,2017,RAT-022,Days inventory outstanding trend,trend,Medium,skipped,Insufficient history for dio,{'dio': np.float64(0.356523472540616)}
+ADANI GREEN ENERGY LTD,2017,RAT-024,Revenue growth rate,trend,Medium,skipped,Unavailable metric values: ['Revenue_Growth'],{'Revenue_Growth': np.float64(nan)}
+ADANI GREEN ENERGY LTD,2017,TR-001,Year-over-year revenue variance,trend,Medium,skipped,Unavailable metric values: ['Revenue_Growth'],{'Revenue_Growth': np.float64(nan)}
+ADANI GREEN ENERGY LTD,2017,TR-002,Year-over-year expense variance,trend,Medium,skipped,Unavailable prior-year Total Expenses,{'Total Expenses': np.float64(0.0)}
+ADANI GREEN ENERGY LTD,2017,TR-003,Multi-year trend consistency,trend,Medium,skipped,Unavailable metric values: ['Revenue_Volatility'],{'Revenue_Volatility': np.float64(nan)}
+ADANI GREEN ENERGY LTD,2017,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2017,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(-0.0930329911292734), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2018,BS-001,Balance sheet equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(18706.01), 'Total Liabilities': np.float64(15708.579999999998), 'Equity Share Capital': np.float64(1564.01), 'Reserves': np.float64(-222.61)}"
+ADANI GREEN ENERGY LTD,2018,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(1564.01), 'Reserves': np.float64(-222.61)}"
+ADANI GREEN ENERGY LTD,2018,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(456.92), 'Net Cash Flow': np.float64(162.45)}"
+ADANI GREEN ENERGY LTD,2018,CF-004,Financing activity plausibility,cross_statement,High,pass,Validation passed,"{'Borrowings': np.float64(9864.14), 'Dividend Amount': np.float64(0.0), 'Cash from Financing Activity': np.float64(3942.02)}"
+ADANI GREEN ENERGY LTD,2018,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(-137.52), 'Depreciation': np.float64(542.99), 'Cash from Operating Activity': np.float64(648.65)}"
+ADANI GREEN ENERGY LTD,2018,CF-008,Sustained negative operating cash flow,trend,High,skipped,Insufficient history for Cash from Operating Activity,{'Cash from Operating Activity': np.float64(648.65)}
+ADANI GREEN ENERGY LTD,2018,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+ADANI GREEN ENERGY LTD,2018,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(0.0), 'Reserves': np.float64(-222.61)}"
+ADANI GREEN ENERGY LTD,2018,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'ADANI GREEN ENERGY LTD', 'Year': np.int64(2018)}"
+ADANI GREEN ENERGY LTD,2018,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+ADANI GREEN ENERGY LTD,2018,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(456.92), 'Inventory': np.float64(1692.29)}"
+ADANI GREEN ENERGY LTD,2018,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+ADANI GREEN ENERGY LTD,2018,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(1480.28), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2018,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2018), 'Report Date': '2018-03-31'}"
+ADANI GREEN ENERGY LTD,2018,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(1.0), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2018,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(551.82), 'Borrowings': np.float64(9864.14)}"
+ADANI GREEN ENERGY LTD,2018,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.3458939956227995), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2018,IS-010,Unusual expense spike detection,trend,High,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+ADANI GREEN ENERGY LTD,2018,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,pass,Validation passed,"{'Revenue_Growth': np.float64(1.9508222864547), 'Operating_CF_Growth': np.float64(22.349532037437005)}"
+ADANI GREEN ENERGY LTD,2018,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(-137.52), 'Dividend Amount': np.float64(0.0), 'Reserves': np.float64(-222.61)}"
+ADANI GREEN ENERGY LTD,2018,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+ADANI GREEN ENERGY LTD,2018,LED-001,Accounting equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(18706.01), 'Total Liabilities': np.float64(15708.579999999998), 'Equity Share Capital': np.float64(1564.01), 'Reserves': np.float64(-222.61)}"
+ADANI GREEN ENERGY LTD,2018,RAT-005,Debt-to-equity ratio,ratio,High,fail,Validation triggered,{'Debt_Equity_Ratio': np.float64(7.35361562546593)}
+ADANI GREEN ENERGY LTD,2018,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+ADANI GREEN ENERGY LTD,2018,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+ADANI GREEN ENERGY LTD,2018,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+ADANI GREEN ENERGY LTD,2018,RAT-010,Gross profit margin trend,trend,Medium,skipped,Insufficient history for gross_margin,{'gross_margin': np.float64(1.0)}
+ADANI GREEN ENERGY LTD,2018,RAT-011,Net profit margin trend,trend,Medium,skipped,Insufficient history for Profit_Margin,{'Profit_Margin': np.float64(-0.0929013429891642)}
+ADANI GREEN ENERGY LTD,2018,RAT-012,Operating margin trend,trend,Medium,skipped,Insufficient history for Operating_Margin,{'Operating_Margin': np.float64(0.0)}
+ADANI GREEN ENERGY LTD,2018,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+ADANI GREEN ENERGY LTD,2018,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(-0.1025197554793499), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2018,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+ADANI GREEN ENERGY LTD,2018,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(0.8747200538914726), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2018,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(1.7451604536558911), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2018,RAT-020,Days sales outstanding trend,trend,Medium,skipped,Insufficient history for dso,{'dso': np.float64(209.14982300645823)}
+ADANI GREEN ENERGY LTD,2018,RAT-022,Days inventory outstanding trend,trend,Medium,skipped,Insufficient history for dio,{'dio': np.float64(417.2763598778609)}
+ADANI GREEN ENERGY LTD,2018,RAT-024,Revenue growth rate,trend,Medium,pass,Validation passed,{'Revenue_Growth': np.float64(1.9508222864547)}
+ADANI GREEN ENERGY LTD,2018,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(1.9508222864547), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2018,TR-002,Year-over-year expense variance,trend,Medium,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+ADANI GREEN ENERGY LTD,2018,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(691.995909272591), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2018,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2018,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(-0.0929013429891642), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2019,BS-001,Balance sheet equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(15912.77), 'Total Liabilities': np.float64(14657.53), 'Equity Share Capital': np.float64(1564.01), 'Reserves': np.float64(369.33)}"
+ADANI GREEN ENERGY LTD,2019,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(1564.01), 'Reserves': np.float64(369.33)}"
+ADANI GREEN ENERGY LTD,2019,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(361.47), 'Net Cash Flow': np.float64(3.48)}"
+ADANI GREEN ENERGY LTD,2019,CF-004,Financing activity plausibility,cross_statement,High,pass,Validation passed,"{'Borrowings': np.float64(11142.49), 'Dividend Amount': np.float64(0.0), 'Cash from Financing Activity': np.float64(1045.21)}"
+ADANI GREEN ENERGY LTD,2019,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(-473.91), 'Depreciation': np.float64(1061.96), 'Cash from Operating Activity': np.float64(1624.55)}"
+ADANI GREEN ENERGY LTD,2019,CF-008,Sustained negative operating cash flow,trend,High,pass,Validation passed,{'Cash from Operating Activity': np.float64(1624.55)}
+ADANI GREEN ENERGY LTD,2019,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+ADANI GREEN ENERGY LTD,2019,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(0.0), 'Reserves': np.float64(369.33)}"
+ADANI GREEN ENERGY LTD,2019,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'ADANI GREEN ENERGY LTD', 'Year': np.int64(2019)}"
+ADANI GREEN ENERGY LTD,2019,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+ADANI GREEN ENERGY LTD,2019,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(361.47), 'Inventory': np.float64(135.88)}"
+ADANI GREEN ENERGY LTD,2019,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+ADANI GREEN ENERGY LTD,2019,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(2057.98), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2019,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2019), 'Report Date': '2019-03-31'}"
+ADANI GREEN ENERGY LTD,2019,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(1.0), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2019,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(1121.18), 'Borrowings': np.float64(11142.49)}"
+ADANI GREEN ENERGY LTD,2019,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.1935483870967742), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2019,IS-010,Unusual expense spike detection,trend,High,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+ADANI GREEN ENERGY LTD,2019,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,pass,Validation passed,"{'Revenue_Growth': np.float64(0.3902640041073311), 'Operating_CF_Growth': np.float64(1.5045093656054882)}"
+ADANI GREEN ENERGY LTD,2019,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(-473.91), 'Dividend Amount': np.float64(0.0), 'Reserves': np.float64(369.33)}"
+ADANI GREEN ENERGY LTD,2019,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+ADANI GREEN ENERGY LTD,2019,LED-001,Accounting equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(15912.77), 'Total Liabilities': np.float64(14657.53), 'Equity Share Capital': np.float64(1564.01), 'Reserves': np.float64(369.33)}"
+ADANI GREEN ENERGY LTD,2019,RAT-005,Debt-to-equity ratio,ratio,High,fail,Validation triggered,{'Debt_Equity_Ratio': np.float64(5.763337022975783)}
+ADANI GREEN ENERGY LTD,2019,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+ADANI GREEN ENERGY LTD,2019,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+ADANI GREEN ENERGY LTD,2019,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+ADANI GREEN ENERGY LTD,2019,RAT-010,Gross profit margin trend,trend,Medium,fail,Validation triggered,{'gross_margin': np.float64(1.0)}
+ADANI GREEN ENERGY LTD,2019,RAT-011,Net profit margin trend,trend,Medium,pass,Validation passed,{'Profit_Margin': np.float64(-0.2302792058231858)}
+ADANI GREEN ENERGY LTD,2019,RAT-012,Operating margin trend,trend,Medium,fail,Validation triggered,{'Operating_Margin': np.float64(0.0)}
+ADANI GREEN ENERGY LTD,2019,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+ADANI GREEN ENERGY LTD,2019,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(-0.2451250168102869), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2019,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+ADANI GREEN ENERGY LTD,2019,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(15.145569620253164), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2019,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(2.7154072490730847), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2019,RAT-020,Days sales outstanding trend,trend,Medium,pass,Validation passed,{'dso': np.float64(134.41814303345998)}
+ADANI GREEN ENERGY LTD,2019,RAT-022,Days inventory outstanding trend,trend,Medium,pass,Validation passed,{'dio': np.float64(24.099456748850816)}
+ADANI GREEN ENERGY LTD,2019,RAT-024,Revenue growth rate,trend,Medium,pass,Validation passed,{'Revenue_Growth': np.float64(0.3902640041073311)}
+ADANI GREEN ENERGY LTD,2019,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(0.3902640041073311), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2019,TR-002,Year-over-year expense variance,trend,Medium,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+ADANI GREEN ENERGY LTD,2019,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(786.7249663213527), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2019,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2019,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(-0.2302792058231858), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2020,BS-001,Balance sheet equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(19963.0), 'Total Liabilities': np.float64(18424.0), 'Equity Share Capital': np.float64(1564.0), 'Reserves': np.float64(792.0)}"
+ADANI GREEN ENERGY LTD,2020,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(1564.0), 'Reserves': np.float64(792.0)}"
+ADANI GREEN ENERGY LTD,2020,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(695.0), 'Net Cash Flow': np.float64(383.0)}"
+ADANI GREEN ENERGY LTD,2020,CF-004,Financing activity plausibility,cross_statement,High,pass,Validation passed,"{'Borrowings': np.float64(14867.0), 'Dividend Amount': np.float64(0.0), 'Cash from Financing Activity': np.float64(2161.0)}"
+ADANI GREEN ENERGY LTD,2020,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(-23.0), 'Depreciation': np.float64(394.0), 'Cash from Operating Activity': np.float64(1965.0)}"
+ADANI GREEN ENERGY LTD,2020,CF-008,Sustained negative operating cash flow,trend,High,pass,Validation passed,{'Cash from Operating Activity': np.float64(1965.0)}
+ADANI GREEN ENERGY LTD,2020,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+ADANI GREEN ENERGY LTD,2020,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(0.0), 'Reserves': np.float64(792.0)}"
+ADANI GREEN ENERGY LTD,2020,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'ADANI GREEN ENERGY LTD', 'Year': np.int64(2020)}"
+ADANI GREEN ENERGY LTD,2020,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+ADANI GREEN ENERGY LTD,2020,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(695.0), 'Inventory': np.float64(104.0)}"
+ADANI GREEN ENERGY LTD,2020,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+ADANI GREEN ENERGY LTD,2020,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(2549.0), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2020,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2020), 'Report Date': '2020-03-31'}"
+ADANI GREEN ENERGY LTD,2020,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(1.0), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2020,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(995.0), 'Borrowings': np.float64(14867.0)}"
+ADANI GREEN ENERGY LTD,2020,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(-0.22), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2020,IS-010,Unusual expense spike detection,trend,High,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+ADANI GREEN ENERGY LTD,2020,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,pass,Validation passed,"{'Revenue_Growth': np.float64(0.2385931836072266), 'Operating_CF_Growth': np.float64(0.2095657258933243)}"
+ADANI GREEN ENERGY LTD,2020,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(-23.0), 'Dividend Amount': np.float64(0.0), 'Reserves': np.float64(792.0)}"
+ADANI GREEN ENERGY LTD,2020,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+ADANI GREEN ENERGY LTD,2020,LED-001,Accounting equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(19963.0), 'Total Liabilities': np.float64(18424.0), 'Equity Share Capital': np.float64(1564.0), 'Reserves': np.float64(792.0)}"
+ADANI GREEN ENERGY LTD,2020,RAT-005,Debt-to-equity ratio,ratio,High,fail,Validation triggered,{'Debt_Equity_Ratio': np.float64(6.310271646859083)}
+ADANI GREEN ENERGY LTD,2020,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+ADANI GREEN ENERGY LTD,2020,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+ADANI GREEN ENERGY LTD,2020,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+ADANI GREEN ENERGY LTD,2020,RAT-010,Gross profit margin trend,trend,Medium,fail,Validation triggered,{'gross_margin': np.float64(1.0)}
+ADANI GREEN ENERGY LTD,2020,RAT-011,Net profit margin trend,trend,Medium,pass,Validation passed,{'Profit_Margin': np.float64(-0.0090231463318948)}
+ADANI GREEN ENERGY LTD,2020,RAT-012,Operating margin trend,trend,Medium,fail,Validation triggered,{'Operating_Margin': np.float64(0.0)}
+ADANI GREEN ENERGY LTD,2020,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+ADANI GREEN ENERGY LTD,2020,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(-0.0097623089983022), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2020,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+ADANI GREEN ENERGY LTD,2020,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(24.509615384615383), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2020,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(3.4445945945945944), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2020,RAT-020,Days sales outstanding trend,trend,Medium,pass,Validation passed,{'dso': np.float64(105.96312279325228)}
+ADANI GREEN ENERGY LTD,2020,RAT-022,Days inventory outstanding trend,trend,Medium,pass,Validation passed,{'dio': np.float64(14.892114554727344)}
+ADANI GREEN ENERGY LTD,2020,RAT-024,Revenue growth rate,trend,Medium,pass,Validation passed,{'Revenue_Growth': np.float64(0.2385931836072266)}
+ADANI GREEN ENERGY LTD,2020,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(0.2385931836072266), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2020,TR-002,Year-over-year expense variance,trend,Medium,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+ADANI GREEN ENERGY LTD,2020,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(534.945537539415), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2020,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2020,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(-0.0090231463318948), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2021,BS-001,Balance sheet equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(30943.0), 'Total Liabilities': np.float64(28692.0), 'Equity Share Capital': np.float64(1564.0), 'Reserves': np.float64(636.0)}"
+ADANI GREEN ENERGY LTD,2021,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(1564.0), 'Reserves': np.float64(636.0)}"
+ADANI GREEN ENERGY LTD,2021,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(1019.0), 'Net Cash Flow': np.float64(-453.0)}"
+ADANI GREEN ENERGY LTD,2021,CF-004,Financing activity plausibility,cross_statement,High,pass,Validation passed,"{'Borrowings': np.float64(24209.0), 'Dividend Amount': np.float64(0.0), 'Cash from Financing Activity': np.float64(7083.0)}"
+ADANI GREEN ENERGY LTD,2021,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(210.0), 'Depreciation': np.float64(486.0), 'Cash from Operating Activity': np.float64(1601.0)}"
+ADANI GREEN ENERGY LTD,2021,CF-008,Sustained negative operating cash flow,trend,High,pass,Validation passed,{'Cash from Operating Activity': np.float64(1601.0)}
+ADANI GREEN ENERGY LTD,2021,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+ADANI GREEN ENERGY LTD,2021,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(0.0), 'Reserves': np.float64(636.0)}"
+ADANI GREEN ENERGY LTD,2021,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'ADANI GREEN ENERGY LTD', 'Year': np.int64(2021)}"
+ADANI GREEN ENERGY LTD,2021,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+ADANI GREEN ENERGY LTD,2021,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(1019.0), 'Inventory': np.float64(29.0)}"
+ADANI GREEN ENERGY LTD,2021,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+ADANI GREEN ENERGY LTD,2021,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(3124.0), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2021,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2021), 'Report Date': '2021-03-31'}"
+ADANI GREEN ENERGY LTD,2021,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(1.0), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2021,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(1953.0), 'Borrowings': np.float64(24209.0)}"
+ADANI GREEN ENERGY LTD,2021,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.0588235294117647), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2021,IS-010,Unusual expense spike detection,trend,High,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+ADANI GREEN ENERGY LTD,2021,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,fail,Validation triggered,"{'Revenue_Growth': np.float64(0.2255786582973715), 'Operating_CF_Growth': np.float64(-0.1852417302798982)}"
+ADANI GREEN ENERGY LTD,2021,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(210.0), 'Dividend Amount': np.float64(0.0), 'Reserves': np.float64(636.0)}"
+ADANI GREEN ENERGY LTD,2021,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+ADANI GREEN ENERGY LTD,2021,LED-001,Accounting equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(30943.0), 'Total Liabilities': np.float64(28692.0), 'Equity Share Capital': np.float64(1564.0), 'Reserves': np.float64(636.0)}"
+ADANI GREEN ENERGY LTD,2021,RAT-005,Debt-to-equity ratio,ratio,High,fail,Validation triggered,{'Debt_Equity_Ratio': np.float64(11.004090909090907)}
+ADANI GREEN ENERGY LTD,2021,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+ADANI GREEN ENERGY LTD,2021,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+ADANI GREEN ENERGY LTD,2021,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+ADANI GREEN ENERGY LTD,2021,RAT-010,Gross profit margin trend,trend,Medium,fail,Validation triggered,{'gross_margin': np.float64(1.0)}
+ADANI GREEN ENERGY LTD,2021,RAT-011,Net profit margin trend,trend,Medium,pass,Validation passed,{'Profit_Margin': np.float64(0.0672215108834827)}
+ADANI GREEN ENERGY LTD,2021,RAT-012,Operating margin trend,trend,Medium,fail,Validation triggered,{'Operating_Margin': np.float64(0.0)}
+ADANI GREEN ENERGY LTD,2021,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+ADANI GREEN ENERGY LTD,2021,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.0954545454545454), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2021,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+ADANI GREEN ENERGY LTD,2021,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(107.72413793103448), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2021,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(2.5968412302576893), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2021,RAT-020,Days sales outstanding trend,trend,Medium,pass,Validation passed,{'dso': np.float64(140.55537772087067)}
+ADANI GREEN ENERGY LTD,2021,RAT-022,Days inventory outstanding trend,trend,Medium,pass,Validation passed,{'dio': np.float64(3.3882842509603077)}
+ADANI GREEN ENERGY LTD,2021,RAT-024,Revenue growth rate,trend,Medium,pass,Validation passed,{'Revenue_Growth': np.float64(0.2255786582973715)}
+ADANI GREEN ENERGY LTD,2021,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(0.2255786582973715), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2021,TR-002,Year-over-year expense variance,trend,Medium,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+ADANI GREEN ENERGY LTD,2021,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(533.5610369332957), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2021,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2021,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.0672215108834827), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2022,BS-001,Balance sheet equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(62373.0), 'Total Liabilities': np.float64(58954.0), 'Equity Share Capital': np.float64(1564.0), 'Reserves': np.float64(1050.0)}"
+ADANI GREEN ENERGY LTD,2022,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(1564.0), 'Reserves': np.float64(1050.0)}"
+ADANI GREEN ENERGY LTD,2022,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(1593.0), 'Net Cash Flow': np.float64(383.0)}"
+ADANI GREEN ENERGY LTD,2022,CF-004,Financing activity plausibility,cross_statement,High,pass,Validation passed,"{'Borrowings': np.float64(52832.0), 'Dividend Amount': np.float64(0.0), 'Cash from Financing Activity': np.float64(15986.0)}"
+ADANI GREEN ENERGY LTD,2022,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(489.0), 'Depreciation': np.float64(849.0), 'Cash from Operating Activity': np.float64(3060.0)}"
+ADANI GREEN ENERGY LTD,2022,CF-008,Sustained negative operating cash flow,trend,High,pass,Validation passed,{'Cash from Operating Activity': np.float64(3060.0)}
+ADANI GREEN ENERGY LTD,2022,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+ADANI GREEN ENERGY LTD,2022,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(0.0), 'Reserves': np.float64(1050.0)}"
+ADANI GREEN ENERGY LTD,2022,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'ADANI GREEN ENERGY LTD', 'Year': np.int64(2022)}"
+ADANI GREEN ENERGY LTD,2022,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+ADANI GREEN ENERGY LTD,2022,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(1593.0), 'Inventory': np.float64(17.0)}"
+ADANI GREEN ENERGY LTD,2022,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+ADANI GREEN ENERGY LTD,2022,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(5133.0), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2022,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2022), 'Report Date': '2022-03-31'}"
+ADANI GREEN ENERGY LTD,2022,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(1.0), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2022,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(2617.0), 'Borrowings': np.float64(52832.0)}"
+ADANI GREEN ENERGY LTD,2022,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.1157323688969258), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2022,IS-010,Unusual expense spike detection,trend,High,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+ADANI GREEN ENERGY LTD,2022,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,pass,Validation passed,"{'Revenue_Growth': np.float64(0.6430857874519846), 'Operating_CF_Growth': np.float64(0.9113054341036853)}"
+ADANI GREEN ENERGY LTD,2022,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(489.0), 'Dividend Amount': np.float64(0.0), 'Reserves': np.float64(1050.0)}"
+ADANI GREEN ENERGY LTD,2022,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+ADANI GREEN ENERGY LTD,2022,LED-001,Accounting equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(62373.0), 'Total Liabilities': np.float64(58954.0), 'Equity Share Capital': np.float64(1564.0), 'Reserves': np.float64(1050.0)}"
+ADANI GREEN ENERGY LTD,2022,RAT-005,Debt-to-equity ratio,ratio,High,fail,Validation triggered,{'Debt_Equity_Ratio': np.float64(20.211170619739864)}
+ADANI GREEN ENERGY LTD,2022,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+ADANI GREEN ENERGY LTD,2022,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+ADANI GREEN ENERGY LTD,2022,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+ADANI GREEN ENERGY LTD,2022,RAT-010,Gross profit margin trend,trend,Medium,fail,Validation triggered,{'gross_margin': np.float64(1.0)}
+ADANI GREEN ENERGY LTD,2022,RAT-011,Net profit margin trend,trend,Medium,pass,Validation passed,{'Profit_Margin': np.float64(0.0952659263588544)}
+ADANI GREEN ENERGY LTD,2022,RAT-012,Operating margin trend,trend,Medium,fail,Validation triggered,{'Operating_Margin': np.float64(0.0)}
+ADANI GREEN ENERGY LTD,2022,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+ADANI GREEN ENERGY LTD,2022,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.1870696250956388), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2022,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+ADANI GREEN ENERGY LTD,2022,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(301.94117647058823), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2022,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(2.8374792703150917), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2022,RAT-020,Days sales outstanding trend,trend,Medium,pass,Validation passed,{'dso': np.float64(128.635300993571)}
+ADANI GREEN ENERGY LTD,2022,RAT-022,Days inventory outstanding trend,trend,Medium,pass,Validation passed,{'dio': np.float64(1.2088447301772842)}
+ADANI GREEN ENERGY LTD,2022,RAT-024,Revenue growth rate,trend,Medium,pass,Validation passed,{'Revenue_Growth': np.float64(0.6430857874519846)}
+ADANI GREEN ENERGY LTD,2022,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(0.6430857874519846), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2022,TR-002,Year-over-year expense variance,trend,Medium,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+ADANI GREEN ENERGY LTD,2022,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(1356.6970922059206), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2022,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2022,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.0952659263588544), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2023,BS-001,Balance sheet equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(71151.0), 'Total Liabilities': np.float64(66909.0), 'Equity Share Capital': np.float64(1584.0), 'Reserves': np.float64(5720.0)}"
+ADANI GREEN ENERGY LTD,2023,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(1584.0), 'Reserves': np.float64(5720.0)}"
+ADANI GREEN ENERGY LTD,2023,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(1984.0), 'Net Cash Flow': np.float64(435.0)}"
+ADANI GREEN ENERGY LTD,2023,CF-004,Financing activity plausibility,cross_statement,High,pass,Validation passed,"{'Borrowings': np.float64(54223.0), 'Dividend Amount': np.float64(0.0), 'Cash from Financing Activity': np.float64(-2973.0)}"
+ADANI GREEN ENERGY LTD,2023,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(974.0), 'Depreciation': np.float64(1300.0), 'Cash from Operating Activity': np.float64(7265.0)}"
+ADANI GREEN ENERGY LTD,2023,CF-008,Sustained negative operating cash flow,trend,High,pass,Validation passed,{'Cash from Operating Activity': np.float64(7265.0)}
+ADANI GREEN ENERGY LTD,2023,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+ADANI GREEN ENERGY LTD,2023,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(0.0), 'Reserves': np.float64(5720.0)}"
+ADANI GREEN ENERGY LTD,2023,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'ADANI GREEN ENERGY LTD', 'Year': np.int64(2023)}"
+ADANI GREEN ENERGY LTD,2023,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+ADANI GREEN ENERGY LTD,2023,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(1984.0), 'Inventory': np.float64(52.0)}"
+ADANI GREEN ENERGY LTD,2023,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+ADANI GREEN ENERGY LTD,2023,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(7792.0), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2023,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2023), 'Report Date': '2023-03-31'}"
+ADANI GREEN ENERGY LTD,2023,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(1.0), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2023,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(2911.0), 'Borrowings': np.float64(54223.0)}"
+ADANI GREEN ENERGY LTD,2023,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.317671809256662), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2023,IS-010,Unusual expense spike detection,trend,High,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+ADANI GREEN ENERGY LTD,2023,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,pass,Validation passed,"{'Revenue_Growth': np.float64(0.5180206506916034), 'Operating_CF_Growth': np.float64(1.3741830065359475)}"
+ADANI GREEN ENERGY LTD,2023,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(974.0), 'Dividend Amount': np.float64(0.0), 'Reserves': np.float64(5720.0)}"
+ADANI GREEN ENERGY LTD,2023,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+ADANI GREEN ENERGY LTD,2023,LED-001,Accounting equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(71151.0), 'Total Liabilities': np.float64(66909.0), 'Equity Share Capital': np.float64(1584.0), 'Reserves': np.float64(5720.0)}"
+ADANI GREEN ENERGY LTD,2023,RAT-005,Debt-to-equity ratio,ratio,High,fail,Validation triggered,{'Debt_Equity_Ratio': np.float64(7.423740416210296)}
+ADANI GREEN ENERGY LTD,2023,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+ADANI GREEN ENERGY LTD,2023,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+ADANI GREEN ENERGY LTD,2023,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+ADANI GREEN ENERGY LTD,2023,RAT-010,Gross profit margin trend,trend,Medium,fail,Validation triggered,{'gross_margin': np.float64(1.0)}
+ADANI GREEN ENERGY LTD,2023,RAT-011,Net profit margin trend,trend,Medium,pass,Validation passed,{'Profit_Margin': np.float64(0.125)}
+ADANI GREEN ENERGY LTD,2023,RAT-012,Operating margin trend,trend,Medium,fail,Validation triggered,{'Operating_Margin': np.float64(0.0)}
+ADANI GREEN ENERGY LTD,2023,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+ADANI GREEN ENERGY LTD,2023,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.1333515881708653), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2023,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+ADANI GREEN ENERGY LTD,2023,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(149.84615384615384), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2023,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(3.5321849501359925), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2023,RAT-020,Days sales outstanding trend,trend,Medium,pass,Validation passed,{'dso': np.float64(103.33547227926078)}
+ADANI GREEN ENERGY LTD,2023,RAT-022,Days inventory outstanding trend,trend,Medium,pass,Validation passed,{'dio': np.float64(2.4358316221765914)}
+ADANI GREEN ENERGY LTD,2023,RAT-024,Revenue growth rate,trend,Medium,pass,Validation passed,{'Revenue_Growth': np.float64(0.5180206506916034)}
+ADANI GREEN ENERGY LTD,2023,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(0.5180206506916034), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2023,TR-002,Year-over-year expense variance,trend,Medium,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+ADANI GREEN ENERGY LTD,2023,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(2341.530340041173), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2023,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2023,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.125), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2024,BS-001,Balance sheet equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(98483.0), 'Total Liabilities': np.float64(88086.0), 'Equity Share Capital': np.float64(1584.0), 'Reserves': np.float64(8250.0)}"
+ADANI GREEN ENERGY LTD,2024,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(1584.0), 'Reserves': np.float64(8250.0)}"
+ADANI GREEN ENERGY LTD,2024,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(8764.0), 'Net Cash Flow': np.float64(606.0)}"
+ADANI GREEN ENERGY LTD,2024,CF-004,Financing activity plausibility,cross_statement,High,pass,Validation passed,"{'Borrowings': np.float64(64858.0), 'Dividend Amount': np.float64(0.0), 'Cash from Financing Activity': np.float64(13953.0)}"
+ADANI GREEN ENERGY LTD,2024,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(1100.0), 'Depreciation': np.float64(1903.0), 'Cash from Operating Activity': np.float64(7713.0)}"
+ADANI GREEN ENERGY LTD,2024,CF-008,Sustained negative operating cash flow,trend,High,pass,Validation passed,{'Cash from Operating Activity': np.float64(7713.0)}
+ADANI GREEN ENERGY LTD,2024,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+ADANI GREEN ENERGY LTD,2024,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(0.0), 'Reserves': np.float64(8250.0)}"
+ADANI GREEN ENERGY LTD,2024,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'ADANI GREEN ENERGY LTD', 'Year': np.int64(2024)}"
+ADANI GREEN ENERGY LTD,2024,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+ADANI GREEN ENERGY LTD,2024,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(8764.0), 'Inventory': np.float64(291.0)}"
+ADANI GREEN ENERGY LTD,2024,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+ADANI GREEN ENERGY LTD,2024,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(9220.0), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2024,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2024), 'Report Date': '2024-03-31'}"
+ADANI GREEN ENERGY LTD,2024,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(1.0), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2024,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(5006.0), 'Borrowings': np.float64(64858.0)}"
+ADANI GREEN ENERGY LTD,2024,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.2459605026929982), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2024,IS-010,Unusual expense spike detection,trend,High,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+ADANI GREEN ENERGY LTD,2024,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,pass,Validation passed,"{'Revenue_Growth': np.float64(0.183264887063655), 'Operating_CF_Growth': np.float64(0.0616655196145905)}"
+ADANI GREEN ENERGY LTD,2024,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(1100.0), 'Dividend Amount': np.float64(0.0), 'Reserves': np.float64(8250.0)}"
+ADANI GREEN ENERGY LTD,2024,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+ADANI GREEN ENERGY LTD,2024,LED-001,Accounting equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(98483.0), 'Total Liabilities': np.float64(88086.0), 'Equity Share Capital': np.float64(1584.0), 'Reserves': np.float64(8250.0)}"
+ADANI GREEN ENERGY LTD,2024,RAT-005,Debt-to-equity ratio,ratio,High,fail,Validation triggered,{'Debt_Equity_Ratio': np.float64(6.595281675818589)}
+ADANI GREEN ENERGY LTD,2024,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+ADANI GREEN ENERGY LTD,2024,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+ADANI GREEN ENERGY LTD,2024,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+ADANI GREEN ENERGY LTD,2024,RAT-010,Gross profit margin trend,trend,Medium,fail,Validation triggered,{'gross_margin': np.float64(1.0)}
+ADANI GREEN ENERGY LTD,2024,RAT-011,Net profit margin trend,trend,Medium,pass,Validation passed,{'Profit_Margin': np.float64(0.1193058568329718)}
+ADANI GREEN ENERGY LTD,2024,RAT-012,Operating margin trend,trend,Medium,fail,Validation triggered,{'Operating_Margin': np.float64(0.0)}
+ADANI GREEN ENERGY LTD,2024,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+ADANI GREEN ENERGY LTD,2024,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.1118568232662192), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2024,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+ADANI GREEN ENERGY LTD,2024,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(31.68384879725086), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2024,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(6.870342771982116), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2024,RAT-020,Days sales outstanding trend,trend,Medium,pass,Validation passed,{'dso': np.float64(53.12689804772234)}
+ADANI GREEN ENERGY LTD,2024,RAT-022,Days inventory outstanding trend,trend,Medium,fail,Validation triggered,{'dio': np.float64(11.520065075921908)}
+ADANI GREEN ENERGY LTD,2024,RAT-024,Revenue growth rate,trend,Medium,pass,Validation passed,{'Revenue_Growth': np.float64(0.183264887063655)}
+ADANI GREEN ENERGY LTD,2024,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(0.183264887063655), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2024,TR-002,Year-over-year expense variance,trend,Medium,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+ADANI GREEN ENERGY LTD,2024,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(2074.1678652735254), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2024,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2024,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.1193058568329718), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2025,BS-001,Balance sheet equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(115737.0), 'Total Liabilities': np.float64(110764.0), 'Equity Share Capital': np.float64(1584.0), 'Reserves': np.float64(10553.0)}"
+ADANI GREEN ENERGY LTD,2025,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(1584.0), 'Reserves': np.float64(10553.0)}"
+ADANI GREEN ENERGY LTD,2025,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(3332.0), 'Net Cash Flow': np.float64(604.0)}"
+ADANI GREEN ENERGY LTD,2025,CF-004,Financing activity plausibility,cross_statement,High,pass,Validation passed,"{'Borrowings': np.float64(80040.0), 'Dividend Amount': np.float64(0.0), 'Cash from Financing Activity': np.float64(12068.0)}"
+ADANI GREEN ENERGY LTD,2025,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(1444.0), 'Depreciation': np.float64(2498.0), 'Cash from Operating Activity': np.float64(8364.0)}"
+ADANI GREEN ENERGY LTD,2025,CF-008,Sustained negative operating cash flow,trend,High,pass,Validation passed,{'Cash from Operating Activity': np.float64(8364.0)}
+ADANI GREEN ENERGY LTD,2025,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+ADANI GREEN ENERGY LTD,2025,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(0.0), 'Reserves': np.float64(10553.0)}"
+ADANI GREEN ENERGY LTD,2025,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'ADANI GREEN ENERGY LTD', 'Year': np.int64(2025)}"
+ADANI GREEN ENERGY LTD,2025,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+ADANI GREEN ENERGY LTD,2025,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(3332.0), 'Inventory': np.float64(101.0)}"
+ADANI GREEN ENERGY LTD,2025,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+ADANI GREEN ENERGY LTD,2025,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(11212.0), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2025,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2025), 'Report Date': '2025-03-31'}"
+ADANI GREEN ENERGY LTD,2025,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(1.0), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2025,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(5492.0), 'Borrowings': np.float64(80040.0)}"
+ADANI GREEN ENERGY LTD,2025,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.0966139954853273), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2025,IS-010,Unusual expense spike detection,trend,High,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+ADANI GREEN ENERGY LTD,2025,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,pass,Validation passed,"{'Revenue_Growth': np.float64(0.2160520607375271), 'Operating_CF_Growth': np.float64(0.0844029560482302)}"
+ADANI GREEN ENERGY LTD,2025,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(1444.0), 'Dividend Amount': np.float64(0.0), 'Reserves': np.float64(10553.0)}"
+ADANI GREEN ENERGY LTD,2025,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+ADANI GREEN ENERGY LTD,2025,LED-001,Accounting equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(115737.0), 'Total Liabilities': np.float64(110764.0), 'Equity Share Capital': np.float64(1584.0), 'Reserves': np.float64(10553.0)}"
+ADANI GREEN ENERGY LTD,2025,RAT-005,Debt-to-equity ratio,ratio,High,fail,Validation triggered,{'Debt_Equity_Ratio': np.float64(6.5947103897173935)}
+ADANI GREEN ENERGY LTD,2025,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+ADANI GREEN ENERGY LTD,2025,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+ADANI GREEN ENERGY LTD,2025,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+ADANI GREEN ENERGY LTD,2025,RAT-010,Gross profit margin trend,trend,Medium,fail,Validation triggered,{'gross_margin': np.float64(1.0)}
+ADANI GREEN ENERGY LTD,2025,RAT-011,Net profit margin trend,trend,Medium,pass,Validation passed,{'Profit_Margin': np.float64(0.1287905815198002)}
+ADANI GREEN ENERGY LTD,2025,RAT-012,Operating margin trend,trend,Medium,fail,Validation triggered,{'Operating_Margin': np.float64(0.0)}
+ADANI GREEN ENERGY LTD,2025,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+ADANI GREEN ENERGY LTD,2025,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.1189750350168905), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2025,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+ADANI GREEN ENERGY LTD,2025,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(111.009900990099), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2025,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(7.28051948051948), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2025,RAT-020,Days sales outstanding trend,trend,Medium,pass,Validation passed,{'dso': np.float64(50.1337852301106)}
+ADANI GREEN ENERGY LTD,2025,RAT-022,Days inventory outstanding trend,trend,Medium,pass,Validation passed,{'dio': np.float64(3.287995005351409)}
+ADANI GREEN ENERGY LTD,2025,RAT-024,Revenue growth rate,trend,Medium,pass,Validation passed,{'Revenue_Growth': np.float64(0.2160520607375271)}
+ADANI GREEN ENERGY LTD,2025,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(0.2160520607375271), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2025,TR-002,Year-over-year expense variance,trend,Medium,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+ADANI GREEN ENERGY LTD,2025,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(1717.7333902558917), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2025,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2025,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.1287905815198002), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2026,BS-001,Balance sheet equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(148019.0), 'Total Liabilities': np.float64(142988.0), 'Equity Share Capital': np.float64(1647.0), 'Reserves': np.float64(18318.0)}"
+ADANI GREEN ENERGY LTD,2026,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(1647.0), 'Reserves': np.float64(18318.0)}"
+ADANI GREEN ENERGY LTD,2026,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(2766.0), 'Net Cash Flow': np.float64(-477.0)}"
+ADANI GREEN ENERGY LTD,2026,CF-004,Financing activity plausibility,cross_statement,High,pass,Validation passed,"{'Borrowings': np.float64(103545.0), 'Dividend Amount': np.float64(0.0), 'Cash from Financing Activity': np.float64(15615.0)}"
+ADANI GREEN ENERGY LTD,2026,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(1652.0), 'Depreciation': np.float64(3372.0), 'Cash from Operating Activity': np.float64(10135.0)}"
+ADANI GREEN ENERGY LTD,2026,CF-008,Sustained negative operating cash flow,trend,High,pass,Validation passed,{'Cash from Operating Activity': np.float64(10135.0)}
+ADANI GREEN ENERGY LTD,2026,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+ADANI GREEN ENERGY LTD,2026,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(0.0), 'Reserves': np.float64(18318.0)}"
+ADANI GREEN ENERGY LTD,2026,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'ADANI GREEN ENERGY LTD', 'Year': np.int64(2026)}"
+ADANI GREEN ENERGY LTD,2026,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+ADANI GREEN ENERGY LTD,2026,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(2766.0), 'Inventory': np.float64(136.0)}"
+ADANI GREEN ENERGY LTD,2026,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+ADANI GREEN ENERGY LTD,2026,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(12928.0), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2026,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2026), 'Report Date': '2026-03-31'}"
+ADANI GREEN ENERGY LTD,2026,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(1.0), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2026,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(6484.0), 'Borrowings': np.float64(103545.0)}"
+ADANI GREEN ENERGY LTD,2026,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.0069965017491254), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2026,IS-010,Unusual expense spike detection,trend,High,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+ADANI GREEN ENERGY LTD,2026,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,pass,Validation passed,"{'Revenue_Growth': np.float64(0.1530503032465215), 'Operating_CF_Growth': np.float64(0.2117407938785269)}"
+ADANI GREEN ENERGY LTD,2026,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(1652.0), 'Dividend Amount': np.float64(0.0), 'Reserves': np.float64(18318.0)}"
+ADANI GREEN ENERGY LTD,2026,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+ADANI GREEN ENERGY LTD,2026,LED-001,Accounting equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(148019.0), 'Total Liabilities': np.float64(142988.0), 'Equity Share Capital': np.float64(1647.0), 'Reserves': np.float64(18318.0)}"
+ADANI GREEN ENERGY LTD,2026,RAT-005,Debt-to-equity ratio,ratio,High,fail,Validation triggered,{'Debt_Equity_Ratio': np.float64(5.186326070623592)}
+ADANI GREEN ENERGY LTD,2026,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+ADANI GREEN ENERGY LTD,2026,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+ADANI GREEN ENERGY LTD,2026,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+ADANI GREEN ENERGY LTD,2026,RAT-010,Gross profit margin trend,trend,Medium,fail,Validation triggered,{'gross_margin': np.float64(1.0)}
+ADANI GREEN ENERGY LTD,2026,RAT-011,Net profit margin trend,trend,Medium,pass,Validation passed,{'Profit_Margin': np.float64(0.1277846534653465)}
+ADANI GREEN ENERGY LTD,2026,RAT-012,Operating margin trend,trend,Medium,fail,Validation triggered,{'Operating_Margin': np.float64(0.0)}
+ADANI GREEN ENERGY LTD,2026,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+ADANI GREEN ENERGY LTD,2026,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.0827448034059604), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2026,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+ADANI GREEN ENERGY LTD,2026,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(95.05882352941175), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2026,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(6.072334429309535), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2026,RAT-020,Days sales outstanding trend,trend,Medium,pass,Validation passed,{'dso': np.float64(60.10867883663367)}
+ADANI GREEN ENERGY LTD,2026,RAT-022,Days inventory outstanding trend,trend,Medium,pass,Validation passed,{'dio': np.float64(3.839727722772277)}
+ADANI GREEN ENERGY LTD,2026,RAT-024,Revenue growth rate,trend,Medium,pass,Validation passed,{'Revenue_Growth': np.float64(0.1530503032465215)}
+ADANI GREEN ENERGY LTD,2026,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(0.1530503032465215), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2026,TR-002,Year-over-year expense variance,trend,Medium,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+ADANI GREEN ENERGY LTD,2026,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(1855.71118442499), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2026,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+ADANI GREEN ENERGY LTD,2026,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.1277846534653465), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"

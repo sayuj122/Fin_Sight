@@ -1,0 +1,421 @@
+Company,Year,Rule ID,Rule Description,Category,Severity,Status,Message,Observed
+ZYDUS WELLNESS LTD,2017,BS-001,Balance sheet equation,integrity,Critical,skipped,"Unavailable metrics: ['Total Assets', 'Total Liabilities']",
+ZYDUS WELLNESS LTD,2017,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(39.07), 'Reserves': np.float64(518.12)}"
+ZYDUS WELLNESS LTD,2017,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,skipped,Unavailable prior-year Cash & Bank,"{'Cash & Bank': np.float64(440.16), 'Net Cash Flow': np.float64(-1.31)}"
+ZYDUS WELLNESS LTD,2017,CF-004,Financing activity plausibility,cross_statement,High,skipped,Unavailable prior-year Borrowings,"{'Borrowings': np.float64(25.0), 'Dividend Amount': np.float64(25.4), 'Cash from Financing Activity': np.float64(-6.21)}"
+ZYDUS WELLNESS LTD,2017,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(108.98), 'Depreciation': np.float64(7.16), 'Cash from Operating Activity': np.float64(76.95)}"
+ZYDUS WELLNESS LTD,2017,CF-008,Sustained negative operating cash flow,trend,High,skipped,Insufficient history for Cash from Operating Activity,{'Cash from Operating Activity': np.float64(76.95)}
+ZYDUS WELLNESS LTD,2017,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+ZYDUS WELLNESS LTD,2017,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(25.4), 'Reserves': np.float64(518.12)}"
+ZYDUS WELLNESS LTD,2017,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'ZYDUS WELLNESS LTD', 'Year': np.int64(2017)}"
+ZYDUS WELLNESS LTD,2017,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+ZYDUS WELLNESS LTD,2017,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(440.16), 'Inventory': np.float64(31.88)}"
+ZYDUS WELLNESS LTD,2017,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+ZYDUS WELLNESS LTD,2017,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(430.57), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2017,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2017), 'Report Date': '2017-03-31'}"
+ZYDUS WELLNESS LTD,2017,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(0.7772952133218757), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2017,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(0.55), 'Borrowings': np.float64(25.0)}"
+ZYDUS WELLNESS LTD,2017,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.1025806451612903), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2017,IS-010,Unusual expense spike detection,trend,High,skipped,Unavailable metrics: ['Total Expenses'],
+ZYDUS WELLNESS LTD,2017,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,skipped,"Unavailable metric values: ['Revenue_Growth', 'Operating_CF_Growth']","{'Revenue_Growth': np.float64(nan), 'Operating_CF_Growth': np.float64(nan)}"
+ZYDUS WELLNESS LTD,2017,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,skipped,Unavailable prior-year Reserves,"{'Net profit': np.float64(108.98), 'Dividend Amount': np.float64(25.4), 'Reserves': np.float64(518.12)}"
+ZYDUS WELLNESS LTD,2017,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+ZYDUS WELLNESS LTD,2017,LED-001,Accounting equation,integrity,Critical,skipped,"Unavailable metrics: ['Total Assets', 'Total Liabilities']",
+ZYDUS WELLNESS LTD,2017,RAT-005,Debt-to-equity ratio,ratio,High,pass,Validation passed,{'Debt_Equity_Ratio': np.float64(0.0448679983488576)}
+ZYDUS WELLNESS LTD,2017,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+ZYDUS WELLNESS LTD,2017,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+ZYDUS WELLNESS LTD,2017,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+ZYDUS WELLNESS LTD,2017,RAT-010,Gross profit margin trend,trend,Medium,skipped,Insufficient history for gross_margin,{'gross_margin': np.float64(0.7772952133218757)}
+ZYDUS WELLNESS LTD,2017,RAT-011,Net profit margin trend,trend,Medium,skipped,Insufficient history for Profit_Margin,{'Profit_Margin': np.float64(0.2531063473999582)}
+ZYDUS WELLNESS LTD,2017,RAT-012,Operating margin trend,trend,Medium,skipped,Insufficient history for Operating_Margin,{'Operating_Margin': np.float64(0.0)}
+ZYDUS WELLNESS LTD,2017,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+ZYDUS WELLNESS LTD,2017,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.1955885784023403), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2017,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+ZYDUS WELLNESS LTD,2017,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(13.505959849435383), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2017,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(106.57673267326732), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2017,RAT-020,Days sales outstanding trend,trend,Medium,skipped,Insufficient history for dso,{'dso': np.float64(3.4247625240959656)}
+ZYDUS WELLNESS LTD,2017,RAT-022,Days inventory outstanding trend,trend,Medium,skipped,Insufficient history for dio,{'dio': np.float64(27.02510625449985)}
+ZYDUS WELLNESS LTD,2017,RAT-024,Revenue growth rate,trend,Medium,skipped,Unavailable metric values: ['Revenue_Growth'],{'Revenue_Growth': np.float64(nan)}
+ZYDUS WELLNESS LTD,2017,TR-001,Year-over-year revenue variance,trend,Medium,skipped,Unavailable metric values: ['Revenue_Growth'],{'Revenue_Growth': np.float64(nan)}
+ZYDUS WELLNESS LTD,2017,TR-002,Year-over-year expense variance,trend,Medium,skipped,Unavailable metrics: ['Total Expenses'],
+ZYDUS WELLNESS LTD,2017,TR-003,Multi-year trend consistency,trend,Medium,skipped,Unavailable metric values: ['Revenue_Volatility'],{'Revenue_Volatility': np.float64(nan)}
+ZYDUS WELLNESS LTD,2017,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2017,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.2531063473999582), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2018,BS-001,Balance sheet equation,integrity,Critical,skipped,"Unavailable metrics: ['Total Assets', 'Total Liabilities']",
+ZYDUS WELLNESS LTD,2018,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(39.07), 'Reserves': np.float64(652.12)}"
+ZYDUS WELLNESS LTD,2018,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(413.72), 'Net Cash Flow': np.float64(8.12)}"
+ZYDUS WELLNESS LTD,2018,CF-004,Financing activity plausibility,cross_statement,High,fail,Validation triggered,"{'Borrowings': np.float64(25.0), 'Dividend Amount': np.float64(31.26), 'Cash from Financing Activity': np.float64(-1.82)}"
+ZYDUS WELLNESS LTD,2018,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(133.9), 'Depreciation': np.float64(8.88), 'Cash from Operating Activity': np.float64(69.06)}"
+ZYDUS WELLNESS LTD,2018,CF-008,Sustained negative operating cash flow,trend,High,skipped,Insufficient history for Cash from Operating Activity,{'Cash from Operating Activity': np.float64(69.06)}
+ZYDUS WELLNESS LTD,2018,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+ZYDUS WELLNESS LTD,2018,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(31.26), 'Reserves': np.float64(652.12)}"
+ZYDUS WELLNESS LTD,2018,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'ZYDUS WELLNESS LTD', 'Year': np.int64(2018)}"
+ZYDUS WELLNESS LTD,2018,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+ZYDUS WELLNESS LTD,2018,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(413.72), 'Inventory': np.float64(35.06)}"
+ZYDUS WELLNESS LTD,2018,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+ZYDUS WELLNESS LTD,2018,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(512.62), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2018,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2018), 'Report Date': '2018-03-31'}"
+ZYDUS WELLNESS LTD,2018,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(0.7808318052358472), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2018,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(1.7), 'Borrowings': np.float64(25.0)}"
+ZYDUS WELLNESS LTD,2018,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.088353145452117), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2018,IS-010,Unusual expense spike detection,trend,High,skipped,Unavailable metrics: ['Total Expenses'],
+ZYDUS WELLNESS LTD,2018,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,fail,Validation triggered,"{'Revenue_Growth': np.float64(0.1905613489095849), 'Operating_CF_Growth': np.float64(-0.1025341130604288)}"
+ZYDUS WELLNESS LTD,2018,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(133.9), 'Dividend Amount': np.float64(31.26), 'Reserves': np.float64(652.12)}"
+ZYDUS WELLNESS LTD,2018,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+ZYDUS WELLNESS LTD,2018,LED-001,Accounting equation,integrity,Critical,skipped,"Unavailable metrics: ['Total Assets', 'Total Liabilities']",
+ZYDUS WELLNESS LTD,2018,RAT-005,Debt-to-equity ratio,ratio,High,pass,Validation passed,{'Debt_Equity_Ratio': np.float64(0.0361695047671407)}
+ZYDUS WELLNESS LTD,2018,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+ZYDUS WELLNESS LTD,2018,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+ZYDUS WELLNESS LTD,2018,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+ZYDUS WELLNESS LTD,2018,RAT-010,Gross profit margin trend,trend,Medium,skipped,Insufficient history for gross_margin,{'gross_margin': np.float64(0.7808318052358472)}
+ZYDUS WELLNESS LTD,2018,RAT-011,Net profit margin trend,trend,Medium,skipped,Insufficient history for Profit_Margin,{'Profit_Margin': np.float64(0.2612071319886075)}
+ZYDUS WELLNESS LTD,2018,RAT-012,Operating margin trend,trend,Medium,skipped,Insufficient history for Operating_Margin,{'Operating_Margin': np.float64(0.0)}
+ZYDUS WELLNESS LTD,2018,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+ZYDUS WELLNESS LTD,2018,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.1937238675328057), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2018,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+ZYDUS WELLNESS LTD,2018,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(14.621220764403878), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2018,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(58.585142857142856), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2018,RAT-020,Days sales outstanding trend,trend,Medium,skipped,Insufficient history for dso,{'dso': np.float64(6.230248527174125)}
+ZYDUS WELLNESS LTD,2018,RAT-022,Days inventory outstanding trend,trend,Medium,skipped,Insufficient history for dio,{'dio': np.float64(24.96371581288284)}
+ZYDUS WELLNESS LTD,2018,RAT-024,Revenue growth rate,trend,Medium,pass,Validation passed,{'Revenue_Growth': np.float64(0.1905613489095849)}
+ZYDUS WELLNESS LTD,2018,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(0.1905613489095849), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2018,TR-002,Year-over-year expense variance,trend,Medium,skipped,Unavailable metrics: ['Total Expenses'],
+ZYDUS WELLNESS LTD,2018,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(58.01811139635621), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2018,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2018,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.2612071319886075), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2019,BS-001,Balance sheet equation,integrity,Critical,skipped,"Unavailable metrics: ['Total Assets', 'Total Liabilities']",
+ZYDUS WELLNESS LTD,2019,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(57.66), 'Reserves': np.float64(3328.62)}"
+ZYDUS WELLNESS LTD,2019,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(164.29), 'Net Cash Flow': np.float64(108.56)}"
+ZYDUS WELLNESS LTD,2019,CF-004,Financing activity plausibility,cross_statement,High,pass,Validation passed,"{'Borrowings': np.float64(1569.25), 'Dividend Amount': np.float64(28.83), 'Cash from Financing Activity': np.float64(4051.53)}"
+ZYDUS WELLNESS LTD,2019,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(169.14), 'Depreciation': np.float64(12.51), 'Cash from Operating Activity': np.float64(149.38)}"
+ZYDUS WELLNESS LTD,2019,CF-008,Sustained negative operating cash flow,trend,High,pass,Validation passed,{'Cash from Operating Activity': np.float64(149.38)}
+ZYDUS WELLNESS LTD,2019,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+ZYDUS WELLNESS LTD,2019,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(28.83), 'Reserves': np.float64(3328.62)}"
+ZYDUS WELLNESS LTD,2019,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'ZYDUS WELLNESS LTD', 'Year': np.int64(2019)}"
+ZYDUS WELLNESS LTD,2019,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+ZYDUS WELLNESS LTD,2019,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(164.29), 'Inventory': np.float64(233.07)}"
+ZYDUS WELLNESS LTD,2019,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+ZYDUS WELLNESS LTD,2019,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(842.82), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2019,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2019), 'Report Date': '2019-03-31'}"
+ZYDUS WELLNESS LTD,2019,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(0.7143874136826368), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2019,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(30.09), 'Borrowings': np.float64(1569.25)}"
+ZYDUS WELLNESS LTD,2019,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(-0.0035749868135732), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2019,IS-010,Unusual expense spike detection,trend,High,skipped,Unavailable metrics: ['Total Expenses'],
+ZYDUS WELLNESS LTD,2019,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,pass,Validation passed,"{'Revenue_Growth': np.float64(0.6441418594670516), 'Operating_CF_Growth': np.float64(1.1630466261222123)}"
+ZYDUS WELLNESS LTD,2019,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(169.14), 'Dividend Amount': np.float64(28.83), 'Reserves': np.float64(3328.62)}"
+ZYDUS WELLNESS LTD,2019,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+ZYDUS WELLNESS LTD,2019,LED-001,Accounting equation,integrity,Critical,skipped,"Unavailable metrics: ['Total Assets', 'Total Liabilities']",
+ZYDUS WELLNESS LTD,2019,RAT-005,Debt-to-equity ratio,ratio,High,pass,Validation passed,{'Debt_Equity_Ratio': np.float64(0.4634141299597198)}
+ZYDUS WELLNESS LTD,2019,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+ZYDUS WELLNESS LTD,2019,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+ZYDUS WELLNESS LTD,2019,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+ZYDUS WELLNESS LTD,2019,RAT-010,Gross profit margin trend,trend,Medium,pass,Validation passed,{'gross_margin': np.float64(0.7143874136826368)}
+ZYDUS WELLNESS LTD,2019,RAT-011,Net profit margin trend,trend,Medium,pass,Validation passed,{'Profit_Margin': np.float64(0.2006834199473197)}
+ZYDUS WELLNESS LTD,2019,RAT-012,Operating margin trend,trend,Medium,fail,Validation triggered,{'Operating_Margin': np.float64(0.0)}
+ZYDUS WELLNESS LTD,2019,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+ZYDUS WELLNESS LTD,2019,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.0499486161805875), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2019,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+ZYDUS WELLNESS LTD,2019,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(3.616166816836144), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2019,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(8.775718450645565), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2019,RAT-020,Days sales outstanding trend,trend,Medium,fail,Validation triggered,{'dso': np.float64(41.59203625922498)}
+ZYDUS WELLNESS LTD,2019,RAT-022,Days inventory outstanding trend,trend,Medium,pass,Validation passed,{'dio': np.float64(100.93560902683846)}
+ZYDUS WELLNESS LTD,2019,RAT-024,Revenue growth rate,trend,Medium,pass,Validation passed,{'Revenue_Growth': np.float64(0.6441418594670516)}
+ZYDUS WELLNESS LTD,2019,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(0.6441418594670516), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2019,TR-002,Year-over-year expense variance,trend,Medium,skipped,Unavailable metrics: ['Total Expenses'],
+ZYDUS WELLNESS LTD,2019,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(218.21789760084604), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2019,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2019,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.2006834199473197), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2020,BS-001,Balance sheet equation,integrity,Critical,skipped,"Unavailable metrics: ['Total Assets', 'Total Liabilities']",
+ZYDUS WELLNESS LTD,2020,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(57.66), 'Reserves': np.float64(3403.0)}"
+ZYDUS WELLNESS LTD,2020,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(82.42), 'Net Cash Flow': np.float64(-17.56)}"
+ZYDUS WELLNESS LTD,2020,CF-004,Financing activity plausibility,cross_statement,High,pass,Validation passed,"{'Borrowings': np.float64(1519.19), 'Dividend Amount': np.float64(28.83), 'Cash from Financing Activity': np.float64(-259.69)}"
+ZYDUS WELLNESS LTD,2020,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(141.72), 'Depreciation': np.float64(26.39), 'Cash from Operating Activity': np.float64(259.25)}"
+ZYDUS WELLNESS LTD,2020,CF-008,Sustained negative operating cash flow,trend,High,pass,Validation passed,{'Cash from Operating Activity': np.float64(259.25)}
+ZYDUS WELLNESS LTD,2020,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+ZYDUS WELLNESS LTD,2020,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(28.83), 'Reserves': np.float64(3403.0)}"
+ZYDUS WELLNESS LTD,2020,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'ZYDUS WELLNESS LTD', 'Year': np.int64(2020)}"
+ZYDUS WELLNESS LTD,2020,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+ZYDUS WELLNESS LTD,2020,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(82.42), 'Inventory': np.float64(292.34)}"
+ZYDUS WELLNESS LTD,2020,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+ZYDUS WELLNESS LTD,2020,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(1766.82), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2020,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2020), 'Report Date': '2020-03-31'}"
+ZYDUS WELLNESS LTD,2020,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(0.607113344879501), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2020,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(139.91), 'Borrowings': np.float64(1519.19)}"
+ZYDUS WELLNESS LTD,2020,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(-0.168631978230395), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2020,IS-010,Unusual expense spike detection,trend,High,skipped,Unavailable metrics: ['Total Expenses'],
+ZYDUS WELLNESS LTD,2020,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,pass,Validation passed,"{'Revenue_Growth': np.float64(1.096319498825372), 'Operating_CF_Growth': np.float64(0.7355067612799573)}"
+ZYDUS WELLNESS LTD,2020,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(141.72), 'Dividend Amount': np.float64(28.83), 'Reserves': np.float64(3403.0)}"
+ZYDUS WELLNESS LTD,2020,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+ZYDUS WELLNESS LTD,2020,LED-001,Accounting equation,integrity,Critical,skipped,"Unavailable metrics: ['Total Assets', 'Total Liabilities']",
+ZYDUS WELLNESS LTD,2020,RAT-005,Debt-to-equity ratio,ratio,High,pass,Validation passed,{'Debt_Equity_Ratio': np.float64(0.4389885166413343)}
+ZYDUS WELLNESS LTD,2020,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+ZYDUS WELLNESS LTD,2020,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+ZYDUS WELLNESS LTD,2020,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+ZYDUS WELLNESS LTD,2020,RAT-010,Gross profit margin trend,trend,Medium,fail,Validation triggered,{'gross_margin': np.float64(0.607113344879501)}
+ZYDUS WELLNESS LTD,2020,RAT-011,Net profit margin trend,trend,Medium,fail,Validation triggered,{'Profit_Margin': np.float64(0.0802119061364485)}
+ZYDUS WELLNESS LTD,2020,RAT-012,Operating margin trend,trend,Medium,fail,Validation triggered,{'Operating_Margin': np.float64(0.0)}
+ZYDUS WELLNESS LTD,2020,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+ZYDUS WELLNESS LTD,2020,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.0409517259713465), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2020,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+ZYDUS WELLNESS LTD,2020,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(6.04371622083875), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2020,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(14.947715736040609), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2020,RAT-020,Days sales outstanding trend,trend,Medium,pass,Validation passed,{'dso': np.float64(24.41844670085238)}
+ZYDUS WELLNESS LTD,2020,RAT-022,Days inventory outstanding trend,trend,Medium,pass,Validation passed,{'dio': np.float64(60.393305486693606)}
+ZYDUS WELLNESS LTD,2020,RAT-024,Revenue growth rate,trend,Medium,pass,Validation passed,{'Revenue_Growth': np.float64(1.096319498825372)}
+ZYDUS WELLNESS LTD,2020,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(1.096319498825372), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2020,TR-002,Year-over-year expense variance,trend,Medium,skipped,Unavailable metrics: ['Total Expenses'],
+ZYDUS WELLNESS LTD,2020,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(650.1058477919833), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2020,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2020,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.0802119061364485), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2021,BS-001,Balance sheet equation,integrity,Critical,skipped,"Unavailable metrics: ['Total Assets', 'Total Liabilities']",
+ZYDUS WELLNESS LTD,2021,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(63.63), 'Reserves': np.float64(4504.16)}"
+ZYDUS WELLNESS LTD,2021,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(252.72), 'Net Cash Flow': np.float64(59.89)}"
+ZYDUS WELLNESS LTD,2021,CF-004,Financing activity plausibility,cross_statement,High,fail,Validation triggered,"{'Borrowings': np.float64(550.4), 'Dividend Amount': np.float64(31.82), 'Cash from Financing Activity': np.float64(-216.43)}"
+ZYDUS WELLNESS LTD,2021,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(118.73), 'Depreciation': np.float64(25.16), 'Cash from Operating Activity': np.float64(286.73)}"
+ZYDUS WELLNESS LTD,2021,CF-008,Sustained negative operating cash flow,trend,High,pass,Validation passed,{'Cash from Operating Activity': np.float64(286.73)}
+ZYDUS WELLNESS LTD,2021,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+ZYDUS WELLNESS LTD,2021,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(31.82), 'Reserves': np.float64(4504.16)}"
+ZYDUS WELLNESS LTD,2021,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'ZYDUS WELLNESS LTD', 'Year': np.int64(2021)}"
+ZYDUS WELLNESS LTD,2021,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+ZYDUS WELLNESS LTD,2021,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(252.72), 'Inventory': np.float64(364.72)}"
+ZYDUS WELLNESS LTD,2021,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+ZYDUS WELLNESS LTD,2021,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(1866.67), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2021,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2021), 'Report Date': '2021-03-31'}"
+ZYDUS WELLNESS LTD,2021,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(0.5253633475654508), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2021,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(83.8), 'Borrowings': np.float64(550.4)}"
+ZYDUS WELLNESS LTD,2021,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(-0.058105338205151), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2021,IS-010,Unusual expense spike detection,trend,High,skipped,Unavailable metrics: ['Total Expenses'],
+ZYDUS WELLNESS LTD,2021,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,pass,Validation passed,"{'Revenue_Growth': np.float64(0.0565139629390658), 'Operating_CF_Growth': np.float64(0.1059980713596915)}"
+ZYDUS WELLNESS LTD,2021,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(118.73), 'Dividend Amount': np.float64(31.82), 'Reserves': np.float64(4504.16)}"
+ZYDUS WELLNESS LTD,2021,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+ZYDUS WELLNESS LTD,2021,LED-001,Accounting equation,integrity,Critical,skipped,"Unavailable metrics: ['Total Assets', 'Total Liabilities']",
+ZYDUS WELLNESS LTD,2021,RAT-005,Debt-to-equity ratio,ratio,High,pass,Validation passed,{'Debt_Equity_Ratio': np.float64(0.1204959072111458)}
+ZYDUS WELLNESS LTD,2021,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+ZYDUS WELLNESS LTD,2021,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+ZYDUS WELLNESS LTD,2021,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+ZYDUS WELLNESS LTD,2021,RAT-010,Gross profit margin trend,trend,Medium,fail,Validation triggered,{'gross_margin': np.float64(0.5253633475654508)}
+ZYDUS WELLNESS LTD,2021,RAT-011,Net profit margin trend,trend,Medium,fail,Validation triggered,{'Profit_Margin': np.float64(0.063605243562065)}
+ZYDUS WELLNESS LTD,2021,RAT-012,Operating margin trend,trend,Medium,fail,Validation triggered,{'Operating_Margin': np.float64(0.0)}
+ZYDUS WELLNESS LTD,2021,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+ZYDUS WELLNESS LTD,2021,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.0259928762049043), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2021,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+ZYDUS WELLNESS LTD,2021,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(5.118090590041676), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2021,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(19.79921510394569), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2021,RAT-020,Days sales outstanding trend,trend,Medium,pass,Validation passed,{'dso': np.float64(18.43507422308174)}
+ZYDUS WELLNESS LTD,2021,RAT-022,Days inventory outstanding trend,trend,Medium,pass,Validation passed,{'dio': np.float64(71.31565836489578)}
+ZYDUS WELLNESS LTD,2021,RAT-024,Revenue growth rate,trend,Medium,pass,Validation passed,{'Revenue_Growth': np.float64(0.0565139629390658)}
+ZYDUS WELLNESS LTD,2021,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(0.0565139629390658), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2021,TR-002,Year-over-year expense variance,trend,Medium,skipped,Unavailable metrics: ['Total Expenses'],
+ZYDUS WELLNESS LTD,2021,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(564.5078749081658), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2021,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2021,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.063605243562065), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2022,BS-001,Balance sheet equation,integrity,Critical,skipped,"Unavailable metrics: ['Total Assets', 'Total Liabilities']",
+ZYDUS WELLNESS LTD,2022,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(63.63), 'Reserves': np.float64(4780.4)}"
+ZYDUS WELLNESS LTD,2022,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(169.8), 'Net Cash Flow': np.float64(-55.9)}"
+ZYDUS WELLNESS LTD,2022,CF-004,Financing activity plausibility,cross_statement,High,pass,Validation passed,"{'Borrowings': np.float64(387.34), 'Dividend Amount': np.float64(31.82), 'Cash from Financing Activity': np.float64(-233.82)}"
+ZYDUS WELLNESS LTD,2022,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(308.87), 'Depreciation': np.float64(23.62), 'Cash from Operating Activity': np.float64(236.85)}"
+ZYDUS WELLNESS LTD,2022,CF-008,Sustained negative operating cash flow,trend,High,pass,Validation passed,{'Cash from Operating Activity': np.float64(236.85)}
+ZYDUS WELLNESS LTD,2022,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+ZYDUS WELLNESS LTD,2022,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(31.82), 'Reserves': np.float64(4780.4)}"
+ZYDUS WELLNESS LTD,2022,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'ZYDUS WELLNESS LTD', 'Year': np.int64(2022)}"
+ZYDUS WELLNESS LTD,2022,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+ZYDUS WELLNESS LTD,2022,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(169.8), 'Inventory': np.float64(361.64)}"
+ZYDUS WELLNESS LTD,2022,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+ZYDUS WELLNESS LTD,2022,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(2009.1), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2022,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2022), 'Report Date': '2022-03-31'}"
+ZYDUS WELLNESS LTD,2022,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(0.512433427903041), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2022,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(25.51), 'Borrowings': np.float64(387.34)}"
+ZYDUS WELLNESS LTD,2022,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(-0.0093131167897523), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2022,IS-010,Unusual expense spike detection,trend,High,skipped,Unavailable metrics: ['Total Expenses'],
+ZYDUS WELLNESS LTD,2022,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,fail,Validation triggered,"{'Revenue_Growth': np.float64(0.0763016494613402), 'Operating_CF_Growth': np.float64(-0.1739615666306282)}"
+ZYDUS WELLNESS LTD,2022,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(308.87), 'Dividend Amount': np.float64(31.82), 'Reserves': np.float64(4780.4)}"
+ZYDUS WELLNESS LTD,2022,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+ZYDUS WELLNESS LTD,2022,LED-001,Accounting equation,integrity,Critical,skipped,"Unavailable metrics: ['Total Assets', 'Total Liabilities']",
+ZYDUS WELLNESS LTD,2022,RAT-005,Debt-to-equity ratio,ratio,High,pass,Validation passed,{'Debt_Equity_Ratio': np.float64(0.0799623454024851)}
+ZYDUS WELLNESS LTD,2022,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+ZYDUS WELLNESS LTD,2022,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+ZYDUS WELLNESS LTD,2022,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+ZYDUS WELLNESS LTD,2022,RAT-010,Gross profit margin trend,trend,Medium,fail,Validation triggered,{'gross_margin': np.float64(0.512433427903041)}
+ZYDUS WELLNESS LTD,2022,RAT-011,Net profit margin trend,trend,Medium,pass,Validation passed,{'Profit_Margin': np.float64(0.1537355034592603)}
+ZYDUS WELLNESS LTD,2022,RAT-012,Operating margin trend,trend,Medium,fail,Validation triggered,{'Operating_Margin': np.float64(0.0)}
+ZYDUS WELLNESS LTD,2022,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+ZYDUS WELLNESS LTD,2022,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.0637630237632714), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2022,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+ZYDUS WELLNESS LTD,2022,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(5.555524831323969), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2022,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(14.116779089376054), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2022,RAT-020,Days sales outstanding trend,trend,Medium,pass,Validation passed,{'dso': np.float64(25.855756308794984)}
+ZYDUS WELLNESS LTD,2022,RAT-022,Days inventory outstanding trend,trend,Medium,pass,Validation passed,{'dio': np.float64(65.70036334677218)}
+ZYDUS WELLNESS LTD,2022,RAT-024,Revenue growth rate,trend,Medium,pass,Validation passed,{'Revenue_Growth': np.float64(0.0763016494613402)}
+ZYDUS WELLNESS LTD,2022,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(0.0763016494613402), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2022,TR-002,Year-over-year expense variance,trend,Medium,skipped,Unavailable metrics: ['Total Expenses'],
+ZYDUS WELLNESS LTD,2022,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(121.76201227531313), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2022,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2022,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.1537355034592603), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2023,BS-001,Balance sheet equation,integrity,Critical,skipped,"Unavailable metrics: ['Total Assets', 'Total Liabilities']",
+ZYDUS WELLNESS LTD,2023,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(63.6), 'Reserves': np.float64(5059.0)}"
+ZYDUS WELLNESS LTD,2023,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,pass,Validation passed,"{'Cash & Bank': np.float64(38.1), 'Net Cash Flow': np.float64(-131.7)}"
+ZYDUS WELLNESS LTD,2023,CF-004,Financing activity plausibility,cross_statement,High,pass,Validation passed,"{'Borrowings': np.float64(297.3), 'Dividend Amount': np.float64(31.8), 'Cash from Financing Activity': np.float64(-138.5)}"
+ZYDUS WELLNESS LTD,2023,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(310.4), 'Depreciation': np.float64(25.0), 'Cash from Operating Activity': np.float64(91.7)}"
+ZYDUS WELLNESS LTD,2023,CF-008,Sustained negative operating cash flow,trend,High,pass,Validation passed,{'Cash from Operating Activity': np.float64(91.7)}
+ZYDUS WELLNESS LTD,2023,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+ZYDUS WELLNESS LTD,2023,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(31.8), 'Reserves': np.float64(5059.0)}"
+ZYDUS WELLNESS LTD,2023,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'ZYDUS WELLNESS LTD', 'Year': np.int64(2023)}"
+ZYDUS WELLNESS LTD,2023,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+ZYDUS WELLNESS LTD,2023,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(38.1), 'Inventory': np.float64(457.5)}"
+ZYDUS WELLNESS LTD,2023,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+ZYDUS WELLNESS LTD,2023,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(2254.8), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2023,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2023), 'Report Date': '2023-03-31'}"
+ZYDUS WELLNESS LTD,2023,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(0.4613712967890722), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2023,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(16.1), 'Borrowings': np.float64(297.3)}"
+ZYDUS WELLNESS LTD,2023,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(-0.0670333447920247), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2023,IS-010,Unusual expense spike detection,trend,High,skipped,Unavailable metrics: ['Total Expenses'],
+ZYDUS WELLNESS LTD,2023,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,fail,Validation triggered,"{'Revenue_Growth': np.float64(0.1222935642825147), 'Operating_CF_Growth': np.float64(-0.6128351277179649)}"
+ZYDUS WELLNESS LTD,2023,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,pass,Validation passed,"{'Net profit': np.float64(310.4), 'Dividend Amount': np.float64(31.8), 'Reserves': np.float64(5059.0)}"
+ZYDUS WELLNESS LTD,2023,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+ZYDUS WELLNESS LTD,2023,LED-001,Accounting equation,integrity,Critical,skipped,"Unavailable metrics: ['Total Assets', 'Total Liabilities']",
+ZYDUS WELLNESS LTD,2023,RAT-005,Debt-to-equity ratio,ratio,High,pass,Validation passed,{'Debt_Equity_Ratio': np.float64(0.0580369343692656)}
+ZYDUS WELLNESS LTD,2023,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+ZYDUS WELLNESS LTD,2023,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+ZYDUS WELLNESS LTD,2023,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+ZYDUS WELLNESS LTD,2023,RAT-010,Gross profit margin trend,trend,Medium,fail,Validation triggered,{'gross_margin': np.float64(0.4613712967890722)}
+ZYDUS WELLNESS LTD,2023,RAT-011,Net profit margin trend,trend,Medium,pass,Validation passed,{'Profit_Margin': np.float64(0.1376618768848678)}
+ZYDUS WELLNESS LTD,2023,RAT-012,Operating margin trend,trend,Medium,fail,Validation triggered,{'Operating_Margin': np.float64(0.0)}
+ZYDUS WELLNESS LTD,2023,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+ZYDUS WELLNESS LTD,2023,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.0605942294928356), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2023,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+ZYDUS WELLNESS LTD,2023,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(4.928524590163935), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2023,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(10.850818094321465), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2023,RAT-020,Days sales outstanding trend,trend,Medium,fail,Validation triggered,{'dso': np.float64(33.63801667553663)}
+ZYDUS WELLNESS LTD,2023,RAT-022,Days inventory outstanding trend,trend,Medium,pass,Validation passed,{'dio': np.float64(74.05867482703565)}
+ZYDUS WELLNESS LTD,2023,RAT-024,Revenue growth rate,trend,Medium,pass,Validation passed,{'Revenue_Growth': np.float64(0.1222935642825147)}
+ZYDUS WELLNESS LTD,2023,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(0.1222935642825147), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2023,TR-002,Year-over-year expense variance,trend,Medium,skipped,Unavailable metrics: ['Total Expenses'],
+ZYDUS WELLNESS LTD,2023,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(196.34140835120235), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2023,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2023,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.1376618768848678), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2024,BS-001,Balance sheet equation,integrity,Critical,skipped,"Unavailable metrics: ['Total Assets', 'Total Liabilities']",
+ZYDUS WELLNESS LTD,2024,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(63.6), 'Reserves': np.float64(5293.9)}"
+ZYDUS WELLNESS LTD,2024,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(239.5), 'Net Cash Flow': np.float64(43.0)}"
+ZYDUS WELLNESS LTD,2024,CF-004,Financing activity plausibility,cross_statement,High,pass,Validation passed,"{'Borrowings': np.float64(328.7), 'Dividend Amount': np.float64(31.8), 'Cash from Financing Activity': np.float64(-25.7)}"
+ZYDUS WELLNESS LTD,2024,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(266.9), 'Depreciation': np.float64(23.8), 'Cash from Operating Activity': np.float64(246.4)}"
+ZYDUS WELLNESS LTD,2024,CF-008,Sustained negative operating cash flow,trend,High,pass,Validation passed,{'Cash from Operating Activity': np.float64(246.4)}
+ZYDUS WELLNESS LTD,2024,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+ZYDUS WELLNESS LTD,2024,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(31.8), 'Reserves': np.float64(5293.9)}"
+ZYDUS WELLNESS LTD,2024,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'ZYDUS WELLNESS LTD', 'Year': np.int64(2024)}"
+ZYDUS WELLNESS LTD,2024,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+ZYDUS WELLNESS LTD,2024,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(239.5), 'Inventory': np.float64(467.6)}"
+ZYDUS WELLNESS LTD,2024,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+ZYDUS WELLNESS LTD,2024,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(2327.8), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2024,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2024), 'Report Date': '2024-03-31'}"
+ZYDUS WELLNESS LTD,2024,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(0.5068734427356302), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2024,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(24.0), 'Borrowings': np.float64(328.7)}"
+ZYDUS WELLNESS LTD,2024,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(-0.0261437908496732), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2024,IS-010,Unusual expense spike detection,trend,High,skipped,Unavailable metrics: ['Total Expenses'],
+ZYDUS WELLNESS LTD,2024,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,pass,Validation passed,"{'Revenue_Growth': np.float64(0.0323753769735675), 'Operating_CF_Growth': np.float64(1.6870229007633588)}"
+ZYDUS WELLNESS LTD,2024,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(266.9), 'Dividend Amount': np.float64(31.8), 'Reserves': np.float64(5293.9)}"
+ZYDUS WELLNESS LTD,2024,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+ZYDUS WELLNESS LTD,2024,LED-001,Accounting equation,integrity,Critical,skipped,"Unavailable metrics: ['Total Assets', 'Total Liabilities']",
+ZYDUS WELLNESS LTD,2024,RAT-005,Debt-to-equity ratio,ratio,High,pass,Validation passed,{'Debt_Equity_Ratio': np.float64(0.0613532431171255)}
+ZYDUS WELLNESS LTD,2024,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+ZYDUS WELLNESS LTD,2024,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+ZYDUS WELLNESS LTD,2024,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+ZYDUS WELLNESS LTD,2024,RAT-010,Gross profit margin trend,trend,Medium,pass,Validation passed,{'gross_margin': np.float64(0.5068734427356302)}
+ZYDUS WELLNESS LTD,2024,RAT-011,Net profit margin trend,trend,Medium,fail,Validation triggered,{'Profit_Margin': np.float64(0.1146576166337314)}
+ZYDUS WELLNESS LTD,2024,RAT-012,Operating margin trend,trend,Medium,fail,Validation triggered,{'Operating_Margin': np.float64(0.0)}
+ZYDUS WELLNESS LTD,2024,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+ZYDUS WELLNESS LTD,2024,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.0498180121325244), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2024,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+ZYDUS WELLNESS LTD,2024,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(4.9781864841745085), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2024,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(8.216731380162372), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2024,RAT-020,Days sales outstanding trend,trend,Medium,fail,Validation triggered,{'dso': np.float64(44.42155683477962)}
+ZYDUS WELLNESS LTD,2024,RAT-022,Days inventory outstanding trend,trend,Medium,pass,Validation passed,{'dio': np.float64(73.31987284130939)}
+ZYDUS WELLNESS LTD,2024,RAT-024,Revenue growth rate,trend,Medium,pass,Validation passed,{'Revenue_Growth': np.float64(0.0323753769735675)}
+ZYDUS WELLNESS LTD,2024,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(0.0323753769735675), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2024,TR-002,Year-over-year expense variance,trend,Medium,skipped,Unavailable metrics: ['Total Expenses'],
+ZYDUS WELLNESS LTD,2024,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(166.96665335729074), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2024,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2024,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.1146576166337314), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2025,BS-001,Balance sheet equation,integrity,Critical,skipped,"Unavailable metrics: ['Total Assets', 'Total Liabilities']",
+ZYDUS WELLNESS LTD,2025,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(63.6), 'Reserves': np.float64(5608.0)}"
+ZYDUS WELLNESS LTD,2025,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(73.9), 'Net Cash Flow': np.float64(-13.3)}"
+ZYDUS WELLNESS LTD,2025,CF-004,Financing activity plausibility,cross_statement,High,pass,Validation passed,"{'Borrowings': np.float64(188.3), 'Dividend Amount': np.float64(38.16), 'Cash from Financing Activity': np.float64(-186.3)}"
+ZYDUS WELLNESS LTD,2025,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(346.9), 'Depreciation': np.float64(28.4), 'Cash from Operating Activity': np.float64(380.0)}"
+ZYDUS WELLNESS LTD,2025,CF-008,Sustained negative operating cash flow,trend,High,pass,Validation passed,{'Cash from Operating Activity': np.float64(380.0)}
+ZYDUS WELLNESS LTD,2025,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+ZYDUS WELLNESS LTD,2025,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(38.16), 'Reserves': np.float64(5608.0)}"
+ZYDUS WELLNESS LTD,2025,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'ZYDUS WELLNESS LTD', 'Year': np.int64(2025)}"
+ZYDUS WELLNESS LTD,2025,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+ZYDUS WELLNESS LTD,2025,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(73.9), 'Inventory': np.float64(517.5)}"
+ZYDUS WELLNESS LTD,2025,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+ZYDUS WELLNESS LTD,2025,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(2708.9), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2025,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2025), 'Report Date': '2025-03-31'}"
+ZYDUS WELLNESS LTD,2025,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(0.509579534128244), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2025,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(12.0), 'Borrowings': np.float64(188.3)}"
+ZYDUS WELLNESS LTD,2025,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.0331661092530657), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2025,IS-010,Unusual expense spike detection,trend,High,skipped,Unavailable metrics: ['Total Expenses'],
+ZYDUS WELLNESS LTD,2025,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,pass,Validation passed,"{'Revenue_Growth': np.float64(0.1637168141592919), 'Operating_CF_Growth': np.float64(0.5422077922077921)}"
+ZYDUS WELLNESS LTD,2025,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(346.9), 'Dividend Amount': np.float64(38.16), 'Reserves': np.float64(5608.0)}"
+ZYDUS WELLNESS LTD,2025,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+ZYDUS WELLNESS LTD,2025,LED-001,Accounting equation,integrity,Critical,skipped,"Unavailable metrics: ['Total Assets', 'Total Liabilities']",
+ZYDUS WELLNESS LTD,2025,RAT-005,Debt-to-equity ratio,ratio,High,pass,Validation passed,{'Debt_Equity_Ratio': np.float64(0.0332005077932153)}
+ZYDUS WELLNESS LTD,2025,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+ZYDUS WELLNESS LTD,2025,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+ZYDUS WELLNESS LTD,2025,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+ZYDUS WELLNESS LTD,2025,RAT-010,Gross profit margin trend,trend,Medium,pass,Validation passed,{'gross_margin': np.float64(0.509579534128244)}
+ZYDUS WELLNESS LTD,2025,RAT-011,Net profit margin trend,trend,Medium,pass,Validation passed,{'Profit_Margin': np.float64(0.1280593598877773)}
+ZYDUS WELLNESS LTD,2025,RAT-012,Operating margin trend,trend,Medium,fail,Validation triggered,{'Operating_Margin': np.float64(0.0)}
+ZYDUS WELLNESS LTD,2025,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+ZYDUS WELLNESS LTD,2025,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.0611643980534593), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2025,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+ZYDUS WELLNESS LTD,2025,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(5.234589371980676), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2025,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(7.381198910081745), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2025,RAT-020,Days sales outstanding trend,trend,Medium,fail,Validation triggered,{'dso': np.float64(49.44996123887925)}
+ZYDUS WELLNESS LTD,2025,RAT-022,Days inventory outstanding trend,trend,Medium,pass,Validation passed,{'dio': np.float64(69.72848757798369)}
+ZYDUS WELLNESS LTD,2025,RAT-024,Revenue growth rate,trend,Medium,pass,Validation passed,{'Revenue_Growth': np.float64(0.1637168141592919)}
+ZYDUS WELLNESS LTD,2025,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(0.1637168141592919), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2025,TR-002,Year-over-year expense variance,trend,Medium,skipped,Unavailable metrics: ['Total Expenses'],
+ZYDUS WELLNESS LTD,2025,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(243.8486620836794), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2025,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2025,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.1280593598877773), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2026,BS-001,Balance sheet equation,integrity,Critical,skipped,"Unavailable metrics: ['Total Assets', 'Total Liabilities']",
+ZYDUS WELLNESS LTD,2026,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(63.6), 'Reserves': np.float64(5762.4)}"
+ZYDUS WELLNESS LTD,2026,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(111.1), 'Net Cash Flow': np.float64(43.9)}"
+ZYDUS WELLNESS LTD,2026,CF-004,Financing activity plausibility,cross_statement,High,pass,Validation passed,"{'Borrowings': np.float64(3202.8), 'Dividend Amount': np.float64(38.16), 'Cash from Financing Activity': np.float64(2698.4)}"
+ZYDUS WELLNESS LTD,2026,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(197.2), 'Depreciation': np.float64(146.7), 'Cash from Operating Activity': np.float64(226.4)}"
+ZYDUS WELLNESS LTD,2026,CF-008,Sustained negative operating cash flow,trend,High,pass,Validation passed,{'Cash from Operating Activity': np.float64(226.4)}
+ZYDUS WELLNESS LTD,2026,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+ZYDUS WELLNESS LTD,2026,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(38.16), 'Reserves': np.float64(5762.4)}"
+ZYDUS WELLNESS LTD,2026,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'ZYDUS WELLNESS LTD', 'Year': np.int64(2026)}"
+ZYDUS WELLNESS LTD,2026,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+ZYDUS WELLNESS LTD,2026,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(111.1), 'Inventory': np.float64(763.8)}"
+ZYDUS WELLNESS LTD,2026,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+ZYDUS WELLNESS LTD,2026,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(3961.0), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2026,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2026), 'Report Date': '2026-03-31'}"
+ZYDUS WELLNESS LTD,2026,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(0.5888159555667761), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2026,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(98.1), 'Borrowings': np.float64(3202.8)}"
+ZYDUS WELLNESS LTD,2026,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.144468546637744), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2026,IS-010,Unusual expense spike detection,trend,High,skipped,Unavailable metrics: ['Total Expenses'],
+ZYDUS WELLNESS LTD,2026,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,fail,Validation triggered,"{'Revenue_Growth': np.float64(0.4622171361069067), 'Operating_CF_Growth': np.float64(-0.4042105263157894)}"
+ZYDUS WELLNESS LTD,2026,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(197.2), 'Dividend Amount': np.float64(38.16), 'Reserves': np.float64(5762.4)}"
+ZYDUS WELLNESS LTD,2026,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+ZYDUS WELLNESS LTD,2026,LED-001,Accounting equation,integrity,Critical,skipped,"Unavailable metrics: ['Total Assets', 'Total Liabilities']",
+ZYDUS WELLNESS LTD,2026,RAT-005,Debt-to-equity ratio,ratio,High,pass,Validation passed,{'Debt_Equity_Ratio': np.float64(0.5497425334706488)}
+ZYDUS WELLNESS LTD,2026,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+ZYDUS WELLNESS LTD,2026,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+ZYDUS WELLNESS LTD,2026,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+ZYDUS WELLNESS LTD,2026,RAT-010,Gross profit margin trend,trend,Medium,pass,Validation passed,{'gross_margin': np.float64(0.5888159555667761)}
+ZYDUS WELLNESS LTD,2026,RAT-011,Net profit margin trend,trend,Medium,pass,Validation passed,{'Profit_Margin': np.float64(0.0497854077253218)}
+ZYDUS WELLNESS LTD,2026,RAT-012,Operating margin trend,trend,Medium,fail,Validation triggered,{'Operating_Margin': np.float64(0.0)}
+ZYDUS WELLNESS LTD,2026,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+ZYDUS WELLNESS LTD,2026,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.0338482663920357), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2026,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+ZYDUS WELLNESS LTD,2026,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(5.185912542550407), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2026,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(10.320479416362687), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2026,RAT-020,Days sales outstanding trend,trend,Medium,pass,Validation passed,{'dso': np.float64(35.36657409745014)}
+ZYDUS WELLNESS LTD,2026,RAT-022,Days inventory outstanding trend,trend,Medium,pass,Validation passed,{'dio': np.float64(70.38298409492552)}
+ZYDUS WELLNESS LTD,2026,RAT-024,Revenue growth rate,trend,Medium,pass,Validation passed,{'Revenue_Growth': np.float64(0.4622171361069067)}
+ZYDUS WELLNESS LTD,2026,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(0.4622171361069067), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2026,TR-002,Year-over-year expense variance,trend,Medium,skipped,Unavailable metrics: ['Total Expenses'],
+ZYDUS WELLNESS LTD,2026,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(854.4329367090983), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2026,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+ZYDUS WELLNESS LTD,2026,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.0497854077253218), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"

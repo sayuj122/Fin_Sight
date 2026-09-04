@@ -1,0 +1,73 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [2 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Length 2620 >>
+stream
+BT /F1 11 Tf 50 786 Td (FinSight Audit Report) Tj ET
+BT /F1 11 Tf 50 772 Td () Tj ET
+BT /F1 11 Tf 50 758 Td (Company: AXIS BANK LTD) Tj ET
+BT /F1 11 Tf 50 744 Td (Report Period: 2017 - 2026) Tj ET
+BT /F1 11 Tf 50 730 Td (Report Generated: September 3, 2026) Tj ET
+BT /F1 11 Tf 50 716 Td (Focus Year: 2026) Tj ET
+BT /F1 11 Tf 50 702 Td () Tj ET
+BT /F1 11 Tf 50 688 Td (Executive Summary) Tj ET
+BT /F1 11 Tf 50 674 Td (Based on analysis of 10 years \(2017 - 2026\), the audit system identified 10 failed rules) Tj ET
+BT /F1 11 Tf 50 660 Td (across 4 control categories. Overall risk score is 41.5/10 \(Moderate risk\). The ML model) Tj ET
+BT /F1 11 Tf 50 646 Td (classified 2026 as Anomaly with a decision score of -0.1013.) Tj ET
+BT /F1 11 Tf 50 632 Td () Tj ET
+BT /F1 11 Tf 50 618 Td (Risk Assessment) Tj ET
+BT /F1 11 Tf 50 604 Td (Rule-Based Risk Score: 41.5/100 \(Moderate\)) Tj ET
+BT /F1 11 Tf 50 590 Td (ML Anomaly Score: 0.1013) Tj ET
+BT /F1 11 Tf 50 576 Td (ML Decision Score: -0.1013) Tj ET
+BT /F1 11 Tf 50 562 Td (Passed Rules: 22) Tj ET
+BT /F1 11 Tf 50 548 Td (Failed Rules: 10) Tj ET
+BT /F1 11 Tf 50 534 Td () Tj ET
+BT /F1 11 Tf 50 520 Td (Rule-Based Findings) Tj ET
+BT /F1 11 Tf 50 506 Td (integrity: 3 failed, 0 passed, 0 skipped) Tj ET
+BT /F1 11 Tf 50 492 Td (cross_statement: 2 failed, 0 passed, 0 skipped) Tj ET
+BT /F1 11 Tf 50 478 Td (ratio: 2 failed, 0 passed, 0 skipped) Tj ET
+BT /F1 11 Tf 50 464 Td (trend: 3 failed, 0 passed, 0 skipped) Tj ET
+BT /F1 11 Tf 50 450 Td () Tj ET
+BT /F1 11 Tf 50 436 Td (ML-Based Findings) Tj ET
+BT /F1 11 Tf 50 422 Td (Prediction: Anomaly) Tj ET
+BT /F1 11 Tf 50 408 Td (Anomaly Score: 0.1013) Tj ET
+BT /F1 11 Tf 50 394 Td (Decision Score: -0.1013) Tj ET
+BT /F1 11 Tf 50 380 Td () Tj ET
+BT /F1 11 Tf 50 366 Td (XAI Insights) Tj ET
+BT /F1 11 Tf 50 352 Td (Validation triggered) Tj ET
+BT /F1 11 Tf 50 338 Td (Validation triggered) Tj ET
+BT /F1 11 Tf 50 324 Td (Violations: 10 across 4 categories) Tj ET
+BT /F1 11 Tf 50 310 Td () Tj ET
+BT /F1 11 Tf 50 296 Td (Strategic Recommendations) Tj ET
+BT /F1 11 Tf 50 282 Td (Initiate a targeted review of the 10 flagged findings, focusing on high-risk areas) Tj ET
+BT /F1 11 Tf 50 268 Td (identified in the analysis.) Tj ET
+BT /F1 11 Tf 50 254 Td (Update automated compliance rules to require secondary approval for transactions exceeding) Tj ET
+BT /F1 11 Tf 50 240 Td (historical thresholds.) Tj ET
+BT /F1 11 Tf 50 226 Td (Continue maintaining current liquidity buffers based on 10-year historical data.) Tj ET
+BT /F1 11 Tf 50 212 Td (Implement continuous monitoring for 4 high-risk control areas showing repeated violations.) Tj ET
+endstream
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 1 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000185 00000 n 
+0000002857 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+2983
+%%EOF

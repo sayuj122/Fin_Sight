@@ -1,0 +1,253 @@
+Company,Year,Rule ID,Rule Description,Category,Severity,Status,Message,Observed
+NATIONAL HIGHWAYS INFRA TRUST,2021,BS-001,Balance sheet equation,integrity,Critical,skipped,Unavailable metrics: ['Total Assets'],
+NATIONAL HIGHWAYS INFRA TRUST,2021,BS-009,Negative total equity,solvency,High,skipped,Unavailable metric values: ['Equity Share Capital'],"{'Equity Share Capital': np.float64(nan), 'Reserves': np.float64(-0.68)}"
+NATIONAL HIGHWAYS INFRA TRUST,2021,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,skipped,"Unavailable metric values: ['Cash & Bank', 'Net Cash Flow']","{'Cash & Bank': np.float64(nan), 'Net Cash Flow': np.float64(nan)}"
+NATIONAL HIGHWAYS INFRA TRUST,2021,CF-004,Financing activity plausibility,cross_statement,High,skipped,Unavailable metrics: ['Dividend Amount'],
+NATIONAL HIGHWAYS INFRA TRUST,2021,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,skipped,"Unavailable metric values: ['Depreciation', 'Cash from Operating Activity']","{'Net profit': np.float64(-0.68), 'Depreciation': np.float64(nan), 'Cash from Operating Activity': np.float64(nan)}"
+NATIONAL HIGHWAYS INFRA TRUST,2021,CF-008,Sustained negative operating cash flow,trend,High,skipped,Unavailable metric values: ['Cash from Operating Activity'],{'Cash from Operating Activity': np.float64(nan)}
+NATIONAL HIGHWAYS INFRA TRUST,2021,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+NATIONAL HIGHWAYS INFRA TRUST,2021,CF-010,Dividend versus reserves,solvency,High,skipped,Unavailable metrics: ['Dividend Amount'],
+NATIONAL HIGHWAYS INFRA TRUST,2021,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'NATIONAL HIGHWAYS INFRA TRUST', 'Year': np.int64(2021)}"
+NATIONAL HIGHWAYS INFRA TRUST,2021,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+NATIONAL HIGHWAYS INFRA TRUST,2021,DV-008,Unexpected negative cash or inventory,data_quality,Medium,skipped,Unavailable metrics: ['Inventory'],
+NATIONAL HIGHWAYS INFRA TRUST,2021,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+NATIONAL HIGHWAYS INFRA TRUST,2021,DV-015,Statistical outlier screening,analytical,Medium,skipped,Unavailable metric values: ['Sales'],{'Sales': np.float64(nan)}
+NATIONAL HIGHWAYS INFRA TRUST,2021,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2021), 'Report Date': '2021-03-31'}"
+NATIONAL HIGHWAYS INFRA TRUST,2021,IS-002,Gross margin consistency,trend,Medium,skipped,Unavailable metric values: ['gross_margin'],{'gross_margin': np.float64(nan)}
+NATIONAL HIGHWAYS INFRA TRUST,2021,IS-007,Interest expense reasonableness,analytical,Medium,skipped,"Unavailable metric values: ['Interest', 'Borrowings']","{'Interest': np.float64(nan), 'Borrowings': np.float64(nan)}"
+NATIONAL HIGHWAYS INFRA TRUST,2021,IS-008,Effective tax rate reasonableness,analytical,Medium,skipped,Unavailable metric values: ['effective_tax_rate'],{'effective_tax_rate': np.float64(nan)}
+NATIONAL HIGHWAYS INFRA TRUST,2021,IS-010,Unusual expense spike detection,trend,High,skipped,Unavailable prior-year Total Expenses,{'Total Expenses': np.float64(0.0)}
+NATIONAL HIGHWAYS INFRA TRUST,2021,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,skipped,"Unavailable metric values: ['Revenue_Growth', 'Operating_CF_Growth']","{'Revenue_Growth': np.float64(nan), 'Operating_CF_Growth': np.float64(nan)}"
+NATIONAL HIGHWAYS INFRA TRUST,2021,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,skipped,Unavailable metrics: ['Dividend Amount'],
+NATIONAL HIGHWAYS INFRA TRUST,2021,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+NATIONAL HIGHWAYS INFRA TRUST,2021,LED-001,Accounting equation,integrity,Critical,skipped,Unavailable metrics: ['Total Assets'],
+NATIONAL HIGHWAYS INFRA TRUST,2021,RAT-005,Debt-to-equity ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Equity_Ratio'],{'Debt_Equity_Ratio': np.float64(nan)}
+NATIONAL HIGHWAYS INFRA TRUST,2021,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+NATIONAL HIGHWAYS INFRA TRUST,2021,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+NATIONAL HIGHWAYS INFRA TRUST,2021,RAT-008,Interest coverage ratio,ratio,High,skipped,Unavailable metric values: ['Interest_Coverage_Ratio'],{'Interest_Coverage_Ratio': np.float64(nan)}
+NATIONAL HIGHWAYS INFRA TRUST,2021,RAT-010,Gross profit margin trend,trend,Medium,skipped,Unavailable metric values: ['gross_margin'],{'gross_margin': np.float64(nan)}
+NATIONAL HIGHWAYS INFRA TRUST,2021,RAT-011,Net profit margin trend,trend,Medium,skipped,Unavailable metric values: ['Profit_Margin'],{'Profit_Margin': np.float64(nan)}
+NATIONAL HIGHWAYS INFRA TRUST,2021,RAT-012,Operating margin trend,trend,Medium,skipped,Unavailable metric values: ['Operating_Margin'],{'Operating_Margin': np.float64(nan)}
+NATIONAL HIGHWAYS INFRA TRUST,2021,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+NATIONAL HIGHWAYS INFRA TRUST,2021,RAT-015,Return on equity outlier,ratio,Medium,skipped,Unavailable metric values: ['ROE'],{'ROE': np.float64(nan)}
+NATIONAL HIGHWAYS INFRA TRUST,2021,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+NATIONAL HIGHWAYS INFRA TRUST,2021,RAT-018,Inventory turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['inventory_turnover'],{'inventory_turnover': np.float64(nan)}
+NATIONAL HIGHWAYS INFRA TRUST,2021,RAT-019,Receivables turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['receivables_turnover'],{'receivables_turnover': np.float64(nan)}
+NATIONAL HIGHWAYS INFRA TRUST,2021,RAT-020,Days sales outstanding trend,trend,Medium,skipped,Unavailable metric values: ['dso'],{'dso': np.float64(nan)}
+NATIONAL HIGHWAYS INFRA TRUST,2021,RAT-022,Days inventory outstanding trend,trend,Medium,skipped,Unavailable metric values: ['dio'],{'dio': np.float64(nan)}
+NATIONAL HIGHWAYS INFRA TRUST,2021,RAT-024,Revenue growth rate,trend,Medium,skipped,Unavailable metric values: ['Revenue_Growth'],{'Revenue_Growth': np.float64(nan)}
+NATIONAL HIGHWAYS INFRA TRUST,2021,TR-001,Year-over-year revenue variance,trend,Medium,skipped,Unavailable metric values: ['Revenue_Growth'],{'Revenue_Growth': np.float64(nan)}
+NATIONAL HIGHWAYS INFRA TRUST,2021,TR-002,Year-over-year expense variance,trend,Medium,skipped,Unavailable prior-year Total Expenses,{'Total Expenses': np.float64(0.0)}
+NATIONAL HIGHWAYS INFRA TRUST,2021,TR-003,Multi-year trend consistency,trend,Medium,skipped,Unavailable metric values: ['Revenue_Volatility'],{'Revenue_Volatility': np.float64(nan)}
+NATIONAL HIGHWAYS INFRA TRUST,2021,TR-006,Common-size statement analysis,trend,Medium,skipped,Unavailable metric values: ['Expense_Ratio'],{'Expense_Ratio': np.float64(nan)}
+NATIONAL HIGHWAYS INFRA TRUST,2021,TR-009,Margin trend stability,trend,Medium,skipped,"Unavailable metric values: ['Profit_Margin', 'Operating_Margin']","{'Profit_Margin': np.float64(nan), 'Operating_Margin': np.float64(nan)}"
+NATIONAL HIGHWAYS INFRA TRUST,2022,BS-001,Balance sheet equation,integrity,Critical,skipped,Unavailable metrics: ['Total Assets'],
+NATIONAL HIGHWAYS INFRA TRUST,2022,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(5994.43), 'Reserves': np.float64(67.69)}"
+NATIONAL HIGHWAYS INFRA TRUST,2022,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,skipped,Unavailable prior-year Cash & Bank,"{'Cash & Bank': np.float64(63.82), 'Net Cash Flow': np.float64(63.82)}"
+NATIONAL HIGHWAYS INFRA TRUST,2022,CF-004,Financing activity plausibility,cross_statement,High,skipped,Unavailable metrics: ['Dividend Amount'],
+NATIONAL HIGHWAYS INFRA TRUST,2022,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(68.36), 'Depreciation': np.float64(10.56), 'Cash from Operating Activity': np.float64(-7242.64)}"
+NATIONAL HIGHWAYS INFRA TRUST,2022,CF-008,Sustained negative operating cash flow,trend,High,skipped,Insufficient history for Cash from Operating Activity,{'Cash from Operating Activity': np.float64(-7242.64)}
+NATIONAL HIGHWAYS INFRA TRUST,2022,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+NATIONAL HIGHWAYS INFRA TRUST,2022,CF-010,Dividend versus reserves,solvency,High,skipped,Unavailable metrics: ['Dividend Amount'],
+NATIONAL HIGHWAYS INFRA TRUST,2022,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'NATIONAL HIGHWAYS INFRA TRUST', 'Year': np.int64(2022)}"
+NATIONAL HIGHWAYS INFRA TRUST,2022,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+NATIONAL HIGHWAYS INFRA TRUST,2022,DV-008,Unexpected negative cash or inventory,data_quality,Medium,skipped,Unavailable metrics: ['Inventory'],
+NATIONAL HIGHWAYS INFRA TRUST,2022,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+NATIONAL HIGHWAYS INFRA TRUST,2022,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(146.56), 'robust_z': None}"
+NATIONAL HIGHWAYS INFRA TRUST,2022,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2022), 'Report Date': '2022-03-31'}"
+NATIONAL HIGHWAYS INFRA TRUST,2022,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(1.0), 'robust_z': None}"
+NATIONAL HIGHWAYS INFRA TRUST,2022,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(31.54), 'Borrowings': np.float64(1465.37)}"
+NATIONAL HIGHWAYS INFRA TRUST,2022,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.0248216833095577), 'robust_z': None}"
+NATIONAL HIGHWAYS INFRA TRUST,2022,IS-010,Unusual expense spike detection,trend,High,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+NATIONAL HIGHWAYS INFRA TRUST,2022,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,skipped,"Unavailable metric values: ['Revenue_Growth', 'Operating_CF_Growth']","{'Revenue_Growth': np.float64(nan), 'Operating_CF_Growth': np.float64(nan)}"
+NATIONAL HIGHWAYS INFRA TRUST,2022,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,skipped,Unavailable metrics: ['Dividend Amount'],
+NATIONAL HIGHWAYS INFRA TRUST,2022,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+NATIONAL HIGHWAYS INFRA TRUST,2022,LED-001,Accounting equation,integrity,Critical,skipped,Unavailable metrics: ['Total Assets'],
+NATIONAL HIGHWAYS INFRA TRUST,2022,RAT-005,Debt-to-equity ratio,ratio,High,pass,Validation passed,{'Debt_Equity_Ratio': np.float64(0.2417256669284012)}
+NATIONAL HIGHWAYS INFRA TRUST,2022,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+NATIONAL HIGHWAYS INFRA TRUST,2022,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+NATIONAL HIGHWAYS INFRA TRUST,2022,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+NATIONAL HIGHWAYS INFRA TRUST,2022,RAT-010,Gross profit margin trend,trend,Medium,skipped,Insufficient history for gross_margin,{'gross_margin': np.float64(1.0)}
+NATIONAL HIGHWAYS INFRA TRUST,2022,RAT-011,Net profit margin trend,trend,Medium,skipped,Insufficient history for Profit_Margin,{'Profit_Margin': np.float64(0.4664301310043668)}
+NATIONAL HIGHWAYS INFRA TRUST,2022,RAT-012,Operating margin trend,trend,Medium,skipped,Insufficient history for Operating_Margin,{'Operating_Margin': np.float64(0.0)}
+NATIONAL HIGHWAYS INFRA TRUST,2022,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+NATIONAL HIGHWAYS INFRA TRUST,2022,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.0112765831095392), 'robust_z': None}"
+NATIONAL HIGHWAYS INFRA TRUST,2022,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+NATIONAL HIGHWAYS INFRA TRUST,2022,RAT-018,Inventory turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['inventory_turnover'],{'inventory_turnover': np.float64(nan)}
+NATIONAL HIGHWAYS INFRA TRUST,2022,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(24.426666666666662), 'robust_z': None}"
+NATIONAL HIGHWAYS INFRA TRUST,2022,RAT-020,Days sales outstanding trend,trend,Medium,skipped,Insufficient history for dso,{'dso': np.float64(14.942685589519652)}
+NATIONAL HIGHWAYS INFRA TRUST,2022,RAT-022,Days inventory outstanding trend,trend,Medium,skipped,Unavailable metric values: ['dio'],{'dio': np.float64(nan)}
+NATIONAL HIGHWAYS INFRA TRUST,2022,RAT-024,Revenue growth rate,trend,Medium,skipped,Unavailable metric values: ['Revenue_Growth'],{'Revenue_Growth': np.float64(nan)}
+NATIONAL HIGHWAYS INFRA TRUST,2022,TR-001,Year-over-year revenue variance,trend,Medium,skipped,Unavailable metric values: ['Revenue_Growth'],{'Revenue_Growth': np.float64(nan)}
+NATIONAL HIGHWAYS INFRA TRUST,2022,TR-002,Year-over-year expense variance,trend,Medium,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+NATIONAL HIGHWAYS INFRA TRUST,2022,TR-003,Multi-year trend consistency,trend,Medium,skipped,Unavailable metric values: ['Revenue_Volatility'],{'Revenue_Volatility': np.float64(nan)}
+NATIONAL HIGHWAYS INFRA TRUST,2022,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+NATIONAL HIGHWAYS INFRA TRUST,2022,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.4664301310043668), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
+NATIONAL HIGHWAYS INFRA TRUST,2023,BS-001,Balance sheet equation,integrity,Critical,skipped,Unavailable metrics: ['Total Assets'],
+NATIONAL HIGHWAYS INFRA TRUST,2023,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(7416.04), 'Reserves': np.float64(-24.7)}"
+NATIONAL HIGHWAYS INFRA TRUST,2023,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,pass,Validation passed,"{'Cash & Bank': np.float64(211.24), 'Net Cash Flow': np.float64(147.42)}"
+NATIONAL HIGHWAYS INFRA TRUST,2023,CF-004,Financing activity plausibility,cross_statement,High,skipped,Unavailable metrics: ['Dividend Amount'],
+NATIONAL HIGHWAYS INFRA TRUST,2023,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(256.9), 'Depreciation': np.float64(175.61), 'Cash from Operating Activity': np.float64(623.73)}"
+NATIONAL HIGHWAYS INFRA TRUST,2023,CF-008,Sustained negative operating cash flow,trend,High,skipped,Insufficient history for Cash from Operating Activity,{'Cash from Operating Activity': np.float64(623.73)}
+NATIONAL HIGHWAYS INFRA TRUST,2023,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+NATIONAL HIGHWAYS INFRA TRUST,2023,CF-010,Dividend versus reserves,solvency,High,skipped,Unavailable metrics: ['Dividend Amount'],
+NATIONAL HIGHWAYS INFRA TRUST,2023,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'NATIONAL HIGHWAYS INFRA TRUST', 'Year': np.int64(2023)}"
+NATIONAL HIGHWAYS INFRA TRUST,2023,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+NATIONAL HIGHWAYS INFRA TRUST,2023,DV-008,Unexpected negative cash or inventory,data_quality,Medium,skipped,Unavailable metrics: ['Inventory'],
+NATIONAL HIGHWAYS INFRA TRUST,2023,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+NATIONAL HIGHWAYS INFRA TRUST,2023,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(697.62), 'robust_z': None}"
+NATIONAL HIGHWAYS INFRA TRUST,2023,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2023), 'Report Date': '2023-03-31'}"
+NATIONAL HIGHWAYS INFRA TRUST,2023,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(1.0), 'robust_z': None}"
+NATIONAL HIGHWAYS INFRA TRUST,2023,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(166.23), 'Borrowings': np.float64(2941.59)}"
+NATIONAL HIGHWAYS INFRA TRUST,2023,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(-0.1816467341306347), 'robust_z': None}"
+NATIONAL HIGHWAYS INFRA TRUST,2023,IS-010,Unusual expense spike detection,trend,High,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+NATIONAL HIGHWAYS INFRA TRUST,2023,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,fail,Validation triggered,"{'Revenue_Growth': np.float64(3.759961790393013), 'Operating_CF_Growth': np.float64(-1.0861191499232323)}"
+NATIONAL HIGHWAYS INFRA TRUST,2023,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,skipped,Unavailable metrics: ['Dividend Amount'],
+NATIONAL HIGHWAYS INFRA TRUST,2023,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+NATIONAL HIGHWAYS INFRA TRUST,2023,LED-001,Accounting equation,integrity,Critical,skipped,Unavailable metrics: ['Total Assets'],
+NATIONAL HIGHWAYS INFRA TRUST,2023,RAT-005,Debt-to-equity ratio,ratio,High,pass,Validation passed,{'Debt_Equity_Ratio': np.float64(0.3979779038712872)}
+NATIONAL HIGHWAYS INFRA TRUST,2023,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+NATIONAL HIGHWAYS INFRA TRUST,2023,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+NATIONAL HIGHWAYS INFRA TRUST,2023,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+NATIONAL HIGHWAYS INFRA TRUST,2023,RAT-010,Gross profit margin trend,trend,Medium,skipped,Insufficient history for gross_margin,{'gross_margin': np.float64(1.0)}
+NATIONAL HIGHWAYS INFRA TRUST,2023,RAT-011,Net profit margin trend,trend,Medium,skipped,Insufficient history for Profit_Margin,{'Profit_Margin': np.float64(0.3682520569937788)}
+NATIONAL HIGHWAYS INFRA TRUST,2023,RAT-012,Operating margin trend,trend,Medium,skipped,Insufficient history for Operating_Margin,{'Operating_Margin': np.float64(0.0)}
+NATIONAL HIGHWAYS INFRA TRUST,2023,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+NATIONAL HIGHWAYS INFRA TRUST,2023,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.0347568911726425), 'robust_z': None}"
+NATIONAL HIGHWAYS INFRA TRUST,2023,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+NATIONAL HIGHWAYS INFRA TRUST,2023,RAT-018,Inventory turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['inventory_turnover'],{'inventory_turnover': np.float64(nan)}
+NATIONAL HIGHWAYS INFRA TRUST,2023,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(198.7521367521368), 'robust_z': None}"
+NATIONAL HIGHWAYS INFRA TRUST,2023,RAT-020,Days sales outstanding trend,trend,Medium,skipped,Insufficient history for dso,{'dso': np.float64(1.836458243743012)}
+NATIONAL HIGHWAYS INFRA TRUST,2023,RAT-022,Days inventory outstanding trend,trend,Medium,skipped,Unavailable metric values: ['dio'],{'dio': np.float64(nan)}
+NATIONAL HIGHWAYS INFRA TRUST,2023,RAT-024,Revenue growth rate,trend,Medium,pass,Validation passed,{'Revenue_Growth': np.float64(3.759961790393013)}
+NATIONAL HIGHWAYS INFRA TRUST,2023,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(3.759961790393013), 'robust_z': None}"
+NATIONAL HIGHWAYS INFRA TRUST,2023,TR-002,Year-over-year expense variance,trend,Medium,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+NATIONAL HIGHWAYS INFRA TRUST,2023,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(389.6582628406589), 'robust_z': None}"
+NATIONAL HIGHWAYS INFRA TRUST,2023,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+NATIONAL HIGHWAYS INFRA TRUST,2023,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.3682520569937788), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
+NATIONAL HIGHWAYS INFRA TRUST,2024,BS-001,Balance sheet equation,integrity,Critical,skipped,Unavailable metrics: ['Total Assets'],
+NATIONAL HIGHWAYS INFRA TRUST,2024,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(14670.93), 'Reserves': np.float64(-275.41)}"
+NATIONAL HIGHWAYS INFRA TRUST,2024,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(469.05), 'Net Cash Flow': np.float64(252.77)}"
+NATIONAL HIGHWAYS INFRA TRUST,2024,CF-004,Financing activity plausibility,cross_statement,High,skipped,Unavailable metrics: ['Dividend Amount'],
+NATIONAL HIGHWAYS INFRA TRUST,2024,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(294.2), 'Depreciation': np.float64(247.71), 'Cash from Operating Activity': np.float64(804.61)}"
+NATIONAL HIGHWAYS INFRA TRUST,2024,CF-008,Sustained negative operating cash flow,trend,High,pass,Validation passed,{'Cash from Operating Activity': np.float64(804.61)}
+NATIONAL HIGHWAYS INFRA TRUST,2024,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+NATIONAL HIGHWAYS INFRA TRUST,2024,CF-010,Dividend versus reserves,solvency,High,skipped,Unavailable metrics: ['Dividend Amount'],
+NATIONAL HIGHWAYS INFRA TRUST,2024,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'NATIONAL HIGHWAYS INFRA TRUST', 'Year': np.int64(2024)}"
+NATIONAL HIGHWAYS INFRA TRUST,2024,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+NATIONAL HIGHWAYS INFRA TRUST,2024,DV-008,Unexpected negative cash or inventory,data_quality,Medium,skipped,Unavailable metrics: ['Inventory'],
+NATIONAL HIGHWAYS INFRA TRUST,2024,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+NATIONAL HIGHWAYS INFRA TRUST,2024,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(974.04), 'robust_z': None}"
+NATIONAL HIGHWAYS INFRA TRUST,2024,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2024), 'Report Date': '2024-03-31'}"
+NATIONAL HIGHWAYS INFRA TRUST,2024,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(1.0), 'robust_z': None}"
+NATIONAL HIGHWAYS INFRA TRUST,2024,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(280.23), 'Borrowings': np.float64(11734.49)}"
+NATIONAL HIGHWAYS INFRA TRUST,2024,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(-0.2537287991136112), 'robust_z': None}"
+NATIONAL HIGHWAYS INFRA TRUST,2024,IS-010,Unusual expense spike detection,trend,High,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+NATIONAL HIGHWAYS INFRA TRUST,2024,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,pass,Validation passed,"{'Revenue_Growth': np.float64(0.3962329061666809), 'Operating_CF_Growth': np.float64(0.2899972744617061)}"
+NATIONAL HIGHWAYS INFRA TRUST,2024,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,skipped,Unavailable metrics: ['Dividend Amount'],
+NATIONAL HIGHWAYS INFRA TRUST,2024,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+NATIONAL HIGHWAYS INFRA TRUST,2024,LED-001,Accounting equation,integrity,Critical,skipped,Unavailable metrics: ['Total Assets'],
+NATIONAL HIGHWAYS INFRA TRUST,2024,RAT-005,Debt-to-equity ratio,ratio,High,pass,Validation passed,{'Debt_Equity_Ratio': np.float64(0.8151487407193349)}
+NATIONAL HIGHWAYS INFRA TRUST,2024,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+NATIONAL HIGHWAYS INFRA TRUST,2024,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+NATIONAL HIGHWAYS INFRA TRUST,2024,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+NATIONAL HIGHWAYS INFRA TRUST,2024,RAT-010,Gross profit margin trend,trend,Medium,fail,Validation triggered,{'gross_margin': np.float64(1.0)}
+NATIONAL HIGHWAYS INFRA TRUST,2024,RAT-011,Net profit margin trend,trend,Medium,fail,Validation triggered,{'Profit_Margin': np.float64(0.3020409839431645)}
+NATIONAL HIGHWAYS INFRA TRUST,2024,RAT-012,Operating margin trend,trend,Medium,fail,Validation triggered,{'Operating_Margin': np.float64(0.0)}
+NATIONAL HIGHWAYS INFRA TRUST,2024,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+NATIONAL HIGHWAYS INFRA TRUST,2024,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.0204369137064864), 'robust_z': None}"
+NATIONAL HIGHWAYS INFRA TRUST,2024,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+NATIONAL HIGHWAYS INFRA TRUST,2024,RAT-018,Inventory turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['inventory_turnover'],{'inventory_turnover': np.float64(nan)}
+NATIONAL HIGHWAYS INFRA TRUST,2024,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(252.99740259740256), 'robust_z': None}"
+NATIONAL HIGHWAYS INFRA TRUST,2024,RAT-020,Days sales outstanding trend,trend,Medium,pass,Validation passed,{'dso': np.float64(1.4427025584164923)}
+NATIONAL HIGHWAYS INFRA TRUST,2024,RAT-022,Days inventory outstanding trend,trend,Medium,skipped,Unavailable metric values: ['dio'],{'dio': np.float64(nan)}
+NATIONAL HIGHWAYS INFRA TRUST,2024,RAT-024,Revenue growth rate,trend,Medium,pass,Validation passed,{'Revenue_Growth': np.float64(0.3962329061666809)}
+NATIONAL HIGHWAYS INFRA TRUST,2024,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(0.3962329061666809), 'robust_z': None}"
+NATIONAL HIGHWAYS INFRA TRUST,2024,TR-002,Year-over-year expense variance,trend,Medium,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+NATIONAL HIGHWAYS INFRA TRUST,2024,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(421.2675892272432), 'robust_z': None}"
+NATIONAL HIGHWAYS INFRA TRUST,2024,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+NATIONAL HIGHWAYS INFRA TRUST,2024,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.3020409839431645), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
+NATIONAL HIGHWAYS INFRA TRUST,2025,BS-001,Balance sheet equation,integrity,Critical,skipped,Unavailable metrics: ['Total Assets'],
+NATIONAL HIGHWAYS INFRA TRUST,2025,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(22970.96), 'Reserves': np.float64(-997.68)}"
+NATIONAL HIGHWAYS INFRA TRUST,2025,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(465.61), 'Net Cash Flow': np.float64(1.6)}"
+NATIONAL HIGHWAYS INFRA TRUST,2025,CF-004,Financing activity plausibility,cross_statement,High,skipped,Unavailable metrics: ['Dividend Amount'],
+NATIONAL HIGHWAYS INFRA TRUST,2025,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(325.01), 'Depreciation': np.float64(797.2), 'Cash from Operating Activity': np.float64(2098.67)}"
+NATIONAL HIGHWAYS INFRA TRUST,2025,CF-008,Sustained negative operating cash flow,trend,High,pass,Validation passed,{'Cash from Operating Activity': np.float64(2098.67)}
+NATIONAL HIGHWAYS INFRA TRUST,2025,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+NATIONAL HIGHWAYS INFRA TRUST,2025,CF-010,Dividend versus reserves,solvency,High,skipped,Unavailable metrics: ['Dividend Amount'],
+NATIONAL HIGHWAYS INFRA TRUST,2025,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'NATIONAL HIGHWAYS INFRA TRUST', 'Year': np.int64(2025)}"
+NATIONAL HIGHWAYS INFRA TRUST,2025,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+NATIONAL HIGHWAYS INFRA TRUST,2025,DV-008,Unexpected negative cash or inventory,data_quality,Medium,skipped,Unavailable metrics: ['Inventory'],
+NATIONAL HIGHWAYS INFRA TRUST,2025,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+NATIONAL HIGHWAYS INFRA TRUST,2025,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(2413.21), 'robust_z': None}"
+NATIONAL HIGHWAYS INFRA TRUST,2025,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2025), 'Report Date': '2025-03-31'}"
+NATIONAL HIGHWAYS INFRA TRUST,2025,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(1.0), 'robust_z': None}"
+NATIONAL HIGHWAYS INFRA TRUST,2025,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(1055.48), 'Borrowings': np.float64(21679.95)}"
+NATIONAL HIGHWAYS INFRA TRUST,2025,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(-1.6568298863729258), 'robust_z': None}"
+NATIONAL HIGHWAYS INFRA TRUST,2025,IS-010,Unusual expense spike detection,trend,High,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+NATIONAL HIGHWAYS INFRA TRUST,2025,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,pass,Validation passed,"{'Revenue_Growth': np.float64(1.4775265902837669), 'Operating_CF_Growth': np.float64(1.608307130162439)}"
+NATIONAL HIGHWAYS INFRA TRUST,2025,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,skipped,Unavailable metrics: ['Dividend Amount'],
+NATIONAL HIGHWAYS INFRA TRUST,2025,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+NATIONAL HIGHWAYS INFRA TRUST,2025,LED-001,Accounting equation,integrity,Critical,skipped,Unavailable metrics: ['Total Assets'],
+NATIONAL HIGHWAYS INFRA TRUST,2025,RAT-005,Debt-to-equity ratio,ratio,High,pass,Validation passed,{'Debt_Equity_Ratio': np.float64(0.9866506047344776)}
+NATIONAL HIGHWAYS INFRA TRUST,2025,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+NATIONAL HIGHWAYS INFRA TRUST,2025,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+NATIONAL HIGHWAYS INFRA TRUST,2025,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+NATIONAL HIGHWAYS INFRA TRUST,2025,RAT-010,Gross profit margin trend,trend,Medium,fail,Validation triggered,{'gross_margin': np.float64(1.0)}
+NATIONAL HIGHWAYS INFRA TRUST,2025,RAT-011,Net profit margin trend,trend,Medium,fail,Validation triggered,{'Profit_Margin': np.float64(0.1346795347276034)}
+NATIONAL HIGHWAYS INFRA TRUST,2025,RAT-012,Operating margin trend,trend,Medium,fail,Validation triggered,{'Operating_Margin': np.float64(0.0)}
+NATIONAL HIGHWAYS INFRA TRUST,2025,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+NATIONAL HIGHWAYS INFRA TRUST,2025,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.0147911463377338), 'robust_z': None}"
+NATIONAL HIGHWAYS INFRA TRUST,2025,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+NATIONAL HIGHWAYS INFRA TRUST,2025,RAT-018,Inventory turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['inventory_turnover'],{'inventory_turnover': np.float64(nan)}
+NATIONAL HIGHWAYS INFRA TRUST,2025,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(147.59694189602445), 'robust_z': None}"
+NATIONAL HIGHWAYS INFRA TRUST,2025,RAT-020,Days sales outstanding trend,trend,Medium,pass,Validation passed,{'dso': np.float64(2.4729509657261493)}
+NATIONAL HIGHWAYS INFRA TRUST,2025,RAT-022,Days inventory outstanding trend,trend,Medium,skipped,Unavailable metric values: ['dio'],{'dio': np.float64(nan)}
+NATIONAL HIGHWAYS INFRA TRUST,2025,RAT-024,Revenue growth rate,trend,Medium,pass,Validation passed,{'Revenue_Growth': np.float64(1.4775265902837669)}
+NATIONAL HIGHWAYS INFRA TRUST,2025,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(1.4775265902837669), 'robust_z': None}"
+NATIONAL HIGHWAYS INFRA TRUST,2025,TR-002,Year-over-year expense variance,trend,Medium,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+NATIONAL HIGHWAYS INFRA TRUST,2025,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(921.1285970120206), 'robust_z': None}"
+NATIONAL HIGHWAYS INFRA TRUST,2025,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+NATIONAL HIGHWAYS INFRA TRUST,2025,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.1346795347276034), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
+NATIONAL HIGHWAYS INFRA TRUST,2026,BS-001,Balance sheet equation,integrity,Critical,skipped,Unavailable metrics: ['Total Assets'],
+NATIONAL HIGHWAYS INFRA TRUST,2026,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(26001.68), 'Reserves': np.float64(-2201.13)}"
+NATIONAL HIGHWAYS INFRA TRUST,2026,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(687.28), 'Net Cash Flow': np.float64(154.1)}"
+NATIONAL HIGHWAYS INFRA TRUST,2026,CF-004,Financing activity plausibility,cross_statement,High,skipped,Unavailable metrics: ['Dividend Amount'],
+NATIONAL HIGHWAYS INFRA TRUST,2026,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(685.52), 'Depreciation': np.float64(1450.92), 'Cash from Operating Activity': np.float64(3820.36)}"
+NATIONAL HIGHWAYS INFRA TRUST,2026,CF-008,Sustained negative operating cash flow,trend,High,pass,Validation passed,{'Cash from Operating Activity': np.float64(3820.36)}
+NATIONAL HIGHWAYS INFRA TRUST,2026,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+NATIONAL HIGHWAYS INFRA TRUST,2026,CF-010,Dividend versus reserves,solvency,High,skipped,Unavailable metrics: ['Dividend Amount'],
+NATIONAL HIGHWAYS INFRA TRUST,2026,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'NATIONAL HIGHWAYS INFRA TRUST', 'Year': np.int64(2026)}"
+NATIONAL HIGHWAYS INFRA TRUST,2026,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+NATIONAL HIGHWAYS INFRA TRUST,2026,DV-008,Unexpected negative cash or inventory,data_quality,Medium,skipped,Unavailable metrics: ['Inventory'],
+NATIONAL HIGHWAYS INFRA TRUST,2026,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+NATIONAL HIGHWAYS INFRA TRUST,2026,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(4321.57), 'robust_z': None}"
+NATIONAL HIGHWAYS INFRA TRUST,2026,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2026), 'Report Date': '2026-03-31'}"
+NATIONAL HIGHWAYS INFRA TRUST,2026,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(1.0), 'robust_z': None}"
+NATIONAL HIGHWAYS INFRA TRUST,2026,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(1723.55), 'Borrowings': np.float64(25047.7)}"
+NATIONAL HIGHWAYS INFRA TRUST,2026,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(-1.1426160337552742), 'robust_z': None}"
+NATIONAL HIGHWAYS INFRA TRUST,2026,IS-010,Unusual expense spike detection,trend,High,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+NATIONAL HIGHWAYS INFRA TRUST,2026,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,pass,Validation passed,"{'Revenue_Growth': np.float64(0.7907973197525286), 'Operating_CF_Growth': np.float64(0.8203719498539552)}"
+NATIONAL HIGHWAYS INFRA TRUST,2026,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,skipped,Unavailable metrics: ['Dividend Amount'],
+NATIONAL HIGHWAYS INFRA TRUST,2026,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+NATIONAL HIGHWAYS INFRA TRUST,2026,LED-001,Accounting equation,integrity,Critical,skipped,Unavailable metrics: ['Total Assets'],
+NATIONAL HIGHWAYS INFRA TRUST,2026,RAT-005,Debt-to-equity ratio,ratio,High,pass,Validation passed,{'Debt_Equity_Ratio': np.float64(1.0524000495786865)}
+NATIONAL HIGHWAYS INFRA TRUST,2026,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+NATIONAL HIGHWAYS INFRA TRUST,2026,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+NATIONAL HIGHWAYS INFRA TRUST,2026,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+NATIONAL HIGHWAYS INFRA TRUST,2026,RAT-010,Gross profit margin trend,trend,Medium,fail,Validation triggered,{'gross_margin': np.float64(1.0)}
+NATIONAL HIGHWAYS INFRA TRUST,2026,RAT-011,Net profit margin trend,trend,Medium,pass,Validation passed,{'Profit_Margin': np.float64(0.1586275358261002)}
+NATIONAL HIGHWAYS INFRA TRUST,2026,RAT-012,Operating margin trend,trend,Medium,fail,Validation triggered,{'Operating_Margin': np.float64(0.0)}
+NATIONAL HIGHWAYS INFRA TRUST,2026,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+NATIONAL HIGHWAYS INFRA TRUST,2026,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.0288026957360229), 'robust_z': None}"
+NATIONAL HIGHWAYS INFRA TRUST,2026,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+NATIONAL HIGHWAYS INFRA TRUST,2026,RAT-018,Inventory turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['inventory_turnover'],{'inventory_turnover': np.float64(nan)}
+NATIONAL HIGHWAYS INFRA TRUST,2026,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(81.24779093814627), 'robust_z': None}"
+NATIONAL HIGHWAYS INFRA TRUST,2026,RAT-020,Days sales outstanding trend,trend,Medium,fail,Validation triggered,{'dso': np.float64(4.492429834527729)}
+NATIONAL HIGHWAYS INFRA TRUST,2026,RAT-022,Days inventory outstanding trend,trend,Medium,skipped,Unavailable metric values: ['dio'],{'dio': np.float64(nan)}
+NATIONAL HIGHWAYS INFRA TRUST,2026,RAT-024,Revenue growth rate,trend,Medium,pass,Validation passed,{'Revenue_Growth': np.float64(0.7907973197525286)}
+NATIONAL HIGHWAYS INFRA TRUST,2026,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(0.7907973197525286), 'robust_z': None}"
+NATIONAL HIGHWAYS INFRA TRUST,2026,TR-002,Year-over-year expense variance,trend,Medium,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+NATIONAL HIGHWAYS INFRA TRUST,2026,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(1679.2361993577117), 'robust_z': None}"
+NATIONAL HIGHWAYS INFRA TRUST,2026,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+NATIONAL HIGHWAYS INFRA TRUST,2026,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.1586275358261002), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"

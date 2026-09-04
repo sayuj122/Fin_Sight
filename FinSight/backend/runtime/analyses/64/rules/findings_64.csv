@@ -1,0 +1,421 @@
+Company,Year,Rule ID,Rule Description,Category,Severity,Status,Message,Observed
+AXIS BANK LTD,2017,BS-001,Balance sheet equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(0.0), 'Total Liabilities': np.float64(611462.0099999999), 'Equity Share Capital': np.float64(479.01), 'Reserves': np.float64(55901.34)}"
+AXIS BANK LTD,2017,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(479.01), 'Reserves': np.float64(55901.34)}"
+AXIS BANK LTD,2017,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,skipped,Unavailable prior-year Cash & Bank,"{'Cash & Bank': np.float64(24500.02), 'Net Cash Flow': np.float64(17263.31)}"
+AXIS BANK LTD,2017,CF-004,Financing activity plausibility,cross_statement,High,skipped,Unavailable prior-year Borrowings,"{'Borrowings': np.float64(527437.44), 'Dividend Amount': np.float64(1197.52), 'Cash from Financing Activity': np.float64(-2486.91)}"
+AXIS BANK LTD,2017,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(3953.03), 'Depreciation': np.float64(526.67), 'Cash from Operating Activity': np.float64(32208.62)}"
+AXIS BANK LTD,2017,CF-008,Sustained negative operating cash flow,trend,High,skipped,Insufficient history for Cash from Operating Activity,{'Cash from Operating Activity': np.float64(32208.62)}
+AXIS BANK LTD,2017,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+AXIS BANK LTD,2017,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(1197.52), 'Reserves': np.float64(55901.34)}"
+AXIS BANK LTD,2017,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'AXIS BANK LTD', 'Year': np.int64(2017)}"
+AXIS BANK LTD,2017,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+AXIS BANK LTD,2017,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(24500.02), 'Inventory': np.float64(0.0)}"
+AXIS BANK LTD,2017,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+AXIS BANK LTD,2017,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(45175.09), 'robust_z': None}"
+AXIS BANK LTD,2017,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2017), 'Report Date': '2017-03-31'}"
+AXIS BANK LTD,2017,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(1.0), 'robust_z': None}"
+AXIS BANK LTD,2017,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(26789.35), 'Borrowings': np.float64(527437.44)}"
+AXIS BANK LTD,2017,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.3336989255619511), 'robust_z': None}"
+AXIS BANK LTD,2017,IS-010,Unusual expense spike detection,trend,High,skipped,Unavailable prior-year Total Expenses,{'Total Expenses': np.float64(0.0)}
+AXIS BANK LTD,2017,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,skipped,"Unavailable metric values: ['Revenue_Growth', 'Operating_CF_Growth']","{'Revenue_Growth': np.float64(nan), 'Operating_CF_Growth': np.float64(nan)}"
+AXIS BANK LTD,2017,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,skipped,Unavailable prior-year Reserves,"{'Net profit': np.float64(3953.03), 'Dividend Amount': np.float64(1197.52), 'Reserves': np.float64(55901.34)}"
+AXIS BANK LTD,2017,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+AXIS BANK LTD,2017,LED-001,Accounting equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(0.0), 'Total Liabilities': np.float64(611462.0099999999), 'Equity Share Capital': np.float64(479.01), 'Reserves': np.float64(55901.34)}"
+AXIS BANK LTD,2017,RAT-005,Debt-to-equity ratio,ratio,High,fail,Validation triggered,{'Debt_Equity_Ratio': np.float64(9.354986976845655)}
+AXIS BANK LTD,2017,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+AXIS BANK LTD,2017,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+AXIS BANK LTD,2017,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+AXIS BANK LTD,2017,RAT-010,Gross profit margin trend,trend,Medium,skipped,Insufficient history for gross_margin,{'gross_margin': np.float64(1.0)}
+AXIS BANK LTD,2017,RAT-011,Net profit margin trend,trend,Medium,skipped,Insufficient history for Profit_Margin,{'Profit_Margin': np.float64(0.0875046402785251)}
+AXIS BANK LTD,2017,RAT-012,Operating margin trend,trend,Medium,skipped,Insufficient history for Operating_Margin,{'Operating_Margin': np.float64(0.0)}
+AXIS BANK LTD,2017,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+AXIS BANK LTD,2017,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.0701136122780365), 'robust_z': None}"
+AXIS BANK LTD,2017,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+AXIS BANK LTD,2017,RAT-018,Inventory turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['inventory_turnover'],{'inventory_turnover': np.float64(nan)}
+AXIS BANK LTD,2017,RAT-019,Receivables turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['receivables_turnover'],{'receivables_turnover': np.float64(nan)}
+AXIS BANK LTD,2017,RAT-020,Days sales outstanding trend,trend,Medium,skipped,Unavailable metric values: ['dso'],{'dso': np.float64(nan)}
+AXIS BANK LTD,2017,RAT-022,Days inventory outstanding trend,trend,Medium,skipped,Unavailable metric values: ['dio'],{'dio': np.float64(nan)}
+AXIS BANK LTD,2017,RAT-024,Revenue growth rate,trend,Medium,skipped,Unavailable metric values: ['Revenue_Growth'],{'Revenue_Growth': np.float64(nan)}
+AXIS BANK LTD,2017,TR-001,Year-over-year revenue variance,trend,Medium,skipped,Unavailable metric values: ['Revenue_Growth'],{'Revenue_Growth': np.float64(nan)}
+AXIS BANK LTD,2017,TR-002,Year-over-year expense variance,trend,Medium,skipped,Unavailable prior-year Total Expenses,{'Total Expenses': np.float64(0.0)}
+AXIS BANK LTD,2017,TR-003,Multi-year trend consistency,trend,Medium,skipped,Unavailable metric values: ['Revenue_Volatility'],{'Revenue_Volatility': np.float64(nan)}
+AXIS BANK LTD,2017,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+AXIS BANK LTD,2017,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.0875046402785251), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
+AXIS BANK LTD,2018,BS-001,Balance sheet equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(0.0), 'Total Liabilities': np.float64(703703.37), 'Equity Share Capital': np.float64(513.31), 'Reserves': np.float64(63694.1)}"
+AXIS BANK LTD,2018,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(513.31), 'Reserves': np.float64(63694.1)}"
+AXIS BANK LTD,2018,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(30223.02), 'Net Cash Flow': np.float64(-7055.3)}"
+AXIS BANK LTD,2018,CF-004,Financing activity plausibility,cross_statement,High,skipped,Unavailable metric values: ['Dividend Amount'],"{'Borrowings': np.float64(611424.85), 'Dividend Amount': np.float64(nan), 'Cash from Financing Activity': np.float64(41342.09)}"
+AXIS BANK LTD,2018,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(455.82), 'Depreciation': np.float64(590.58), 'Cash from Operating Activity': np.float64(-38390.3)}"
+AXIS BANK LTD,2018,CF-008,Sustained negative operating cash flow,trend,High,skipped,Insufficient history for Cash from Operating Activity,{'Cash from Operating Activity': np.float64(-38390.3)}
+AXIS BANK LTD,2018,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+AXIS BANK LTD,2018,CF-010,Dividend versus reserves,solvency,High,skipped,Unavailable metric values: ['Dividend Amount'],"{'Dividend Amount': np.float64(nan), 'Reserves': np.float64(63694.1)}"
+AXIS BANK LTD,2018,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'AXIS BANK LTD', 'Year': np.int64(2018)}"
+AXIS BANK LTD,2018,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+AXIS BANK LTD,2018,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(30223.02), 'Inventory': np.float64(0.0)}"
+AXIS BANK LTD,2018,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+AXIS BANK LTD,2018,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(46614.06), 'robust_z': None}"
+AXIS BANK LTD,2018,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2018), 'Report Date': '2018-03-31'}"
+AXIS BANK LTD,2018,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(1.0), 'robust_z': None}"
+AXIS BANK LTD,2018,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(27603.69), 'Borrowings': np.float64(611424.85)}"
+AXIS BANK LTD,2018,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.180002827454584), 'robust_z': None}"
+AXIS BANK LTD,2018,IS-010,Unusual expense spike detection,trend,High,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+AXIS BANK LTD,2018,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,fail,Validation triggered,"{'Revenue_Growth': np.float64(0.0318531739505112), 'Operating_CF_Growth': np.float64(-2.191926260733928)}"
+AXIS BANK LTD,2018,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,skipped,Unavailable metric values: ['Dividend Amount'],"{'Net profit': np.float64(455.82), 'Dividend Amount': np.float64(nan), 'Reserves': np.float64(63694.1)}"
+AXIS BANK LTD,2018,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+AXIS BANK LTD,2018,LED-001,Accounting equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(0.0), 'Total Liabilities': np.float64(703703.37), 'Equity Share Capital': np.float64(513.31), 'Reserves': np.float64(63694.1)}"
+AXIS BANK LTD,2018,RAT-005,Debt-to-equity ratio,ratio,High,fail,Validation triggered,{'Debt_Equity_Ratio': np.float64(9.522652447747076)}
+AXIS BANK LTD,2018,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+AXIS BANK LTD,2018,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+AXIS BANK LTD,2018,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+AXIS BANK LTD,2018,RAT-010,Gross profit margin trend,trend,Medium,skipped,Insufficient history for gross_margin,{'gross_margin': np.float64(1.0)}
+AXIS BANK LTD,2018,RAT-011,Net profit margin trend,trend,Medium,skipped,Insufficient history for Profit_Margin,{'Profit_Margin': np.float64(0.009778594698681)}
+AXIS BANK LTD,2018,RAT-012,Operating margin trend,trend,Medium,skipped,Insufficient history for Operating_Margin,{'Operating_Margin': np.float64(0.0)}
+AXIS BANK LTD,2018,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+AXIS BANK LTD,2018,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.0070991806085933), 'robust_z': None}"
+AXIS BANK LTD,2018,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+AXIS BANK LTD,2018,RAT-018,Inventory turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['inventory_turnover'],{'inventory_turnover': np.float64(nan)}
+AXIS BANK LTD,2018,RAT-019,Receivables turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['receivables_turnover'],{'receivables_turnover': np.float64(nan)}
+AXIS BANK LTD,2018,RAT-020,Days sales outstanding trend,trend,Medium,skipped,Unavailable metric values: ['dso'],{'dso': np.float64(nan)}
+AXIS BANK LTD,2018,RAT-022,Days inventory outstanding trend,trend,Medium,skipped,Unavailable metric values: ['dio'],{'dio': np.float64(nan)}
+AXIS BANK LTD,2018,RAT-024,Revenue growth rate,trend,Medium,pass,Validation passed,{'Revenue_Growth': np.float64(0.0318531739505112)}
+AXIS BANK LTD,2018,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(0.0318531739505112), 'robust_z': None}"
+AXIS BANK LTD,2018,TR-002,Year-over-year expense variance,trend,Medium,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+AXIS BANK LTD,2018,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(1017.5054449240072), 'robust_z': None}"
+AXIS BANK LTD,2018,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+AXIS BANK LTD,2018,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.009778594698681), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
+AXIS BANK LTD,2019,BS-001,Balance sheet equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(0.0), 'Total Liabilities': np.float64(814045.97), 'Equity Share Capital': np.float64(514.33), 'Reserves': np.float64(67288.29)}"
+AXIS BANK LTD,2019,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(514.33), 'Reserves': np.float64(67288.29)}"
+AXIS BANK LTD,2019,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(30885.82), 'Net Cash Flow': np.float64(24093.5)}"
+AXIS BANK LTD,2019,CF-004,Financing activity plausibility,cross_statement,High,fail,Validation triggered,"{'Borrowings': np.float64(711995.77), 'Dividend Amount': np.float64(257.16), 'Cash from Financing Activity': np.float64(5642.6)}"
+AXIS BANK LTD,2019,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(5038.59), 'Depreciation': np.float64(737.17), 'Cash from Operating Activity': np.float64(37125.25)}"
+AXIS BANK LTD,2019,CF-008,Sustained negative operating cash flow,trend,High,pass,Validation passed,{'Cash from Operating Activity': np.float64(37125.25)}
+AXIS BANK LTD,2019,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+AXIS BANK LTD,2019,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(257.16), 'Reserves': np.float64(67288.29)}"
+AXIS BANK LTD,2019,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'AXIS BANK LTD', 'Year': np.int64(2019)}"
+AXIS BANK LTD,2019,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+AXIS BANK LTD,2019,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(30885.82), 'Inventory': np.float64(0.0)}"
+AXIS BANK LTD,2019,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+AXIS BANK LTD,2019,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(56043.65), 'robust_z': None}"
+AXIS BANK LTD,2019,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2019), 'Report Date': '2019-03-31'}"
+AXIS BANK LTD,2019,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(1.0), 'robust_z': None}"
+AXIS BANK LTD,2019,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(33883.47), 'Borrowings': np.float64(711995.77)}"
+AXIS BANK LTD,2019,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.3352138091819732), 'robust_z': None}"
+AXIS BANK LTD,2019,IS-010,Unusual expense spike detection,trend,High,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+AXIS BANK LTD,2019,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,fail,Validation triggered,"{'Revenue_Growth': np.float64(0.2022906822533803), 'Operating_CF_Growth': np.float64(-1.967047665686384)}"
+AXIS BANK LTD,2019,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(5038.59), 'Dividend Amount': np.float64(257.16), 'Reserves': np.float64(67288.29)}"
+AXIS BANK LTD,2019,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+AXIS BANK LTD,2019,LED-001,Accounting equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(0.0), 'Total Liabilities': np.float64(814045.97), 'Equity Share Capital': np.float64(514.33), 'Reserves': np.float64(67288.29)}"
+AXIS BANK LTD,2019,RAT-005,Debt-to-equity ratio,ratio,High,fail,Validation triggered,{'Debt_Equity_Ratio': np.float64(10.501006745757024)}
+AXIS BANK LTD,2019,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+AXIS BANK LTD,2019,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+AXIS BANK LTD,2019,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+AXIS BANK LTD,2019,RAT-010,Gross profit margin trend,trend,Medium,fail,Validation triggered,{'gross_margin': np.float64(1.0)}
+AXIS BANK LTD,2019,RAT-011,Net profit margin trend,trend,Medium,pass,Validation passed,{'Profit_Margin': np.float64(0.0899047438915916)}
+AXIS BANK LTD,2019,RAT-012,Operating margin trend,trend,Medium,fail,Validation triggered,{'Operating_Margin': np.float64(0.0)}
+AXIS BANK LTD,2019,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+AXIS BANK LTD,2019,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.0743126150582381), 'robust_z': None}"
+AXIS BANK LTD,2019,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+AXIS BANK LTD,2019,RAT-018,Inventory turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['inventory_turnover'],{'inventory_turnover': np.float64(nan)}
+AXIS BANK LTD,2019,RAT-019,Receivables turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['receivables_turnover'],{'receivables_turnover': np.float64(nan)}
+AXIS BANK LTD,2019,RAT-020,Days sales outstanding trend,trend,Medium,skipped,Unavailable metric values: ['dso'],{'dso': np.float64(nan)}
+AXIS BANK LTD,2019,RAT-022,Days inventory outstanding trend,trend,Medium,skipped,Unavailable metric values: ['dio'],{'dio': np.float64(nan)}
+AXIS BANK LTD,2019,RAT-024,Revenue growth rate,trend,Medium,pass,Validation passed,{'Revenue_Growth': np.float64(0.2022906822533803)}
+AXIS BANK LTD,2019,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(0.2022906822533803), 'robust_z': None}"
+AXIS BANK LTD,2019,TR-002,Year-over-year expense variance,trend,Medium,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+AXIS BANK LTD,2019,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(5903.577992802334), 'robust_z': None}"
+AXIS BANK LTD,2019,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+AXIS BANK LTD,2019,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.0899047438915916), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
+AXIS BANK LTD,2020,BS-001,Balance sheet equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(0.0), 'Total Liabilities': np.float64(927871.81), 'Equity Share Capital': np.float64(564.34), 'Reserves': np.float64(85776.09)}"
+AXIS BANK LTD,2020,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(564.34), 'Reserves': np.float64(85776.09)}"
+AXIS BANK LTD,2020,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(76971.34), 'Net Cash Flow': np.float64(29795.47)}"
+AXIS BANK LTD,2020,CF-004,Financing activity plausibility,cross_statement,High,skipped,Unavailable metric values: ['Dividend Amount'],"{'Borrowings': np.float64(797337.38), 'Dividend Amount': np.float64(nan), 'Cash from Financing Activity': np.float64(8865.13)}"
+AXIS BANK LTD,2020,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(1853.11), 'Depreciation': np.float64(806.07), 'Cash from Operating Activity': np.float64(30415.64)}"
+AXIS BANK LTD,2020,CF-008,Sustained negative operating cash flow,trend,High,pass,Validation passed,{'Cash from Operating Activity': np.float64(30415.64)}
+AXIS BANK LTD,2020,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+AXIS BANK LTD,2020,CF-010,Dividend versus reserves,solvency,High,skipped,Unavailable metric values: ['Dividend Amount'],"{'Dividend Amount': np.float64(nan), 'Reserves': np.float64(85776.09)}"
+AXIS BANK LTD,2020,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'AXIS BANK LTD', 'Year': np.int64(2020)}"
+AXIS BANK LTD,2020,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+AXIS BANK LTD,2020,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(76971.34), 'Inventory': np.float64(0.0)}"
+AXIS BANK LTD,2020,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+AXIS BANK LTD,2020,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(63715.68), 'robust_z': None}"
+AXIS BANK LTD,2020,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2020), 'Report Date': '2020-03-31'}"
+AXIS BANK LTD,2020,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(1.0), 'robust_z': None}"
+AXIS BANK LTD,2020,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(37995.94), 'Borrowings': np.float64(797337.38)}"
+AXIS BANK LTD,2020,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.6441776119544322), 'robust_z': None}"
+AXIS BANK LTD,2020,IS-010,Unusual expense spike detection,trend,High,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+AXIS BANK LTD,2020,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,fail,Validation triggered,"{'Revenue_Growth': np.float64(0.1368938318614152), 'Operating_CF_Growth': np.float64(-0.180729018659807)}"
+AXIS BANK LTD,2020,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,skipped,Unavailable metric values: ['Dividend Amount'],"{'Net profit': np.float64(1853.11), 'Dividend Amount': np.float64(nan), 'Reserves': np.float64(85776.09)}"
+AXIS BANK LTD,2020,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+AXIS BANK LTD,2020,LED-001,Accounting equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(0.0), 'Total Liabilities': np.float64(927871.81), 'Equity Share Capital': np.float64(564.34), 'Reserves': np.float64(85776.09)}"
+AXIS BANK LTD,2020,RAT-005,Debt-to-equity ratio,ratio,High,fail,Validation triggered,{'Debt_Equity_Ratio': np.float64(9.23480899967721)}
+AXIS BANK LTD,2020,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+AXIS BANK LTD,2020,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+AXIS BANK LTD,2020,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+AXIS BANK LTD,2020,RAT-010,Gross profit margin trend,trend,Medium,fail,Validation triggered,{'gross_margin': np.float64(1.0)}
+AXIS BANK LTD,2020,RAT-011,Net profit margin trend,trend,Medium,pass,Validation passed,{'Profit_Margin': np.float64(0.029084049640528)}
+AXIS BANK LTD,2020,RAT-012,Operating margin trend,trend,Medium,fail,Validation triggered,{'Operating_Margin': np.float64(0.0)}
+AXIS BANK LTD,2020,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+AXIS BANK LTD,2020,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.0214628303333675), 'robust_z': None}"
+AXIS BANK LTD,2020,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+AXIS BANK LTD,2020,RAT-018,Inventory turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['inventory_turnover'],{'inventory_turnover': np.float64(nan)}
+AXIS BANK LTD,2020,RAT-019,Receivables turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['receivables_turnover'],{'receivables_turnover': np.float64(nan)}
+AXIS BANK LTD,2020,RAT-020,Days sales outstanding trend,trend,Medium,skipped,Unavailable metric values: ['dso'],{'dso': np.float64(nan)}
+AXIS BANK LTD,2020,RAT-022,Days inventory outstanding trend,trend,Medium,skipped,Unavailable metric values: ['dio'],{'dio': np.float64(nan)}
+AXIS BANK LTD,2020,RAT-024,Revenue growth rate,trend,Medium,pass,Validation passed,{'Revenue_Growth': np.float64(0.1368938318614152)}
+AXIS BANK LTD,2020,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(0.1368938318614152), 'robust_z': None}"
+AXIS BANK LTD,2020,TR-002,Year-over-year expense variance,trend,Medium,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+AXIS BANK LTD,2020,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(8565.84903860869), 'robust_z': None}"
+AXIS BANK LTD,2020,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+AXIS BANK LTD,2020,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.029084049640528), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
+AXIS BANK LTD,2021,BS-001,Balance sheet equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(0.0), 'Total Liabilities': np.float64(1001004.54), 'Equity Share Capital': np.float64(612.75), 'Reserves': np.float64(102980.95)}"
+AXIS BANK LTD,2021,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(612.75), 'Reserves': np.float64(102980.95)}"
+AXIS BANK LTD,2021,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(39135.41), 'Net Cash Flow': np.float64(-34375.42)}"
+AXIS BANK LTD,2021,CF-004,Financing activity plausibility,cross_statement,High,skipped,Unavailable metric values: ['Dividend Amount'],"{'Borrowings': np.float64(850551.35), 'Dividend Amount': np.float64(nan), 'Cash from Financing Activity': np.float64(7279.33)}"
+AXIS BANK LTD,2021,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(7195.5), 'Depreciation': np.float64(975.83), 'Cash from Operating Activity': np.float64(12632.88)}"
+AXIS BANK LTD,2021,CF-008,Sustained negative operating cash flow,trend,High,pass,Validation passed,{'Cash from Operating Activity': np.float64(12632.88)}
+AXIS BANK LTD,2021,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+AXIS BANK LTD,2021,CF-010,Dividend versus reserves,solvency,High,skipped,Unavailable metric values: ['Dividend Amount'],"{'Dividend Amount': np.float64(nan), 'Reserves': np.float64(102980.95)}"
+AXIS BANK LTD,2021,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'AXIS BANK LTD', 'Year': np.int64(2021)}"
+AXIS BANK LTD,2021,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+AXIS BANK LTD,2021,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(39135.41), 'Inventory': np.float64(0.0)}"
+AXIS BANK LTD,2021,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+AXIS BANK LTD,2021,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(64397.36), 'robust_z': None}"
+AXIS BANK LTD,2021,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2021), 'Report Date': '2021-03-31'}"
+AXIS BANK LTD,2021,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(1.0), 'robust_z': None}"
+AXIS BANK LTD,2021,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(34627.38), 'Borrowings': np.float64(850551.35)}"
+AXIS BANK LTD,2021,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.2561712314155371), 'robust_z': None}"
+AXIS BANK LTD,2021,IS-010,Unusual expense spike detection,trend,High,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+AXIS BANK LTD,2021,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,fail,Validation triggered,"{'Revenue_Growth': np.float64(0.0106987793271609), 'Operating_CF_Growth': np.float64(-0.5846584191554083)}"
+AXIS BANK LTD,2021,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,skipped,Unavailable metric values: ['Dividend Amount'],"{'Net profit': np.float64(7195.5), 'Dividend Amount': np.float64(nan), 'Reserves': np.float64(102980.95)}"
+AXIS BANK LTD,2021,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+AXIS BANK LTD,2021,LED-001,Accounting equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(0.0), 'Total Liabilities': np.float64(1001004.54), 'Equity Share Capital': np.float64(612.75), 'Reserves': np.float64(102980.95)}"
+AXIS BANK LTD,2021,RAT-005,Debt-to-equity ratio,ratio,High,fail,Validation triggered,{'Debt_Equity_Ratio': np.float64(8.210454400219318)}
+AXIS BANK LTD,2021,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+AXIS BANK LTD,2021,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+AXIS BANK LTD,2021,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+AXIS BANK LTD,2021,RAT-010,Gross profit margin trend,trend,Medium,fail,Validation triggered,{'gross_margin': np.float64(1.0)}
+AXIS BANK LTD,2021,RAT-011,Net profit margin trend,trend,Medium,pass,Validation passed,{'Profit_Margin': np.float64(0.1117359469394397)}
+AXIS BANK LTD,2021,RAT-012,Operating margin trend,trend,Medium,fail,Validation triggered,{'Operating_Margin': np.float64(0.0)}
+AXIS BANK LTD,2021,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+AXIS BANK LTD,2021,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.0694588570540486), 'robust_z': None}"
+AXIS BANK LTD,2021,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+AXIS BANK LTD,2021,RAT-018,Inventory turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['inventory_turnover'],{'inventory_turnover': np.float64(nan)}
+AXIS BANK LTD,2021,RAT-019,Receivables turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['receivables_turnover'],{'receivables_turnover': np.float64(nan)}
+AXIS BANK LTD,2021,RAT-020,Days sales outstanding trend,trend,Medium,skipped,Unavailable metric values: ['dso'],{'dso': np.float64(nan)}
+AXIS BANK LTD,2021,RAT-022,Days inventory outstanding trend,trend,Medium,skipped,Unavailable metric values: ['dio'],{'dio': np.float64(nan)}
+AXIS BANK LTD,2021,RAT-024,Revenue growth rate,trend,Medium,pass,Validation passed,{'Revenue_Growth': np.float64(0.0106987793271609)}
+AXIS BANK LTD,2021,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(0.0106987793271609), 'robust_z': None}"
+AXIS BANK LTD,2021,TR-002,Year-over-year expense variance,trend,Medium,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+AXIS BANK LTD,2021,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(4638.771437701309), 'robust_z': None}"
+AXIS BANK LTD,2021,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+AXIS BANK LTD,2021,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.1117359469394397), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
+AXIS BANK LTD,2022,BS-001,Balance sheet equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(0.0), 'Total Liabilities': np.float64(1195528.51), 'Equity Share Capital': np.float64(613.95), 'Reserves': np.float64(117646.71)}"
+AXIS BANK LTD,2022,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(613.95), 'Reserves': np.float64(117646.71)}"
+AXIS BANK LTD,2022,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(84194.41), 'Net Cash Flow': np.float64(48919.15)}"
+AXIS BANK LTD,2022,CF-004,Financing activity plausibility,cross_statement,High,pass,Validation passed,"{'Borrowings': np.float64(1020692.32), 'Dividend Amount': np.float64(306.98), 'Cash from Financing Activity': np.float64(47894.08)}"
+AXIS BANK LTD,2022,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(14119.29), 'Depreciation': np.float64(1045.59), 'Cash from Operating Activity': np.float64(28137.3)}"
+AXIS BANK LTD,2022,CF-008,Sustained negative operating cash flow,trend,High,pass,Validation passed,{'Cash from Operating Activity': np.float64(28137.3)}
+AXIS BANK LTD,2022,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+AXIS BANK LTD,2022,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(306.98), 'Reserves': np.float64(117646.71)}"
+AXIS BANK LTD,2022,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'AXIS BANK LTD', 'Year': np.int64(2022)}"
+AXIS BANK LTD,2022,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+AXIS BANK LTD,2022,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(84194.41), 'Inventory': np.float64(0.0)}"
+AXIS BANK LTD,2022,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+AXIS BANK LTD,2022,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(68846.06), 'robust_z': None}"
+AXIS BANK LTD,2022,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2022), 'Report Date': '2022-03-31'}"
+AXIS BANK LTD,2022,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(1.0), 'robust_z': None}"
+AXIS BANK LTD,2022,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(34922.66), 'Borrowings': np.float64(1020692.32)}"
+AXIS BANK LTD,2022,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.2517298433235813), 'robust_z': None}"
+AXIS BANK LTD,2022,IS-010,Unusual expense spike detection,trend,High,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+AXIS BANK LTD,2022,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,pass,Validation passed,"{'Revenue_Growth': np.float64(0.0690820244805066), 'Operating_CF_Growth': np.float64(1.2273068373957483)}"
+AXIS BANK LTD,2022,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(14119.29), 'Dividend Amount': np.float64(306.98), 'Reserves': np.float64(117646.71)}"
+AXIS BANK LTD,2022,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+AXIS BANK LTD,2022,LED-001,Accounting equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(0.0), 'Total Liabilities': np.float64(1195528.51), 'Equity Share Capital': np.float64(613.95), 'Reserves': np.float64(117646.71)}"
+AXIS BANK LTD,2022,RAT-005,Debt-to-equity ratio,ratio,High,fail,Validation triggered,{'Debt_Equity_Ratio': np.float64(8.630869470878988)}
+AXIS BANK LTD,2022,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+AXIS BANK LTD,2022,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+AXIS BANK LTD,2022,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+AXIS BANK LTD,2022,RAT-010,Gross profit margin trend,trend,Medium,fail,Validation triggered,{'gross_margin': np.float64(1.0)}
+AXIS BANK LTD,2022,RAT-011,Net profit margin trend,trend,Medium,pass,Validation passed,{'Profit_Margin': np.float64(0.2050849387750003)}
+AXIS BANK LTD,2022,RAT-012,Operating margin trend,trend,Medium,fail,Validation triggered,{'Operating_Margin': np.float64(0.0)}
+AXIS BANK LTD,2022,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+AXIS BANK LTD,2022,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.1193912667154064), 'robust_z': None}"
+AXIS BANK LTD,2022,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+AXIS BANK LTD,2022,RAT-018,Inventory turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['inventory_turnover'],{'inventory_turnover': np.float64(nan)}
+AXIS BANK LTD,2022,RAT-019,Receivables turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['receivables_turnover'],{'receivables_turnover': np.float64(nan)}
+AXIS BANK LTD,2022,RAT-020,Days sales outstanding trend,trend,Medium,skipped,Unavailable metric values: ['dso'],{'dso': np.float64(nan)}
+AXIS BANK LTD,2022,RAT-022,Days inventory outstanding trend,trend,Medium,skipped,Unavailable metric values: ['dio'],{'dio': np.float64(nan)}
+AXIS BANK LTD,2022,RAT-024,Revenue growth rate,trend,Medium,pass,Validation passed,{'Revenue_Growth': np.float64(0.0690820244805066)}
+AXIS BANK LTD,2022,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(0.0690820244805066), 'robust_z': None}"
+AXIS BANK LTD,2022,TR-002,Year-over-year expense variance,trend,Medium,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+AXIS BANK LTD,2022,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(2786.1687630388624), 'robust_z': None}"
+AXIS BANK LTD,2022,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+AXIS BANK LTD,2022,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.2050849387750003), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
+AXIS BANK LTD,2023,BS-001,Balance sheet equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(0.0), 'Total Liabilities': np.float64(1344417.96), 'Equity Share Capital': np.float64(615.37), 'Reserves': np.float64(129166.34)}"
+AXIS BANK LTD,2023,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(615.37), 'Reserves': np.float64(129166.34)}"
+AXIS BANK LTD,2023,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(56451.88), 'Net Cash Flow': np.float64(-3635.58)}"
+AXIS BANK LTD,2023,CF-004,Financing activity plausibility,cross_statement,High,fail,Validation triggered,"{'Borrowings': np.float64(1152038.29), 'Dividend Amount': np.float64(307.68), 'Cash from Financing Activity': np.float64(6640.54)}"
+AXIS BANK LTD,2023,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(10818.45), 'Depreciation': np.float64(13143.37), 'Cash from Operating Activity': np.float64(22074.78)}"
+AXIS BANK LTD,2023,CF-008,Sustained negative operating cash flow,trend,High,pass,Validation passed,{'Cash from Operating Activity': np.float64(22074.78)}
+AXIS BANK LTD,2023,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+AXIS BANK LTD,2023,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(307.68), 'Reserves': np.float64(129166.34)}"
+AXIS BANK LTD,2023,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'AXIS BANK LTD', 'Year': np.int64(2023)}"
+AXIS BANK LTD,2023,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+AXIS BANK LTD,2023,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(56451.88), 'Inventory': np.float64(0.0)}"
+AXIS BANK LTD,2023,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+AXIS BANK LTD,2023,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(87448.37), 'robust_z': None}"
+AXIS BANK LTD,2023,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2023), 'Report Date': '2023-03-31'}"
+AXIS BANK LTD,2023,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(1.0), 'robust_z': None}"
+AXIS BANK LTD,2023,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(43389.15), 'Borrowings': np.float64(1152038.29)}"
+AXIS BANK LTD,2023,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.4171873103637901), 'robust_z': None}"
+AXIS BANK LTD,2023,IS-010,Unusual expense spike detection,trend,High,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+AXIS BANK LTD,2023,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,fail,Validation triggered,"{'Revenue_Growth': np.float64(0.2702015191573781), 'Operating_CF_Growth': np.float64(-0.2154620379354096)}"
+AXIS BANK LTD,2023,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(10818.45), 'Dividend Amount': np.float64(307.68), 'Reserves': np.float64(129166.34)}"
+AXIS BANK LTD,2023,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+AXIS BANK LTD,2023,LED-001,Accounting equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(0.0), 'Total Liabilities': np.float64(1344417.96), 'Equity Share Capital': np.float64(615.37), 'Reserves': np.float64(129166.34)}"
+AXIS BANK LTD,2023,RAT-005,Debt-to-equity ratio,ratio,High,fail,Validation triggered,{'Debt_Equity_Ratio': np.float64(8.876738409441517)}
+AXIS BANK LTD,2023,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+AXIS BANK LTD,2023,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+AXIS BANK LTD,2023,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+AXIS BANK LTD,2023,RAT-010,Gross profit margin trend,trend,Medium,fail,Validation triggered,{'gross_margin': np.float64(1.0)}
+AXIS BANK LTD,2023,RAT-011,Net profit margin trend,trend,Medium,pass,Validation passed,{'Profit_Margin': np.float64(0.1237124259720335)}
+AXIS BANK LTD,2023,RAT-012,Operating margin trend,trend,Medium,fail,Validation triggered,{'Operating_Margin': np.float64(0.0)}
+AXIS BANK LTD,2023,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+AXIS BANK LTD,2023,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.0833588184344311), 'robust_z': None}"
+AXIS BANK LTD,2023,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+AXIS BANK LTD,2023,RAT-018,Inventory turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['inventory_turnover'],{'inventory_turnover': np.float64(nan)}
+AXIS BANK LTD,2023,RAT-019,Receivables turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['receivables_turnover'],{'receivables_turnover': np.float64(nan)}
+AXIS BANK LTD,2023,RAT-020,Days sales outstanding trend,trend,Medium,skipped,Unavailable metric values: ['dso'],{'dso': np.float64(nan)}
+AXIS BANK LTD,2023,RAT-022,Days inventory outstanding trend,trend,Medium,skipped,Unavailable metric values: ['dio'],{'dio': np.float64(nan)}
+AXIS BANK LTD,2023,RAT-024,Revenue growth rate,trend,Medium,pass,Validation passed,{'Revenue_Growth': np.float64(0.2702015191573781)}
+AXIS BANK LTD,2023,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(0.2702015191573781), 'robust_z': None}"
+AXIS BANK LTD,2023,TR-002,Year-over-year expense variance,trend,Medium,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+AXIS BANK LTD,2023,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(12228.286409293014), 'robust_z': None}"
+AXIS BANK LTD,2023,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+AXIS BANK LTD,2023,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.1237124259720335), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
+AXIS BANK LTD,2024,BS-001,Balance sheet equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(0.0), 'Total Liabilities': np.float64(1518238.53), 'Equity Share Capital': np.float64(617.31), 'Reserves': np.float64(156406.21)}"
+AXIS BANK LTD,2024,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(617.31), 'Reserves': np.float64(156406.21)}"
+AXIS BANK LTD,2024,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(76442.68), 'Net Cash Flow': np.float64(7785.25)}"
+AXIS BANK LTD,2024,CF-004,Financing activity plausibility,cross_statement,High,fail,Validation triggered,"{'Borrowings': np.float64(1295301.95), 'Dividend Amount': np.float64(308.66), 'Cash from Financing Activity': np.float64(22341.25)}"
+AXIS BANK LTD,2024,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(26386.2), 'Depreciation': np.float64(1384.97), 'Cash from Operating Activity': np.float64(-5554.67)}"
+AXIS BANK LTD,2024,CF-008,Sustained negative operating cash flow,trend,High,pass,Validation passed,{'Cash from Operating Activity': np.float64(-5554.67)}
+AXIS BANK LTD,2024,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+AXIS BANK LTD,2024,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(308.66), 'Reserves': np.float64(156406.21)}"
+AXIS BANK LTD,2024,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'AXIS BANK LTD', 'Year': np.int64(2024)}"
+AXIS BANK LTD,2024,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+AXIS BANK LTD,2024,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(76442.68), 'Inventory': np.float64(0.0)}"
+AXIS BANK LTD,2024,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+AXIS BANK LTD,2024,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(112759.05), 'robust_z': None}"
+AXIS BANK LTD,2024,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2024), 'Report Date': '2024-03-31'}"
+AXIS BANK LTD,2024,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(1.0), 'robust_z': None}"
+AXIS BANK LTD,2024,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(61390.74), 'Borrowings': np.float64(1295301.95)}"
+AXIS BANK LTD,2024,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.2488617886178861), 'robust_z': None}"
+AXIS BANK LTD,2024,IS-010,Unusual expense spike detection,trend,High,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+AXIS BANK LTD,2024,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,fail,Validation triggered,"{'Revenue_Growth': np.float64(0.2894356978866503), 'Operating_CF_Growth': np.float64(-1.2516296878156885)}"
+AXIS BANK LTD,2024,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(26386.2), 'Dividend Amount': np.float64(308.66), 'Reserves': np.float64(156406.21)}"
+AXIS BANK LTD,2024,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+AXIS BANK LTD,2024,LED-001,Accounting equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(0.0), 'Total Liabilities': np.float64(1518238.53), 'Equity Share Capital': np.float64(617.31), 'Reserves': np.float64(156406.21)}"
+AXIS BANK LTD,2024,RAT-005,Debt-to-equity ratio,ratio,High,fail,Validation triggered,{'Debt_Equity_Ratio': np.float64(8.2490951037144)}
+AXIS BANK LTD,2024,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+AXIS BANK LTD,2024,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+AXIS BANK LTD,2024,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+AXIS BANK LTD,2024,RAT-010,Gross profit margin trend,trend,Medium,fail,Validation triggered,{'gross_margin': np.float64(1.0)}
+AXIS BANK LTD,2024,RAT-011,Net profit margin trend,trend,Medium,pass,Validation passed,{'Profit_Margin': np.float64(0.2340051641087788)}
+AXIS BANK LTD,2024,RAT-012,Operating margin trend,trend,Medium,fail,Validation triggered,{'Operating_Margin': np.float64(0.0)}
+AXIS BANK LTD,2024,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+AXIS BANK LTD,2024,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.1680397942932371), 'robust_z': None}"
+AXIS BANK LTD,2024,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+AXIS BANK LTD,2024,RAT-018,Inventory turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['inventory_turnover'],{'inventory_turnover': np.float64(nan)}
+AXIS BANK LTD,2024,RAT-019,Receivables turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['receivables_turnover'],{'receivables_turnover': np.float64(nan)}
+AXIS BANK LTD,2024,RAT-020,Days sales outstanding trend,trend,Medium,skipped,Unavailable metric values: ['dso'],{'dso': np.float64(nan)}
+AXIS BANK LTD,2024,RAT-022,Days inventory outstanding trend,trend,Medium,skipped,Unavailable metric values: ['dio'],{'dio': np.float64(nan)}
+AXIS BANK LTD,2024,RAT-024,Revenue growth rate,trend,Medium,pass,Validation passed,{'Revenue_Growth': np.float64(0.2894356978866503)}
+AXIS BANK LTD,2024,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(0.2894356978866503), 'robust_z': None}"
+AXIS BANK LTD,2024,TR-002,Year-over-year expense variance,trend,Medium,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+AXIS BANK LTD,2024,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(22041.72993112006), 'robust_z': None}"
+AXIS BANK LTD,2024,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+AXIS BANK LTD,2024,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.2340051641087788), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
+AXIS BANK LTD,2025,BS-001,Balance sheet equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(0.0), 'Total Liabilities': np.float64(1656962.61), 'Equity Share Capital': np.float64(619.47), 'Reserves': np.float64(186616.02)}"
+AXIS BANK LTD,2025,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(619.47), 'Reserves': np.float64(186616.02)}"
+AXIS BANK LTD,2025,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(65564.5), 'Net Cash Flow': np.float64(-13794.48)}"
+AXIS BANK LTD,2025,CF-004,Financing activity plausibility,cross_statement,High,fail,Validation triggered,"{'Borrowings': np.float64(1391607.64), 'Dividend Amount': np.float64(309.74), 'Cash from Financing Activity': np.float64(-7000.36)}"
+AXIS BANK LTD,2025,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(28055.11), 'Depreciation': np.float64(1763.48), 'Cash from Operating Activity': np.float64(44383.68)}"
+AXIS BANK LTD,2025,CF-008,Sustained negative operating cash flow,trend,High,pass,Validation passed,{'Cash from Operating Activity': np.float64(44383.68)}
+AXIS BANK LTD,2025,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+AXIS BANK LTD,2025,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(309.74), 'Reserves': np.float64(186616.02)}"
+AXIS BANK LTD,2025,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'AXIS BANK LTD', 'Year': np.int64(2025)}"
+AXIS BANK LTD,2025,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+AXIS BANK LTD,2025,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(65564.5), 'Inventory': np.float64(0.0)}"
+AXIS BANK LTD,2025,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+AXIS BANK LTD,2025,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(127374.09), 'robust_z': None}"
+AXIS BANK LTD,2025,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2025), 'Report Date': '2025-03-31'}"
+AXIS BANK LTD,2025,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(1.0), 'robust_z': None}"
+AXIS BANK LTD,2025,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(71036.31), 'Borrowings': np.float64(1391607.64)}"
+AXIS BANK LTD,2025,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.2344747694580057), 'robust_z': None}"
+AXIS BANK LTD,2025,IS-010,Unusual expense spike detection,trend,High,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+AXIS BANK LTD,2025,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,fail,Validation triggered,"{'Revenue_Growth': np.float64(0.1296130111064255), 'Operating_CF_Growth': np.float64(-8.990336059567895)}"
+AXIS BANK LTD,2025,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(28055.11), 'Dividend Amount': np.float64(309.74), 'Reserves': np.float64(186616.02)}"
+AXIS BANK LTD,2025,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+AXIS BANK LTD,2025,LED-001,Accounting equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(0.0), 'Total Liabilities': np.float64(1656962.61), 'Equity Share Capital': np.float64(619.47), 'Reserves': np.float64(186616.02)}"
+AXIS BANK LTD,2025,RAT-005,Debt-to-equity ratio,ratio,High,fail,Validation triggered,{'Debt_Equity_Ratio': np.float64(7.432392437993459)}
+AXIS BANK LTD,2025,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+AXIS BANK LTD,2025,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+AXIS BANK LTD,2025,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+AXIS BANK LTD,2025,RAT-010,Gross profit margin trend,trend,Medium,fail,Validation triggered,{'gross_margin': np.float64(1.0)}
+AXIS BANK LTD,2025,RAT-011,Net profit margin trend,trend,Medium,pass,Validation passed,{'Profit_Margin': np.float64(0.2202575892789499)}
+AXIS BANK LTD,2025,RAT-012,Operating margin trend,trend,Medium,fail,Validation triggered,{'Operating_Margin': np.float64(0.0)}
+AXIS BANK LTD,2025,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+AXIS BANK LTD,2025,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.1498386336906534), 'robust_z': None}"
+AXIS BANK LTD,2025,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+AXIS BANK LTD,2025,RAT-018,Inventory turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['inventory_turnover'],{'inventory_turnover': np.float64(nan)}
+AXIS BANK LTD,2025,RAT-019,Receivables turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['receivables_turnover'],{'receivables_turnover': np.float64(nan)}
+AXIS BANK LTD,2025,RAT-020,Days sales outstanding trend,trend,Medium,skipped,Unavailable metric values: ['dso'],{'dso': np.float64(nan)}
+AXIS BANK LTD,2025,RAT-022,Days inventory outstanding trend,trend,Medium,skipped,Unavailable metric values: ['dio'],{'dio': np.float64(nan)}
+AXIS BANK LTD,2025,RAT-024,Revenue growth rate,trend,Medium,pass,Validation passed,{'Revenue_Growth': np.float64(0.1296130111064255)}
+AXIS BANK LTD,2025,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(0.1296130111064255), 'robust_z': None}"
+AXIS BANK LTD,2025,TR-002,Year-over-year expense variance,trend,Medium,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+AXIS BANK LTD,2025,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(20200.218785046218), 'robust_z': None}"
+AXIS BANK LTD,2025,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+AXIS BANK LTD,2025,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.2202575892789499), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
+AXIS BANK LTD,2026,BS-001,Balance sheet equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(0.0), 'Total Liabilities': np.float64(1946050.29), 'Equity Share Capital': np.float64(621.63), 'Reserves': np.float64(214413.72)}"
+AXIS BANK LTD,2026,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(621.63), 'Reserves': np.float64(214413.72)}"
+AXIS BANK LTD,2026,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(71868.91), 'Net Cash Flow': np.float64(6652.87)}"
+AXIS BANK LTD,2026,CF-004,Financing activity plausibility,cross_statement,High,pass,Validation passed,"{'Borrowings': np.float64(1614302.06), 'Dividend Amount': np.float64(310.82), 'Cash from Financing Activity': np.float64(60357.67)}"
+AXIS BANK LTD,2026,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(26384.85), 'Depreciation': np.float64(1889.45), 'Cash from Operating Activity': np.float64(-8636.71)}"
+AXIS BANK LTD,2026,CF-008,Sustained negative operating cash flow,trend,High,pass,Validation passed,{'Cash from Operating Activity': np.float64(-8636.71)}
+AXIS BANK LTD,2026,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+AXIS BANK LTD,2026,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(310.82), 'Reserves': np.float64(214413.72)}"
+AXIS BANK LTD,2026,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'AXIS BANK LTD', 'Year': np.int64(2026)}"
+AXIS BANK LTD,2026,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+AXIS BANK LTD,2026,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(71868.91), 'Inventory': np.float64(0.0)}"
+AXIS BANK LTD,2026,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+AXIS BANK LTD,2026,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(132538.24), 'robust_z': None}"
+AXIS BANK LTD,2026,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2026), 'Report Date': '2026-03-31'}"
+AXIS BANK LTD,2026,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(1.0), 'robust_z': None}"
+AXIS BANK LTD,2026,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(74074.99), 'Borrowings': np.float64(1614302.06)}"
+AXIS BANK LTD,2026,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.1795917811222458), 'robust_z': None}"
+AXIS BANK LTD,2026,IS-010,Unusual expense spike detection,trend,High,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+AXIS BANK LTD,2026,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,fail,Validation triggered,"{'Revenue_Growth': np.float64(0.0405431748324953), 'Operating_CF_Growth': np.float64(-1.1945920212114003)}"
+AXIS BANK LTD,2026,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(26384.85), 'Dividend Amount': np.float64(310.82), 'Reserves': np.float64(214413.72)}"
+AXIS BANK LTD,2026,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+AXIS BANK LTD,2026,LED-001,Accounting equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(0.0), 'Total Liabilities': np.float64(1946050.29), 'Equity Share Capital': np.float64(621.63), 'Reserves': np.float64(214413.72)}"
+AXIS BANK LTD,2026,RAT-005,Debt-to-equity ratio,ratio,High,fail,Validation triggered,{'Debt_Equity_Ratio': np.float64(7.507147359724808)}
+AXIS BANK LTD,2026,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+AXIS BANK LTD,2026,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+AXIS BANK LTD,2026,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+AXIS BANK LTD,2026,RAT-010,Gross profit margin trend,trend,Medium,fail,Validation triggered,{'gross_margin': np.float64(1.0)}
+AXIS BANK LTD,2026,RAT-011,Net profit margin trend,trend,Medium,fail,Validation triggered,{'Profit_Margin': np.float64(0.1990734900357813)}
+AXIS BANK LTD,2026,RAT-012,Operating margin trend,trend,Medium,fail,Validation triggered,{'Operating_Margin': np.float64(0.0)}
+AXIS BANK LTD,2026,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+AXIS BANK LTD,2026,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.1227000583857491), 'robust_z': None}"
+AXIS BANK LTD,2026,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+AXIS BANK LTD,2026,RAT-018,Inventory turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['inventory_turnover'],{'inventory_turnover': np.float64(nan)}
+AXIS BANK LTD,2026,RAT-019,Receivables turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['receivables_turnover'],{'receivables_turnover': np.float64(nan)}
+AXIS BANK LTD,2026,RAT-020,Days sales outstanding trend,trend,Medium,skipped,Unavailable metric values: ['dso'],{'dso': np.float64(nan)}
+AXIS BANK LTD,2026,RAT-022,Days inventory outstanding trend,trend,Medium,skipped,Unavailable metric values: ['dio'],{'dio': np.float64(nan)}
+AXIS BANK LTD,2026,RAT-024,Revenue growth rate,trend,Medium,pass,Validation passed,{'Revenue_Growth': np.float64(0.0405431748324953)}
+AXIS BANK LTD,2026,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(0.0405431748324953), 'robust_z': None}"
+AXIS BANK LTD,2026,TR-002,Year-over-year expense variance,trend,Medium,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+AXIS BANK LTD,2026,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(10259.013894133996), 'robust_z': None}"
+AXIS BANK LTD,2026,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+AXIS BANK LTD,2026,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.1990734900357813), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"

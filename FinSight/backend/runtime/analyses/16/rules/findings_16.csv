@@ -1,0 +1,421 @@
+Company,Year,Rule ID,Rule Description,Category,Severity,Status,Message,Observed
+WIPRO LTD,2017,BS-001,Balance sheet equation,integrity,Critical,skipped,"Unavailable metrics: ['Total Assets', 'Total Liabilities']",
+WIPRO LTD,2017,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(486.1), 'Reserves': np.float64(51184.1)}"
+WIPRO LTD,2017,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,skipped,Unavailable prior-year Cash & Bank,"{'Cash & Bank': np.float64(5271.0), 'Net Cash Flow': np.float64(-4767.4)}"
+WIPRO LTD,2017,CF-004,Financing activity plausibility,cross_statement,High,skipped,Unavailable prior-year Borrowings,"{'Borrowings': np.float64(14241.2), 'Dividend Amount': np.float64(486.1), 'Cash from Financing Activity': np.float64(-2275.2)}"
+WIPRO LTD,2017,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(8493.1), 'Depreciation': np.float64(2310.0), 'Cash from Operating Activity': np.float64(9277.3)}"
+WIPRO LTD,2017,CF-008,Sustained negative operating cash flow,trend,High,skipped,Insufficient history for Cash from Operating Activity,{'Cash from Operating Activity': np.float64(9277.3)}
+WIPRO LTD,2017,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+WIPRO LTD,2017,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(486.1), 'Reserves': np.float64(51184.1)}"
+WIPRO LTD,2017,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'WIPRO LTD', 'Year': np.int64(2017)}"
+WIPRO LTD,2017,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+WIPRO LTD,2017,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(5271.0), 'Inventory': np.float64(391.5)}"
+WIPRO LTD,2017,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+WIPRO LTD,2017,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(55448.4), 'robust_z': None}"
+WIPRO LTD,2017,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2017), 'Report Date': '2017-03-31'}"
+WIPRO LTD,2017,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(0.953903088276668), 'robust_z': None}"
+WIPRO LTD,2017,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(594.2), 'Borrowings': np.float64(14241.2)}"
+WIPRO LTD,2017,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.2284021631806364), 'robust_z': None}"
+WIPRO LTD,2017,IS-010,Unusual expense spike detection,trend,High,skipped,Unavailable metrics: ['Total Expenses'],
+WIPRO LTD,2017,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,skipped,"Unavailable metric values: ['Revenue_Growth', 'Operating_CF_Growth']","{'Revenue_Growth': np.float64(nan), 'Operating_CF_Growth': np.float64(nan)}"
+WIPRO LTD,2017,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,skipped,Unavailable prior-year Reserves,"{'Net profit': np.float64(8493.1), 'Dividend Amount': np.float64(486.1), 'Reserves': np.float64(51184.1)}"
+WIPRO LTD,2017,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+WIPRO LTD,2017,LED-001,Accounting equation,integrity,Critical,skipped,"Unavailable metrics: ['Total Assets', 'Total Liabilities']",
+WIPRO LTD,2017,RAT-005,Debt-to-equity ratio,ratio,High,pass,Validation passed,{'Debt_Equity_Ratio': np.float64(0.275617280366633)}
+WIPRO LTD,2017,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+WIPRO LTD,2017,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+WIPRO LTD,2017,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+WIPRO LTD,2017,RAT-010,Gross profit margin trend,trend,Medium,skipped,Insufficient history for gross_margin,{'gross_margin': np.float64(0.953903088276668)}
+WIPRO LTD,2017,RAT-011,Net profit margin trend,trend,Medium,skipped,Insufficient history for Profit_Margin,{'Profit_Margin': np.float64(0.1531712366813109)}
+WIPRO LTD,2017,RAT-012,Operating margin trend,trend,Medium,skipped,Insufficient history for Operating_Margin,{'Operating_Margin': np.float64(0.0)}
+WIPRO LTD,2017,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+WIPRO LTD,2017,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.1643713397664418), 'robust_z': None}"
+WIPRO LTD,2017,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+WIPRO LTD,2017,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(141.63065134099617), 'robust_z': None}"
+WIPRO LTD,2017,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(5.846150602028551), 'robust_z': None}"
+WIPRO LTD,2017,RAT-020,Days sales outstanding trend,trend,Medium,skipped,Insufficient history for dso,{'dso': np.float64(62.43424517208793)}
+WIPRO LTD,2017,RAT-022,Days inventory outstanding trend,trend,Medium,skipped,Insufficient history for dio,{'dio': np.float64(2.5771257601662088)}
+WIPRO LTD,2017,RAT-024,Revenue growth rate,trend,Medium,skipped,Unavailable metric values: ['Revenue_Growth'],{'Revenue_Growth': np.float64(nan)}
+WIPRO LTD,2017,TR-001,Year-over-year revenue variance,trend,Medium,skipped,Unavailable metric values: ['Revenue_Growth'],{'Revenue_Growth': np.float64(nan)}
+WIPRO LTD,2017,TR-002,Year-over-year expense variance,trend,Medium,skipped,Unavailable metrics: ['Total Expenses'],
+WIPRO LTD,2017,TR-003,Multi-year trend consistency,trend,Medium,skipped,Unavailable metric values: ['Revenue_Volatility'],{'Revenue_Volatility': np.float64(nan)}
+WIPRO LTD,2017,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+WIPRO LTD,2017,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.1531712366813109), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
+WIPRO LTD,2018,BS-001,Balance sheet equation,integrity,Critical,skipped,"Unavailable metrics: ['Total Assets', 'Total Liabilities']",
+WIPRO LTD,2018,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(904.8), 'Reserves': np.float64(47021.5)}"
+WIPRO LTD,2018,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(4492.5), 'Net Cash Flow': np.float64(-979.2)}"
+WIPRO LTD,2018,CF-004,Financing activity plausibility,cross_statement,High,pass,Validation passed,"{'Borrowings': np.float64(13901.2), 'Dividend Amount': np.float64(452.4), 'Cash from Financing Activity': np.float64(-12997.8)}"
+WIPRO LTD,2018,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(8002.8), 'Depreciation': np.float64(2111.7), 'Cash from Operating Activity': np.float64(8423.3)}"
+WIPRO LTD,2018,CF-008,Sustained negative operating cash flow,trend,High,skipped,Insufficient history for Cash from Operating Activity,{'Cash from Operating Activity': np.float64(8423.3)}
+WIPRO LTD,2018,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+WIPRO LTD,2018,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(452.4), 'Reserves': np.float64(47021.5)}"
+WIPRO LTD,2018,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'WIPRO LTD', 'Year': np.int64(2018)}"
+WIPRO LTD,2018,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+WIPRO LTD,2018,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(4492.5), 'Inventory': np.float64(337.0)}"
+WIPRO LTD,2018,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+WIPRO LTD,2018,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(54487.1), 'robust_z': None}"
+WIPRO LTD,2018,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2018), 'Report Date': '2018-03-31'}"
+WIPRO LTD,2018,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(0.9661681388805792), 'robust_z': None}"
+WIPRO LTD,2018,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(583.0), 'Borrowings': np.float64(13901.2)}"
+WIPRO LTD,2018,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.2186151412782409), 'robust_z': None}"
+WIPRO LTD,2018,IS-010,Unusual expense spike detection,trend,High,skipped,Unavailable metrics: ['Total Expenses'],
+WIPRO LTD,2018,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,pass,Validation passed,"{'Revenue_Growth': np.float64(-0.0173368392956334), 'Operating_CF_Growth': np.float64(-0.0920526446272083)}"
+WIPRO LTD,2018,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(8002.8), 'Dividend Amount': np.float64(452.4), 'Reserves': np.float64(47021.5)}"
+WIPRO LTD,2018,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+WIPRO LTD,2018,LED-001,Accounting equation,integrity,Critical,skipped,"Unavailable metrics: ['Total Assets', 'Total Liabilities']",
+WIPRO LTD,2018,RAT-005,Debt-to-equity ratio,ratio,High,pass,Validation passed,{'Debt_Equity_Ratio': np.float64(0.2900536865979639)}
+WIPRO LTD,2018,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+WIPRO LTD,2018,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+WIPRO LTD,2018,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+WIPRO LTD,2018,RAT-010,Gross profit margin trend,trend,Medium,skipped,Insufficient history for gross_margin,{'gross_margin': np.float64(0.9661681388805792)}
+WIPRO LTD,2018,RAT-011,Net profit margin trend,trend,Medium,skipped,Insufficient history for Profit_Margin,{'Profit_Margin': np.float64(0.1468751319119571)}
+WIPRO LTD,2018,RAT-012,Operating margin trend,trend,Medium,skipped,Insufficient history for Operating_Margin,{'Operating_Margin': np.float64(0.0)}
+WIPRO LTD,2018,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+WIPRO LTD,2018,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.1669813860030922), 'robust_z': None}"
+WIPRO LTD,2018,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+WIPRO LTD,2018,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(161.68278931750743), 'robust_z': None}"
+WIPRO LTD,2018,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(5.395296564016239), 'robust_z': None}"
+WIPRO LTD,2018,RAT-020,Days sales outstanding trend,trend,Medium,skipped,Insufficient history for dso,{'dso': np.float64(67.65151751515496)}
+WIPRO LTD,2018,RAT-022,Days inventory outstanding trend,trend,Medium,skipped,Insufficient history for dio,{'dio': np.float64(2.2575068227158352)}
+WIPRO LTD,2018,RAT-024,Revenue growth rate,trend,Medium,fail,Validation triggered,{'Revenue_Growth': np.float64(-0.0173368392956334)}
+WIPRO LTD,2018,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(-0.0173368392956334), 'robust_z': None}"
+WIPRO LTD,2018,TR-002,Year-over-year expense variance,trend,Medium,skipped,Unavailable metrics: ['Total Expenses'],
+WIPRO LTD,2018,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(679.7417487546302), 'robust_z': None}"
+WIPRO LTD,2018,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+WIPRO LTD,2018,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.1468751319119571), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
+WIPRO LTD,2019,BS-001,Balance sheet equation,integrity,Critical,skipped,"Unavailable metrics: ['Total Assets', 'Total Liabilities']",
+WIPRO LTD,2019,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(1206.8), 'Reserves': np.float64(55215.8)}"
+WIPRO LTD,2019,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(15852.9), 'Net Cash Flow': np.float64(11759.9)}"
+WIPRO LTD,2019,CF-004,Financing activity plausibility,cross_statement,High,pass,Validation passed,"{'Borrowings': np.float64(9946.7), 'Dividend Amount': np.float64(603.4), 'Cash from Financing Activity': np.float64(-4936.9)}"
+WIPRO LTD,2019,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(9003.7), 'Depreciation': np.float64(1946.7), 'Cash from Operating Activity': np.float64(11631.6)}"
+WIPRO LTD,2019,CF-008,Sustained negative operating cash flow,trend,High,pass,Validation passed,{'Cash from Operating Activity': np.float64(11631.6)}
+WIPRO LTD,2019,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+WIPRO LTD,2019,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(603.4), 'Reserves': np.float64(55215.8)}"
+WIPRO LTD,2019,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'WIPRO LTD', 'Year': np.int64(2019)}"
+WIPRO LTD,2019,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+WIPRO LTD,2019,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(15852.9), 'Inventory': np.float64(395.1)}"
+WIPRO LTD,2019,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+WIPRO LTD,2019,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(59018.9), 'robust_z': None}"
+WIPRO LTD,2019,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2019), 'Report Date': '2019-03-31'}"
+WIPRO LTD,2019,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(0.9761550960793914), 'robust_z': None}"
+WIPRO LTD,2019,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(737.5), 'Borrowings': np.float64(9946.7)}"
+WIPRO LTD,2019,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.2187018072811075), 'robust_z': None}"
+WIPRO LTD,2019,IS-010,Unusual expense spike detection,trend,High,skipped,Unavailable metrics: ['Total Expenses'],
+WIPRO LTD,2019,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,pass,Validation passed,"{'Revenue_Growth': np.float64(0.0831719801567711), 'Operating_CF_Growth': np.float64(0.3808839765887479)}"
+WIPRO LTD,2019,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(9003.7), 'Dividend Amount': np.float64(603.4), 'Reserves': np.float64(55215.8)}"
+WIPRO LTD,2019,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+WIPRO LTD,2019,LED-001,Accounting equation,integrity,Critical,skipped,"Unavailable metrics: ['Total Assets', 'Total Liabilities']",
+WIPRO LTD,2019,RAT-005,Debt-to-equity ratio,ratio,High,pass,Validation passed,{'Debt_Equity_Ratio': np.float64(0.1762892883348162)}
+WIPRO LTD,2019,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+WIPRO LTD,2019,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+WIPRO LTD,2019,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+WIPRO LTD,2019,RAT-010,Gross profit margin trend,trend,Medium,pass,Validation passed,{'gross_margin': np.float64(0.9761550960793914)}
+WIPRO LTD,2019,RAT-011,Net profit margin trend,trend,Medium,pass,Validation passed,{'Profit_Margin': np.float64(0.1525562150429777)}
+WIPRO LTD,2019,RAT-012,Operating margin trend,trend,Medium,fail,Validation triggered,{'Operating_Margin': np.float64(0.0)}
+WIPRO LTD,2019,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+WIPRO LTD,2019,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.1595761272965088), 'robust_z': None}"
+WIPRO LTD,2019,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+WIPRO LTD,2019,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(149.37711971652746), 'robust_z': None}"
+WIPRO LTD,2019,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(5.873170197733086), 'robust_z': None}"
+WIPRO LTD,2019,RAT-020,Days sales outstanding trend,trend,Medium,pass,Validation passed,{'dso': np.float64(62.14701561703114)}
+WIPRO LTD,2019,RAT-022,Days inventory outstanding trend,trend,Medium,pass,Validation passed,{'dio': np.float64(2.44347996997572)}
+WIPRO LTD,2019,RAT-024,Revenue growth rate,trend,Medium,pass,Validation passed,{'Revenue_Growth': np.float64(0.0831719801567711)}
+WIPRO LTD,2019,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(0.0831719801567711), 'robust_z': None}"
+WIPRO LTD,2019,TR-002,Year-over-year expense variance,trend,Medium,skipped,Unavailable metrics: ['Total Expenses'],
+WIPRO LTD,2019,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(2387.8085901791505), 'robust_z': None}"
+WIPRO LTD,2019,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+WIPRO LTD,2019,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.1525562150429777), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
+WIPRO LTD,2020,BS-001,Balance sheet equation,integrity,Critical,skipped,"Unavailable metrics: ['Total Assets', 'Total Liabilities']",
+WIPRO LTD,2020,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(1142.7), 'Reserves': np.float64(54179.0)}"
+WIPRO LTD,2020,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(14449.9), 'Net Cash Flow': np.float64(-1442.1)}"
+WIPRO LTD,2020,CF-004,Financing activity plausibility,cross_statement,High,pass,Validation passed,"{'Borrowings': np.float64(9724.0), 'Dividend Amount': np.float64(571.35), 'Cash from Financing Activity': np.float64(-15099.8)}"
+WIPRO LTD,2020,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(9722.3), 'Depreciation': np.float64(2085.5), 'Cash from Operating Activity': np.float64(10064.3)}"
+WIPRO LTD,2020,CF-008,Sustained negative operating cash flow,trend,High,pass,Validation passed,{'Cash from Operating Activity': np.float64(10064.3)}
+WIPRO LTD,2020,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+WIPRO LTD,2020,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(571.35), 'Reserves': np.float64(54179.0)}"
+WIPRO LTD,2020,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'WIPRO LTD', 'Year': np.int64(2020)}"
+WIPRO LTD,2020,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+WIPRO LTD,2020,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(14449.9), 'Inventory': np.float64(186.5)}"
+WIPRO LTD,2020,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+WIPRO LTD,2020,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(61137.6), 'robust_z': None}"
+WIPRO LTD,2020,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2020), 'Report Date': '2020-03-31'}"
+WIPRO LTD,2020,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(0.9846902724346392), 'robust_z': None}"
+WIPRO LTD,2020,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(732.8), 'Borrowings': np.float64(9724.0)}"
+WIPRO LTD,2020,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.2024257462107918), 'robust_z': None}"
+WIPRO LTD,2020,IS-010,Unusual expense spike detection,trend,High,skipped,Unavailable metrics: ['Total Expenses'],
+WIPRO LTD,2020,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,fail,Validation triggered,"{'Revenue_Growth': np.float64(0.0358986697481653), 'Operating_CF_Growth': np.float64(-0.1347450049864164)}"
+WIPRO LTD,2020,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(9722.3), 'Dividend Amount': np.float64(571.35), 'Reserves': np.float64(54179.0)}"
+WIPRO LTD,2020,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+WIPRO LTD,2020,LED-001,Accounting equation,integrity,Critical,skipped,"Unavailable metrics: ['Total Assets', 'Total Liabilities']",
+WIPRO LTD,2020,RAT-005,Debt-to-equity ratio,ratio,High,pass,Validation passed,{'Debt_Equity_Ratio': np.float64(0.1757718942114938)}
+WIPRO LTD,2020,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+WIPRO LTD,2020,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+WIPRO LTD,2020,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+WIPRO LTD,2020,RAT-010,Gross profit margin trend,trend,Medium,pass,Validation passed,{'gross_margin': np.float64(0.9846902724346392)}
+WIPRO LTD,2020,RAT-011,Net profit margin trend,trend,Medium,pass,Validation passed,{'Profit_Margin': np.float64(0.1590232524665672)}
+WIPRO LTD,2020,RAT-012,Operating margin trend,trend,Medium,fail,Validation triggered,{'Operating_Margin': np.float64(0.0)}
+WIPRO LTD,2020,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+WIPRO LTD,2020,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.1757411648593589), 'robust_z': None}"
+WIPRO LTD,2020,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+WIPRO LTD,2020,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(327.81554959785524), 'robust_z': None}"
+WIPRO LTD,2020,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(5.851944024350556), 'robust_z': None}"
+WIPRO LTD,2020,RAT-020,Days sales outstanding trend,trend,Medium,pass,Validation passed,{'dso': np.float64(62.37243529350187)}
+WIPRO LTD,2020,RAT-022,Days inventory outstanding trend,trend,Medium,pass,Validation passed,{'dio': np.float64(1.1134310146292952)}
+WIPRO LTD,2020,RAT-024,Revenue growth rate,trend,Medium,pass,Validation passed,{'Revenue_Growth': np.float64(0.0358986697481653)}
+WIPRO LTD,2020,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(0.0358986697481653), 'robust_z': None}"
+WIPRO LTD,2020,TR-002,Year-over-year expense variance,trend,Medium,skipped,Unavailable metrics: ['Total Expenses'],
+WIPRO LTD,2020,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(3397.431656903983), 'robust_z': None}"
+WIPRO LTD,2020,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+WIPRO LTD,2020,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.1590232524665672), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
+WIPRO LTD,2021,BS-001,Balance sheet equation,integrity,Critical,skipped,"Unavailable metrics: ['Total Assets', 'Total Liabilities']",
+WIPRO LTD,2021,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(1095.8), 'Reserves': np.float64(53805.2)}"
+WIPRO LTD,2021,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(16979.3), 'Net Cash Flow': np.float64(2555.9)}"
+WIPRO LTD,2021,CF-004,Financing activity plausibility,cross_statement,High,pass,Validation passed,"{'Borrowings': np.float64(10451.4), 'Dividend Amount': np.float64(547.9), 'Cash from Financing Activity': np.float64(-12884.0)}"
+WIPRO LTD,2021,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(10796.4), 'Depreciation': np.float64(2763.4), 'Cash from Operating Activity': np.float64(14755.0)}"
+WIPRO LTD,2021,CF-008,Sustained negative operating cash flow,trend,High,pass,Validation passed,{'Cash from Operating Activity': np.float64(14755.0)}
+WIPRO LTD,2021,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+WIPRO LTD,2021,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(547.9), 'Reserves': np.float64(53805.2)}"
+WIPRO LTD,2021,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'WIPRO LTD', 'Year': np.int64(2021)}"
+WIPRO LTD,2021,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+WIPRO LTD,2021,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(16979.3), 'Inventory': np.float64(106.4)}"
+WIPRO LTD,2021,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+WIPRO LTD,2021,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(61934.9), 'robust_z': None}"
+WIPRO LTD,2021,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2021), 'Report Date': '2021-03-31'}"
+WIPRO LTD,2021,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(0.9887672378578152), 'robust_z': None}"
+WIPRO LTD,2021,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(508.8), 'Borrowings': np.float64(10451.4)}"
+WIPRO LTD,2021,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.2182925864388005), 'robust_z': None}"
+WIPRO LTD,2021,IS-010,Unusual expense spike detection,trend,High,skipped,Unavailable metrics: ['Total Expenses'],
+WIPRO LTD,2021,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,pass,Validation passed,"{'Revenue_Growth': np.float64(0.0130410745596818), 'Operating_CF_Growth': np.float64(0.466073149647765)}"
+WIPRO LTD,2021,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(10796.4), 'Dividend Amount': np.float64(547.9), 'Reserves': np.float64(53805.2)}"
+WIPRO LTD,2021,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+WIPRO LTD,2021,LED-001,Accounting equation,integrity,Critical,skipped,"Unavailable metrics: ['Total Assets', 'Total Liabilities']",
+WIPRO LTD,2021,RAT-005,Debt-to-equity ratio,ratio,High,pass,Validation passed,{'Debt_Equity_Ratio': np.float64(0.1903681171563359)}
+WIPRO LTD,2021,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+WIPRO LTD,2021,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+WIPRO LTD,2021,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+WIPRO LTD,2021,RAT-010,Gross profit margin trend,trend,Medium,pass,Validation passed,{'gross_margin': np.float64(0.9887672378578152)}
+WIPRO LTD,2021,RAT-011,Net profit margin trend,trend,Medium,pass,Validation passed,{'Profit_Margin': np.float64(0.1743185183151986)}
+WIPRO LTD,2021,RAT-012,Operating margin trend,trend,Medium,fail,Validation triggered,{'Operating_Margin': np.float64(0.0)}
+WIPRO LTD,2021,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+WIPRO LTD,2021,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.196652155698439), 'robust_z': None}"
+WIPRO LTD,2021,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+WIPRO LTD,2021,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(582.0949248120301), 'robust_z': None}"
+WIPRO LTD,2021,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(6.567997200364801), 'robust_z': None}"
+WIPRO LTD,2021,RAT-020,Days sales outstanding trend,trend,Medium,pass,Validation passed,{'dso': np.float64(55.57249628238682)}
+WIPRO LTD,2021,RAT-022,Days inventory outstanding trend,trend,Medium,pass,Validation passed,{'dio': np.float64(0.6270454945434643)}
+WIPRO LTD,2021,RAT-024,Revenue growth rate,trend,Medium,pass,Validation passed,{'Revenue_Growth': np.float64(0.0130410745596818)}
+WIPRO LTD,2021,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(0.0130410745596818), 'robust_z': None}"
+WIPRO LTD,2021,TR-002,Year-over-year expense variance,trend,Medium,skipped,Unavailable metrics: ['Total Expenses'],
+WIPRO LTD,2021,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(1507.0740404284525), 'robust_z': None}"
+WIPRO LTD,2021,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+WIPRO LTD,2021,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.1743185183151986), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
+WIPRO LTD,2022,BS-001,Balance sheet equation,integrity,Critical,skipped,"Unavailable metrics: ['Total Assets', 'Total Liabilities']",
+WIPRO LTD,2022,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(1096.4), 'Reserves': np.float64(64306.6)}"
+WIPRO LTD,2022,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(10383.6), 'Net Cash Flow': np.float64(-6583.0)}"
+WIPRO LTD,2022,CF-004,Financing activity plausibility,cross_statement,High,pass,Validation passed,"{'Borrowings': np.float64(17592.9), 'Dividend Amount': np.float64(3289.2), 'Cash from Financing Activity': np.float64(4658.6)}"
+WIPRO LTD,2022,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(12229.6), 'Depreciation': np.float64(3077.8), 'Cash from Operating Activity': np.float64(11079.7)}"
+WIPRO LTD,2022,CF-008,Sustained negative operating cash flow,trend,High,pass,Validation passed,{'Cash from Operating Activity': np.float64(11079.7)}
+WIPRO LTD,2022,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+WIPRO LTD,2022,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(3289.2), 'Reserves': np.float64(64306.6)}"
+WIPRO LTD,2022,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'WIPRO LTD', 'Year': np.int64(2022)}"
+WIPRO LTD,2022,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+WIPRO LTD,2022,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(10383.6), 'Inventory': np.float64(133.4)}"
+WIPRO LTD,2022,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+WIPRO LTD,2022,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(79312.0), 'robust_z': None}"
+WIPRO LTD,2022,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2022), 'Report Date': '2022-03-31'}"
+WIPRO LTD,2022,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(0.9915082206980028), 'robust_z': None}"
+WIPRO LTD,2022,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(532.5), 'Borrowings': np.float64(17592.9)}"
+WIPRO LTD,2022,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.1913637324315756), 'robust_z': None}"
+WIPRO LTD,2022,IS-010,Unusual expense spike detection,trend,High,skipped,Unavailable metrics: ['Total Expenses'],
+WIPRO LTD,2022,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,fail,Validation triggered,"{'Revenue_Growth': np.float64(0.2805704053772591), 'Operating_CF_Growth': np.float64(-0.2490884445950525)}"
+WIPRO LTD,2022,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(12229.6), 'Dividend Amount': np.float64(3289.2), 'Reserves': np.float64(64306.6)}"
+WIPRO LTD,2022,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+WIPRO LTD,2022,LED-001,Accounting equation,integrity,Critical,skipped,"Unavailable metrics: ['Total Assets', 'Total Liabilities']",
+WIPRO LTD,2022,RAT-005,Debt-to-equity ratio,ratio,High,pass,Validation passed,{'Debt_Equity_Ratio': np.float64(0.2689922480620155)}
+WIPRO LTD,2022,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+WIPRO LTD,2022,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+WIPRO LTD,2022,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+WIPRO LTD,2022,RAT-010,Gross profit margin trend,trend,Medium,pass,Validation passed,{'gross_margin': np.float64(0.9915082206980028)}
+WIPRO LTD,2022,RAT-011,Net profit margin trend,trend,Medium,pass,Validation passed,{'Profit_Margin': np.float64(0.1541960863425459)}
+WIPRO LTD,2022,RAT-012,Operating margin trend,trend,Medium,fail,Validation triggered,{'Operating_Margin': np.float64(0.0)}
+WIPRO LTD,2022,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+WIPRO LTD,2022,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.186988364448114), 'robust_z': None}"
+WIPRO LTD,2022,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+WIPRO LTD,2022,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(594.5427286356821), 'robust_z': None}"
+WIPRO LTD,2022,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(6.883586908409203), 'robust_z': None}"
+WIPRO LTD,2022,RAT-020,Days sales outstanding trend,trend,Medium,pass,Validation passed,{'dso': np.float64(53.02468100665725)}
+WIPRO LTD,2022,RAT-022,Days inventory outstanding trend,trend,Medium,pass,Validation passed,{'dio': np.float64(0.6139171878152109)}
+WIPRO LTD,2022,RAT-024,Revenue growth rate,trend,Medium,pass,Validation passed,{'Revenue_Growth': np.float64(0.2805704053772591)}
+WIPRO LTD,2022,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(0.2805704053772591), 'robust_z': None}"
+WIPRO LTD,2022,TR-002,Year-over-year expense variance,trend,Medium,skipped,Unavailable metrics: ['Total Expenses'],
+WIPRO LTD,2022,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(10270.573718639092), 'robust_z': None}"
+WIPRO LTD,2022,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+WIPRO LTD,2022,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.1541960863425459), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
+WIPRO LTD,2023,BS-001,Balance sheet equation,integrity,Critical,skipped,"Unavailable metrics: ['Total Assets', 'Total Liabilities']",
+WIPRO LTD,2023,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(1097.6), 'Reserves': np.float64(76570.3)}"
+WIPRO LTD,2023,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(9188.0), 'Net Cash Flow': np.float64(-1197.2)}"
+WIPRO LTD,2023,CF-004,Financing activity plausibility,cross_statement,High,pass,Validation passed,"{'Borrowings': np.float64(17466.6), 'Dividend Amount': np.float64(548.8), 'Cash from Financing Activity': np.float64(-6088.1)}"
+WIPRO LTD,2023,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(11350.0), 'Depreciation': np.float64(3340.2), 'Cash from Operating Activity': np.float64(13060.1)}"
+WIPRO LTD,2023,CF-008,Sustained negative operating cash flow,trend,High,pass,Validation passed,{'Cash from Operating Activity': np.float64(13060.1)}
+WIPRO LTD,2023,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+WIPRO LTD,2023,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(548.8), 'Reserves': np.float64(76570.3)}"
+WIPRO LTD,2023,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'WIPRO LTD', 'Year': np.int64(2023)}"
+WIPRO LTD,2023,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+WIPRO LTD,2023,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(9188.0), 'Inventory': np.float64(118.8)}"
+WIPRO LTD,2023,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+WIPRO LTD,2023,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(90487.6), 'robust_z': None}"
+WIPRO LTD,2023,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2023), 'Report Date': '2023-03-31'}"
+WIPRO LTD,2023,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(0.9928233260689864), 'robust_z': None}"
+WIPRO LTD,2023,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(1007.7), 'Borrowings': np.float64(17466.6)}"
+WIPRO LTD,2023,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.2302092010537935), 'robust_z': None}"
+WIPRO LTD,2023,IS-010,Unusual expense spike detection,trend,High,skipped,Unavailable metrics: ['Total Expenses'],
+WIPRO LTD,2023,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,pass,Validation passed,"{'Revenue_Growth': np.float64(0.1409067984668146), 'Operating_CF_Growth': np.float64(0.1787413016597923)}"
+WIPRO LTD,2023,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(11350.0), 'Dividend Amount': np.float64(548.8), 'Reserves': np.float64(76570.3)}"
+WIPRO LTD,2023,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+WIPRO LTD,2023,LED-001,Accounting equation,integrity,Critical,skipped,"Unavailable metrics: ['Total Assets', 'Total Liabilities']",
+WIPRO LTD,2023,RAT-005,Debt-to-equity ratio,ratio,High,pass,Validation passed,{'Debt_Equity_Ratio': np.float64(0.2248882743063736)}
+WIPRO LTD,2023,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+WIPRO LTD,2023,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+WIPRO LTD,2023,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+WIPRO LTD,2023,RAT-010,Gross profit margin trend,trend,Medium,pass,Validation passed,{'gross_margin': np.float64(0.9928233260689864)}
+WIPRO LTD,2023,RAT-011,Net profit margin trend,trend,Medium,fail,Validation triggered,{'Profit_Margin': np.float64(0.1254315508423253)}
+WIPRO LTD,2023,RAT-012,Operating margin trend,trend,Medium,fail,Validation triggered,{'Operating_Margin': np.float64(0.0)}
+WIPRO LTD,2023,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+WIPRO LTD,2023,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.1461350184567884), 'robust_z': None}"
+WIPRO LTD,2023,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+WIPRO LTD,2023,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(761.6801346801348), 'robust_z': None}"
+WIPRO LTD,2023,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(7.161662049861496), 'robust_z': None}"
+WIPRO LTD,2023,RAT-020,Days sales outstanding trend,trend,Medium,pass,Validation passed,{'dso': np.float64(50.965822941485904)}
+WIPRO LTD,2023,RAT-022,Days inventory outstanding trend,trend,Medium,pass,Validation passed,{'dio': np.float64(0.4792037804074812)}
+WIPRO LTD,2023,RAT-024,Revenue growth rate,trend,Medium,pass,Validation passed,{'Revenue_Growth': np.float64(0.1409067984668146)}
+WIPRO LTD,2023,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(0.1409067984668146), 'robust_z': None}"
+WIPRO LTD,2023,TR-002,Year-over-year expense variance,trend,Medium,skipped,Unavailable metrics: ['Total Expenses'],
+WIPRO LTD,2023,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(14388.156686780052), 'robust_z': None}"
+WIPRO LTD,2023,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+WIPRO LTD,2023,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.1254315508423253), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
+WIPRO LTD,2024,BS-001,Balance sheet equation,integrity,Critical,skipped,"Unavailable metrics: ['Total Assets', 'Total Liabilities']",
+WIPRO LTD,2024,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(1045.0), 'Reserves': np.float64(73488.0)}"
+WIPRO LTD,2024,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(9695.3), 'Net Cash Flow': np.float64(509.0)}"
+WIPRO LTD,2024,CF-004,Financing activity plausibility,cross_statement,High,pass,Validation passed,"{'Borrowings': np.float64(16464.9), 'Dividend Amount': np.float64(522.5), 'Cash from Financing Activity': np.float64(-18256.7)}"
+WIPRO LTD,2024,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(11045.2), 'Depreciation': np.float64(3407.1), 'Cash from Operating Activity': np.float64(17621.6)}"
+WIPRO LTD,2024,CF-008,Sustained negative operating cash flow,trend,High,pass,Validation passed,{'Cash from Operating Activity': np.float64(17621.6)}
+WIPRO LTD,2024,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+WIPRO LTD,2024,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(522.5), 'Reserves': np.float64(73488.0)}"
+WIPRO LTD,2024,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'WIPRO LTD', 'Year': np.int64(2024)}"
+WIPRO LTD,2024,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+WIPRO LTD,2024,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(9695.3), 'Inventory': np.float64(90.7)}"
+WIPRO LTD,2024,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+WIPRO LTD,2024,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(89760.3), 'robust_z': None}"
+WIPRO LTD,2024,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2024), 'Report Date': '2024-03-31'}"
+WIPRO LTD,2024,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(0.995730852058204), 'robust_z': None}"
+WIPRO LTD,2024,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(1255.2), 'Borrowings': np.float64(16464.9)}"
+WIPRO LTD,2024,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.2451531825283608), 'robust_z': None}"
+WIPRO LTD,2024,IS-010,Unusual expense spike detection,trend,High,skipped,Unavailable metrics: ['Total Expenses'],
+WIPRO LTD,2024,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,pass,Validation passed,"{'Revenue_Growth': np.float64(-0.0080375653680725), 'Operating_CF_Growth': np.float64(0.3492699137066331)}"
+WIPRO LTD,2024,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(11045.2), 'Dividend Amount': np.float64(522.5), 'Reserves': np.float64(73488.0)}"
+WIPRO LTD,2024,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+WIPRO LTD,2024,LED-001,Accounting equation,integrity,Critical,skipped,"Unavailable metrics: ['Total Assets', 'Total Liabilities']",
+WIPRO LTD,2024,RAT-005,Debt-to-equity ratio,ratio,High,pass,Validation passed,{'Debt_Equity_Ratio': np.float64(0.2209075174754806)}
+WIPRO LTD,2024,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+WIPRO LTD,2024,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+WIPRO LTD,2024,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+WIPRO LTD,2024,RAT-010,Gross profit margin trend,trend,Medium,pass,Validation passed,{'gross_margin': np.float64(0.995730852058204)}
+WIPRO LTD,2024,RAT-011,Net profit margin trend,trend,Medium,fail,Validation triggered,{'Profit_Margin': np.float64(0.1230521733995987)}
+WIPRO LTD,2024,RAT-012,Operating margin trend,trend,Medium,fail,Validation triggered,{'Operating_Margin': np.float64(0.0)}
+WIPRO LTD,2024,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+WIPRO LTD,2024,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.1481920759931842), 'robust_z': None}"
+WIPRO LTD,2024,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+WIPRO LTD,2024,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(989.6394707828003), 'robust_z': None}"
+WIPRO LTD,2024,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(7.773002416065537), 'robust_z': None}"
+WIPRO LTD,2024,RAT-020,Days sales outstanding trend,trend,Medium,pass,Validation passed,{'dso': np.float64(46.957402103156966)}
+WIPRO LTD,2024,RAT-022,Days inventory outstanding trend,trend,Medium,pass,Validation passed,{'dio': np.float64(0.3688211826386498)}
+WIPRO LTD,2024,RAT-024,Revenue growth rate,trend,Medium,fail,Validation triggered,{'Revenue_Growth': np.float64(-0.0080375653680725)}
+WIPRO LTD,2024,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(-0.0080375653680725), 'robust_z': None}"
+WIPRO LTD,2024,TR-002,Year-over-year expense variance,trend,Medium,skipped,Unavailable metrics: ['Total Expenses'],
+WIPRO LTD,2024,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(6252.865656907538), 'robust_z': None}"
+WIPRO LTD,2024,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+WIPRO LTD,2024,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.1230521733995987), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
+WIPRO LTD,2025,BS-001,Balance sheet equation,integrity,Critical,skipped,"Unavailable metrics: ['Total Assets', 'Total Liabilities']",
+WIPRO LTD,2025,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(2094.4), 'Reserves': np.float64(80269.7)}"
+WIPRO LTD,2025,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(12197.4), 'Net Cash Flow': np.float64(2502.3)}"
+WIPRO LTD,2025,CF-004,Financing activity plausibility,cross_statement,High,pass,Validation passed,"{'Borrowings': np.float64(19203.5), 'Dividend Amount': np.float64(6283.2), 'Cash from Financing Activity': np.float64(-6396.3)}"
+WIPRO LTD,2025,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(13135.4), 'Depreciation': np.float64(2957.9), 'Cash from Operating Activity': np.float64(16942.6)}"
+WIPRO LTD,2025,CF-008,Sustained negative operating cash flow,trend,High,pass,Validation passed,{'Cash from Operating Activity': np.float64(16942.6)}
+WIPRO LTD,2025,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+WIPRO LTD,2025,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(6283.2), 'Reserves': np.float64(80269.7)}"
+WIPRO LTD,2025,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'WIPRO LTD', 'Year': np.int64(2025)}"
+WIPRO LTD,2025,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+WIPRO LTD,2025,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(12197.4), 'Inventory': np.float64(69.4)}"
+WIPRO LTD,2025,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+WIPRO LTD,2025,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(89088.4), 'robust_z': None}"
+WIPRO LTD,2025,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2025), 'Report Date': '2025-03-31'}"
+WIPRO LTD,2025,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(0.9966696000826146), 'robust_z': None}"
+WIPRO LTD,2025,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(1477.0), 'Borrowings': np.float64(19203.5)}"
+WIPRO LTD,2025,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.2445000771618168), 'robust_z': None}"
+WIPRO LTD,2025,IS-010,Unusual expense spike detection,trend,High,skipped,Unavailable metrics: ['Total Expenses'],
+WIPRO LTD,2025,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,pass,Validation passed,"{'Revenue_Growth': np.float64(-0.0074854919156911), 'Operating_CF_Growth': np.float64(-0.0385322558677986)}"
+WIPRO LTD,2025,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(13135.4), 'Dividend Amount': np.float64(6283.2), 'Reserves': np.float64(80269.7)}"
+WIPRO LTD,2025,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+WIPRO LTD,2025,LED-001,Accounting equation,integrity,Critical,skipped,"Unavailable metrics: ['Total Assets', 'Total Liabilities']",
+WIPRO LTD,2025,RAT-005,Debt-to-equity ratio,ratio,High,pass,Validation passed,{'Debt_Equity_Ratio': np.float64(0.2331537648077257)}
+WIPRO LTD,2025,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+WIPRO LTD,2025,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+WIPRO LTD,2025,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+WIPRO LTD,2025,RAT-010,Gross profit margin trend,trend,Medium,pass,Validation passed,{'gross_margin': np.float64(0.9966696000826146)}
+WIPRO LTD,2025,RAT-011,Net profit margin trend,trend,Medium,pass,Validation passed,{'Profit_Margin': np.float64(0.1474423157223611)}
+WIPRO LTD,2025,RAT-012,Operating margin trend,trend,Medium,fail,Validation triggered,{'Operating_Margin': np.float64(0.0)}
+WIPRO LTD,2025,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+WIPRO LTD,2025,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.1594796762181581), 'robust_z': None}"
+WIPRO LTD,2025,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+WIPRO LTD,2025,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(1283.6945244956771), 'robust_z': None}"
+WIPRO LTD,2025,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(7.566215125907681), 'robust_z': None}"
+WIPRO LTD,2025,RAT-020,Days sales outstanding trend,trend,Medium,pass,Validation passed,{'dso': np.float64(48.24076422968647)}
+WIPRO LTD,2025,RAT-022,Days inventory outstanding trend,trend,Medium,pass,Validation passed,{'dio': np.float64(0.2843355588381877)}
+WIPRO LTD,2025,RAT-024,Revenue growth rate,trend,Medium,fail,Validation triggered,{'Revenue_Growth': np.float64(-0.0074854919156911)}
+WIPRO LTD,2025,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(-0.0074854919156911), 'robust_z': None}"
+WIPRO LTD,2025,TR-002,Year-over-year expense variance,trend,Medium,skipped,Unavailable metrics: ['Total Expenses'],
+WIPRO LTD,2025,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(699.7827686745561), 'robust_z': None}"
+WIPRO LTD,2025,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+WIPRO LTD,2025,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.1474423157223611), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
+WIPRO LTD,2026,BS-001,Balance sheet equation,integrity,Critical,skipped,"Unavailable metrics: ['Total Assets', 'Total Liabilities']",
+WIPRO LTD,2026,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(2097.7), 'Reserves': np.float64(85920.6)}"
+WIPRO LTD,2026,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,pass,Validation passed,"{'Cash & Bank': np.float64(10555.5), 'Net Cash Flow': np.float64(-1641.9)}"
+WIPRO LTD,2026,CF-004,Financing activity plausibility,cross_statement,High,pass,Validation passed,"{'Borrowings': np.float64(20291.0), 'Dividend Amount': np.float64(11537.35), 'Cash from Financing Activity': np.float64(-14126.0)}"
+WIPRO LTD,2026,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(13197.4), 'Depreciation': np.float64(2910.7), 'Cash from Operating Activity': np.float64(14931.6)}"
+WIPRO LTD,2026,CF-008,Sustained negative operating cash flow,trend,High,pass,Validation passed,{'Cash from Operating Activity': np.float64(14931.6)}
+WIPRO LTD,2026,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+WIPRO LTD,2026,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(11537.35), 'Reserves': np.float64(85920.6)}"
+WIPRO LTD,2026,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'WIPRO LTD', 'Year': np.int64(2026)}"
+WIPRO LTD,2026,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+WIPRO LTD,2026,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(10555.5), 'Inventory': np.float64(51.7)}"
+WIPRO LTD,2026,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+WIPRO LTD,2026,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(92624.0), 'robust_z': None}"
+WIPRO LTD,2026,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2026), 'Report Date': '2026-03-31'}"
+WIPRO LTD,2026,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(0.9937867075487996), 'robust_z': None}"
+WIPRO LTD,2026,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(1457.7), 'Borrowings': np.float64(20291.0)}"
+WIPRO LTD,2026,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.2350739813864446), 'robust_z': None}"
+WIPRO LTD,2026,IS-010,Unusual expense spike detection,trend,High,skipped,Unavailable metrics: ['Total Expenses'],
+WIPRO LTD,2026,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,fail,Validation triggered,"{'Revenue_Growth': np.float64(0.0396864238217322), 'Operating_CF_Growth': np.float64(-0.1186948874434855)}"
+WIPRO LTD,2026,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(13197.4), 'Dividend Amount': np.float64(11537.35), 'Reserves': np.float64(85920.6)}"
+WIPRO LTD,2026,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+WIPRO LTD,2026,LED-001,Accounting equation,integrity,Critical,skipped,"Unavailable metrics: ['Total Assets', 'Total Liabilities']",
+WIPRO LTD,2026,RAT-005,Debt-to-equity ratio,ratio,High,pass,Validation passed,{'Debt_Equity_Ratio': np.float64(0.23053160535934)}
+WIPRO LTD,2026,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+WIPRO LTD,2026,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+WIPRO LTD,2026,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+WIPRO LTD,2026,RAT-010,Gross profit margin trend,trend,Medium,pass,Validation passed,{'gross_margin': np.float64(0.9937867075487996)}
+WIPRO LTD,2026,RAT-011,Net profit margin trend,trend,Medium,pass,Validation passed,{'Profit_Margin': np.float64(0.142483589566419)}
+WIPRO LTD,2026,RAT-012,Operating margin trend,trend,Medium,fail,Validation triggered,{'Operating_Margin': np.float64(0.0)}
+WIPRO LTD,2026,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+WIPRO LTD,2026,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.1499392739918857), 'robust_z': None}"
+WIPRO LTD,2026,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+WIPRO LTD,2026,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(1791.5667311411992), 'robust_z': None}"
+WIPRO LTD,2026,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(6.815549554455081), 'robust_z': None}"
+WIPRO LTD,2026,RAT-020,Days sales outstanding trend,trend,Medium,fail,Validation triggered,{'dso': np.float64(53.55400868025566)}
+WIPRO LTD,2026,RAT-022,Days inventory outstanding trend,trend,Medium,pass,Validation passed,{'dio': np.float64(0.2037322940058732)}
+WIPRO LTD,2026,RAT-024,Revenue growth rate,trend,Medium,pass,Validation passed,{'Revenue_Growth': np.float64(0.0396864238217322)}
+WIPRO LTD,2026,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(0.0396864238217322), 'robust_z': None}"
+WIPRO LTD,2026,TR-002,Year-over-year expense variance,trend,Medium,skipped,Unavailable metrics: ['Total Expenses'],
+WIPRO LTD,2026,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(1877.617935044435), 'robust_z': None}"
+WIPRO LTD,2026,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+WIPRO LTD,2026,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.142483589566419), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"

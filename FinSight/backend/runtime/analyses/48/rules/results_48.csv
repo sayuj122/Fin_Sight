@@ -1,0 +1,12 @@
+Company,Year,Passed Rules,Failed Rules,Skipped Rules,Critical Failures,High Failures,Medium Failures,Low Failures,Obtained Score,Maximum Score,Risk Score,Risk Level
+ABB INDIA LTD,2016,18,3,21,2,1,0,0,37.7,256.0,14.73,Low
+ABB INDIA LTD,2017,24,6,12,4,1,1,0,70.7,256.0,27.62,Moderate
+ABB INDIA LTD,2018,28,8,6,4,2,2,0,84.8,256.0,33.13,Moderate
+ABB INDIA LTD,2019,30,6,6,4,1,1,0,70.7,256.0,27.62,Moderate
+ABB INDIA LTD,2020,27,9,6,4,1,4,0,85.7,256.0,33.48,Moderate
+ABB INDIA LTD,2021,29,5,8,2,1,2,0,45.7,256.0,17.85,Low
+ABB INDIA LTD,2022,29,7,6,4,1,2,0,75.7,256.0,29.57,Moderate
+ABB INDIA LTD,2023,30,6,6,4,1,1,0,70.7,256.0,27.62,Moderate
+ABB INDIA LTD,2024,29,7,6,4,2,1,0,79.8,256.0,31.17,Moderate
+ABB INDIA LTD,2025,29,7,6,4,2,1,0,79.8,256.0,31.17,Moderate
+ABB INDIA LTD,2026,10,0,32,0,0,0,0,0.0,256.0,0.0,Low

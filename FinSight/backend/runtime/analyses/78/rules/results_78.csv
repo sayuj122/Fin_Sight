@@ -1,0 +1,11 @@
+Company,Year,Passed Rules,Failed Rules,Skipped Rules,Critical Failures,High Failures,Medium Failures,Low Failures,Obtained Score,Maximum Score,Risk Score,Risk Level
+BLUE STAR LTD,2017,18,3,21,2,1,0,0,37.7,256.0,14.73,Low
+BLUE STAR LTD,2018,24,6,12,4,2,0,0,74.8,256.0,29.22,Moderate
+BLUE STAR LTD,2019,30,6,6,4,1,1,0,70.7,256.0,27.62,Moderate
+BLUE STAR LTD,2020,30,6,6,4,1,1,0,70.7,256.0,27.62,Moderate
+BLUE STAR LTD,2021,27,9,6,4,1,4,0,85.7,256.0,33.48,Moderate
+BLUE STAR LTD,2022,27,9,6,4,2,3,0,89.8,256.0,35.08,Moderate
+BLUE STAR LTD,2023,30,6,6,4,1,1,0,70.7,256.0,27.62,Moderate
+BLUE STAR LTD,2024,30,6,6,4,1,1,0,70.7,256.0,27.62,Moderate
+BLUE STAR LTD,2025,30,6,6,4,1,1,0,70.7,256.0,27.62,Moderate
+BLUE STAR LTD,2026,29,7,6,4,2,1,0,79.8,256.0,31.17,Moderate

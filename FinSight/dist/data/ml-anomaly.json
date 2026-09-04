@@ -1,0 +1,239 @@
+{
+  "company": "AARTI DRUGS LTD",
+  "totalYears": 10,
+  "years": [
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026"
+  ],
+  "defaultYear": "2026",
+  "byYear": {
+    "2017": {
+      "prediction": "Normal",
+      "decisionScore": 0.195976,
+      "anomalyScore": -0.195976,
+      "keyMetrics": {
+        "sales": 1195.17,
+        "netProfit": 81.8,
+        "totalAssets": 1191.04,
+        "totalLiabilities": 1191.04,
+        "equity": 400.14,
+        "borrowings": 479.5,
+        "cashFlowOps": 174.75,
+        "profitMargin": 0.0684,
+        "operatingMargin": 0.0963,
+        "roe": 0.2044,
+        "roa": 0.0687,
+        "debtToEquity": 1.1983,
+        "interestCoverage": 2.8281,
+        "currentRatio": 0.0035,
+        "assetUtilization": 2.0475
+      }
+    },
+    "2018": {
+      "prediction": "Normal",
+      "decisionScore": 0.195975,
+      "anomalyScore": -0.195975,
+      "keyMetrics": {
+        "sales": 1243.63,
+        "netProfit": 82.31,
+        "totalAssets": 1389.42,
+        "totalLiabilities": 1389.42,
+        "equity": 455.43,
+        "borrowings": 546.25,
+        "cashFlowOps": 69.77,
+        "profitMargin": 0.0662,
+        "operatingMargin": 0.0119,
+        "roe": 0.1807,
+        "roa": 0.0592,
+        "debtToEquity": 1.1994,
+        "interestCoverage": 3.1634,
+        "currentRatio": 0.0031,
+        "assetUtilization": 1.663
+      }
+    },
+    "2019": {
+      "prediction": "Normal",
+      "decisionScore": 0.195337,
+      "anomalyScore": -0.195337,
+      "keyMetrics": {
+        "sales": 1560.94,
+        "netProfit": 89.75,
+        "totalAssets": 1455.49,
+        "totalLiabilities": 1455.49,
+        "equity": 543.44,
+        "borrowings": 507.21,
+        "cashFlowOps": 143.09,
+        "profitMargin": 0.0575,
+        "operatingMargin": 0.1055,
+        "roe": 0.1652,
+        "roa": 0.0617,
+        "debtToEquity": 0.9333,
+        "interestCoverage": 2.9438,
+        "currentRatio": 0.0038,
+        "assetUtilization": 1.9873
+      }
+    },
+    "2020": {
+      "prediction": "Normal",
+      "decisionScore": 0.194545,
+      "anomalyScore": -0.194545,
+      "keyMetrics": {
+        "sales": 1806.09,
+        "netProfit": 141.4,
+        "totalAssets": 1576.5,
+        "totalLiabilities": 1576.5,
+        "equity": 652.49,
+        "borrowings": 388.64,
+        "cashFlowOps": 250.74,
+        "profitMargin": 0.0783,
+        "operatingMargin": 0.0458,
+        "roe": 0.2167,
+        "roa": 0.0897,
+        "debtToEquity": 0.5956,
+        "interestCoverage": 4.8227,
+        "currentRatio": 0.0048,
+        "assetUtilization": 1.991
+      }
+    },
+    "2021": {
+      "prediction": "Normal",
+      "decisionScore": 0.192789,
+      "anomalyScore": -0.192789,
+      "keyMetrics": {
+        "sales": 2154.78,
+        "netProfit": 280.41,
+        "totalAssets": 1766.01,
+        "totalLiabilities": 1766.01,
+        "equity": 913.4200000000001,
+        "borrowings": 350.76,
+        "cashFlowOps": 154.95,
+        "profitMargin": 0.1301,
+        "operatingMargin": 0.1604,
+        "roe": 0.307,
+        "roa": 0.1588,
+        "debtToEquity": 0.384,
+        "interestCoverage": 13.552,
+        "currentRatio": 0.0055,
+        "assetUtilization": 2.0251
+      }
+    },
+    "2022": {
+      "prediction": "Normal",
+      "decisionScore": 0.194698,
+      "anomalyScore": -0.194698,
+      "keyMetrics": {
+        "sales": 2488.65,
+        "netProfit": 205.04,
+        "totalAssets": 2207.96,
+        "totalLiabilities": 2207.96,
+        "equity": 1036.36,
+        "borrowings": 542.82,
+        "cashFlowOps": 70.41,
+        "profitMargin": 0.0824,
+        "operatingMargin": 0.0393,
+        "roe": 0.1978,
+        "roa": 0.0929,
+        "debtToEquity": 0.5238,
+        "interestCoverage": 10.837,
+        "currentRatio": 0.0101,
+        "assetUtilization": 1.7503
+      }
+    },
+    "2023": {
+      "prediction": "Normal",
+      "decisionScore": 0.195993,
+      "anomalyScore": -0.195993,
+      "keyMetrics": {
+        "sales": 2716.05,
+        "netProfit": 166.31,
+        "totalAssets": 2421.4,
+        "totalLiabilities": 2421.4,
+        "equity": 1192.4299999999998,
+        "borrowings": 608.91,
+        "cashFlowOps": 133.32,
+        "profitMargin": 0.0612,
+        "operatingMargin": 0.0813,
+        "roe": 0.1395,
+        "roa": 0.0687,
+        "debtToEquity": 0.5106,
+        "interestCoverage": 5.8781,
+        "currentRatio": 0.0037,
+        "assetUtilization": 1.7916
+      }
+    },
+    "2024": {
+      "prediction": "Normal",
+      "decisionScore": 0.194496,
+      "anomalyScore": -0.194496,
+      "keyMetrics": {
+        "sales": 2528.58,
+        "netProfit": 171.42,
+        "totalAssets": 2432.37,
+        "totalLiabilities": 2432.37,
+        "equity": 1281.55,
+        "borrowings": 564.28,
+        "cashFlowOps": 358.92,
+        "profitMargin": 0.0678,
+        "operatingMargin": 0.1133,
+        "roe": 0.1338,
+        "roa": 0.0705,
+        "debtToEquity": 0.4403,
+        "interestCoverage": 6.0563,
+        "currentRatio": 0.0039,
+        "assetUtilization": 1.8864
+      }
+    },
+    "2025": {
+      "prediction": "Normal",
+      "decisionScore": 0.194835,
+      "anomalyScore": -0.194835,
+      "keyMetrics": {
+        "sales": 2387.03,
+        "netProfit": 168.16,
+        "totalAssets": 2574.68,
+        "totalLiabilities": 2574.68,
+        "equity": 1369,
+        "borrowings": 615.08,
+        "cashFlowOps": 244.58,
+        "profitMargin": 0.0704,
+        "operatingMargin": 0.105,
+        "roe": 0.1228,
+        "roa": 0.0653,
+        "debtToEquity": 0.4493,
+        "interestCoverage": 5.289,
+        "currentRatio": 0.0029,
+        "assetUtilization": 1.7604
+      }
+    },
+    "2026": {
+      "prediction": "Normal",
+      "decisionScore": 0.196298,
+      "anomalyScore": -0.196298,
+      "keyMetrics": {
+        "sales": 2565.31,
+        "netProfit": 194.92,
+        "totalAssets": 2815.26,
+        "totalLiabilities": 2815.26,
+        "equity": 1548.86,
+        "borrowings": 576.64,
+        "cashFlowOps": 253.54,
+        "profitMargin": 0.076,
+        "operatingMargin": 0.0819,
+        "roe": 0.1258,
+        "roa": 0.0692,
+        "debtToEquity": 0.3723,
+        "interestCoverage": 6.0761,
+        "currentRatio": 0.0031,
+        "assetUtilization": 1.7243
+      }
+    }
+  }
+}

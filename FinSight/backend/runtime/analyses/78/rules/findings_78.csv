@@ -1,0 +1,421 @@
+Company,Year,Rule ID,Rule Description,Category,Severity,Status,Message,Observed
+BLUE STAR LTD,2017,BS-001,Balance sheet equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(4281.31), 'Total Liabilities': np.float64(2650.1800000000003), 'Equity Share Capital': np.float64(19.11), 'Reserves': np.float64(738.02)}"
+BLUE STAR LTD,2017,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(19.11), 'Reserves': np.float64(738.02)}"
+BLUE STAR LTD,2017,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,skipped,Unavailable prior-year Cash & Bank,"{'Cash & Bank': np.float64(96.57), 'Net Cash Flow': np.float64(24.91)}"
+BLUE STAR LTD,2017,CF-004,Financing activity plausibility,cross_statement,High,skipped,Unavailable prior-year Borrowings,"{'Borrowings': np.float64(221.12), 'Dividend Amount': np.float64(71.66), 'Cash from Financing Activity': np.float64(-203.05)}"
+BLUE STAR LTD,2017,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(123.05), 'Depreciation': np.float64(60.58), 'Cash from Operating Activity': np.float64(158.52)}"
+BLUE STAR LTD,2017,CF-008,Sustained negative operating cash flow,trend,High,skipped,Insufficient history for Cash from Operating Activity,{'Cash from Operating Activity': np.float64(158.52)}
+BLUE STAR LTD,2017,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+BLUE STAR LTD,2017,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(71.66), 'Reserves': np.float64(738.02)}"
+BLUE STAR LTD,2017,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'BLUE STAR LTD', 'Year': np.int64(2017)}"
+BLUE STAR LTD,2017,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+BLUE STAR LTD,2017,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(96.57), 'Inventory': np.float64(595.58)}"
+BLUE STAR LTD,2017,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+BLUE STAR LTD,2017,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(4385.24), 'robust_z': None}"
+BLUE STAR LTD,2017,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2017), 'Report Date': '2017-03-31'}"
+BLUE STAR LTD,2017,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(0.4832209867646925), 'robust_z': None}"
+BLUE STAR LTD,2017,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(37.78), 'Borrowings': np.float64(221.12)}"
+BLUE STAR LTD,2017,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.2311668662926306), 'robust_z': None}"
+BLUE STAR LTD,2017,IS-010,Unusual expense spike detection,trend,High,skipped,Unavailable prior-year Total Expenses,{'Total Expenses': np.float64(0.0)}
+BLUE STAR LTD,2017,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,skipped,"Unavailable metric values: ['Revenue_Growth', 'Operating_CF_Growth']","{'Revenue_Growth': np.float64(nan), 'Operating_CF_Growth': np.float64(nan)}"
+BLUE STAR LTD,2017,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,skipped,Unavailable prior-year Reserves,"{'Net profit': np.float64(123.05), 'Dividend Amount': np.float64(71.66), 'Reserves': np.float64(738.02)}"
+BLUE STAR LTD,2017,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+BLUE STAR LTD,2017,LED-001,Accounting equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(4281.31), 'Total Liabilities': np.float64(2650.1800000000003), 'Equity Share Capital': np.float64(19.11), 'Reserves': np.float64(738.02)}"
+BLUE STAR LTD,2017,RAT-005,Debt-to-equity ratio,ratio,High,pass,Validation passed,{'Debt_Equity_Ratio': np.float64(0.2920502423626062)}
+BLUE STAR LTD,2017,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+BLUE STAR LTD,2017,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+BLUE STAR LTD,2017,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+BLUE STAR LTD,2017,RAT-010,Gross profit margin trend,trend,Medium,skipped,Insufficient history for gross_margin,{'gross_margin': np.float64(0.4832209867646925)}
+BLUE STAR LTD,2017,RAT-011,Net profit margin trend,trend,Medium,skipped,Insufficient history for Profit_Margin,{'Profit_Margin': np.float64(0.0280600377630414)}
+BLUE STAR LTD,2017,RAT-012,Operating margin trend,trend,Medium,skipped,Insufficient history for Operating_Margin,{'Operating_Margin': np.float64(0.0)}
+BLUE STAR LTD,2017,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+BLUE STAR LTD,2017,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.1625216277257538), 'robust_z': None}"
+BLUE STAR LTD,2017,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+BLUE STAR LTD,2017,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(7.362973907787366), 'robust_z': None}"
+BLUE STAR LTD,2017,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(4.670216618032333), 'robust_z': None}"
+BLUE STAR LTD,2017,RAT-020,Days sales outstanding trend,trend,Medium,skipped,Insufficient history for dso,{'dso': np.float64(78.15483303080333)}
+BLUE STAR LTD,2017,RAT-022,Days inventory outstanding trend,trend,Medium,skipped,Insufficient history for dio,{'dio': np.float64(49.57236091981283)}
+BLUE STAR LTD,2017,RAT-024,Revenue growth rate,trend,Medium,skipped,Unavailable metric values: ['Revenue_Growth'],{'Revenue_Growth': np.float64(nan)}
+BLUE STAR LTD,2017,TR-001,Year-over-year revenue variance,trend,Medium,skipped,Unavailable metric values: ['Revenue_Growth'],{'Revenue_Growth': np.float64(nan)}
+BLUE STAR LTD,2017,TR-002,Year-over-year expense variance,trend,Medium,skipped,Unavailable prior-year Total Expenses,{'Total Expenses': np.float64(0.0)}
+BLUE STAR LTD,2017,TR-003,Multi-year trend consistency,trend,Medium,skipped,Unavailable metric values: ['Revenue_Volatility'],{'Revenue_Volatility': np.float64(nan)}
+BLUE STAR LTD,2017,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+BLUE STAR LTD,2017,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.0280600377630414), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
+BLUE STAR LTD,2018,BS-001,Balance sheet equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(5284.6), 'Total Liabilities': np.float64(3236.22), 'Equity Share Capital': np.float64(19.2), 'Reserves': np.float64(773.53)}"
+BLUE STAR LTD,2018,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(19.2), 'Reserves': np.float64(773.53)}"
+BLUE STAR LTD,2018,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(80.88), 'Net Cash Flow': np.float64(-18.06)}"
+BLUE STAR LTD,2018,CF-004,Financing activity plausibility,cross_statement,High,pass,Validation passed,"{'Borrowings': np.float64(375.62), 'Dividend Amount': np.float64(96.0), 'Cash from Financing Activity': np.float64(51.39)}"
+BLUE STAR LTD,2018,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(143.96), 'Depreciation': np.float64(63.81), 'Cash from Operating Activity': np.float64(18.87)}"
+BLUE STAR LTD,2018,CF-008,Sustained negative operating cash flow,trend,High,skipped,Insufficient history for Cash from Operating Activity,{'Cash from Operating Activity': np.float64(18.87)}
+BLUE STAR LTD,2018,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+BLUE STAR LTD,2018,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(96.0), 'Reserves': np.float64(773.53)}"
+BLUE STAR LTD,2018,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'BLUE STAR LTD', 'Year': np.int64(2018)}"
+BLUE STAR LTD,2018,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+BLUE STAR LTD,2018,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(80.88), 'Inventory': np.float64(1017.08)}"
+BLUE STAR LTD,2018,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+BLUE STAR LTD,2018,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(4638.95), 'robust_z': None}"
+BLUE STAR LTD,2018,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2018), 'Report Date': '2018-03-31'}"
+BLUE STAR LTD,2018,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(0.4237963332219575), 'robust_z': None}"
+BLUE STAR LTD,2018,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(28.74), 'Borrowings': np.float64(375.62)}"
+BLUE STAR LTD,2018,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.2526972439535716), 'robust_z': None}"
+BLUE STAR LTD,2018,IS-010,Unusual expense spike detection,trend,High,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+BLUE STAR LTD,2018,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,fail,Validation triggered,"{'Revenue_Growth': np.float64(0.0578554423475112), 'Operating_CF_Growth': np.float64(-0.8809613928841786)}"
+BLUE STAR LTD,2018,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(143.96), 'Dividend Amount': np.float64(96.0), 'Reserves': np.float64(773.53)}"
+BLUE STAR LTD,2018,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+BLUE STAR LTD,2018,LED-001,Accounting equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(5284.6), 'Total Liabilities': np.float64(3236.22), 'Equity Share Capital': np.float64(19.2), 'Reserves': np.float64(773.53)}"
+BLUE STAR LTD,2018,RAT-005,Debt-to-equity ratio,ratio,High,pass,Validation passed,{'Debt_Equity_Ratio': np.float64(0.4738309386550275)}
+BLUE STAR LTD,2018,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+BLUE STAR LTD,2018,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+BLUE STAR LTD,2018,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+BLUE STAR LTD,2018,RAT-010,Gross profit margin trend,trend,Medium,skipped,Insufficient history for gross_margin,{'gross_margin': np.float64(0.4237963332219575)}
+BLUE STAR LTD,2018,RAT-011,Net profit margin trend,trend,Medium,skipped,Insufficient history for Profit_Margin,{'Profit_Margin': np.float64(0.0310328845967298)}
+BLUE STAR LTD,2018,RAT-012,Operating margin trend,trend,Medium,skipped,Insufficient history for Operating_Margin,{'Operating_Margin': np.float64(0.0)}
+BLUE STAR LTD,2018,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+BLUE STAR LTD,2018,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.1816002926595436), 'robust_z': None}"
+BLUE STAR LTD,2018,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+BLUE STAR LTD,2018,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(4.561047311912533), 'robust_z': None}"
+BLUE STAR LTD,2018,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(4.88094737063614), 'robust_z': None}"
+BLUE STAR LTD,2018,RAT-020,Days sales outstanding trend,trend,Medium,skipped,Insufficient history for dso,{'dso': np.float64(74.7805645674129)}
+BLUE STAR LTD,2018,RAT-022,Days inventory outstanding trend,trend,Medium,skipped,Insufficient history for dio,{'dio': np.float64(80.02547990385756)}
+BLUE STAR LTD,2018,RAT-024,Revenue growth rate,trend,Medium,pass,Validation passed,{'Revenue_Growth': np.float64(0.0578554423475112)}
+BLUE STAR LTD,2018,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(0.0578554423475112), 'robust_z': None}"
+BLUE STAR LTD,2018,TR-002,Year-over-year expense variance,trend,Medium,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+BLUE STAR LTD,2018,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(179.40006145483932), 'robust_z': None}"
+BLUE STAR LTD,2018,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+BLUE STAR LTD,2018,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.0310328845967298), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
+BLUE STAR LTD,2019,BS-001,Balance sheet equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(5433.27), 'Total Liabilities': np.float64(3350.96), 'Equity Share Capital': np.float64(19.26), 'Reserves': np.float64(853.8)}"
+BLUE STAR LTD,2019,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(19.26), 'Reserves': np.float64(853.8)}"
+BLUE STAR LTD,2019,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(100.94), 'Net Cash Flow': np.float64(12.75)}"
+BLUE STAR LTD,2019,CF-004,Financing activity plausibility,cross_statement,High,pass,Validation passed,"{'Borrowings': np.float64(347.56), 'Dividend Amount': np.float64(96.3), 'Cash from Financing Activity': np.float64(-180.79)}"
+BLUE STAR LTD,2019,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(190.06), 'Depreciation': np.float64(74.9), 'Cash from Operating Activity': np.float64(258.41)}"
+BLUE STAR LTD,2019,CF-008,Sustained negative operating cash flow,trend,High,pass,Validation passed,{'Cash from Operating Activity': np.float64(258.41)}
+BLUE STAR LTD,2019,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+BLUE STAR LTD,2019,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(96.3), 'Reserves': np.float64(853.8)}"
+BLUE STAR LTD,2019,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'BLUE STAR LTD', 'Year': np.int64(2019)}"
+BLUE STAR LTD,2019,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+BLUE STAR LTD,2019,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(100.94), 'Inventory': np.float64(869.32)}"
+BLUE STAR LTD,2019,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+BLUE STAR LTD,2019,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(5234.84), 'robust_z': None}"
+BLUE STAR LTD,2019,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2019), 'Report Date': '2019-03-31'}"
+BLUE STAR LTD,2019,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(0.5244515591689526), 'robust_z': None}"
+BLUE STAR LTD,2019,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(47.87), 'Borrowings': np.float64(347.56)}"
+BLUE STAR LTD,2019,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.1671975790395795), 'robust_z': None}"
+BLUE STAR LTD,2019,IS-010,Unusual expense spike detection,trend,High,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+BLUE STAR LTD,2019,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,pass,Validation passed,"{'Revenue_Growth': np.float64(0.1284536371377145), 'Operating_CF_Growth': np.float64(12.694223635400109)}"
+BLUE STAR LTD,2019,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(190.06), 'Dividend Amount': np.float64(96.3), 'Reserves': np.float64(853.8)}"
+BLUE STAR LTD,2019,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+BLUE STAR LTD,2019,LED-001,Accounting equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(5433.27), 'Total Liabilities': np.float64(3350.96), 'Equity Share Capital': np.float64(19.26), 'Reserves': np.float64(853.8)}"
+BLUE STAR LTD,2019,RAT-005,Debt-to-equity ratio,ratio,High,pass,Validation passed,{'Debt_Equity_Ratio': np.float64(0.3980940599729686)}
+BLUE STAR LTD,2019,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+BLUE STAR LTD,2019,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+BLUE STAR LTD,2019,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+BLUE STAR LTD,2019,RAT-010,Gross profit margin trend,trend,Medium,pass,Validation passed,{'gross_margin': np.float64(0.5244515591689526)}
+BLUE STAR LTD,2019,RAT-011,Net profit margin trend,trend,Medium,pass,Validation passed,{'Profit_Margin': np.float64(0.0363067448097745)}
+BLUE STAR LTD,2019,RAT-012,Operating margin trend,trend,Medium,fail,Validation triggered,{'Operating_Margin': np.float64(0.0)}
+BLUE STAR LTD,2019,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+BLUE STAR LTD,2019,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.2176940874624882), 'robust_z': None}"
+BLUE STAR LTD,2019,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+BLUE STAR LTD,2019,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(6.021764137486771), 'robust_z': None}"
+BLUE STAR LTD,2019,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(4.707378265365766), 'robust_z': None}"
+BLUE STAR LTD,2019,RAT-020,Days sales outstanding trend,trend,Medium,pass,Validation passed,{'dso': np.float64(77.53785215976038)}
+BLUE STAR LTD,2019,RAT-022,Days inventory outstanding trend,trend,Medium,pass,Validation passed,{'dio': np.float64(60.6134666962123)}
+BLUE STAR LTD,2019,RAT-024,Revenue growth rate,trend,Medium,pass,Validation passed,{'Revenue_Growth': np.float64(0.1284536371377145)}
+BLUE STAR LTD,2019,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(0.1284536371377145), 'robust_z': None}"
+BLUE STAR LTD,2019,TR-002,Year-over-year expense variance,trend,Medium,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+BLUE STAR LTD,2019,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(436.13335426220334), 'robust_z': None}"
+BLUE STAR LTD,2019,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+BLUE STAR LTD,2019,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.0363067448097745), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
+BLUE STAR LTD,2020,BS-001,Balance sheet equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(5440.689999999999), 'Total Liabilities': np.float64(3439.26), 'Equity Share Capital': np.float64(19.26), 'Reserves': np.float64(763.11)}"
+BLUE STAR LTD,2020,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(19.26), 'Reserves': np.float64(763.11)}"
+BLUE STAR LTD,2020,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(293.94), 'Net Cash Flow': np.float64(202.29)}"
+BLUE STAR LTD,2020,CF-004,Financing activity plausibility,cross_statement,High,pass,Validation passed,"{'Borrowings': np.float64(520.16), 'Dividend Amount': np.float64(96.3), 'Cash from Financing Activity': np.float64(-166.9)}"
+BLUE STAR LTD,2020,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(143.25), 'Depreciation': np.float64(87.99), 'Cash from Operating Activity': np.float64(457.42)}"
+BLUE STAR LTD,2020,CF-008,Sustained negative operating cash flow,trend,High,pass,Validation passed,{'Cash from Operating Activity': np.float64(457.42)}
+BLUE STAR LTD,2020,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+BLUE STAR LTD,2020,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(96.3), 'Reserves': np.float64(763.11)}"
+BLUE STAR LTD,2020,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'BLUE STAR LTD', 'Year': np.int64(2020)}"
+BLUE STAR LTD,2020,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+BLUE STAR LTD,2020,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(293.94), 'Inventory': np.float64(869.82)}"
+BLUE STAR LTD,2020,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+BLUE STAR LTD,2020,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(5360.19), 'robust_z': None}"
+BLUE STAR LTD,2020,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2020), 'Report Date': '2020-03-31'}"
+BLUE STAR LTD,2020,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(0.4877457702059068), 'robust_z': None}"
+BLUE STAR LTD,2020,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(29.47), 'Borrowings': np.float64(520.16)}"
+BLUE STAR LTD,2020,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.3171027719792222), 'robust_z': None}"
+BLUE STAR LTD,2020,IS-010,Unusual expense spike detection,trend,High,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+BLUE STAR LTD,2020,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,pass,Validation passed,"{'Revenue_Growth': np.float64(0.0239453354830327), 'Operating_CF_Growth': np.float64(0.7701327348012847)}"
+BLUE STAR LTD,2020,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(143.25), 'Dividend Amount': np.float64(96.3), 'Reserves': np.float64(763.11)}"
+BLUE STAR LTD,2020,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+BLUE STAR LTD,2020,LED-001,Accounting equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(5440.689999999999), 'Total Liabilities': np.float64(3439.26), 'Equity Share Capital': np.float64(19.26), 'Reserves': np.float64(763.11)}"
+BLUE STAR LTD,2020,RAT-005,Debt-to-equity ratio,ratio,High,pass,Validation passed,{'Debt_Equity_Ratio': np.float64(0.6648516686478264)}
+BLUE STAR LTD,2020,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+BLUE STAR LTD,2020,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+BLUE STAR LTD,2020,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+BLUE STAR LTD,2020,RAT-010,Gross profit margin trend,trend,Medium,pass,Validation passed,{'gross_margin': np.float64(0.4877457702059068)}
+BLUE STAR LTD,2020,RAT-011,Net profit margin trend,trend,Medium,pass,Validation passed,{'Profit_Margin': np.float64(0.0267247989343661)}
+BLUE STAR LTD,2020,RAT-012,Operating margin trend,trend,Medium,fail,Validation triggered,{'Operating_Margin': np.float64(0.0)}
+BLUE STAR LTD,2020,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+BLUE STAR LTD,2020,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.183097511407646), 'robust_z': None}"
+BLUE STAR LTD,2020,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+BLUE STAR LTD,2020,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(6.162412913016485), 'robust_z': None}"
+BLUE STAR LTD,2020,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(6.3989279787983335), 'robust_z': None}"
+BLUE STAR LTD,2020,RAT-020,Days sales outstanding trend,trend,Medium,pass,Validation passed,{'dso': np.float64(57.04080452372024)}
+BLUE STAR LTD,2020,RAT-022,Days inventory outstanding trend,trend,Medium,pass,Validation passed,{'dio': np.float64(59.23004594986372)}
+BLUE STAR LTD,2020,RAT-024,Revenue growth rate,trend,Medium,pass,Validation passed,{'Revenue_Growth': np.float64(0.0239453354830327)}
+BLUE STAR LTD,2020,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(0.0239453354830327), 'robust_z': None}"
+BLUE STAR LTD,2020,TR-002,Year-over-year expense variance,trend,Medium,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+BLUE STAR LTD,2020,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(385.35365838841415), 'robust_z': None}"
+BLUE STAR LTD,2020,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+BLUE STAR LTD,2020,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.0267247989343661), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
+BLUE STAR LTD,2021,BS-001,Balance sheet equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(5575.01), 'Total Liabilities': np.float64(3549.45), 'Equity Share Capital': np.float64(19.26), 'Reserves': np.float64(865.92)}"
+BLUE STAR LTD,2021,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(19.26), 'Reserves': np.float64(865.92)}"
+BLUE STAR LTD,2021,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(332.16), 'Net Cash Flow': np.float64(41.78)}"
+BLUE STAR LTD,2021,CF-004,Financing activity plausibility,cross_statement,High,pass,Validation passed,"{'Borrowings': np.float64(510.13), 'Dividend Amount': np.float64(38.52), 'Cash from Financing Activity': np.float64(-69.57)}"
+BLUE STAR LTD,2021,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(100.35), 'Depreciation': np.float64(92.29), 'Cash from Operating Activity': np.float64(349.81)}"
+BLUE STAR LTD,2021,CF-008,Sustained negative operating cash flow,trend,High,pass,Validation passed,{'Cash from Operating Activity': np.float64(349.81)}
+BLUE STAR LTD,2021,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+BLUE STAR LTD,2021,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(38.52), 'Reserves': np.float64(865.92)}"
+BLUE STAR LTD,2021,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'BLUE STAR LTD', 'Year': np.int64(2021)}"
+BLUE STAR LTD,2021,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+BLUE STAR LTD,2021,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(332.16), 'Inventory': np.float64(882.42)}"
+BLUE STAR LTD,2021,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+BLUE STAR LTD,2021,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(4263.59), 'robust_z': None}"
+BLUE STAR LTD,2021,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2021), 'Report Date': '2021-03-31'}"
+BLUE STAR LTD,2021,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(0.4784395310055611), 'robust_z': None}"
+BLUE STAR LTD,2021,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(64.72), 'Borrowings': np.float64(510.13)}"
+BLUE STAR LTD,2021,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.3244230106786083), 'robust_z': None}"
+BLUE STAR LTD,2021,IS-010,Unusual expense spike detection,trend,High,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+BLUE STAR LTD,2021,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,pass,Validation passed,"{'Revenue_Growth': np.float64(-0.2045823002542819), 'Operating_CF_Growth': np.float64(-0.2352542521096585)}"
+BLUE STAR LTD,2021,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(100.35), 'Dividend Amount': np.float64(38.52), 'Reserves': np.float64(865.92)}"
+BLUE STAR LTD,2021,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+BLUE STAR LTD,2021,LED-001,Accounting equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(5575.01), 'Total Liabilities': np.float64(3549.45), 'Equity Share Capital': np.float64(19.26), 'Reserves': np.float64(865.92)}"
+BLUE STAR LTD,2021,RAT-005,Debt-to-equity ratio,ratio,High,pass,Validation passed,{'Debt_Equity_Ratio': np.float64(0.5763008653607177)}
+BLUE STAR LTD,2021,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+BLUE STAR LTD,2021,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+BLUE STAR LTD,2021,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+BLUE STAR LTD,2021,RAT-010,Gross profit margin trend,trend,Medium,fail,Validation triggered,{'gross_margin': np.float64(0.4784395310055611)}
+BLUE STAR LTD,2021,RAT-011,Net profit margin trend,trend,Medium,fail,Validation triggered,{'Profit_Margin': np.float64(0.0235365032754087)}
+BLUE STAR LTD,2021,RAT-012,Operating margin trend,trend,Medium,fail,Validation triggered,{'Operating_Margin': np.float64(0.0)}
+BLUE STAR LTD,2021,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+BLUE STAR LTD,2021,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.1133667728597573), 'robust_z': None}"
+BLUE STAR LTD,2021,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+BLUE STAR LTD,2021,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(4.831701457355908), 'robust_z': None}"
+BLUE STAR LTD,2021,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(5.257330637007078), 'robust_z': None}"
+BLUE STAR LTD,2021,RAT-020,Days sales outstanding trend,trend,Medium,pass,Validation passed,{'dso': np.float64(69.42686796807385)}
+BLUE STAR LTD,2021,RAT-022,Days inventory outstanding trend,trend,Medium,pass,Validation passed,{'dio': np.float64(75.54274684010423)}
+BLUE STAR LTD,2021,RAT-024,Revenue growth rate,trend,Medium,fail,Validation triggered,{'Revenue_Growth': np.float64(-0.2045823002542819)}
+BLUE STAR LTD,2021,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(-0.2045823002542819), 'robust_z': None}"
+BLUE STAR LTD,2021,TR-002,Year-over-year expense variance,trend,Medium,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+BLUE STAR LTD,2021,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(600.2181193810579), 'robust_z': None}"
+BLUE STAR LTD,2021,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+BLUE STAR LTD,2021,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.0235365032754087), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
+BLUE STAR LTD,2022,BS-001,Balance sheet equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(6916.28), 'Total Liabilities': np.float64(4312.64), 'Equity Share Capital': np.float64(19.26), 'Reserves': np.float64(998.32)}"
+BLUE STAR LTD,2022,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(19.26), 'Reserves': np.float64(998.32)}"
+BLUE STAR LTD,2022,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(269.66), 'Net Cash Flow': np.float64(-62.28)}"
+BLUE STAR LTD,2022,CF-004,Financing activity plausibility,cross_statement,High,pass,Validation passed,"{'Borrowings': np.float64(553.7), 'Dividend Amount': np.float64(96.3), 'Cash from Financing Activity': np.float64(-82.37)}"
+BLUE STAR LTD,2022,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(167.71), 'Depreciation': np.float64(85.98), 'Cash from Operating Activity': np.float64(87.4)}"
+BLUE STAR LTD,2022,CF-008,Sustained negative operating cash flow,trend,High,pass,Validation passed,{'Cash from Operating Activity': np.float64(87.4)}
+BLUE STAR LTD,2022,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+BLUE STAR LTD,2022,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(96.3), 'Reserves': np.float64(998.32)}"
+BLUE STAR LTD,2022,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'BLUE STAR LTD', 'Year': np.int64(2022)}"
+BLUE STAR LTD,2022,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+BLUE STAR LTD,2022,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(269.66), 'Inventory': np.float64(1144.24)}"
+BLUE STAR LTD,2022,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+BLUE STAR LTD,2022,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(6064.08), 'robust_z': None}"
+BLUE STAR LTD,2022,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2022), 'Report Date': '2022-03-31'}"
+BLUE STAR LTD,2022,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(0.4400222292581892), 'robust_z': None}"
+BLUE STAR LTD,2022,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(46.4), 'Borrowings': np.float64(553.7)}"
+BLUE STAR LTD,2022,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.3304105221203667), 'robust_z': None}"
+BLUE STAR LTD,2022,IS-010,Unusual expense spike detection,trend,High,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+BLUE STAR LTD,2022,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,fail,Validation triggered,"{'Revenue_Growth': np.float64(0.4222943575719053), 'Operating_CF_Growth': np.float64(-0.7501500814727995)}"
+BLUE STAR LTD,2022,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(167.71), 'Dividend Amount': np.float64(96.3), 'Reserves': np.float64(998.32)}"
+BLUE STAR LTD,2022,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+BLUE STAR LTD,2022,LED-001,Accounting equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(6916.28), 'Total Liabilities': np.float64(4312.64), 'Equity Share Capital': np.float64(19.26), 'Reserves': np.float64(998.32)}"
+BLUE STAR LTD,2022,RAT-005,Debt-to-equity ratio,ratio,High,pass,Validation passed,{'Debt_Equity_Ratio': np.float64(0.5441341221329036)}
+BLUE STAR LTD,2022,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+BLUE STAR LTD,2022,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+BLUE STAR LTD,2022,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+BLUE STAR LTD,2022,RAT-010,Gross profit margin trend,trend,Medium,fail,Validation triggered,{'gross_margin': np.float64(0.4400222292581892)}
+BLUE STAR LTD,2022,RAT-011,Net profit margin trend,trend,Medium,pass,Validation passed,{'Profit_Margin': np.float64(0.0276562974103244)}
+BLUE STAR LTD,2022,RAT-012,Operating margin trend,trend,Medium,fail,Validation triggered,{'Operating_Margin': np.float64(0.0)}
+BLUE STAR LTD,2022,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+BLUE STAR LTD,2022,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.1648125945871577), 'robust_z': None}"
+BLUE STAR LTD,2022,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+BLUE STAR LTD,2022,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(5.29965741452842), 'robust_z': None}"
+BLUE STAR LTD,2022,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(5.096979171919915), 'robust_z': None}"
+BLUE STAR LTD,2022,RAT-020,Days sales outstanding trend,trend,Medium,fail,Validation triggered,{'dso': np.float64(71.6110440495508)}
+BLUE STAR LTD,2022,RAT-022,Days inventory outstanding trend,trend,Medium,pass,Validation passed,{'dio': np.float64(68.87237635387396)}
+BLUE STAR LTD,2022,RAT-024,Revenue growth rate,trend,Medium,pass,Validation passed,{'Revenue_Growth': np.float64(0.4222943575719053)}
+BLUE STAR LTD,2022,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(0.4222943575719053), 'robust_z': None}"
+BLUE STAR LTD,2022,TR-002,Year-over-year expense variance,trend,Medium,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+BLUE STAR LTD,2022,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(907.3548490162684), 'robust_z': None}"
+BLUE STAR LTD,2022,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+BLUE STAR LTD,2022,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.0276562974103244), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
+BLUE STAR LTD,2023,BS-001,Balance sheet equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(8672.74), 'Total Liabilities': np.float64(5447.24), 'Equity Share Capital': np.float64(19.26), 'Reserves': np.float64(1311.39)}"
+BLUE STAR LTD,2023,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(19.26), 'Reserves': np.float64(1311.39)}"
+BLUE STAR LTD,2023,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(243.29), 'Net Cash Flow': np.float64(-11.16)}"
+BLUE STAR LTD,2023,CF-004,Financing activity plausibility,cross_statement,High,pass,Validation passed,"{'Borrowings': np.float64(661.95), 'Dividend Amount': np.float64(115.56), 'Cash from Financing Activity': np.float64(-75.94)}"
+BLUE STAR LTD,2023,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(400.46), 'Depreciation': np.float64(84.78), 'Cash from Operating Activity': np.float64(243.23)}"
+BLUE STAR LTD,2023,CF-008,Sustained negative operating cash flow,trend,High,pass,Validation passed,{'Cash from Operating Activity': np.float64(243.23)}
+BLUE STAR LTD,2023,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+BLUE STAR LTD,2023,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(115.56), 'Reserves': np.float64(1311.39)}"
+BLUE STAR LTD,2023,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'BLUE STAR LTD', 'Year': np.int64(2023)}"
+BLUE STAR LTD,2023,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+BLUE STAR LTD,2023,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(243.29), 'Inventory': np.float64(1433.39)}"
+BLUE STAR LTD,2023,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+BLUE STAR LTD,2023,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(7977.32), 'robust_z': None}"
+BLUE STAR LTD,2023,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2023), 'Report Date': '2023-03-31'}"
+BLUE STAR LTD,2023,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(0.4623294540020959), 'robust_z': None}"
+BLUE STAR LTD,2023,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(54.7), 'Borrowings': np.float64(661.95)}"
+BLUE STAR LTD,2023,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.2785300154848932), 'robust_z': None}"
+BLUE STAR LTD,2023,IS-010,Unusual expense spike detection,trend,High,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+BLUE STAR LTD,2023,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,pass,Validation passed,"{'Revenue_Growth': np.float64(0.3155037532486378), 'Operating_CF_Growth': np.float64(1.7829519450800912)}"
+BLUE STAR LTD,2023,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(400.46), 'Dividend Amount': np.float64(115.56), 'Reserves': np.float64(1311.39)}"
+BLUE STAR LTD,2023,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+BLUE STAR LTD,2023,LED-001,Accounting equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(8672.74), 'Total Liabilities': np.float64(5447.24), 'Equity Share Capital': np.float64(19.26), 'Reserves': np.float64(1311.39)}"
+BLUE STAR LTD,2023,RAT-005,Debt-to-equity ratio,ratio,High,pass,Validation passed,{'Debt_Equity_Ratio': np.float64(0.4974636455867433)}
+BLUE STAR LTD,2023,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+BLUE STAR LTD,2023,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+BLUE STAR LTD,2023,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+BLUE STAR LTD,2023,RAT-010,Gross profit margin trend,trend,Medium,pass,Validation passed,{'gross_margin': np.float64(0.4623294540020959)}
+BLUE STAR LTD,2023,RAT-011,Net profit margin trend,trend,Medium,pass,Validation passed,{'Profit_Margin': np.float64(0.05019981647972)}
+BLUE STAR LTD,2023,RAT-012,Operating margin trend,trend,Medium,fail,Validation triggered,{'Operating_Margin': np.float64(0.0)}
+BLUE STAR LTD,2023,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+BLUE STAR LTD,2023,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.3009506632097095), 'robust_z': None}"
+BLUE STAR LTD,2023,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+BLUE STAR LTD,2023,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(5.565352067476401), 'robust_z': None}"
+BLUE STAR LTD,2023,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(5.150579150579151), 'robust_z': None}"
+BLUE STAR LTD,2023,RAT-020,Days sales outstanding trend,trend,Medium,pass,Validation passed,{'dso': np.float64(70.86581709145428)}
+BLUE STAR LTD,2023,RAT-022,Days inventory outstanding trend,trend,Medium,pass,Validation passed,{'dio': np.float64(65.58435038333677)}
+BLUE STAR LTD,2023,RAT-024,Revenue growth rate,trend,Medium,pass,Validation passed,{'Revenue_Growth': np.float64(0.3155037532486378)}
+BLUE STAR LTD,2023,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(0.3155037532486378), 'robust_z': None}"
+BLUE STAR LTD,2023,TR-002,Year-over-year expense variance,trend,Medium,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+BLUE STAR LTD,2023,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(1857.150238519582), 'robust_z': None}"
+BLUE STAR LTD,2023,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+BLUE STAR LTD,2023,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.05019981647972), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
+BLUE STAR LTD,2024,BS-001,Balance sheet equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(10348.38), 'Total Liabilities': np.float64(6611.27), 'Equity Share Capital': np.float64(41.12), 'Reserves': np.float64(2568.96)}"
+BLUE STAR LTD,2024,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(41.12), 'Reserves': np.float64(2568.96)}"
+BLUE STAR LTD,2024,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(377.37), 'Net Cash Flow': np.float64(129.82)}"
+BLUE STAR LTD,2024,CF-004,Financing activity plausibility,cross_statement,High,pass,Validation passed,"{'Borrowings': np.float64(242.93), 'Dividend Amount': np.float64(143.92), 'Cash from Financing Activity': np.float64(364.83)}"
+BLUE STAR LTD,2024,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(414.95), 'Depreciation': np.float64(97.61), 'Cash from Operating Activity': np.float64(289.22)}"
+BLUE STAR LTD,2024,CF-008,Sustained negative operating cash flow,trend,High,pass,Validation passed,{'Cash from Operating Activity': np.float64(289.22)}
+BLUE STAR LTD,2024,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+BLUE STAR LTD,2024,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(143.92), 'Reserves': np.float64(2568.96)}"
+BLUE STAR LTD,2024,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'BLUE STAR LTD', 'Year': np.int64(2024)}"
+BLUE STAR LTD,2024,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+BLUE STAR LTD,2024,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(377.37), 'Inventory': np.float64(1407.18)}"
+BLUE STAR LTD,2024,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+BLUE STAR LTD,2024,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(9685.36), 'robust_z': None}"
+BLUE STAR LTD,2024,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2024), 'Report Date': '2024-03-31'}"
+BLUE STAR LTD,2024,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(0.5093501945203895), 'robust_z': None}"
+BLUE STAR LTD,2024,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(58.08), 'Borrowings': np.float64(242.93)}"
+BLUE STAR LTD,2024,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.2563895469882978), 'robust_z': None}"
+BLUE STAR LTD,2024,IS-010,Unusual expense spike detection,trend,High,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+BLUE STAR LTD,2024,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,pass,Validation passed,"{'Revenue_Growth': np.float64(0.2141120075413798), 'Operating_CF_Growth': np.float64(0.1890802943715825)}"
+BLUE STAR LTD,2024,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(414.95), 'Dividend Amount': np.float64(143.92), 'Reserves': np.float64(2568.96)}"
+BLUE STAR LTD,2024,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+BLUE STAR LTD,2024,LED-001,Accounting equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(10348.38), 'Total Liabilities': np.float64(6611.27), 'Equity Share Capital': np.float64(41.12), 'Reserves': np.float64(2568.96)}"
+BLUE STAR LTD,2024,RAT-005,Debt-to-equity ratio,ratio,High,pass,Validation passed,{'Debt_Equity_Ratio': np.float64(0.0930737755164592)}
+BLUE STAR LTD,2024,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+BLUE STAR LTD,2024,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+BLUE STAR LTD,2024,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+BLUE STAR LTD,2024,RAT-010,Gross profit margin trend,trend,Medium,pass,Validation passed,{'gross_margin': np.float64(0.5093501945203895)}
+BLUE STAR LTD,2024,RAT-011,Net profit margin trend,trend,Medium,pass,Validation passed,{'Profit_Margin': np.float64(0.0428430125467716)}
+BLUE STAR LTD,2024,RAT-012,Operating margin trend,trend,Medium,fail,Validation triggered,{'Operating_Margin': np.float64(0.0)}
+BLUE STAR LTD,2024,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+BLUE STAR LTD,2024,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.1589798013853981), 'robust_z': None}"
+BLUE STAR LTD,2024,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+BLUE STAR LTD,2024,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(6.8828152759419545), 'robust_z': None}"
+BLUE STAR LTD,2024,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(4.960339246937354), 'robust_z': None}"
+BLUE STAR LTD,2024,RAT-020,Days sales outstanding trend,trend,Medium,pass,Validation passed,{'dso': np.float64(73.58367680705724)}
+BLUE STAR LTD,2024,RAT-022,Days inventory outstanding trend,trend,Medium,pass,Validation passed,{'dio': np.float64(53.0306256040044)}
+BLUE STAR LTD,2024,RAT-024,Revenue growth rate,trend,Medium,pass,Validation passed,{'Revenue_Growth': np.float64(0.2141120075413798)}
+BLUE STAR LTD,2024,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(0.2141120075413798), 'robust_z': None}"
+BLUE STAR LTD,2024,TR-002,Year-over-year expense variance,trend,Medium,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+BLUE STAR LTD,2024,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(1811.6087131607692), 'robust_z': None}"
+BLUE STAR LTD,2024,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+BLUE STAR LTD,2024,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.0428430125467716), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
+BLUE STAR LTD,2025,BS-001,Balance sheet equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(12789.04), 'Total Liabilities': np.float64(8248.6), 'Equity Share Capital': np.float64(41.12), 'Reserves': np.float64(3023.9)}"
+BLUE STAR LTD,2025,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(41.12), 'Reserves': np.float64(3023.9)}"
+BLUE STAR LTD,2025,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(431.92), 'Net Cash Flow': np.float64(62.84)}"
+BLUE STAR LTD,2025,CF-004,Financing activity plausibility,cross_statement,High,pass,Validation passed,"{'Borrowings': np.float64(381.0), 'Dividend Amount': np.float64(185.04), 'Cash from Financing Activity': np.float64(-162.18)}"
+BLUE STAR LTD,2025,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(591.24), 'Depreciation': np.float64(128.37), 'Cash from Operating Activity': np.float64(688.07)}"
+BLUE STAR LTD,2025,CF-008,Sustained negative operating cash flow,trend,High,pass,Validation passed,{'Cash from Operating Activity': np.float64(688.07)}
+BLUE STAR LTD,2025,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+BLUE STAR LTD,2025,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(185.04), 'Reserves': np.float64(3023.9)}"
+BLUE STAR LTD,2025,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'BLUE STAR LTD', 'Year': np.int64(2025)}"
+BLUE STAR LTD,2025,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+BLUE STAR LTD,2025,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(431.92), 'Inventory': np.float64(2149.15)}"
+BLUE STAR LTD,2025,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+BLUE STAR LTD,2025,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(11967.65), 'robust_z': None}"
+BLUE STAR LTD,2025,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2025), 'Report Date': '2025-03-31'}"
+BLUE STAR LTD,2025,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(0.4772315366843114), 'robust_z': None}"
+BLUE STAR LTD,2025,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(48.8), 'Borrowings': np.float64(381.0)}"
+BLUE STAR LTD,2025,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.2467098976978839), 'robust_z': None}"
+BLUE STAR LTD,2025,IS-010,Unusual expense spike detection,trend,High,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+BLUE STAR LTD,2025,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,pass,Validation passed,"{'Revenue_Growth': np.float64(0.2356432801671799), 'Operating_CF_Growth': np.float64(1.37905400733006)}"
+BLUE STAR LTD,2025,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(591.24), 'Dividend Amount': np.float64(185.04), 'Reserves': np.float64(3023.9)}"
+BLUE STAR LTD,2025,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+BLUE STAR LTD,2025,LED-001,Accounting equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(12789.04), 'Total Liabilities': np.float64(8248.6), 'Equity Share Capital': np.float64(41.12), 'Reserves': np.float64(3023.9)}"
+BLUE STAR LTD,2025,RAT-005,Debt-to-equity ratio,ratio,High,pass,Validation passed,{'Debt_Equity_Ratio': np.float64(0.1243058772862819)}
+BLUE STAR LTD,2025,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+BLUE STAR LTD,2025,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+BLUE STAR LTD,2025,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+BLUE STAR LTD,2025,RAT-010,Gross profit margin trend,trend,Medium,pass,Validation passed,{'gross_margin': np.float64(0.4772315366843114)}
+BLUE STAR LTD,2025,RAT-011,Net profit margin trend,trend,Medium,pass,Validation passed,{'Profit_Margin': np.float64(0.0494031827468216)}
+BLUE STAR LTD,2025,RAT-012,Operating margin trend,trend,Medium,fail,Validation triggered,{'Operating_Margin': np.float64(0.0)}
+BLUE STAR LTD,2025,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+BLUE STAR LTD,2025,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.1928992306738618), 'robust_z': None}"
+BLUE STAR LTD,2025,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+BLUE STAR LTD,2025,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(5.56855035711793), 'robust_z': None}"
+BLUE STAR LTD,2025,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(6.107907133415333), 'robust_z': None}"
+BLUE STAR LTD,2025,RAT-020,Days sales outstanding trend,trend,Medium,pass,Validation passed,{'dso': np.float64(59.75860340167033)}
+BLUE STAR LTD,2025,RAT-022,Days inventory outstanding trend,trend,Medium,pass,Validation passed,{'dio': np.float64(65.54668209715358)}
+BLUE STAR LTD,2025,RAT-024,Revenue growth rate,trend,Medium,pass,Validation passed,{'Revenue_Growth': np.float64(0.2356432801671799)}
+BLUE STAR LTD,2025,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(0.2356432801671799), 'robust_z': None}"
+BLUE STAR LTD,2025,TR-002,Year-over-year expense variance,trend,Medium,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+BLUE STAR LTD,2025,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(2002.0398678431368), 'robust_z': None}"
+BLUE STAR LTD,2025,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+BLUE STAR LTD,2025,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.0494031827468216), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
+BLUE STAR LTD,2026,BS-001,Balance sheet equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(13274.69), 'Total Liabilities': np.float64(8566.72), 'Equity Share Capital': np.float64(41.12), 'Reserves': np.float64(3390.29)}"
+BLUE STAR LTD,2026,BS-009,Negative total equity,solvency,High,pass,Validation passed,"{'Equity Share Capital': np.float64(41.12), 'Reserves': np.float64(3390.29)}"
+BLUE STAR LTD,2026,CF-002,Cash flow to cash-balance tie-out,integrity,Critical,fail,Validation triggered,"{'Cash & Bank': np.float64(402.07), 'Net Cash Flow': np.float64(-62.84)}"
+BLUE STAR LTD,2026,CF-004,Financing activity plausibility,cross_statement,High,pass,Validation passed,"{'Borrowings': np.float64(809.99), 'Dividend Amount': np.float64(174.76), 'Cash from Financing Activity': np.float64(137.14)}"
+BLUE STAR LTD,2026,CF-006,Depreciation non-cash adjustment plausibility,cross_statement,High,pass,Validation passed,"{'Net profit': np.float64(527.68), 'Depreciation': np.float64(178.79), 'Cash from Operating Activity': np.float64(153.81)}"
+BLUE STAR LTD,2026,CF-008,Sustained negative operating cash flow,trend,High,pass,Validation passed,{'Cash from Operating Activity': np.float64(153.81)}
+BLUE STAR LTD,2026,CF-009,Cash flow versus net income divergence,cross_statement,High,skipped,Unavailable metric values: ['Operating_CF_Ratio'],{'Operating_CF_Ratio': np.float64(nan)}
+BLUE STAR LTD,2026,CF-010,Dividend versus reserves,solvency,High,pass,Validation passed,"{'Dividend Amount': np.float64(174.76), 'Reserves': np.float64(3390.29)}"
+BLUE STAR LTD,2026,DV-004,Mandatory field completeness,data_completeness,Critical,pass,Validation passed,"{'Company': 'BLUE STAR LTD', 'Year': np.int64(2026)}"
+BLUE STAR LTD,2026,DV-007,Numeric financial value validation,data_completeness,High,pass,Validation passed,
+BLUE STAR LTD,2026,DV-008,Unexpected negative cash or inventory,data_quality,Medium,pass,Validation passed,"{'Cash & Bank': np.float64(402.07), 'Inventory': np.float64(2166.2)}"
+BLUE STAR LTD,2026,DV-012,Input schema validation,data_completeness,High,pass,Validation passed,
+BLUE STAR LTD,2026,DV-015,Statistical outlier screening,analytical,Medium,pass,Validation passed,"{'Sales': np.float64(12401.99), 'robust_z': None}"
+BLUE STAR LTD,2026,DV-018,Reporting date consistency,data_completeness,Medium,pass,Validation passed,"{'Year': np.int64(2026), 'Report Date': '2026-03-31'}"
+BLUE STAR LTD,2026,IS-002,Gross margin consistency,trend,Medium,pass,Validation passed,"{'gross_margin': np.float64(0.5036086950561967), 'robust_z': None}"
+BLUE STAR LTD,2026,IS-007,Interest expense reasonableness,analytical,Medium,pass,Validation passed,"{'Interest': np.float64(72.14), 'Borrowings': np.float64(809.99)}"
+BLUE STAR LTD,2026,IS-008,Effective tax rate reasonableness,analytical,Medium,pass,Validation passed,"{'effective_tax_rate': np.float64(0.250003555631409), 'robust_z': None}"
+BLUE STAR LTD,2026,IS-010,Unusual expense spike detection,trend,High,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+BLUE STAR LTD,2026,IS-011,Revenue versus operating cash flow correlation,cross_statement,High,fail,Validation triggered,"{'Revenue_Growth': np.float64(0.0362928394463408), 'Operating_CF_Growth': np.float64(-0.7764616972110396)}"
+BLUE STAR LTD,2026,IS-013,Net income to reserve movement plausibility,cross_statement,Critical,fail,Validation triggered,"{'Net profit': np.float64(527.68), 'Dividend Amount': np.float64(174.76), 'Reserves': np.float64(3390.29)}"
+BLUE STAR LTD,2026,IS-016,Depreciation expense consistency,trend,Medium,skipped,Unavailable metric values: ['Depreciation_Ratio'],{'Depreciation_Ratio': np.float64(nan)}
+BLUE STAR LTD,2026,LED-001,Accounting equation,integrity,Critical,fail,Validation triggered,"{'Total Assets': np.float64(13274.69), 'Total Liabilities': np.float64(8566.72), 'Equity Share Capital': np.float64(41.12), 'Reserves': np.float64(3390.29)}"
+BLUE STAR LTD,2026,RAT-005,Debt-to-equity ratio,ratio,High,pass,Validation passed,{'Debt_Equity_Ratio': np.float64(0.2360516522362527)}
+BLUE STAR LTD,2026,RAT-006,Debt-to-assets ratio,ratio,High,skipped,Unavailable metric values: ['Debt_Ratio'],{'Debt_Ratio': np.float64(nan)}
+BLUE STAR LTD,2026,RAT-007,Equity ratio,ratio,High,skipped,Unavailable metric values: ['Equity_Ratio'],{'Equity_Ratio': np.float64(nan)}
+BLUE STAR LTD,2026,RAT-008,Interest coverage ratio,ratio,High,fail,Validation triggered,{'Interest_Coverage_Ratio': np.float64(0.0)}
+BLUE STAR LTD,2026,RAT-010,Gross profit margin trend,trend,Medium,pass,Validation passed,{'gross_margin': np.float64(0.5036086950561967)}
+BLUE STAR LTD,2026,RAT-011,Net profit margin trend,trend,Medium,pass,Validation passed,{'Profit_Margin': np.float64(0.0425480104402599)}
+BLUE STAR LTD,2026,RAT-012,Operating margin trend,trend,Medium,fail,Validation triggered,{'Operating_Margin': np.float64(0.0)}
+BLUE STAR LTD,2026,RAT-014,Return on assets outlier,ratio,Medium,skipped,Unavailable metric values: ['ROA'],{'ROA': np.float64(nan)}
+BLUE STAR LTD,2026,RAT-015,Return on equity outlier,ratio,Medium,pass,Validation passed,"{'ROE': np.float64(0.1537793501796637), 'robust_z': None}"
+BLUE STAR LTD,2026,RAT-017,Asset turnover outlier,ratio,Medium,skipped,Unavailable metric values: ['Asset_Utilization_Ratio'],{'Asset_Utilization_Ratio': np.float64(nan)}
+BLUE STAR LTD,2026,RAT-018,Inventory turnover outlier,ratio,Medium,pass,Validation passed,"{'inventory_turnover': np.float64(5.725228510756163), 'robust_z': None}"
+BLUE STAR LTD,2026,RAT-019,Receivables turnover outlier,ratio,Medium,pass,Validation passed,"{'receivables_turnover': np.float64(5.796134972192363), 'robust_z': None}"
+BLUE STAR LTD,2026,RAT-020,Days sales outstanding trend,trend,Medium,pass,Validation passed,{'dso': np.float64(62.97299868811376)}
+BLUE STAR LTD,2026,RAT-022,Days inventory outstanding trend,trend,Medium,pass,Validation passed,{'dio': np.float64(63.7529138468907)}
+BLUE STAR LTD,2026,RAT-024,Revenue growth rate,trend,Medium,pass,Validation passed,{'Revenue_Growth': np.float64(0.0362928394463408)}
+BLUE STAR LTD,2026,TR-001,Year-over-year revenue variance,trend,Medium,pass,Validation passed,"{'Revenue_Growth': np.float64(0.0362928394463408), 'robust_z': None}"
+BLUE STAR LTD,2026,TR-002,Year-over-year expense variance,trend,Medium,pass,Validation passed,{'Total Expenses': np.float64(0.0)}
+BLUE STAR LTD,2026,TR-003,Multi-year trend consistency,trend,Medium,pass,Validation passed,"{'Revenue_Volatility': np.float64(1459.31361928592), 'robust_z': None}"
+BLUE STAR LTD,2026,TR-006,Common-size statement analysis,trend,Medium,pass,Validation passed,"{'Expense_Ratio': np.float64(0.0), 'robust_z': None}"
+BLUE STAR LTD,2026,TR-009,Margin trend stability,trend,Medium,pass,Validation passed,"{'Profit_Margin': np.float64(0.0425480104402599), 'Operating_Margin': np.float64(0.0), 'robust_z': None}"
